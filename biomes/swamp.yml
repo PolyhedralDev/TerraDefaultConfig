@@ -1,0 +1,19 @@
+noise-equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)/4))"
+id: "SWAMP"
+name: "Swamp"
+palette:
+  - BEDROCK: 2
+  - SWAMP_BOTTOM: 61
+  - SWAMP: 255
+vanilla: SWAMP
+fauna:
+  TALL_GRASS: 15
+  LILY_PAD: 4
+  GRASS: 70
+  BLUE_ORCHID: 2
+fauna-chance: 80
+
+tree-chance: 95
+tree-density: 1
+trees:
+  SWAMP_OAK: 1

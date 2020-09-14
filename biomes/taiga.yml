@@ -1,0 +1,20 @@
+noise-equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)+0.5))"
+id: "TAIGA"
+name: "Taiga Forest"
+
+palette:
+  - BEDROCK: 1
+  - SANDY: 63
+  - TAIGA: 255
+vanilla: TAIGA
+
+fauna-chance: 40
+fauna:
+  TALL_GRASS: 15
+  GRASS: 70
+  POPPY: 5
+
+tree-chance: 100
+tree-density: 5
+trees:
+  "TERRA:SPRUCE": 8

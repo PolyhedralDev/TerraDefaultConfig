@@ -1,0 +1,14 @@
+noise-equation: "((-((y / 63)^2)) + 1) + ((noise2(x, z)/2))"
+id: "BEACH"
+name: "Beach"
+palette:
+  - BEDROCK: 2
+  - SANDY: 64
+  - GRASSY: 255
+vanilla: BEACH
+fauna:
+  TALL_GRASS: 15
+  LILY_PAD: 1
+  GRASS: 70
+  POPPY: 5
+fauna-chance: 60

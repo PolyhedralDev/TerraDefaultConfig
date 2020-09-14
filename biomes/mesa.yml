@@ -1,0 +1,33 @@
+noise-equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)+0.5) / 3) + max(min(floor(noise3(x, y, z)*10 + noise2(x, z)*22), 18)/10, 0)"
+id: "MESA"
+name: "Mesa"
+
+palette:
+  - BEDROCK: 1
+  - RED_DESERT: 255
+  - "BLOCK:minecraft:red_terracotta": 128
+  - "BLOCK:minecraft:orange_terracotta": 124
+  - "BLOCK:minecraft:terracotta": 120
+  - "BLOCK:minecraft:yellow_terracotta": 116
+  - "BLOCK:minecraft:red_terracotta": 112
+  - "BLOCK:minecraft:orange_terracotta": 108
+  - "BLOCK:minecraft:terracotta": 104
+  - "BLOCK:minecraft:red_terracotta": 100
+  - "BLOCK:minecraft:orange_terracotta": 96
+  - "BLOCK:minecraft:terracotta": 92
+  - "BLOCK:minecraft:yellow_terracotta": 88
+  - "BLOCK:minecraft:red_terracotta": 84
+  - "BLOCK:minecraft:orange_terracotta": 80
+  - "BLOCK:minecraft:terracotta": 76
+  - RED_DESERT2: 72
+vanilla: BADLANDS
+
+fauna-chance: 2
+fauna:
+  DEAD_BUSH: 1
+  SMALL_ROCK: 1
+
+tree-chance: 50
+tree-density: 1
+trees:
+  CACTUS: 1

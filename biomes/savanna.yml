@@ -1,0 +1,20 @@
+noise-equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)+0.5) / 1.5)"
+id: "SAVANNA"
+name: "Savanna"
+
+palette:
+  - BEDROCK: 1
+  - SANDY: 63
+  - GRASSY: 255
+vanilla: SAVANNA
+
+fauna-chance: 40
+fauna:
+  TALL_GRASS: 15
+  GRASS: 70
+  POPPY: 5
+
+tree-chance: 80
+tree-density: 1
+trees:
+  ACACIA: 1
