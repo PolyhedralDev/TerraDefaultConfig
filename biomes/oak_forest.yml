@@ -3,19 +3,80 @@ id: "OAK_FOREST"
 name: "Oak Forest"
 
 palette:
-  - BEDROCK: 1
-  - SANDY: 63
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SANDY: 62
   - GRASSY: 255
 vanilla: FOREST
 
 fauna-chance: 40
 fauna:
-  TALL_GRASS: 15
-  GRASS: 70
-  POPPY: 5
+  TALL_GRASS: 150
+  GRASS: 750
+  POPPY: 50
+  ROSE_BUSH: 4
+  LILAC: 4
+
+carving:
+  - CAVE: 35
+  - RAVINE: 5
 
 tree-chance: 100
 tree-density: 7
 trees:
   OAK: 8
   LARGE_OAK: 2
+
+ores:
+  DIRT:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  DIORITE:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  ANDESITE:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  GRANITE:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  COAL_ORE:
+    min: 5
+    max: 15
+    min-height: 0
+    max-height: 128
+  IRON_ORE:
+    min: 2
+    max: 8
+    min-height: 0
+    max-height: 64
+  GOLD_ORE:
+    min: 1
+    max: 5
+    min-height: 0
+    max-height: 32
+  LAPIS_ORE:
+    min: 1
+    max: 4
+    min-height: 0
+    max-height: 32
+  REDSTONE_ORE:
+    min: 1
+    max: 4
+    min-height: 0
+    max-height: 16
+  DIAMOND_ORE:
+    min: 1
+    max: 2
+    min-height: 0
+    max-height: 16

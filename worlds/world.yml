@@ -36,3 +36,10 @@ frequencies:
   grid-1: 256
   grid-2: 512
   zone: 1536
+image:
+  use-image: false
+  image-location: "/home/dfsek/Desktop/wg.png"
+  channels:
+    biome-x: red
+    biome-z: green
+    zone: blue

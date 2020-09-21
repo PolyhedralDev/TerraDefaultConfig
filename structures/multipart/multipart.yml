@@ -1,0 +1,11 @@
+pools:
+  CENTER_POOL:
+    structures:
+      CENTER: 1
+  EDGE_POOL:
+    structures:
+      EDGE: 1
+
+entry: CENTER_POOL
+exit: [EDGE_POOL]
+max-layers: 2

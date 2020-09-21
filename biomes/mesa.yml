@@ -3,7 +3,10 @@ id: "MESA"
 name: "Mesa"
 
 palette:
-  - BEDROCK: 1
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
   - RED_DESERT: 255
   - "BLOCK:minecraft:red_terracotta": 128
   - "BLOCK:minecraft:orange_terracotta": 124
@@ -19,7 +22,7 @@ palette:
   - "BLOCK:minecraft:red_terracotta": 84
   - "BLOCK:minecraft:orange_terracotta": 80
   - "BLOCK:minecraft:terracotta": 76
-  - RED_DESERT2: 72
+  - RED_DESERT: 72
 vanilla: BADLANDS
 
 fauna-chance: 2
@@ -30,4 +33,61 @@ fauna:
 tree-chance: 50
 tree-density: 1
 trees:
-  CACTUS: 1
+  CACTUS: 9
+  "TERRA:DEAD": 1
+
+carving:
+  - CAVE: 35
+  - RAVINE: 5
+
+ores:
+  DIRT:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  DIORITE:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  ANDESITE:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  GRANITE:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  COAL_ORE:
+    min: 5
+    max: 15
+    min-height: 0
+    max-height: 128
+  IRON_ORE:
+    min: 2
+    max: 8
+    min-height: 0
+    max-height: 64
+  GOLD_ORE:
+    min: 2
+    max: 9
+    min-height: 0
+    max-height: 64
+  LAPIS_ORE:
+    min: 1
+    max: 4
+    min-height: 0
+    max-height: 32
+  REDSTONE_ORE:
+    min: 1
+    max: 4
+    min-height: 0
+    max-height: 16
+  DIAMOND_ORE:
+    min: 1
+    max: 2
+    min-height: 0
+    max-height: 16

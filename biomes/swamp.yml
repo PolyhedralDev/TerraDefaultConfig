@@ -2,18 +2,77 @@ noise-equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)/4))"
 id: "SWAMP"
 name: "Swamp"
 palette:
-  - BEDROCK: 2
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
   - SWAMP_BOTTOM: 61
   - SWAMP: 255
 vanilla: SWAMP
 fauna:
-  TALL_GRASS: 15
-  LILY_PAD: 4
-  GRASS: 70
-  BLUE_ORCHID: 2
+  TALL_GRASS: 150
+  LILY_PAD: 40
+  GRASS: 700
+  BLUE_ORCHID: 20
+  ROOT: 3
 fauna-chance: 80
+
+carving:
+  - CAVE_SWAMP: 50
 
 tree-chance: 95
 tree-density: 1
 trees:
   SWAMP_OAK: 1
+
+ores:
+  DIRT:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  DIORITE:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  ANDESITE:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  GRANITE:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
+  COAL_ORE:
+    min: 5
+    max: 15
+    min-height: 0
+    max-height: 128
+  IRON_ORE:
+    min: 2
+    max: 8
+    min-height: 0
+    max-height: 64
+  GOLD_ORE:
+    min: 1
+    max: 5
+    min-height: 0
+    max-height: 32
+  LAPIS_ORE:
+    min: 1
+    max: 4
+    min-height: 0
+    max-height: 32
+  REDSTONE_ORE:
+    min: 1
+    max: 4
+    min-height: 0
+    max-height: 16
+  DIAMOND_ORE:
+    min: 1
+    max: 2
+    min-height: 0
+    max-height: 16
