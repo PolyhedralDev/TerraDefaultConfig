@@ -37,8 +37,8 @@ frequencies:
   grid-2: 512
   zone: 1536
 image:
-  use-image: false
-  image-location: "/home/dfsek/Desktop/wg.png"
+  use-image: true
+  image-location: "/home/dfsek/Desktop/map_1600748916324.png"
   channels:
     biome-x: red
     biome-z: green
