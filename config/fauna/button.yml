@@ -1,0 +1,14 @@
+blocks:
+  - materials:
+      - "minecraft:stone_button[facing=east,face=floor]": 1
+      - "minecraft:stone_button[facing=south,face=floor]": 1
+    layers: 1
+id: SMALL_ROCK
+name: "Stone button \"rock\""
+spawnable:
+  - STONE
+  - SAND
+  - RED_SAND
+  - GRAVEL
+  - DIRT
+  - COARSE_DIRT

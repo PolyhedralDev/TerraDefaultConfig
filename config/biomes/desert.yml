@@ -1,0 +1,23 @@
+extends: "PLAINS_ABSTRACT"
+id: "DESERT"
+name: "Desert"
+
+palette:
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - DESERT: 255
+vanilla: DESERT
+
+fauna-chance: 2
+fauna:
+  DEAD_BUSH: 1
+  SMALL_ROCK: 1
+
+tree-chance: 50
+tree-density: 1
+trees:
+  CACTUS: 1
+
+# Carving and ores covered by super biome

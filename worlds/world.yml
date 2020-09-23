@@ -12,10 +12,10 @@ grids:
   - TEMPERATE
   - TEMPERATE
   - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
+  - COLD
+  - COLD
+  - COLD
+  - COLD
   - TEMPERATE
   - TEMPERATE
   - TEMPERATE
@@ -37,7 +37,7 @@ frequencies:
   grid-2: 512
   zone: 1536
 image:
-  use-image: true
+  use-image: false
   align: center
   image-location: "/home/dfsek/Pictures/Screenshot from 2020-09-22 16-20-11.png"
   channels:

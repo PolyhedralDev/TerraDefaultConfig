@@ -1,0 +1,26 @@
+extends: "PLAINS_ABSTRACT"
+id: "PLAINS"
+name: "Plains"
+
+palette:
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SANDY: 62
+  - GRASSY: 255
+vanilla: PLAINS
+
+fauna-chance: 60
+fauna:
+  TALL_GRASS: 150
+  GRASS: 700
+  POPPY: 50
+  SUNFLOWER: 8
+
+tree-chance: 1
+tree-density: 0
+trees:
+  "TERRA:OAK_MEDIUM": 2
+
+# Carving and ores covered by super biome

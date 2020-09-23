@@ -1,0 +1,9 @@
+material: "minecraft:granite"
+radius:
+  min: 3
+  max: 5
+deform: 0.75
+deform-frequency: 0.1
+id: GRANITE
+replace:
+  - STONE
