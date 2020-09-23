@@ -1,4 +1,10 @@
 extends: "BEACH_ABSTRACT"
-id: "BEACH"
-name: "Beach"
+id: "WARM_BEACH"
+name: "Warm Beach"
 vanilla: BEACH
+palette:
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - "BLOCK:minecraft:sand": 255

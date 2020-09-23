@@ -1,6 +1,6 @@
 extends: "BEACH_ABSTRACT"
 id: "COLD_BEACH"
-name: "Beach"
+name: "Cold Beach"
 palette:
   - BEDROCK: 0
   - BEDROCK_MOST: 1
