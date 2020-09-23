@@ -1,5 +1,0 @@
-grid:
-  - ["OCEAN", "OCEAN", "SWAMP"]
-  - ["OCEAN", "OCEAN", "OCEAN"]
-id: OCEAN
-name: "Ocean Grid"

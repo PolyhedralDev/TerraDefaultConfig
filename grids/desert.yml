@@ -1,4 +1,0 @@
-grid:
-  - ["MESA","MESA","MESA","MESA", "MESA_BORDER", "DESERT", "DESERT", "DESERT", "DESERT", "DESERT", "DESERT"]
-id: DESERT
-name: "Desert Grid"
