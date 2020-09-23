@@ -10,6 +10,11 @@ ores:
     max: 2
     min-height: 0
     max-height: 128
+  GRAVEL:
+    min: 0
+    max: 2
+    min-height: 0
+    max-height: 128
   DIORITE:
     min: 0
     max: 2

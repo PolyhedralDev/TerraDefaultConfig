@@ -1,4 +1,5 @@
 noise-equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)+0.5))"
+extends: "BASIC_ORES"
 id: "OAK_FOREST"
 name: "Oak Forest"
 
@@ -19,64 +20,8 @@ fauna:
   ROSE_BUSH: 4
   LILAC: 4
 
-carving:
-  - CAVE: 35
-  - RAVINE: 5
-
 tree-chance: 100
 tree-density: 7
 trees:
   OAK: 8
   LARGE_OAK: 2
-
-ores:
-  DIRT:
-    min: 0
-    max: 2
-    min-height: 0
-    max-height: 128
-  DIORITE:
-    min: 0
-    max: 2
-    min-height: 0
-    max-height: 128
-  ANDESITE:
-    min: 0
-    max: 2
-    min-height: 0
-    max-height: 128
-  GRANITE:
-    min: 0
-    max: 2
-    min-height: 0
-    max-height: 128
-  COAL_ORE:
-    min: 5
-    max: 15
-    min-height: 0
-    max-height: 128
-  IRON_ORE:
-    min: 2
-    max: 8
-    min-height: 0
-    max-height: 64
-  GOLD_ORE:
-    min: 1
-    max: 5
-    min-height: 0
-    max-height: 32
-  LAPIS_ORE:
-    min: 1
-    max: 4
-    min-height: 0
-    max-height: 32
-  REDSTONE_ORE:
-    min: 1
-    max: 4
-    min-height: 0
-    max-height: 16
-  DIAMOND_ORE:
-    min: 1
-    max: 2
-    min-height: 0
-    max-height: 16

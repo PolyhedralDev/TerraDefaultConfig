@@ -1,4 +1,5 @@
 noise-equation: "-(y-62)*(y-156)*(y+25)*(y-160)*0.0000001 + if(max(y-72, 0), noise3(x, y, z)*0.75, (noise2(x, z)+0.5) / 2)"
+extends: "BASIC_ORES"
 id: "PLAINS_ISLANDS"
 name: "Plains Islands"
 
@@ -22,59 +23,3 @@ tree-chance: 1
 tree-density: 0
 trees:
   "TERRA:OAK_MEDIUM": 2
-
-carving:
-  - CAVE: 35
-  - RAVINE: 5
-
-ores:
-  DIRT:
-    min: 0
-    max: 2
-    min-height: 0
-    max-height: 128
-  DIORITE:
-    min: 0
-    max: 2
-    min-height: 0
-    max-height: 128
-  ANDESITE:
-    min: 0
-    max: 2
-    min-height: 0
-    max-height: 128
-  GRANITE:
-    min: 0
-    max: 2
-    min-height: 0
-    max-height: 128
-  COAL_ORE:
-    min: 5
-    max: 15
-    min-height: 0
-    max-height: 128
-  IRON_ORE:
-    min: 2
-    max: 8
-    min-height: 0
-    max-height: 64
-  GOLD_ORE:
-    min: 1
-    max: 5
-    min-height: 0
-    max-height: 32
-  LAPIS_ORE:
-    min: 1
-    max: 4
-    min-height: 0
-    max-height: 32
-  REDSTONE_ORE:
-    min: 1
-    max: 4
-    min-height: 0
-    max-height: 16
-  DIAMOND_ORE:
-    min: 1
-    max: 2
-    min-height: 0
-    max-height: 16
