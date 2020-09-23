@@ -1,19 +1,21 @@
-noise-equation: "((-((y / 54)^2)) + 1) + ((noise2(x, z)/2))"
-id: "OCEAN"
-name: "Ocean"
+noise-equation: "((-((y / 63)^2)) + 1) + ((noise2(x, z)/2))"
+id: "BEACH_ABSTRACT"
+
 palette:
   - BEDROCK: 0
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
-  - SANDY: 255
-  - OCEANFLOOR: 60
-vanilla: OCEAN
-fauna: {}
-fauna-chance: 0
+  - SANDY: 64
+  - GRASSY: 255
 
-carving:
-  - CAVE_OCEAN: 50
+
+fauna:
+  TALL_GRASS: 15
+  LILY_PAD: 1
+  GRASS: 70
+  POPPY: 5
+fauna-chance: 60
 
 ores:
   DIRT:

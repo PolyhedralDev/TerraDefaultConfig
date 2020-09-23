@@ -1,5 +1,0 @@
-grid:
-  - ["BEACH", "BEACH", "SWAMP"]
-  - ["BEACH", "BEACH", "BEACH"]
-id: BEACH
-name: "Beach Grid"

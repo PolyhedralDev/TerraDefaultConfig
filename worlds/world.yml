@@ -1,41 +1,16 @@
 grids:
   - DESERT
   - DESERT
-  - DESERT
-  - DESERT
-  - DESERT
-  - DESERT
-  - DESERT
   - TEMPERATE
   - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
+  - TEMPERATE_COLD
   - COLD
   - COLD
-  - COLD
-  - COLD
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - BEACH
-  - BEACH
-  - OCEAN
-  - OCEAN
-  - OCEAN
-  - OCEAN
-  - OCEAN
-  - OCEAN
-  - OCEAN
 sea-level: 63
 frequencies:
-  grid-1: 256
-  grid-2: 512
-  zone: 1536
+  grid-1: 512
+  grid-2: 768
+  zone: 3072
 image:
   use-image: false
   align: center
