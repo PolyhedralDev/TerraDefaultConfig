@@ -12,6 +12,6 @@ palette:
   - SNOW: 255
 vanilla: MOUNTAINS
 
-fauna-chance: 2
-fauna:
+flora-chance: 2
+flora:
   SMALL_ROCK: 1

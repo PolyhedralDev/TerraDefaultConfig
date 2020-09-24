@@ -10,8 +10,8 @@ palette:
   - DESERT: 255
 vanilla: DESERT
 
-fauna-chance: 2
-fauna:
+flora-chance: 2
+flora:
   DEAD_BUSH: 1
   SMALL_ROCK: 1
 

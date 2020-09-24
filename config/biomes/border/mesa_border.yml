@@ -26,8 +26,8 @@ palette:
   - RED_DESERT_BORDER: 72
 vanilla: BADLANDS
 
-fauna-chance: 2
-fauna:
+flora-chance: 2
+flora:
   DEAD_BUSH: 1
   SMALL_ROCK: 1
 

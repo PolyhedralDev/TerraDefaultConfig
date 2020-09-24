@@ -12,8 +12,8 @@ palette:
   - GRASSY: 255
 vanilla: FOREST
 
-fauna-chance: 40
-fauna:
+flora-chance: 40
+flora:
   TALL_GRASS: 150
   GRASS: 750
   POPPY: 50

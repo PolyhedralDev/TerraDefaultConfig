@@ -10,13 +10,13 @@ palette:
   - SWAMP_BOTTOM: 61
   - SWAMP: 255
 vanilla: SWAMP
-fauna:
+flora:
   TALL_GRASS: 150
   LILY_PAD: 40
   GRASS: 700
   BLUE_ORCHID: 20
   ROOT: 3
-fauna-chance: 80
+flora-chance: 80
 
 carving:
   - CAVE_SWAMP: 50

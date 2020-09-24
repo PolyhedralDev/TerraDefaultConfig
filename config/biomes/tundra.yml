@@ -10,6 +10,6 @@ palette:
   - TUNDRA: 255
 vanilla: SNOWY_TUNDRA
 
-fauna-chance: 2
-fauna:
+flora-chance: 2
+flora:
   SMALL_ROCK: 1

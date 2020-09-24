@@ -10,11 +10,11 @@ palette:
   - SANDY: 62
   - GRASSY: 255
 vanilla: BEACH
-fauna:
+flora:
   TALL_GRASS: 15
   LILY_PAD: 1
   GRASS: 70
   POPPY: 5
-fauna-chance: 60
+flora-chance: 60
 
 carving: []

@@ -10,8 +10,8 @@ palette:
   - SANDY: 255
   - OCEANFLOOR: 60
 
-fauna: {}
-fauna-chance: 0
+flora: {}
+flora-chance: 0
 
 carving:
   - CAVE_OCEAN: 50
