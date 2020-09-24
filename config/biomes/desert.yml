@@ -28,4 +28,14 @@ tree-density: 1
 trees:
   CACTUS: 1
 
+slabs:
+  enable: true
+  threshold: 0.015
+  palettes:
+    - "minecraft:sand": "BLOCK:minecraft:sandstone_slab"
+  use-stairs-if-available: true
+  stair-palettes:
+    - "minecraft:sand": "BLOCK:minecraft:sandstone_stairs"
+
+
 # Carving and ores covered by super biome

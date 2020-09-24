@@ -25,3 +25,13 @@ flora:
     y:
       min: 32
       max: 64
+  KELP_MEDIUM:
+    weight: 5
+    y:
+      min: 32
+      max: 64
+  KELP_TALL:
+    weight: 5
+    y:
+      min: 32
+      max: 64
