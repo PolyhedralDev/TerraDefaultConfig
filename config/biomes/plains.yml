@@ -13,10 +13,21 @@ vanilla: PLAINS
 
 flora-chance: 60
 flora:
-  TALL_GRASS: 150
-  GRASS: 700
-  POPPY: 50
-  SUNFLOWER: 8
+  TALL_GRASS:
+    weight: 160
+    y:
+      min: 62
+      max: 255
+  GRASS:
+    weight: 100
+    y:
+      min: 62
+      max: 255
+  SUNFLOWER:
+    weight: 8
+    y:
+      min: 62
+      max: 255
 
 tree-chance: 1
 tree-density: 0

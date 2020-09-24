@@ -6,9 +6,11 @@ blocks:
 id: SMALL_ROCK
 name: "Stone button \"rock\""
 spawnable:
-  - STONE
-  - SAND
-  - RED_SAND
-  - GRAVEL
-  - DIRT
-  - COARSE_DIRT
+  - "minecraft:stone"
+  - "minecraft:sand"
+  - "minecraft:red_sand"
+  - "minecraft:gravel"
+  - "minecraft:dirt"
+  - "minecraft:coarse_dirt"
+replaceable:
+  - "minecraft:air"

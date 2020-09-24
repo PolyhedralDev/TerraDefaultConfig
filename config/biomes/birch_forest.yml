@@ -14,9 +14,21 @@ vanilla: BIRCH_FOREST
 
 flora-chance: 40
 flora:
-  TALL_GRASS: 15
-  GRASS: 70
-  POPPY: 5
+  TALL_GRASS:
+    weight: 15
+    y:
+      min: 62
+      max: 255
+  GRASS:
+    weight: 70
+    y:
+      min: 62
+      max: 255
+  POPPY:
+    weight: 5
+    y:
+      min: 62
+      max: 255
 
 tree-chance: 100
 tree-density: 7

@@ -14,11 +14,31 @@ vanilla: FOREST
 
 flora-chance: 40
 flora:
-  TALL_GRASS: 150
-  GRASS: 750
-  POPPY: 50
-  ROSE_BUSH: 4
-  LILAC: 4
+  TALL_GRASS:
+    weight: 150
+    y:
+      min: 62
+      max: 255
+  GRASS:
+    weight: 750
+    y:
+      min: 62
+      max: 255
+  POPPY:
+    weight: 50
+    y:
+      min: 62
+      max: 255
+  ROSE_BUSH:
+    weight: 4
+    y:
+      min: 62
+      max: 255
+  LILAC:
+    weight: 4
+    y:
+      min: 62
+      max: 255
 
 tree-chance: 100
 tree-density: 7

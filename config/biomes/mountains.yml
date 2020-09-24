@@ -14,4 +14,8 @@ vanilla: MOUNTAINS
 
 flora-chance: 2
 flora:
-  SMALL_ROCK: 1
+  SMALL_ROCK:
+    weight: 1
+    y:
+      min: 60
+      max: 72

@@ -17,6 +17,8 @@ blocks:
 id: ROOT
 name: "Swamp Root"
 spawnable:
-  - GRASS_BLOCK
-  - COARSE_DIRT
-  - DIRT
+  - "minecraft:grass_block"
+  - "minecraft:coarse_dirt"
+  - "minecraft:dirt"
+replaceable:
+  - "minecraft:air"

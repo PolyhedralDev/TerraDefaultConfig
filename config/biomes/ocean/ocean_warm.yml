@@ -9,3 +9,19 @@ palette:
   - BEDROCK_LITTLE: 3
   - SANDY: 255
   - OCEANFLOOR: 60
+flora:
+  TALL_SEAGRASS:
+    weight: 1
+    y:
+      min: 32
+      max: 64
+  SEAGRASS:
+    weight: 3
+    y:
+      min: 32
+      max: 64
+  KELP_SHORT:
+    weight: 5
+    y:
+      min: 32
+      max: 64

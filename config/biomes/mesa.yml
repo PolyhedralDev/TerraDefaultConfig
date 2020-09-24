@@ -28,8 +28,16 @@ vanilla: BADLANDS
 
 flora-chance: 2
 flora:
-  DEAD_BUSH: 1
-  SMALL_ROCK: 1
+  DEAD_BUSH:
+    weight: 1
+    y:
+      min: 62
+      max: 255
+  SMALL_ROCK:
+    weight: 1
+    y:
+      min: 62
+      max: 255
 
 tree-chance: 50
 tree-density: 1
