@@ -1,0 +1,48 @@
+noise-equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)+0.5) / 2)"
+extends: "BASIC_ORES"
+id: "JUNGLE"
+name: "Jungle"
+
+palette:
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SANDY: 62
+  - GRASSY: 255
+vanilla: JUNGLE
+
+flora-chance: 80
+flora:
+  TALL_GRASS:
+    weight: 150
+    y:
+      min: 62
+      max: 255
+  GRASS:
+    weight: 750
+    y:
+      min: 62
+      max: 255
+  POPPY:
+    weight: 50
+    y:
+      min: 62
+      max: 255
+  ROSE_BUSH:
+    weight: 4
+    y:
+      min: 62
+      max: 255
+  LILAC:
+    weight: 4
+    y:
+      min: 62
+      max: 255
+
+tree-chance: 100
+tree-density: 15
+trees:
+  JUNGLE_BUSH: 8
+  SMALL_JUNGLE: 3
+  JUNGLE: 2

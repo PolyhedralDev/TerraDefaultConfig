@@ -38,6 +38,16 @@ flora:
     y:
       min: 62
       max: 255
+slabs:
+  enable: true
+  threshold: 0.015
+  palettes:
+    - "minecraft:sand": "BLOCK:minecraft:sandstone_slab"
+    - "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_slab"
+  use-stairs-if-available: true
+  stair-palettes:
+    - "minecraft:sand": "BLOCK:minecraft:sandstone_stairs"
+    - "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_stairs"
 
 tree-chance: 50
 tree-density: 1

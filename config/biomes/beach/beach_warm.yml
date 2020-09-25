@@ -7,4 +7,4 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
-  - "BLOCK:minecraft:sand": 255
+  - SAND_ALL: 255

@@ -9,5 +9,5 @@ grid:
   - ["MESA",       "MESA",       "MESA",       "MESA",       "MESA",       "MESA_BORDER","DESERT",       "DESERT",       "DESERT",  "DESERT",  "DESERT",  "DESERT",  "DESERT",    "WARM_BEACH", "WARM_OCEAN", "WARM_OCEAN", "WARM_OCEAN", "WARM_OCEAN", "WARM_OCEAN", "WARM_OCEAN"]
   - ["MESA",       "MESA",       "MESA",       "MESA",       "MESA",       "MESA_BORDER","DESERT",       "DESERT",       "DESERT",  "DESERT",  "DESERT",  "DESERT",  "DESERT",    "WARM_BEACH", "WARM_OCEAN", "WARM_OCEAN", "WARM_OCEAN", "WARM_OCEAN", "WARM_OCEAN", "WARM_OCEAN"]
 
-id: TEMPERATE
+id: TEMPERATE_SEASONAL
 name: "Temperate Grid"

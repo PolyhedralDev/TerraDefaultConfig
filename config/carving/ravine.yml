@@ -9,13 +9,16 @@ start:
   radius:
     multiply:
       x: 1
-      y: 5
+      y: 4
       z: 1
-    min: 1
-    max: 3
+    min: 2
+    max: 4
   height:
     min: 12
     max: 56
+cut:
+  top: 1
+  bottom: 2
 mutate:
   x: 1
   y: 3
@@ -37,6 +40,18 @@ palette:
   outer:
     replace-blacklist: false
     replace: []
+    blocks:
+      - materials: { "minecraft:stone": 1 }
+        y: 255
+  top:
+    replace-blacklist: false
+    replace: [ ]
+    blocks:
+      - materials: { "minecraft:stone": 1 }
+        y: 255
+  bottom:
+    replace-blacklist: false
+    replace: [ ]
     blocks:
       - materials: { "minecraft:stone": 1 }
         y: 255
