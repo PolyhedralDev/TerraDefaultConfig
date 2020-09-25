@@ -81,4 +81,5 @@ shift:
   "minecraft:gravel": ["minecraft:dirt"]
   "minecraft:sand": ["minecraft:dirt"]
   "minecraft:coarse_dirt": ["minecraft:dirt"]
-update: []
+update:
+  - "minecraft:water"

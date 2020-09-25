@@ -62,4 +62,5 @@ shift:
   "minecraft:sand": ["minecraft:dirt"]
   "minecraft:coarse_dirt": ["minecraft:dirt"]
 
-update: []
+update:
+  - "minecraft:water"

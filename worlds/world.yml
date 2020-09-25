@@ -13,7 +13,7 @@ grids:
   - TROPICAL
   - TROPICAL
   - TROPICAL
-  - RIVER
+  - RIVER_TROPIC
   - TEMPERATE
   - TEMPERATE
   - TEMPERATE
@@ -47,7 +47,7 @@ sea-level: 63
 biome-resolution: 4
 frequencies:
   grid-x: 512
-  grid-z: 2048
+  grid-z: 1024
   zone: 3072
 image:
   use-image: false

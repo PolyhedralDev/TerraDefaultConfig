@@ -1,0 +1,49 @@
+noise-equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)/3.25))"
+extends: "BASIC_ORES"
+id: "SWAMP_BORDER"
+name: "Swamp"
+palette:
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SWAMP_BOTTOM: 61
+  - SWAMP_BORDER: 255
+vanilla: SWAMP
+flora:
+  TALL_GRASS:
+    weight: 150
+    y:
+      min: 62
+      max: 255
+  LILY_PAD:
+    weight: 40
+    y:
+      min: 62
+      max: 255
+  GRASS:
+    weight: 700
+    y:
+      min: 62
+      max: 255
+  BLUE_ORCHID:
+    weight: 20
+    y:
+      min: 62
+      max: 255
+  ROOT:
+    weight: 3
+    y:
+      min: 62
+      max: 255
+
+flora-chance: 80
+flora-attempts: 1
+
+carving:
+  - CAVE_SWAMP: 50
+
+tree-chance: 95
+tree-density: 1
+trees:
+  SWAMP_OAK: 1
