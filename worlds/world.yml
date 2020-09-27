@@ -57,3 +57,8 @@ image:
     biome-x: red
     biome-z: green
     zone: blue
+blend:
+  enable: true
+  frequency: 0.125
+  amplitude: 10
+  ignore-terrain: true
