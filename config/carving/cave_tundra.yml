@@ -32,6 +32,7 @@ palette:
       - "minecraft:water"
       - "minecraft:lava"
       - "minecraft:bedrock"
+      - "minecraft:ice"
     blocks:
       - materials: { "minecraft:air": 1 }
         y: 255

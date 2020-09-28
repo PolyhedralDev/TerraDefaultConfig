@@ -28,5 +28,9 @@ flora:
       min: 62
       max: 255
 
+ocean:
+  palette: "BLOCK:minecraft:water"
+  level: 62
+
 flora-chance: 60
 flora-attempts: 1

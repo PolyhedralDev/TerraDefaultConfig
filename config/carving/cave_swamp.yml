@@ -32,6 +32,7 @@ palette:
       - "minecraft:water"
       - "minecraft:lava"
       - "minecraft:bedrock"
+      - "minecraft:ice"
     blocks:
       - materials: { "minecraft:air": 1 }
         y: 255
@@ -81,5 +82,4 @@ shift:
   "minecraft:gravel": ["minecraft:dirt"]
   "minecraft:sand": ["minecraft:dirt"]
   "minecraft:coarse_dirt": ["minecraft:dirt"]
-update:
-  - "minecraft:water"
+update: []

@@ -41,6 +41,11 @@ flora:
     y:
       min: 62
       max: 255
+flora-simplex:
+  enable: true
+  frequency: 0.1
+  seed: 4
+
 slabs:
   enable: true
   threshold: 0.015

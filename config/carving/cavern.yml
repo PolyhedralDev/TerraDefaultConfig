@@ -32,6 +32,7 @@ palette:
       - "minecraft:water"
       - "minecraft:lava"
       - "minecraft:bedrock"
+      - "minecraft:ice"
     blocks:
       - materials: {"minecraft:air": 1}
         y: 255
@@ -51,9 +52,9 @@ palette:
         y: 255
   bottom:
     replace-blacklist: false
-    replace: [ "minecraft:stone" ]
+    replace: [ ]
     blocks:
-      - materials: { "minecraft:cobblestone": 1 }
+      - materials: { "minecraft:stone": 1 }
         y: 255
 shift:
   "minecraft:grass_block": ["minecraft:dirt"]

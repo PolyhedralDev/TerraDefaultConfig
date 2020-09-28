@@ -1,6 +1,6 @@
 extends: "OCEAN_ABSTRACT"
 id: "COLD_OCEAN"
-name: "Ocean"
+name: "Cold Ocean"
 vanilla: COLD_OCEAN
 palette:
   - BEDROCK: 0
@@ -9,3 +9,5 @@ palette:
   - BEDROCK_LITTLE: 3
   - TUNDRA: 255
   - OCEANFLOOR: 60
+ocean:
+  level: 62
