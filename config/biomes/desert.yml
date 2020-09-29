@@ -37,5 +37,8 @@ slabs:
   stair-palettes:
     - "minecraft:sand": "BLOCK:minecraft:sandstone_stairs"
 
+structures:
+  - DESERT_TEMPLE
+
 
 # Carving and ores covered by super biome
