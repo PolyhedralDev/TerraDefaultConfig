@@ -42,8 +42,8 @@ flora:
       max: 255
 
 tree-chance: 100
-tree-density: 24
+tree-density: 12
 trees:
-  JUNGLE_BUSH: 6
+  JUNGLE_BUSH: 4
   SMALL_JUNGLE: 3
-  JUNGLE: 2
+  JUNGLE: 3
