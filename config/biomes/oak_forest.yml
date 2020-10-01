@@ -19,27 +19,27 @@ flora:
     weight: 150
     y:
       min: 62
-      max: 255
+      max: 84
   GRASS:
     weight: 750
     y:
       min: 62
-      max: 255
+      max: 84
   POPPY:
     weight: 50
     y:
       min: 62
-      max: 255
+      max: 84
   ROSE_BUSH:
     weight: 4
     y:
       min: 62
-      max: 255
+      max: 84
   LILAC:
     weight: 4
     y:
       min: 62
-      max: 255
+      max: 84
 
 tree-chance: 100
 tree-density: 7

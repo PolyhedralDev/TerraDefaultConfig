@@ -18,17 +18,17 @@ flora:
     weight: 150
     y:
       min: 62
-      max: 255
+      max: 84
   GRASS:
     weight: 700
     y:
       min: 62
-      max: 255
+      max: 84
   SUNFLOWER:
     weight: 8
     y:
       min: 62
-      max: 255
+      max: 84
 
 tree-chance: 1
 tree-density: 0

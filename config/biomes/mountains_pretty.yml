@@ -24,23 +24,23 @@ flora:
   SMALL_ROCK:
     weight: 1
     y:
-      min: 60
-      max: 72
+      min: 62
+      max: 180
   TALL_GRASS:
     weight: 1
     y:
-      min: 2
-      max: 255
+      min: 62
+      max: 180
   GRASS:
     weight: 5
     y:
-      min: 7
-      max: 255
+      min: 62
+      max: 180
   LEAVES:
     weight: 3
     y:
       min: 62
-      max: 255
+      max: 180
 flora-simplex:
   enable: true
   frequency: 0.1

@@ -19,12 +19,12 @@ flora:
     weight: 15
     y:
       min: 62
-      max: 255
+      max: 84
   GRASS:
     weight: 70
     y:
       min: 62
-      max: 255
+      max: 84
 
 tree-chance: 80
 tree-density: 1

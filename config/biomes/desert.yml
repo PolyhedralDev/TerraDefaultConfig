@@ -16,12 +16,12 @@ flora:
     weight: 1
     y:
       min: 62
-      max: 255
+      max: 84
   SMALL_ROCK:
     weight: 1
     y:
       min: 62
-      max: 255
+      max: 84
 
 tree-chance: 50
 tree-density: 1
