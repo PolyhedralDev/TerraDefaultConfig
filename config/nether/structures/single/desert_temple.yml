@@ -1,0 +1,13 @@
+file: "desert.tstructure"
+id: "DESERT_TEMPLE"
+spawn:
+  start:
+    min: 72
+    max: 72
+  bound:
+    min-y: 48
+    max-y: 64
+  type: DISTRIBUTE
+  width: 75
+  padding: 25
+  search: DOWN
