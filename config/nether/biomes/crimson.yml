@@ -3,7 +3,7 @@ id: "CRIMSON"
 flora-chance: 1
 flora-attempts: 1
 flora:
-  FIRE:
+  WEEPING_VINES:
     weight: 1
     y:
       min: 1

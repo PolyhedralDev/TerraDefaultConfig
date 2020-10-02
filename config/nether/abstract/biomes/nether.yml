@@ -21,3 +21,8 @@ ores:
     max: 2
     min-height: 0
     max-height: 36
+  LAVA:
+    min: 8
+    max: 32
+    min-height: 0
+    max-height: 255

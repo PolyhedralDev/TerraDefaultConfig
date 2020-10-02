@@ -3,7 +3,7 @@ id: "WARPED"
 flora-chance: 1
 flora-attempts: 1
 flora:
-  FIRE:
+  TWISTING_VINES:
     weight: 1
     y:
       min: 1
@@ -22,6 +22,7 @@ palette:
   - BEDROCK_LITTLE: 3
   - WARPED: 251
   - NETHER_GRAVEL: 32
+  - BEDROCK: 255
   - BEDROCK_MOST: 254
   - BEDROCK_HALF: 253
   - BEDROCK_LITTLE: 252
