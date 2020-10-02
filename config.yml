@@ -1,4 +1,4 @@
-debug: false
+debug: true
 data-save: PT6M
 master-disable:
   caves: false
