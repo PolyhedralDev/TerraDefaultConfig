@@ -7,5 +7,6 @@ spawnable:
   - "minecraft:basalt"
   - "minecraft:blackstone"
 replaceable:
-  - "minecraft:air"
+  - "minecraft:basalt"
+  - "minecraft:blackstone"
 physics: true

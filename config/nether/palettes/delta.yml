@@ -14,12 +14,12 @@ blocks:
       - "minecraft:air": 1
       - "minecraft:magma_block": 1
       - "minecraft:air": 1
-    layers: 1
+    layers: 2
   - materials:
       - "minecraft:blackstone": 2
       - "minecraft:basalt": 10
       - "minecraft:magma_block": 2
-    layers: 3
+    layers: 2
   - materials:
       - "minecraft:netherrack": 1
     layers: 1
