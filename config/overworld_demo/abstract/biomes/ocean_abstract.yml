@@ -24,7 +24,7 @@ flora:
 flora-chance: 50
 
 carving:
-  - CAVE_OCEAN: 50
+  - CAVE_OCEAN: 35
 
 ores:
   DIRT:

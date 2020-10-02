@@ -7,18 +7,7 @@ grids:
   - TROPICAL
   - TROPICAL
   - TROPICAL
-  - TROPICAL
-  - TROPICAL
-  - TROPICAL
-  - TROPICAL
-  - TROPICAL
-  - TROPICAL
-  - TROPICAL
   - RIVER_TROPIC
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
   - TEMPERATE
   - TEMPERATE
   - TEMPERATE
@@ -32,18 +21,22 @@ grids:
   - RIVER
   - COLD_EDGE
   - COLD_EDGE
-  - COLD_EDGE
   - COLD
   - COLD
   - COLD
   - COLD
   - COLD
-  - COLD
-  - COLD
-  - COLD
-  - COLD
-  - COLD
-  - COLD
+  - MOUNTAIN_0
+  - MOUNTAIN_0
+  - MOUNTAIN_1
+  - MOUNTAIN_1
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
 sea-level: 63
 biome-resolution: 4
 frequencies:

@@ -41,7 +41,7 @@ flora-chance: 80
 flora-attempts: 1
 
 carving:
-  - CAVE_SWAMP: 50
+  - CAVE_SWAMP: 30
 
 tree-chance: 95
 tree-density: 1
