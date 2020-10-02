@@ -1,15 +1,19 @@
-noise-equation: "abs(y-64)/96 + noise3(x*3, y*4, z*3)*2"
-id: "SOUL_VALLEY"
+noise-equation: "if(y, abs(y-64)/128 + noise3(x*1.5, y*2, z*1.5)*3, 1)"
+id: "DELTA"
 extends: "NETHER"
-flora-chance: 2
+flora-chance: 60
 flora-attempts: 1
+flora-simplex:
+  enable: true
+  frequency: 0.1
+  seed: 4
 flora:
-  BLUE_FIRE:
-    weight: 5
+  BASALT:
+    weight: 49
     y:
       min: 1
       max: 255
-  BASALT:
+  LAVA:
     weight: 1
     y:
       min: 1
@@ -22,9 +26,9 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
-  - SOUL: 251
+  - DELTA: 251
   - BEDROCK: 255
   - BEDROCK_MOST: 254
   - BEDROCK_HALF: 253
   - BEDROCK_LITTLE: 252
-vanilla: SOUL_SAND_VALLEY
+vanilla: BASALT_DELTAS

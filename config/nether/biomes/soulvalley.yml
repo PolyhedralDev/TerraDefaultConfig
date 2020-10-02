@@ -1,4 +1,4 @@
-noise-equation: "abs(y-64)/96 + noise3(x*3, y*4, z*3)*2"
+noise-equation: "if(y, abs(y-64)/128 + noise3(x*1.5, y*3, z*1.5)*2, 1)"
 id: "SOUL_VALLEY"
 extends: "NETHER"
 flora-chance: 2
