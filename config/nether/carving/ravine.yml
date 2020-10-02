@@ -37,30 +37,27 @@ palette:
       - materials: {"minecraft:air": 1}
         y: 255
       - materials: {"minecraft:lava": 1}
-        y: 8
+        y: 32
   outer:
     replace-blacklist: false
     replace: []
     blocks:
-      - materials: { "minecraft:stone": 1 }
+      - materials: { "minecraft:netherrack": 1 }
         y: 255
   top:
     replace-blacklist: false
     replace: [ ]
     blocks:
-      - materials: { "minecraft:stone": 1 }
+      - materials: { "minecraft:netherrack": 1 }
         y: 255
   bottom:
     replace-blacklist: false
     replace: [ ]
     blocks:
-      - materials: { "minecraft:stone": 1 }
+      - materials: { "minecraft:netherrack": 1 }
         y: 255
 shift:
-  "minecraft:grass_block": ["minecraft:dirt"]
-  "minecraft:podzol": ["minecraft:dirt"]
-  "minecraft:gravel": ["minecraft:dirt"]
-  "minecraft:sand": ["minecraft:dirt"]
-  "minecraft:coarse_dirt": ["minecraft:dirt"]
+  "minecraft:crimson_nylium": ["minecraft:netherrack"]
+  "minecraft:warped_nylium": ["minecraft:netherrack"]
 
 update: []

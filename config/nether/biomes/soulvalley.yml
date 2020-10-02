@@ -1,9 +1,15 @@
+noise-equation: "abs(y-64)/96 + noise3(x*3, y*4, z*3)*2"
+id: "SOUL_VALLEY"
 extends: "NETHER"
-id: "NETHER"
-flora-chance: 1
+flora-chance: 2
 flora-attempts: 1
 flora:
-  FIRE:
+  BLUE_FIRE:
+    weight: 5
+    y:
+      min: 1
+      max: 255
+  BASALT:
     weight: 1
     y:
       min: 1
@@ -16,10 +22,9 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
-  - NETHER_GRAVEL: 251
+  - SOUL: 251
   - BEDROCK: 255
   - BEDROCK_MOST: 254
   - BEDROCK_HALF: 253
   - BEDROCK_LITTLE: 252
-vanilla: NETHER_WASTES
-
+vanilla: SOUL_SAND_VALLEY

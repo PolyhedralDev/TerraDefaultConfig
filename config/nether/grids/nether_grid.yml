@@ -1,0 +1,4 @@
+grid:
+  - ["NETHER", "SOUL_VALLEY", "CRIMSON", "WARPED"]
+id: NETHER
+name: "Nether Grid"

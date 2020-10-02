@@ -1,19 +1,9 @@
-noise-equation: "abs(y-64)/96 + noise3(x*2, y*2, z*2)*2"
+noise-equation: "abs(y-64)/128 + noise3(x*2, y*2, z*2)*2"
 id: "NETHER"
 
 carving:
   - CAVE: 35
   - RAVINE: 5
-  - CAVERN: 5
-fauna:
-  FIRE:
-    weight: 1
-    y:
-      min: 0
-      max: 255
-
-flora-chance: 60
-flora-attempts: 2
 
 ores:
   GOLD_ORE:
@@ -26,3 +16,8 @@ ores:
     max: 8
     min-height: 0
     max-height: 128
+  MAGMA:
+    min: 1
+    max: 2
+    min-height: 0
+    max-height: 36

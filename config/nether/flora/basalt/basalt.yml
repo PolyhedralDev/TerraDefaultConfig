@@ -1,8 +1,12 @@
 blocks:
   - materials:
-      - "minecraft:fire": 1
+      - "minecraft:basalt": 1
+      - "minecraft:air": 1
     layers: 1
-id: FIRE
+  - materials:
+      - "minecraft:basalt": 1
+    layers: 3
+id: BASALT
 spawnable:
   - "minecraft:netherrack"
   - "minecraft:soul_sand"

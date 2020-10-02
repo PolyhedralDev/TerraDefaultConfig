@@ -1,8 +1,8 @@
 blocks:
   - materials:
-      - "minecraft:fire": 1
+      - "minecraft:soul_fire": 1
     layers: 1
-id: FIRE
+id: BLUE_FIRE
 spawnable:
   - "minecraft:netherrack"
   - "minecraft:soul_sand"

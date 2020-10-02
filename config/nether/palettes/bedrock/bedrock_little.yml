@@ -1,7 +1,6 @@
 blocks:
   - materials:
       - "minecraft:bedrock": 1
-      - "minecraft:stone": 2
+      - "minecraft:netherrack": 2
     layers: 1
 id: BEDROCK_LITTLE
-name: "Bedrock Palette"
