@@ -1,4 +1,12 @@
-file: "swamp.tstructure"
+files:
+  swamp1: 1
+  swamp2: 1
+  swamp3: 1
+  swamp4: 1
+  swamp5: 1
+  swamp6: 1
+  swamp7: 1
+  swamp8: 1
 id: "SWAMP"
 spawn:
   start:
