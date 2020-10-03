@@ -21,17 +21,21 @@ flora:
       min: 32
       max: 64
   KELP_SHORT:
-    weight: 5
+    weight: 1
     y:
       min: 32
       max: 64
   KELP_MEDIUM:
-    weight: 5
+    weight: 1
     y:
       min: 32
       max: 64
   KELP_TALL:
-    weight: 5
+    weight: 1
     y:
       min: 32
       max: 64
+flora-simplex:
+  enable: true
+  frequency: 0.05
+  seed: 4

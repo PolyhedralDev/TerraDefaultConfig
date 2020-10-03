@@ -34,5 +34,5 @@ flora:
 tree-chance: 100
 tree-density: 5
 trees:
-  "TERRA:SPRUCE_SMALL": 7
-  "TERRA:SPRUCE_MEDIUM": 3
+  "SPRUCE": 7
+  "LARGE_SPRUCE": 3

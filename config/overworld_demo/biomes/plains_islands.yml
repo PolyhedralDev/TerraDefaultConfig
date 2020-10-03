@@ -33,4 +33,4 @@ flora:
 tree-chance: 1
 tree-density: 0
 trees:
-  "TERRA:OAK_MEDIUM": 2
+  "OAK": 2

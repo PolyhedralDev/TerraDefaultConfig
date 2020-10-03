@@ -13,9 +13,7 @@ vanilla: PLAINS
 tree-chance: 15
 tree-density: 0
 trees:
-  "TERRA:SPRUCE_SMALL": 7
-  "TERRA:SPRUCE_MEDIUM": 3
-  "TERRA:SPRUCE_LARGE": 3
+  "SPRUCE": 1
 
 flora-chance: 60
 flora-attempts: 2
