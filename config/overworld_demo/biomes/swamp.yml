@@ -43,6 +43,9 @@ flora-attempts: 1
 carving:
   - CAVE_SWAMP: 30
 
+structures:
+  - SWAMP
+
 tree-chance: 95
 tree-density: 1
 trees:
