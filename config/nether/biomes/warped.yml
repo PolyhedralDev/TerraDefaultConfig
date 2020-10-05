@@ -11,7 +11,11 @@ flora:
 tree-chance: 90
 tree-density: 1
 trees:
-  WARPED_FUNGUS: 1
+  WARPED_FUNGUS:
+    weight: 1
+    y:
+      min: 58
+      max: 72
 ocean:
   level: 32
   palette: "BLOCK:minecraft:lava"

@@ -29,4 +29,8 @@ flora:
 tree-chance: 80
 tree-density: 1
 trees:
-  ACACIA: 1
+  ACACIA:
+    weight: 1
+    y:
+      min: 58
+      max: 84

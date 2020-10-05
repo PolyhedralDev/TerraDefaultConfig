@@ -50,4 +50,8 @@ slabs:
 tree-chance: 50
 tree-density: 1
 trees:
-  CACTUS: 9
+  CACTUS:
+    weight: 1
+    y:
+      min: 58
+      max: 72

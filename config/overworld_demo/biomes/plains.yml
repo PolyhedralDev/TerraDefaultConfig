@@ -33,6 +33,10 @@ flora:
 tree-chance: 1
 tree-density: 0
 trees:
-  "OAK": 2
+  OAK:
+    weight: 1
+    y:
+      min: 58
+      max: 72
 
 # Carving and ores covered by super biome

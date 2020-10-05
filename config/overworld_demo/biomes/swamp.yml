@@ -49,4 +49,8 @@ structures:
 tree-chance: 95
 tree-density: 1
 trees:
-  SWAMP_OAK: 1
+  SWAMP_OAK:
+    weight: 1
+    y:
+      min: 58
+      max: 84

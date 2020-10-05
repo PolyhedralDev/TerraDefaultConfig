@@ -13,7 +13,11 @@ vanilla: PLAINS
 tree-chance: 15
 tree-density: 0
 trees:
-  "SPRUCE": 1
+  SPRUCE:
+    weight: 1
+    y:
+      min: 58
+      max: 72
 
 flora-chance: 60
 flora-attempts: 2

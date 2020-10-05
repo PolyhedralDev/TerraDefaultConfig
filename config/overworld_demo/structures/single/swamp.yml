@@ -10,8 +10,8 @@ files:
 id: "SWAMP"
 spawn:
   start:
-    min: 72
-    max: 72
+    min: 64
+    max: 64
   bound:
     min-y: 48
     max-y: 72
@@ -19,3 +19,12 @@ spawn:
   width: 75
   padding: 25
   search: DOWN
+group:
+  enable: true
+  size:
+    min: 3
+    max: 5
+  distribution:
+    radius: 20
+    distance-min: 8
+

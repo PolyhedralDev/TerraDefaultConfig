@@ -33,4 +33,8 @@ flora:
 tree-chance: 100
 tree-density: 7
 trees:
-  BIRCH: 1
+  BIRCH:
+    weight: 1
+    y:
+      min: 58
+      max: 84

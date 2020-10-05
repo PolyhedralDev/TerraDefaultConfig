@@ -34,5 +34,13 @@ flora:
 tree-chance: 100
 tree-density: 5
 trees:
-  "SPRUCE": 7
-  "LARGE_SPRUCE": 3
+  SPRUCE:
+    weight: 1
+    y:
+      min: 58
+      max: 84
+  LARGE_SPRUCE:
+    weight: 1
+    y:
+      min: 58
+      max: 84

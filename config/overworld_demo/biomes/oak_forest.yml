@@ -44,5 +44,13 @@ flora:
 tree-chance: 100
 tree-density: 7
 trees:
-  OAK: 8
-  LARGE_OAK: 2
+  OAK:
+    weight: 8
+    y:
+      min: 58
+      max: 84
+  LARGE_OAK:
+    weight: 2
+    y:
+      min: 58
+      max: 84
