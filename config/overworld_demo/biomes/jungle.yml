@@ -13,7 +13,8 @@ palette:
   - GRASSY: 255
 vanilla: JUNGLE
 
-flora-chance: 55
+flora-chance: 80
+flora-attempts: 2
 flora:
   TALL_GRASS:
     weight: 150
@@ -40,6 +41,16 @@ flora:
     y:
       min: 62
       max: 84
+  STALAGMITE:
+    weight: 10
+    y:
+      min: 4
+      max: 50
+  STALACTITE:
+    weight: 10
+    y:
+      min: 4
+      max: 50
 
 tree-chance: 100
 tree-density: 12
