@@ -10,29 +10,31 @@ palette:
   - DESERT: 255
 vanilla: DESERT
 
-flora-chance: 2
 flora:
-  DEAD_BUSH:
-    weight: 1
-    y:
-      min: 62
-      max: 84
-  SMALL_ROCK:
-    weight: 1
-    y:
-      min: 62
-      max: 84
+  chance: 2
+  items:
+    DEAD_BUSH:
+      weight: 1
+      y:
+        min: 62
+        max: 84
+    SMALL_ROCK:
+      weight: 1
+      y:
+        min: 62
+        max: 84
 
 erodible: true
 
-tree-chance: 50
-tree-density: 1
 trees:
-  CACTUS:
-    weight: 1
-    y:
-      min: 58
-      max: 72
+  chance: 50
+  density: 1
+  items:
+    CACTUS:
+      weight: 1
+      y:
+        min: 58
+        max: 72
 
 slabs:
   enable: true

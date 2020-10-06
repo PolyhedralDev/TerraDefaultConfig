@@ -12,29 +12,32 @@ palette:
   - GRASSY: 255
 vanilla: PLAINS
 
-flora-chance: 60
 flora:
-  TALL_GRASS:
-    weight: 150
-    y:
-      min: 62
-      max: 84
-  GRASS:
-    weight: 700
-    y:
-      min: 62
-      max: 84
-  SUNFLOWER:
-    weight: 8
-    y:
-      min: 62
-      max: 84
+  chance: 60
+  attempts: 1
+  items:
+    TALL_GRASS:
+      weight: 160
+      y:
+        min: 62
+        max: 84
+    GRASS:
+      weight: 100
+      y:
+        min: 62
+        max: 84
+    SUNFLOWER:
+      weight: 8
+      y:
+        min: 62
+        max: 84
 
-tree-chance: 1
-tree-density: 0
 trees:
-  OAK:
-    weight: 1
-    y:
-      min: 58
-      max: 72
+  chance: 1
+  density: 1
+  items:
+    OAK:
+      weight: 1
+      y:
+        min: 58
+        max: 72

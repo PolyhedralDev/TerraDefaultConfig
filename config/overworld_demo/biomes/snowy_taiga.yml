@@ -15,34 +15,38 @@ vanilla: TAIGA
 
 snow-chance: 100
 erodible: true
-flora-chance: 40
-flora:
-  TALL_GRASS:
-    weight: 15
-    y:
-      min: 62
-      max: 84
-  GRASS:
-    weight: 75
-    y:
-      min: 62
-      max: 84
-  POPPY:
-    weight: 5
-    y:
-      min: 62
-      max: 84
 
-tree-chance: 100
-tree-density: 5
+flora:
+  chance: 40
+  attempts: 1
+  items:
+    TALL_GRASS:
+      weight: 15
+      y:
+        min: 62
+        max: 84
+    GRASS:
+      weight: 75
+      y:
+        min: 62
+        max: 84
+    POPPY:
+      weight: 5
+      y:
+        min: 62
+        max: 84
+
 trees:
-  SPRUCE:
-    weight: 1
-    y:
-      min: 58
-      max: 84
-  LARGE_SPRUCE:
-    weight: 1
-    y:
-      min: 58
-      max: 84
+  chance: 100
+  density: 5
+  items:
+    SPRUCE:
+      weight: 1
+      y:
+        min: 58
+        max: 84
+    LARGE_SPRUCE:
+      weight: 1
+      y:
+        min: 58
+        max: 84

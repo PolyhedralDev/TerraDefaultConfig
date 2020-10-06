@@ -17,13 +17,14 @@ carving:
 snow-chance: 20
 erodible: true
 
-flora-chance: 2
 flora:
-  SMALL_ROCK:
-    weight: 1
-    y:
-      min: 60
-      max: 255
+  chance: 2
+  items:
+    SMALL_ROCK:
+      weight: 1
+      y:
+        min: 60
+        max: 255
 slabs:
   enable: true
   threshold: 0.015

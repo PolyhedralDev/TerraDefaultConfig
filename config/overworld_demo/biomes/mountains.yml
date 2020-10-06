@@ -12,13 +12,15 @@ palette:
   - SNOW: 255
 vanilla: MOUNTAINS
 
-flora-chance: 2
 flora:
-  SMALL_ROCK:
-    weight: 1
-    y:
-      min: 60
-      max: 72
+  chance: 2
+  attempts: 1
+  items:
+    SMALL_ROCK:
+      weight: 1
+      y:
+        min: 60
+        max: 72
 slabs:
   enable: true
   threshold: 0.015

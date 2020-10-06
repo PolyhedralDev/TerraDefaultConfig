@@ -11,17 +11,19 @@ palette:
   - OCEANFLOOR: 60
 
 flora:
-  TALL_SEAGRASS:
-    weight: 1
-    y:
-      min: 32
-      max: 64
-  SEAGRASS:
-    weight: 3
-    y:
-      min: 32
-      max: 64
-flora-chance: 50
+  chance: 50
+  attempts: 1
+  items:
+    TALL_SEAGRASS:
+      weight: 1
+      y:
+        min: 32
+        max: 64
+    SEAGRASS:
+      weight: 3
+      y:
+        min: 32
+        max: 64
 
 carving:
   - CAVE_OCEAN: 35

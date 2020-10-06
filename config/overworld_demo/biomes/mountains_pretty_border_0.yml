@@ -10,42 +10,44 @@ palette:
   - MOUNTAIN_PRETTY: 255
 vanilla: PLAINS
 
-tree-chance: 15
-tree-density: 0
 trees:
-  SPRUCE:
-    weight: 1
-    y:
-      min: 58
-      max: 72
+  chance: 15
+  density: 1
+  items:
+    SPRUCE:
+      weight: 1
+      y:
+        min: 58
+        max: 72
 
-flora-chance: 60
-flora-attempts: 2
 flora:
-  SMALL_ROCK:
-    weight: 1
-    y:
-      min: 62
-      max: 180
-  TALL_GRASS:
-    weight: 1
-    y:
-      min: 62
-      max: 180
-  GRASS:
-    weight: 5
-    y:
-      min: 62
-      max: 180
-  LEAVES:
-    weight: 3
-    y:
-      min: 62
-      max: 180
-flora-simplex:
-  enable: true
-  frequency: 0.1
-  seed: 4
+  chance: 60
+  attempts: 2
+  simplex:
+    enable: true
+    frequency: 0.1
+    seed: 4
+  items:
+    SMALL_ROCK:
+      weight: 1
+      y:
+        min: 62
+        max: 180
+    TALL_GRASS:
+      weight: 1
+      y:
+        min: 62
+        max: 180
+    GRASS:
+      weight: 5
+      y:
+        min: 62
+        max: 180
+    LEAVES:
+      weight: 3
+      y:
+        min: 62
+        max: 180
 
 slabs:
   enable: true

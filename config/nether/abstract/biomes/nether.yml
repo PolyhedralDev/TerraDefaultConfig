@@ -4,7 +4,9 @@ id: "NETHER"
 carving:
   - CAVE: 35
   - RAVINE: 5
-
+ocean:
+  level: 32
+  palette: "BLOCK:minecraft:lava"
 ores:
   GOLD_ORE:
     min: 1

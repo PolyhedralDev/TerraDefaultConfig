@@ -13,24 +13,28 @@ palette:
   - GRASSY: 255
 vanilla: SAVANNA
 
-flora-chance: 40
 flora:
-  TALL_GRASS:
-    weight: 15
-    y:
-      min: 62
-      max: 84
-  GRASS:
-    weight: 70
-    y:
-      min: 62
-      max: 84
+  chance: 40
+  attempts: 1
+  items:
+    TALL_GRASS:
+      weight: 15
+      y:
+        min: 62
+        max: 84
+    GRASS:
+      weight: 70
+      y:
+        min: 62
+        max: 84
 erodible: true
-tree-chance: 80
-tree-density: 1
+
 trees:
-  ACACIA:
-    weight: 1
-    y:
-      min: 58
-      max: 84
+  chance: 80
+  density: 1
+  items:
+    ACACIA:
+      weight: 1
+      y:
+        min: 58
+        max: 84

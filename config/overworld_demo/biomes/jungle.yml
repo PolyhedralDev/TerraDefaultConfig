@@ -15,60 +15,62 @@ vanilla: JUNGLE
 
 erodible: true
 
-flora-chance: 80
-flora-attempts: 2
 flora:
-  TALL_GRASS:
-    weight: 150
-    y:
-      min: 62
-      max: 84
-  GRASS:
-    weight: 750
-    y:
-      min: 62
-      max: 84
-  POPPY:
-    weight: 50
-    y:
-      min: 62
-      max: 84
-  ROSE_BUSH:
-    weight: 4
-    y:
-      min: 62
-      max: 84
-  LILAC:
-    weight: 4
-    y:
-      min: 62
-      max: 84
-  STALAGMITE:
-    weight: 10
-    y:
-      min: 4
-      max: 50
-  STALACTITE:
-    weight: 10
-    y:
-      min: 4
-      max: 50
+  chance: 80
+  attempts: 2
+  items:
+    TALL_GRASS:
+      weight: 150
+      y:
+        min: 62
+        max: 84
+    GRASS:
+      weight: 750
+      y:
+        min: 62
+        max: 84
+    POPPY:
+      weight: 50
+      y:
+        min: 62
+        max: 84
+    ROSE_BUSH:
+      weight: 4
+      y:
+        min: 62
+        max: 84
+    LILAC:
+      weight: 4
+      y:
+        min: 62
+        max: 84
+    STALAGMITE:
+      weight: 10
+      y:
+        min: 4
+        max: 50
+    STALACTITE:
+      weight: 10
+      y:
+        min: 4
+        max: 50
 
-tree-chance: 100
-tree-density: 12
 trees:
-  JUNGLE_BUSH:
-    weight: 4
-    y:
-      min: 58
-      max: 84
-  SMALL_JUNGLE:
-    weight: 3
-    y:
-      min: 58
-      max: 84
-  JUNGLE:
-    weight: 2
-    y:
-      min: 58
-      max: 84
+  chance: 100
+  density: 15
+  items:
+    JUNGLE_BUSH:
+      weight: 4
+      y:
+        min: 58
+        max: 84
+    SMALL_JUNGLE:
+      weight: 3
+      y:
+        min: 58
+        max: 84
+    JUNGLE:
+      weight: 2
+      y:
+        min: 58
+        max: 84

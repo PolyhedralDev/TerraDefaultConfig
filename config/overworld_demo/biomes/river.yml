@@ -11,26 +11,27 @@ palette:
   - RIVER_SHORE: 62
   - GRASSY: 255
 vanilla: RIVER
+
 flora:
-  TALL_GRASS:
-    weight: 150
-    y:
-      min: 62
-      max: 84
-  LILY_PAD:
-    weight: 10
-    y:
-      min: 62
-      max: 84
-  GRASS:
-    weight: 700
-    y:
-      min: 62
-      max: 84
+  chance: 60
+  attempts: 1
+  items:
+    TALL_GRASS:
+      weight: 150
+      y:
+        min: 62
+        max: 84
+    LILY_PAD:
+      weight: 10
+      y:
+        min: 62
+        max: 84
+    GRASS:
+      weight: 700
+      y:
+        min: 62
+        max: 84
 
 ocean:
   palette: "BLOCK:minecraft:water"
   level: 62
-
-flora-chance: 60
-flora-attempts: 1

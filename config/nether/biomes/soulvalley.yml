@@ -1,22 +1,20 @@
 noise-equation: "if(y, abs(y-64)/128 + noise3(x*1.5, y*3, z*1.5)*2, 1)"
 id: "SOUL_VALLEY"
 extends: "NETHER"
-flora-chance: 2
-flora-attempts: 1
 flora:
-  BLUE_FIRE:
-    weight: 5
-    y:
-      min: 1
-      max: 255
-  BASALT:
-    weight: 1
-    y:
-      min: 1
-      max: 255
-ocean:
-  level: 32
-  palette: "BLOCK:minecraft:lava"
+  chance: 2
+  attempts: 1
+  items:
+    BLUE_FIRE:
+      weight: 5
+      y:
+        min: 1
+        max: 255
+    BASALT:
+      weight: 1
+      y:
+        min: 1
+        max: 255
 palette:
   - BEDROCK: 0
   - BEDROCK_MOST: 1
