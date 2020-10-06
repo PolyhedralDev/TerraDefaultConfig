@@ -13,6 +13,8 @@ palette:
   - GRASSY: 255
 vanilla: JUNGLE
 
+erodible: true
+
 flora-chance: 80
 flora-attempts: 2
 flora:

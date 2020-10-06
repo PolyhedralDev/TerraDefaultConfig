@@ -14,6 +14,9 @@ carving:
   - RAVINE: 5
   - CAVERN: 5
 
+snow-chance: 20
+erodible: true
+
 flora-chance: 2
 flora:
   SMALL_ROCK:

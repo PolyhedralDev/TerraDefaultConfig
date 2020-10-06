@@ -40,7 +40,7 @@ flora:
     y:
       min: 62
       max: 84
-
+erodible: true
 tree-chance: 100
 tree-density: 7
 trees:

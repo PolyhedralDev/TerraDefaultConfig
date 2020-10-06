@@ -23,6 +23,8 @@ flora:
       min: 62
       max: 84
 
+erodible: true
+
 tree-chance: 50
 tree-density: 1
 trees:

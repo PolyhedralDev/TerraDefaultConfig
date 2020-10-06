@@ -2,6 +2,8 @@ extends: "BEACH_ABSTRACT"
 id: "WARM_BEACH"
 name: "Warm Beach"
 vanilla: BEACH
+
+erodible: true
 palette:
   - BEDROCK: 0
   - BEDROCK_MOST: 1

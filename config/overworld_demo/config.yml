@@ -7,7 +7,6 @@ grids:
   - TROPICAL
   - TROPICAL
   - TROPICAL
-  - RIVER_TROPIC
   - TEMPERATE
   - TEMPERATE
   - TEMPERATE
@@ -16,9 +15,8 @@ grids:
   - TEMPERATE
   - TEMPERATE
   - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - RIVER
+  - TEMPERATE_COLD
+  - TEMPERATE_COLD
   - COLD_EDGE
   - COLD_EDGE
   - COLD
@@ -48,3 +46,8 @@ blend:
   frequency: 0.125
   amplitude: 10
   ignore-terrain: true
+erode:
+  enable: true
+  frequency: 0.002
+  threshold: 0.00125
+  grid: "BIOME:RIVER"

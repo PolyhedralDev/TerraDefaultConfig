@@ -6,6 +6,8 @@ carving:
   - RAVINE: 5
   - CAVERN: 5
 
+erodible: true
+
 ores:
   DIRT:
     min: 0

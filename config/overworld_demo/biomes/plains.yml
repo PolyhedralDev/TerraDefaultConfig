@@ -12,6 +12,8 @@ palette:
   - GRASSY: 255
 vanilla: PLAINS
 
+erodible: true
+
 flora-chance: 60
 flora:
   TALL_GRASS:
