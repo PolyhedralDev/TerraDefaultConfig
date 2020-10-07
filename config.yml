@@ -1,4 +1,5 @@
 debug: true
+language: en_us
 data-save: PT6M
 master-disable:
   caves: false
