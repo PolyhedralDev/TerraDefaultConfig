@@ -1,6 +1,5 @@
 extends: "PLAINS_ABSTRACT"
 id: "PLAINS"
-name: "Plains"
 
 palette:
   - BEDROCK: 0
