@@ -1,4 +1,0 @@
-grid:
-  - ["SWAMP", "SWAMP", "SWAMP", "RIVER", "RIVER", "RIVER", "RIVER",  "RIVER", "OCEAN", "OCEAN", "OCEAN"]
-id: RIVER_TROPIC
-name: "River Grid"

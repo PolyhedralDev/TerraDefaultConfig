@@ -1,6 +1,5 @@
 extends: "BEACH_ABSTRACT"
-id: "COLD_BEACH"
-name: "Cold Beach"
+id: "FROZEN_BEACH"
 palette:
   - BEDROCK: 0
   - BEDROCK_MOST: 1
@@ -10,3 +9,6 @@ palette:
   - TUNDRA: 255
 erodible: true
 vanilla: SNOWY_BEACH
+ocean:
+  palette: "COLD_OCEAN"
+  level: 62

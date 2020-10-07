@@ -1,29 +1,28 @@
 id: OVERWORLD
 grids:
-  - TROPICAL
-  - TROPICAL
-  - TROPICAL
-  - TROPICAL
-  - TROPICAL
-  - TROPICAL
-  - TROPICAL
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE
-  - TEMPERATE_COLD
-  - TEMPERATE_COLD
-  - COLD_EDGE
-  - COLD_EDGE
-  - COLD
-  - COLD
-  - COLD
-  - COLD
-  - COLD
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - BEACH
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
   - MOUNTAIN_0
   - MOUNTAIN_0
   - MOUNTAIN_1
@@ -32,20 +31,18 @@ grids:
   - MOUNTAIN
   - MOUNTAIN
   - MOUNTAIN
-  - MOUNTAIN
-  - MOUNTAIN
-  - MOUNTAIN
+  - MOUNTAIN_PLATEAU_M
+  - MOUNTAIN_PLATEAU
 sea-level: 63
 biome-resolution: 4
 frequencies:
-  grid-x: 512
-  grid-z: 1024
-  zone: 3072
+  grid-x: 1536
+  grid-z: 1536
+  zone: 2048
 blend:
   enable: true
   frequency: 0.125
   amplitude: 10
-  ignore-terrain: true
 erode:
   enable: true
   frequency: 0.002
