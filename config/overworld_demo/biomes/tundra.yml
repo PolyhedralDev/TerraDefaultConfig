@@ -25,6 +25,15 @@ flora:
       y:
         min: 60
         max: 255
+trees:
+  chance: 90
+  density: 1
+  items:
+    ICE_SPIKE:
+      weight: 1
+      y:
+        min: 58
+        max: 84
 slabs:
   enable: true
   threshold: 0.015
