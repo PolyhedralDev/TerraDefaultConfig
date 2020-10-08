@@ -5,6 +5,7 @@ enable:
 disable:
   - "Thank you for using Terra!"
 command:
+  debug-only: "This command must be used with debug mode enabled!"
   player-only: "This command is for players only!"
   terra-world: "This command must be executed in a Terra world!"
   invalid: "Invalid command. (Expected %1$s arguments, found %2$s)."
@@ -77,6 +78,7 @@ command:
       - "export - Export your current WorldEdit selection as a Terra structure."
       - "load   - Load a Terra structure"
     invalid-radius: "Invalid radius: \"%s\""
+    invalid-rotation: "Invalid rotation: \"%s\""
     invalid: "Invalid Structure ID: \"%s\""
     export: "Saved structure to \"%s\""
 world-config:
