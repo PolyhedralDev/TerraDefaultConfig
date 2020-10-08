@@ -1,4 +1,4 @@
-noise-equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)+0.5) / 3) + max(min(floor(noise3(x, y, z)*12 + noise2(x, z)*22), 18)/10, 0)"
+noise-equation: "((-((y / 64)^2)) + 1) + min(floor(((|noise2(x/1.5, z/1.5)|) + 0.1)*6), 3)/1.5 + |noise2(x/1.5, z/1.5)*2|"
 extends: "BASIC_ORES"
 id: "MESA"
 name: "Mesa"
