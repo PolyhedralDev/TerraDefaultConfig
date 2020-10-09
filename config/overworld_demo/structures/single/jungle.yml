@@ -1,0 +1,15 @@
+files:
+  jungle2: 1
+id: "JUNGLE"
+spawn:
+  start:
+    min: 64
+    max: 64
+  bound:
+    min-y: 48
+    max-y: 72
+  type: DISTRIBUTE
+  width: 75
+  padding: 25
+  search: DOWN
+  enable: true

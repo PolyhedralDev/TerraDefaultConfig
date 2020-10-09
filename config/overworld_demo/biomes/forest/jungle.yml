@@ -14,7 +14,8 @@ palette:
 vanilla: JUNGLE
 
 erodible: true
-
+structures:
+  - JUNGLE
 flora:
   chance: 80
   attempts: 2
