@@ -43,8 +43,7 @@ flora:
 carving:
   - CAVE_SWAMP: 30
 
-structures:
-  - SWAMP
+
 
 trees:
   chance: 95

@@ -66,12 +66,12 @@ trees:
         min: 58
         max: 84
     SMALL_JUNGLE:
-      weight: 3
+      weight: 2
       y:
         min: 58
         max: 84
     JUNGLE:
-      weight: 2
+      weight: 4
       y:
         min: 58
         max: 84
