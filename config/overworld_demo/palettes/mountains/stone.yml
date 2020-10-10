@@ -2,7 +2,7 @@ blocks:
   - materials:
       - "minecraft:cyan_terracotta": 1
       - "minecraft:stone": 2
-      - "minecraft:snow_block": 2
+      - "minecraft:snow_block": 3
       - "minecraft:cobblestone": 1
     layers: 3
   - materials:
@@ -10,5 +10,5 @@ blocks:
     layers: 1
 id: MOUNTAIN_STONE
 simplex: true
-frequency: 0.04
+frequency: 0.05
 seed: 3

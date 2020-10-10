@@ -23,10 +23,11 @@ grids:
   - LAND
   - LAND
   - LAND
-  - MOUNTAIN_0
+  - LAND
   - MOUNTAIN_0
   - MOUNTAIN_1
-  - MOUNTAIN_1
+  - MOUNTAIN
+  - MOUNTAIN
   - MOUNTAIN
   - MOUNTAIN
   - MOUNTAIN

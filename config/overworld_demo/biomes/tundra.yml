@@ -14,7 +14,10 @@ carving:
   - RAVINE: 5
   - CAVERN: 5
 
-snow-chance: 20
+snow:
+  - min: 0
+    max: 255
+    chance: 30
 erodible: true
 
 flora:

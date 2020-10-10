@@ -13,7 +13,10 @@ palette:
   - TAIGA: 255
 vanilla: TAIGA
 
-snow-chance: 100
+snow:
+  - min: 0
+    max: 255
+    chance: 100
 erodible: true
 
 flora:
