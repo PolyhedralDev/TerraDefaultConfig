@@ -1,0 +1,37 @@
+extends: "MOUNTAINS_PRETTY_0"
+id: "MOUNTAINS_STONE_0"
+
+palette:
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - MOUNTAIN_STONE: 255
+vanilla: PLAINS
+snow:
+  - min: 80
+    max: 100
+    chance: 25
+  - min: 100
+    max: 120
+    chance: 50
+  - min: 120
+    max: 140
+    chance: 75
+  - min: 140
+    max: 255
+    chance: 100
+trees:
+  chance: 15
+  density: 1
+  items:
+    SPRUCE:
+      weight: 1
+      y:
+        min: 58
+        max: 72
+
+flora:
+  chance: 0
+  attempts: 0
+  items: {}
