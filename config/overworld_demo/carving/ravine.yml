@@ -16,6 +16,7 @@ start:
   height:
     min: 12
     max: 56
+update-liquids: true
 cut:
   top: 1
   bottom: 2
