@@ -31,8 +31,6 @@ grids:
   - MOUNTAIN
   - MOUNTAIN
   - MOUNTAIN
-  - MOUNTAIN_PLATEAU_M
-  - MOUNTAIN_PLATEAU
 sea-level: 63
 biome-resolution: 4
 frequencies:

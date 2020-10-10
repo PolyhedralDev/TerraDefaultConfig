@@ -1,5 +1,5 @@
 files:
-  testloot: 1
+  jungle1: 1
 id: "JUNGLE"
 spawn:
   start:
@@ -14,6 +14,5 @@ spawn:
   search: DOWN
   enable: true
 loot:
-  0: cobble_house
-  1: wood_house
-  2: spruce_house
+  0: arrows
+  1: cobble_house
