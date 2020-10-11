@@ -1,5 +1,10 @@
-id: OVERWORLD
+id: OVERWORLD_DEMO
 grids:
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - OCEAN
+  - OCEAN
   - OCEAN
   - OCEAN
   - OCEAN
@@ -24,6 +29,12 @@ grids:
   - LAND
   - LAND
   - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
   - MOUNTAIN_0
   - MOUNTAIN_1
   - MOUNTAIN
@@ -32,12 +43,15 @@ grids:
   - MOUNTAIN
   - MOUNTAIN
   - MOUNTAIN
-sea-level: 63
-biome-resolution: 4
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
 frequencies:
-  grid-x: 1536
-  grid-z: 1536
-  zone: 2048
+  grid-x: 3072
+  grid-z: 2048
+  zone: 4096
 blend:
   enable: true
   frequency: 0.125
@@ -45,5 +59,5 @@ blend:
 erode:
   enable: true
   frequency: 0.002
-  threshold: 0.00125
+  threshold: 0.001
   grid: "BIOME:RIVER"

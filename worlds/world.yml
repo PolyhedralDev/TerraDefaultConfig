@@ -1,8 +1,8 @@
-config: OVERWORLD
+config: OVERWORLD_DEMO
 image:
-  use-image: false
+  enable: false
   align: center
-  image-location: "/home/dfsek/Pictures/Screenshot from 2020-09-22 16-20-11.png"
+  file: "/home/dfsek/Pictures/Screenshot from 2020-09-22 16-20-11.png"
   channels:
     biome-x: red
     biome-z: green
