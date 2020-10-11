@@ -37,4 +37,5 @@ function is greater than the erosion threshold. (It is most commonly used to cre
 eroded biomes. Unlike the Biome choosing frequencies, this value corresponds to the actual frequency used internally.
 * `threshold` - When the erosion noise function produces a value which, when squared, is *less than* this threshold, the
 location will be eroded.
+* `octaves` - The number of noise octaves to use for erosion. Higher values produce "squigglier" erosion.
 * `grid` - The BiomeGrid to pull biomes from when a location is to be eroded.

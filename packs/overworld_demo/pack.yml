@@ -60,4 +60,5 @@ erode:
   enable: true
   frequency: 0.002
   threshold: 0.001
+  octaves: 4
   grid: "BIOME:RIVER"
