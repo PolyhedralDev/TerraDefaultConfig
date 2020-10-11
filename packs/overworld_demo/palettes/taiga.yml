@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:grass_block": 2
       - "minecraft:podzol": 1

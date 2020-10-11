@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:basalt": 1
       - "minecraft:air": 1

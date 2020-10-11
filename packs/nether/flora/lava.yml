@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:lava": 1
     layers: 1

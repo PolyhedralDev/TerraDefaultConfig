@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:warped_nylium": 49
       - "minecraft:gravel": 1

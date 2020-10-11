@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:cobblestone_slab": 1
       - "minecraft:stone_slab": 3

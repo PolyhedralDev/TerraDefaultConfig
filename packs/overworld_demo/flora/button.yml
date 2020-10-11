@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:stone_button[facing=east,face=floor]": 1
       - "minecraft:stone_button[facing=south,face=floor]": 1

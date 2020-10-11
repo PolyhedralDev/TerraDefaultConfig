@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:dirt": 2
       - "minecraft:coarse_dirt": 1

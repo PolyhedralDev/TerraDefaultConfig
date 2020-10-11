@@ -33,7 +33,7 @@ palette:
       - "minecraft:lava"
       - "minecraft:bedrock"
       - "minecraft:ice"
-    blocks:
+    layers:
       - materials: {"minecraft:air": 1}
         y: 255
       - materials: {"minecraft:lava": 1}
@@ -41,19 +41,19 @@ palette:
   outer:
     replace-blacklist: false
     replace: []
-    blocks:
+    layers:
       - materials: { "minecraft:stone": 1 }
         y: 255
   top:
     replace-blacklist: false
     replace: [ ]
-    blocks:
+    layers:
       - materials: { "minecraft:stone": 1 }
         y: 255
   bottom:
     replace-blacklist: false
     replace: [ ]
-    blocks:
+    layers:
       - materials: { "minecraft:stone": 1 }
         y: 255
 shift:

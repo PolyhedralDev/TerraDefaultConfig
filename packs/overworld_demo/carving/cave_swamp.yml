@@ -33,7 +33,7 @@ palette:
       - "minecraft:lava"
       - "minecraft:bedrock"
       - "minecraft:ice"
-    blocks:
+    layers:
       - materials: { "minecraft:air": 1 }
         y: 255
       - materials: {"minecraft:water": 1}
@@ -46,7 +46,7 @@ palette:
     replace-blacklist: false
     replace:
       - "minecraft:stone"
-    blocks:
+    layers:
       - materials: { "minecraft:stone": 21, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1, "minecraft:oak_leaves[persistent=true]": 2 }
         y: 255
       - materials: { "minecraft:stone": 23, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1 }
@@ -57,7 +57,7 @@ palette:
     replace-blacklist: false
     replace:
       - "minecraft:stone"
-    blocks:
+    layers:
       - materials: { "minecraft:stone": 16, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1, "minecraft:oak_leaves[persistent=true]": 2 }
         y: 255
       - materials: { "minecraft:stone": 18, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1 }
@@ -68,7 +68,7 @@ palette:
     replace-blacklist: false
     replace:
       - "minecraft:stone"
-    blocks:
+    layers:
       - materials: { "minecraft:stone": 4, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1, "minecraft:oak_leaves[persistent=true]": 2 }
         y: 255
       - materials: { "minecraft:stone": 6, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1 }

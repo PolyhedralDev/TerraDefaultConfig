@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:soul_fire": 1
     layers: 1

@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:netherrack": 49
       - "minecraft:gravel": 1

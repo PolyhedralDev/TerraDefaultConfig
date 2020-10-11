@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:gravel": 1
       - "minecraft:stone": 1

@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:cobblestone_wall": 1
     layers: 1

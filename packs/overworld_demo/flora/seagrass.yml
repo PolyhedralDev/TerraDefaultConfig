@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:seagrass": 1
     layers: 1

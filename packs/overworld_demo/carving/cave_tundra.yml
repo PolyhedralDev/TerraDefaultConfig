@@ -33,7 +33,7 @@ palette:
       - "minecraft:lava"
       - "minecraft:bedrock"
       - "minecraft:ice"
-    blocks:
+    layers:
       - materials: { "minecraft:air": 1 }
         y: 255
       - materials: { "minecraft:lava": 1 }
@@ -42,14 +42,14 @@ palette:
     replace-blacklist: false
     replace:
       - "minecraft:stone"
-    blocks:
+    layers:
       - materials: { "minecraft:stone": 1, "minecraft:cobblestone": 1,"minecraft:snow_block": 1}
         y: 255
   outer:
     replace-blacklist: false
     replace:
       - "minecraft:stone"
-    blocks:
+    layers:
       - materials: { "minecraft:packed_ice": 1,"minecraft:snow_block": 1, "minecraft:stone": 2}
         y: 255
       - materials: { "minecraft:stone": 1 }
@@ -58,7 +58,7 @@ palette:
     replace-blacklist: false
     replace:
       - "minecraft:stone"
-    blocks:
+    layers:
       - materials: { "minecraft:packed_ice": 4}
         y: 255
       - materials: { "minecraft:stone": 1 }

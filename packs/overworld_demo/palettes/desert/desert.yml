@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:sand": 1
     layers: 3

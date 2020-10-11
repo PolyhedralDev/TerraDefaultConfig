@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:cyan_terracotta": 2
       - "minecraft:clay": 2

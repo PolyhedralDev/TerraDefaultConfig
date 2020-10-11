@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:fire": 1
     layers: 1

@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:spruce_fence": 1
       - "minecraft:air": 2

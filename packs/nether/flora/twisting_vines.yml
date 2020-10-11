@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:twisting_vines_plant": 1
     layers: 4

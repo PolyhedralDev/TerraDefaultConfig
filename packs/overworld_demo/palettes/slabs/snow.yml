@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:snow[layers=3]": 1
       - "minecraft:snow[layers=4]": 1

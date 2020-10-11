@@ -1,8 +1,6 @@
 id: NETHER
 grids:
   - NETHER
-sea-level: 24
-biome-resolution: 4
 frequencies:
   grid-x: 1024
   grid-z: 1024

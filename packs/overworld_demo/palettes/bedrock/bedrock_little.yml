@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:bedrock": 1
       - "minecraft:stone": 2

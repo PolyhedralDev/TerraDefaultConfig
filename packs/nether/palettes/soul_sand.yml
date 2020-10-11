@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:soul_sand": 1
       - "minecraft:soul_soil": 3

@@ -1,4 +1,4 @@
-blocks:
+layers:
   - materials:
       - "minecraft:snow_block": 2
     layers: 3
