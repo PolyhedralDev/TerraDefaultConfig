@@ -1,4 +1,3 @@
-config: NETHER
 image:
   use-image: false
   align: center

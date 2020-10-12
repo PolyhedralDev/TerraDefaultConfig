@@ -46,7 +46,7 @@ ores:
     max-height: 64
   GOLD_ORE:
     min: 1
-    max: 5
+    max: 3
     min-height: 0
     max-height: 32
   LAPIS_ORE:

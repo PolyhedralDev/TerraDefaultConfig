@@ -1,4 +1,3 @@
-config: OVERWORLD_DEMO
 image:
   enable: false
   align: center
