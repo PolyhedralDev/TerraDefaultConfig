@@ -7,7 +7,8 @@ carving:
   - CAVERN: 5
 
 erodible: true
-
+structures:
+  - PULL
 ores:
   DIRT:
     min: 0

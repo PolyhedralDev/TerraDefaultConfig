@@ -3,11 +3,11 @@ files:
 id: "JUNGLE"
 spawn:
   start:
-    min: 64
-    max: 64
+    min: 72
+    max: 72
   bound:
-    min-y: 48
-    max-y: 72
+    min: 48
+    max: 96
   type: DISTRIBUTE
   width: 75
   padding: 25
