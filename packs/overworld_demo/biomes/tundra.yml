@@ -29,7 +29,7 @@ flora:
         min: 60
         max: 255
 trees:
-  density: 60
+  density: 40
   items:
     ICE_SPIKE:
       weight: 1

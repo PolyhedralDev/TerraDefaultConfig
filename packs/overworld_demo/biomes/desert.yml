@@ -27,7 +27,7 @@ flora:
 erodible: true
 
 trees:
-  chance: 50
+  chance: 100
   density: 1
   items:
     CACTUS:
