@@ -57,8 +57,7 @@ flora:
         max: 50
 
 trees:
-  chance: 100
-  density: 15
+  density: 500
   items:
     JUNGLE_BUSH:
       weight: 4

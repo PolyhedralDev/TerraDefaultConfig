@@ -9,8 +9,7 @@ palette:
   - MOUNTAIN_JUNGLE: 255
 vanilla: JUNGLE
 trees:
-  chance: 100
-  density: 15
+  density: 120
   items:
     JUNGLE_BUSH:
       weight: 4

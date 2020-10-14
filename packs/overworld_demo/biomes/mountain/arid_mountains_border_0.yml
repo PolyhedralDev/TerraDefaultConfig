@@ -30,8 +30,7 @@ flora:
         max: 128
 
 trees:
-  chance: 80
-  density: 1
+  density: 50
   items:
     ACACIA:
       weight: 1

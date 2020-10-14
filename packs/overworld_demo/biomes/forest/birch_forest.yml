@@ -34,8 +34,7 @@ flora:
 erodible: true
 
 trees:
-  chance: 100
-  density: 7
+  density: 200
   items:
     BIRCH:
       weight: 1

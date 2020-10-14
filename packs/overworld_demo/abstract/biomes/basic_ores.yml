@@ -4,8 +4,6 @@ carving:
   - CAVE: 30
   - RAVINE: 5
   - CAVERN: 5
-structures:
-  - PULL
 ores:
   DIRT:
     min: 0

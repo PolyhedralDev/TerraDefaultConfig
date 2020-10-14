@@ -35,8 +35,7 @@ flora:
         max: 84
 
 trees:
-  chance: 100
-  density: 5
+  density: 125
   items:
     SPRUCE:
       weight: 1

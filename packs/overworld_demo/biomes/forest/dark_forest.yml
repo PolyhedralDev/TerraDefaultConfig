@@ -34,8 +34,7 @@ flora:
         max: 255
 
 trees:
-  chance: 100
-  density: 15
+  density: 400
   items:
     DARK_OAK:
       weight: 1

@@ -30,8 +30,7 @@ flora:
 erodible: true
 
 trees:
-  chance: 80
-  density: 1
+  density: 20
   items:
     ACACIA:
       weight: 1

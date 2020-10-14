@@ -46,8 +46,7 @@ carving:
 
 
 trees:
-  chance: 95
-  density: 1
+  density: 15
   items:
     SWAMP_OAK:
       weight: 1
