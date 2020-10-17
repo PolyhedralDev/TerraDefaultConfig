@@ -62,3 +62,6 @@ erode:
   threshold: 0.001
   octaves: 4
   grid: "BIOME:RIVER"
+noise:
+  octaves: 4
+  frequency: 0.01
