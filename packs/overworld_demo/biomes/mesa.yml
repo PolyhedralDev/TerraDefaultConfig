@@ -42,7 +42,7 @@ flora:
         max: 84
 slabs:
   enable: true
-  threshold: 0.015
+  threshold: 0.0075
   palettes:
     - "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_slab"
   use-stairs-if-available: true
