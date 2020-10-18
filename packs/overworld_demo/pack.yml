@@ -63,5 +63,5 @@ erode:
   octaves: 4
   grid: "BIOME:RIVER"
 noise:
-  octaves: 4
-  frequency: 0.01
+  octaves: 5
+  frequency: 0.0075
