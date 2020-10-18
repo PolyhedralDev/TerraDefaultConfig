@@ -1,13 +1,13 @@
 id: OVERWORLD_DEMO
 grids:
-  - OCEAN
-  - OCEAN
-  - OCEAN
-  - OCEAN
-  - OCEAN
-  - OCEAN
-  - OCEAN
-  - OCEAN
+  - OCEAN_DEEP
+  - OCEAN_DEEP
+  - OCEAN_DEEP
+  - OCEAN_DEEP
+  - OCEAN_DEEP
+  - OCEAN_DEEP
+  - OCEAN_DEEP
+  - OCEAN_SHELF
   - OCEAN
   - OCEAN
   - OCEAN
