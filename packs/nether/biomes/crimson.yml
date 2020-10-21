@@ -12,8 +12,7 @@ flora:
         min: 1
         max: 255
 trees:
-  chance: 90
-  density: 1
+  density: 15
   items:
     CRIMSON_FUNGUS:
       weight: 1

@@ -1,6 +1,5 @@
 files:
-  spruce1: 1
-  spruce2: 2
+  spruce_tree_1: 1
 id: SPRUCE_CUSTOM
 y-offset: 0
 spawnable:
