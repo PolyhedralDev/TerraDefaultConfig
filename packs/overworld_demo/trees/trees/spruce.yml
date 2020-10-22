@@ -1,6 +1,13 @@
 files:
-  spruce_tree_1: 1
+  spruce1: 1
+  spruce2: 1
+  spruce3: 1
+  spruce4: 1
+  spruce5: 1
+  spruce6: 1
+  spruce7: 1
 id: SPRUCE_CUSTOM
 y-offset: 0
 spawnable:
   - "minecraft:grass_block"
+  - "minecraft:podzol"
