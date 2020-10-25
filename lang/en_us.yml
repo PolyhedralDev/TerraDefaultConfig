@@ -7,11 +7,11 @@ disable:
 command:
   debug-only: "This command must be used with debug mode enabled!"
   player-only: "This command is for players only!"
-  terra-world: "This command must be executed in a Terra world!"
   invalid: "Invalid command. (Expected %1$s arguments, found %2$s)."
   players-only: "Command is for players only."
   world: "This command must be executed in a Terra world!"
   reload: "Reloaded Terra config."
+  version: "This server is running Terra version \"%s\""
   main-menu:
     - "--------------------Terra--------------------"
     - "reload    - Reload configuration data"
@@ -93,6 +93,7 @@ config:
   loaded: "Loaded %1$s from file %2$s"
   loaded-all: "Loaded %1$s %2$s(s) in %3$sms."
   error:
+    invalid-failover: "Invalid failover type: \"%s\""
     duplicate: "Duplicate ID found in file: %s"
     file:
       - "Configuration error for Terra object. File: %1$s"
@@ -107,3 +108,10 @@ error:
   severe-config: "A severe configuration error has prevented Terra from properly generating terrain at coordinates: %1$s, %2$s. Please check your configuration for errors. Any config errors will have been reported above."
 debug:
   data-save: "Saved population data for world \"%s\""
+use-paper:
+  - "You appear to be using Spigot/CraftBukkit."
+  - "While Terra &odoes&r work on Spigot, some functionality will be lost. (Terra is untested on CraftBukkit; no support will be given for CraftBukkit)."
+  - "To get the most out of Terra, please switch to Paper."
+  - "Plus, Paper offers immense performance improvements over Spigot, and all Spigot plugins should work with Paper!"
+  - "To have the best experience with Terra, and all your plugins, please use Paper."
+  - "Find out more on Paper's website: https://papermc.io/"
