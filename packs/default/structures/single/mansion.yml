@@ -9,6 +9,6 @@ spawn:
     min: 48
     max: 96
   width: 250
-  padding: 100
+  padding: 500
 loot:
   1: arrows
