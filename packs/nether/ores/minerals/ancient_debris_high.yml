@@ -1,0 +1,11 @@
+material: "minecraft:ancient_debris"
+radius:
+  min: 1
+  max: 1
+deform: 0.3
+deform-frequency: 0.1
+id: ANCIENT_DEBRIS_HIGH
+replace:
+  - "minecraft:netherrack"
+  - "minecraft:basalt"
+  - "minecraft:blackstone"
