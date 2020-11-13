@@ -1,13 +1,13 @@
 layers:
   - materials:
       - "minecraft:stone": 1
-      - "minecraft:cobblestone": 1
+      - "minecraft:mossy_cobblestone": 1
       - "minecraft:stone": 1
       - "minecraft:stone": 1
       - "minecraft:cobblestone": 1
       - "minecraft:stone": 1
       - "minecraft:stone": 1
-      - "minecraft:cobblestone": 1
+      - "minecraft:mossy_cobblestone": 1
       - "minecraft:stone": 1
       - "minecraft:stone": 1
       - "minecraft:cobblestone": 1
@@ -18,13 +18,13 @@ layers:
     layers: 1
   - materials:
       - "minecraft:stone": 1
-      - "minecraft:cobblestone": 1
+      - "minecraft:mossy_cobblestone": 1
       - "minecraft:stone": 1
       - "minecraft:stone": 1
       - "minecraft:cobblestone": 1
       - "minecraft:stone": 1
       - "minecraft:stone": 1
-      - "minecraft:cobblestone": 1
+      - "minecraft:mossy_cobblestone": 1
       - "minecraft:stone": 1
       - "minecraft:stone": 1
       - "minecraft:cobblestone": 1

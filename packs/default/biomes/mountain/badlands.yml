@@ -60,11 +60,13 @@ slabs:
     - "minecraft:stone": "MOUNTAIN_SLABS"
     - "minecraft:cobblestone": "MOUNTAIN_SLABS"
     - "minecraft:gravel": "MOUNTAIN_SLABS"
+    - "minecraft:mossy_cobblestopne": "MOUNTAIN_SLABS_MOSS"
   use-stairs-if-available: true
   stair-palettes:
     - "minecraft:stone": "MOUNTAIN_STAIRS"
     - "minecraft:cobblestone": "MOUNTAIN_STAIRS"
     - "minecraft:gravel": "MOUNTAIN_STAIRS"
+    - "minecraft:mossy_cobblestone": "MOUNTAIN_STAIRS_MOSS"
 
 trees:
   density: 7
