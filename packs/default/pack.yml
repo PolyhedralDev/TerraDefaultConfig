@@ -38,8 +38,8 @@ grids:
   - MOUNTAIN
   - MOUNTAIN
 frequencies:
-  grid-x: 6144
-  grid-z: 8192
+  grid-x: 5120
+  grid-z: 6144
   zone: 2048
 blend:
   enable: true
