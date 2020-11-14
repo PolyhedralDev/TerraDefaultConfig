@@ -38,8 +38,8 @@ grids:
   - MOUNTAIN
   - MOUNTAIN
 frequencies:
-  grid-x: 3072
-  grid-z: 4096
+  grid-x: 6144
+  grid-z: 8192
   zone: 2048
 blend:
   enable: true
@@ -56,3 +56,5 @@ noise:
   frequency: 0.0075
 locatable:
   STRONGHOLD: STRONGHOLD
+variables:
+  base: 63
