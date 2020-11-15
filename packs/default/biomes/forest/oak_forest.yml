@@ -13,7 +13,7 @@ palette:
 vanilla: FOREST
 
 flora:
-  chance: 40
+  chance: 45
   attempts: 1
   items:
     TALL_GRASS:
@@ -41,18 +41,18 @@ flora:
       y:
         min: 62
         max: 84
+    LEAVES:
+      weight: 100
+      y:
+        min: 62
+        max: 84
 erodible: true
 
 trees:
-  density: 250
+  density: 100
   items:
     OAK:
       weight: 8
-      y:
-        min: 58
-        max: 84
-    LARGE_OAK:
-      weight: 2
       y:
         min: 58
         max: 84
