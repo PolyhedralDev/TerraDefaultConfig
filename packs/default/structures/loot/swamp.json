@@ -17,7 +17,7 @@
               }
             }
           ],
-          "name": "glowstone_dust"
+          "name": "minecraft:glowstone_dust"
         },
         {
           "type": "item",
@@ -30,7 +30,7 @@
               }
             }
           ],
-          "name": "sugar"
+          "name": "minecraft:sugar"
         },
         {
           "type": "item",
@@ -43,7 +43,7 @@
               }
             }
           ],
-          "name": "redstone"
+          "name": "minecraft:redstone"
         },
         {
           "type": "item",
@@ -56,7 +56,7 @@
               }
             }
           ],
-          "name": "spider_eye"
+          "name": "minecraft:spider_eye"
         },
         {
           "type": "item",
@@ -69,7 +69,7 @@
               }
             }
           ],
-          "name": "glass_bottle"
+          "name": "minecraft:glass_bottle"
         },
         {
           "type": "item",
@@ -82,7 +82,7 @@
               }
             }
           ],
-          "name": "gunpowder"
+          "name": "minecraft:gunpowder"
         },
         {
           "type": "item",
@@ -96,7 +96,7 @@
               }
             }
           ],
-          "name": "stick"
+          "name": "minecraft:stick"
         }
       ]
     }
