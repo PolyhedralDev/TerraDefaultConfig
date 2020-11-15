@@ -43,6 +43,9 @@ carving:
   CAVE_SWAMP: 30
 
 
+structures:
+  - SWAMP
+  - STRONGHOLD
 
 trees:
   density: 15

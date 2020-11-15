@@ -1,0 +1,33 @@
+files:
+  "swamp/swamp1": 1
+  "swamp/swamp2": 1
+  "swamp/swamp3": 1
+  "swamp/swamp4": 1
+  "swamp/swamp5": 1
+  "swamp/swamp6": 1
+  "swamp/swamp7": 1
+  "swamp/swamp8": 1
+id: "SWAMP"
+spawn:
+  start:
+    min: 72
+    max: 72
+  bound:
+    min: 48
+    max: 96
+  width: 150
+  padding: 50
+loot:
+  0: swamp
+features:
+  - ENTITY_FEATURE:
+      entity: WITCH
+      attempts: 10
+      in-height: 2
+      amount:
+        min: 1
+        max: 3
+      spawnable-on:
+        - "minecraft:spruce_planks"
+      spawnable-in:
+        - "minecraft:air"
