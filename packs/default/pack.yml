@@ -55,8 +55,20 @@ erode:
   octaves: 5
   grid: "BIOME:RIVER"
 noise:
-  octaves: 5
-  frequency: 0.0075
+  noise2:
+    dimensions: 2
+    type: OpenSimplex2
+    frequency: 0.0075
+    fractal:
+      type: FBm
+      octaves: 5
+  noise3:
+    dimensions: 3
+    type: OpenSimplex2
+    frequency: 0.0075
+    fractal:
+      type: FBm
+      octaves: 5
 locatable:
   STRONGHOLD: STRONGHOLD
 variables:
