@@ -1,0 +1,83 @@
+noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x, z) / 3) + 0.1|"
+extends: "BASIC_ORES"
+id: "ROCKY_TALL_FOREST"
+
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - GRITTY: 255
+vanilla: JUNGLE
+erodible: true
+
+flora:
+  chance: 40
+  attempts: 1
+  items:
+    TALL_GRASS:
+      weight: 15
+      y:
+        min: 62
+        max: 84
+    GRASS:
+      weight: 75
+      y:
+        min: 62
+        max: 84
+    POPPY:
+      weight: 5
+      y:
+        min: 62
+        max: 84
+    SUNFLOWER:
+      weight: 1
+      y:
+        min: 62
+        max: 84
+    BLUE_ORCHID:
+      weight: 1
+      y:
+        min: 62
+        max: 84
+    ROSE_BUSH:
+      weight: 1
+      y:
+        min: 62
+        max: 84
+    LEAVES:
+      weight: 10
+      y:
+        min: 62
+        max: 84
+
+trees:
+  density: 200
+  items:
+    GRAY_OAK:
+      weight: 90
+      y:
+        min: 58
+        max: 84
+    OAK:
+      weight: 45
+      y:
+        min: 58
+        max: 84
+    SMALL_ROCKS:
+      weight: 15
+      y:
+        min: 58
+        max: 84
+    MEDIUM_ROCKS:
+      weight: 10
+      y:
+        min: 58
+        max: 84
+    LARGE_ROCKS:
+      weight: 30
+      y:
+        min: 58
+        max: 84
