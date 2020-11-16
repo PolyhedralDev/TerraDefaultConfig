@@ -11,7 +11,7 @@ files:
   dark_oak/Dark_Oak__10: 1
   dark_oak/Dark_Oak__11: 1
   dark_oak/Dark_Oak__12: 1
-id: DARK_OAK_CUSTOM
+id: DARK_OAK
 y-offset: 0
 spawnable:
   - "minecraft:grass_block"
