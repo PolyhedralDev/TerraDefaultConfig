@@ -1,0 +1,14 @@
+files:
+  Small_Rocks/Small_Rock__1: 1
+  Small_Rocks/Small_Rock__2: 1
+  Small_Rocks/Small_Rock__3: 1
+  Small_Rocks/Small_Rock__4: 1
+  Small_Rocks/Small_Rock__5: 1
+  Small_Rocks/Small_Rock__6: 1
+id: SMALL_ROCKS
+y-offset: 1
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:brown_concrete_powder"
+  - "minecraft:coarse_dirt"
+  - "minecraft:gravel"
