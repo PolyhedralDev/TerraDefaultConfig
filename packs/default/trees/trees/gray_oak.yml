@@ -11,7 +11,7 @@ files:
   gray_oak/Gray_Oak__10: 1
   gray_oak/Gray_Oak__11: 1
   gray_oak/Gray_Oak__12: 1
-id: GRAY_OAK_CUSTOM
+id: GRAY_OAK
 y-offset: 0
 spawnable:
   - "minecraft:grass_block"
