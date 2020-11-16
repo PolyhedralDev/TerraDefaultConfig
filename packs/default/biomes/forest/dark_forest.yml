@@ -36,7 +36,7 @@ flora:
         max: 255
 
 trees:
-  density: 400
+  density: 300
   items:
     DARK_OAK:
       weight: 19
