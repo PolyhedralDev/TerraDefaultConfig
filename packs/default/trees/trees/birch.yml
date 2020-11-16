@@ -1,23 +1,23 @@
 files:
-  Birch/Birch__1: 1
-  Birch/Birch__2: 1
-  Birch/Birch__3: 1
-  Birch/Birch__4: 1
-  Birch/Birch__5: 1
-  Birch/Birch__6: 1
-  Birch/Birch__7: 1
-  Birch/Birch__8: 1
-  Birch/Birch__9: 1
-  Birch/Birch__10: 1
-  Birch/Birch__11: 1
-  Birch/Birch__12: 1
-  Birch/Birch__13: 1
-  Birch/Birch__14: 1
-  Birch/Birch__15: 1
-  Birch/Birch__16: 1
-  Birch/Birch__17: 1
-  Birch/Birch__18: 1
-id: BIRCH_CUSTOM
+  birch/Birch__1: 1
+  birch/Birch__2: 1
+  birch/Birch__3: 1
+  birch/Birch__4: 1
+  birch/Birch__5: 1
+  birch/Birch__6: 1
+  birch/Birch__7: 1
+  birch/Birch__8: 1
+  birch/Birch__9: 1
+  birch/Birch__10: 1
+  birch/Birch__11: 1
+  birch/Birch__12: 1
+  birch/Birch__13: 1
+  birch/Birch__14: 1
+  birch/Birch__15: 1
+  birch/Birch__16: 1
+  birch/Birch__17: 1
+  birch/Birch__18: 1
+id: BIRCH
 y-offset: 0
 spawnable:
   - "minecraft:grass_block"
