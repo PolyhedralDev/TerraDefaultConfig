@@ -17,7 +17,7 @@ structures:
   - JUNGLE
   - STRONGHOLD
 flora:
-  chance: 80
+  chance: 40
   attempts: 2
   items:
     TALL_GRASS:
@@ -57,10 +57,10 @@ flora:
         max: 50
 
 trees:
-  density: 500
+  density: 750
   items:
     JUNGLE_BUSH:
-      weight: 4
+      weight: 3
       y:
         min: 58
         max: 84
