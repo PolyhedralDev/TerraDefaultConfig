@@ -57,20 +57,20 @@ flora:
         max: 50
 
 trees:
-  density: 750
+  density: 350
   items:
     JUNGLE_BUSH:
+      weight: 4
+      y:
+        min: 58
+        max: 92
+    SMALL_JUNGLE:
       weight: 3
       y:
         min: 58
-        max: 84
-    SMALL_JUNGLE:
-      weight: 2
-      y:
-        min: 58
-        max: 84
+        max: 92
     JUNGLE:
       weight: 4
       y:
         min: 58
-        max: 84
+        max: 92

@@ -1,11 +1,11 @@
 files:
-  spruce1: 1
-  spruce2: 1
-  spruce3: 1
-  spruce4: 1
-  spruce5: 1
-  spruce6: 1
-  spruce7: 1
+  spruce/spruce1: 1
+  spruce/spruce2: 1
+  spruce/spruce3: 1
+  spruce/spruce4: 1
+  spruce/spruce5: 1
+  spruce/spruce6: 1
+  spruce/spruce7: 1
 id: SPRUCE
 y-offset: 0
 spawnable:
