@@ -60,17 +60,23 @@ trees:
   density: 350
   items:
     JUNGLE_BUSH:
-      weight: 4
+      weight: 16
       y:
         min: 58
         max: 92
     SMALL_JUNGLE:
-      weight: 3
+      weight: 12
       y:
         min: 58
         max: 92
     JUNGLE:
-      weight: 4
+      weight: 16
       y:
         min: 58
         max: 92
+    JUNGLE_COCO:
+      weight: 3
+      y:
+        min: 58
+        max: 92
+        
