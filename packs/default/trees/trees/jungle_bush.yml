@@ -1,0 +1,11 @@
+files:
+  jungle_bush/jungleshrub1: 3
+  jungle_bush/jungleshrub2: 1
+  jungle_bush/jungleshrub3: 1
+  jungle_bush/jungleshrub4: 1
+id: JUNGLE_BUSH
+y-offset: 0
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+  - "minecraft:coarse_dirt"
