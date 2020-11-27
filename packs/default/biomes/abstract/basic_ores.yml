@@ -1,5 +1,5 @@
 id: "BASIC_ORES"
-
+abstract: true
 structures:
   - STRONGHOLD
 

@@ -1,4 +1,4 @@
-extends: "MOUNTAINS_PRETTY_1"
+extends: "MOUNTAINS_PRETTY_1_A"
 id: "MOUNTAINS_PRETTY_1"
 
 palette:
