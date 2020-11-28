@@ -29,8 +29,3 @@ trees:
       y:
         min: 58
         max: 92
-
-flora:
-  chance: 0
-  attempts: 0
-  items: { }

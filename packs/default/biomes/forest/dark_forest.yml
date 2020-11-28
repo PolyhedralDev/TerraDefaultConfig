@@ -15,25 +15,6 @@ palette:
 vanilla: DARK_FOREST
 erodible: true
 flora-chance: 40
-flora:
-  chance: 40
-  attempts: 1
-  items:
-    TALL_GRASS:
-      weight: 15
-      y:
-        min: 62
-        max: 255
-    GRASS:
-      weight: 70
-      y:
-        min: 62
-        max: 255
-    POPPY:
-      weight: 5
-      y:
-        min: 62
-        max: 255
 
 trees:
   density: 300

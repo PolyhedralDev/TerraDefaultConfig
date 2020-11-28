@@ -13,26 +13,6 @@ palette:
 vanilla: TAIGA
 erodible: true
 
-flora:
-  chance: 40
-  attempts: 1
-  items:
-    TALL_GRASS:
-      weight: 15
-      y:
-        min: 62
-        max: 84
-    GRASS:
-      weight: 75
-      y:
-        min: 62
-        max: 84
-    POPPY:
-      weight: 5
-      y:
-        min: 62
-        max: 84
-
 trees:
   density: 75
   items:

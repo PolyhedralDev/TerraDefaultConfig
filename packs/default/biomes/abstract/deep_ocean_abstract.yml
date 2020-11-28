@@ -1,6 +1,6 @@
 noise-equation: "((-((y / 36)^2)) + 1) + ((noise2(x, z)/3))"
 id: "DEEP_OCEAN_ABSTRACT"
-
+extends: OCEAN_FLORA
 abstract: true
 palette:
   - "BLOCK:minecraft:bedrock": 0
@@ -9,21 +9,6 @@ palette:
   - BEDROCK_LITTLE: 3
   - SANDY: 255
   - OCEANFLOOR: 60
-
-flora:
-  chance: 50
-  attempts: 1
-  items:
-    TALL_SEAGRASS:
-      weight: 1
-      y:
-        min: 32
-        max: 64
-    SEAGRASS:
-      weight: 3
-      y:
-        min: 32
-        max: 64
 
 carving:
   CAVE_OCEAN: 45

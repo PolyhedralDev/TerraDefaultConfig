@@ -1,0 +1,14 @@
+id: MOUNTAINS_PRETTY_FLORA
+abstract: true
+
+flora:
+  - density: 60
+    simplex-frequency: 0.1
+    items:
+      - SMALL_ROCK: 1
+      - TALL_GRASS: 1
+      - GRASS: 5
+      - LEAVES: 3
+    y:
+      min: 62
+      max: 180

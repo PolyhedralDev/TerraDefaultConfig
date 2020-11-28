@@ -10,18 +10,13 @@ palette:
 vanilla: DESERT
 
 flora:
-  chance: 2
-  items:
-    DEAD_BUSH:
-      weight: 1
-      y:
-        min: 62
-        max: 84
-    SMALL_ROCK:
-      weight: 1
-      y:
-        min: 62
-        max: 84
+  - density: 2
+    y:
+      min: 62
+      max: 84
+    items:
+      - DEAD_BUSH: 1
+      - SMALL_ROCK: 1
 
 erodible: true
 
@@ -38,10 +33,10 @@ slabs:
   enable: true
   threshold: 0.0075
   palettes:
-    - "minecraft:sand": "BLOCK:minecraft:sandstone_slab"
+    "minecraft:sand": "BLOCK:minecraft:sandstone_slab"
   use-stairs-if-available: true
   stair-palettes:
-    - "minecraft:sand": "BLOCK:minecraft:sandstone_stairs"
+    "minecraft:sand": "BLOCK:minecraft:sandstone_stairs"
 
 
 

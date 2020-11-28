@@ -66,42 +66,15 @@ ores:
     min-height: 0
     max-height: 16
 
-flora:
-  chance: 60
-  attempts: 2
-  simplex:
-    enable: true
-    frequency: 0.1
-    seed: 4
-  items:
-    SMALL_ROCK:
-      weight: 1
-      y:
-        min: 62
-        max: 180
-    TALL_GRASS:
-      weight: 1
-      y:
-        min: 62
-        max: 180
-    GRASS:
-      weight: 5
-      y:
-        min: 62
-        max: 180
-    LEAVES:
-      weight: 3
-      y:
-        min: 62
-        max: 180
+extends: MOUNTAINS_PRETTY_FLORA
 
 slabs:
   enable: true
   threshold: 0.0075
   palettes:
-    - "minecraft:stone": "MOUNTAIN_SLABS"
-    - "minecraft:gravel": "MOUNTAIN_SLABS"
+    "minecraft:stone": "MOUNTAIN_SLABS"
+    "minecraft:gravel": "MOUNTAIN_SLABS"
   use-stairs-if-available: true
   stair-palettes:
-    - "minecraft:stone": "MOUNTAIN_STAIRS"
-    - "minecraft:gravel": "MOUNTAIN_STAIRS"
+    "minecraft:stone": "MOUNTAIN_STAIRS"
+    "minecraft:gravel": "MOUNTAIN_STAIRS"

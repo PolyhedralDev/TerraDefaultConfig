@@ -12,29 +12,15 @@ palette:
 vanilla: RIVER
 
 flora:
-  chance: 60
-  attempts: 1
-  items:
-    TALL_GRASS:
-      weight: 150
-      y:
-        min: 62
-        max: 84
-    LILY_PAD:
-      weight: 10
-      y:
-        min: 62
-        max: 84
-    GRASS:
-      weight: 675
-      y:
-        min: 62
-        max: 84
-    SUGARCANE:
-      weight: 25
-      y:
-        min: 62
-        max: 68
+  - density: 60
+    y:
+      min: 62
+      max: 80
+    items:
+      - SUGARCANE: 25
+      - GRASS: 675
+      - LILY_PAD: 10
+      - TALL_GRASS: 150
 
 ocean:
   palette: "BLOCK:minecraft:water"

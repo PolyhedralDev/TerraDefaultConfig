@@ -9,35 +9,18 @@ palette:
   - SWAMP_BOTTOM: 61
   - SWAMP: 255
 vanilla: SWAMP
+
 flora:
-  chance: 80
-  attempts: 1
-  items:
-    TALL_GRASS:
-      weight: 150
-      y:
-        min: 62
-        max: 84
-    LILY_PAD:
-      weight: 40
-      y:
-        min: 62
-        max: 84
-    GRASS:
-      weight: 700
-      y:
-        min: 62
-        max: 84
-    BLUE_ORCHID:
-      weight: 20
-      y:
-        min: 62
-        max: 84
-    ROOT:
-      weight: 3
-      y:
-        min: 62
-        max: 84
+  - density: 80
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - LILY_PAD: 40
+      - GRASS: 700
+      - BLUE_ORCHID: 20
+      - ROOT: 3
 
 carving:
   CAVE_SWAMP: 30

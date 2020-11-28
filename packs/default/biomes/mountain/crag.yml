@@ -25,48 +25,20 @@ palette:
   - GRASSY_STONE: 255
 vanilla: PLAINS
 
-flora:
-  chance: 60
-  attempts: 2
-  simplex:
-    enable: true
-    frequency: 0.1
-    seed: 4
-  items:
-    SMALL_ROCK:
-      weight: 1
-      y:
-        min: 62
-        max: 180
-    TALL_GRASS:
-      weight: 1
-      y:
-        min: 62
-        max: 180
-    GRASS:
-      weight: 5
-      y:
-        min: 62
-        max: 180
-    LEAVES:
-      weight: 3
-      y:
-        min: 62
-        max: 180
 slabs:
   enable: true
   threshold: 0.0075
   palettes:
-    - "minecraft:stone": "MOUNTAIN_SLABS"
-    - "minecraft:cobblestone": "MOUNTAIN_SLABS"
-    - "minecraft:gravel": "MOUNTAIN_SLABS"
-    - "minecraft:mossy_cobblestone": "MOUNTAIN_SLABS_MOSS"
+    "minecraft:stone": "MOUNTAIN_SLABS"
+    "minecraft:cobblestone": "MOUNTAIN_SLABS"
+    "minecraft:gravel": "MOUNTAIN_SLABS"
+    "minecraft:mossy_cobblestone": "MOUNTAIN_SLABS_MOSS"
   use-stairs-if-available: true
   stair-palettes:
-    - "minecraft:stone": "MOUNTAIN_STAIRS"
-    - "minecraft:cobblestone": "MOUNTAIN_STAIRS"
-    - "minecraft:gravel": "MOUNTAIN_STAIRS"
-    - "minecraft:mossy_cobblestone": "MOUNTAIN_STAIRS_MOSS"
+    "minecraft:stone": "MOUNTAIN_STAIRS"
+    "minecraft:cobblestone": "MOUNTAIN_STAIRS"
+    "minecraft:gravel": "MOUNTAIN_STAIRS"
+    "minecraft:mossy_cobblestone": "MOUNTAIN_STAIRS_MOSS"
 
 trees:
   density: 7

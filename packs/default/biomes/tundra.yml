@@ -19,14 +19,6 @@ snow:
     chance: 30
 erodible: true
 
-flora:
-  chance: 2
-  items:
-    SMALL_ROCK:
-      weight: 1
-      y:
-        min: 60
-        max: 255
 trees:
   density: 40
   items:
@@ -39,10 +31,10 @@ slabs:
   enable: true
   threshold: 0.015
   palettes:
-    - "minecraft:stone": "MOUNTAIN_SLABS"
-    - "minecraft:snow_block": "SNOW_LAYERS"
-    - "minecraft:gravel": "MOUNTAIN_SLABS"
+    "minecraft:stone": "MOUNTAIN_SLABS"
+    "minecraft:snow_block": "SNOW_LAYERS"
+    "minecraft:gravel": "MOUNTAIN_SLABS"
   use-stairs-if-available: true
   stair-palettes:
-    - "minecraft:stone": "MOUNTAIN_STAIRS"
-    - "minecraft:gravel": "MOUNTAIN_STAIRS"
+    "minecraft:stone": "MOUNTAIN_STAIRS"
+    "minecraft:gravel": "MOUNTAIN_STAIRS"

@@ -11,25 +11,6 @@ palette:
   - GRASSY: 255
 vanilla: BIRCH_FOREST
 
-flora:
-  chance: 40
-  attempts: 1
-  items:
-    TALL_GRASS:
-      weight: 15
-      y:
-        min: 62
-        max: 84
-    GRASS:
-      weight: 70
-      y:
-        min: 62
-        max: 84
-    POPPY:
-      weight: 5
-      y:
-        min: 62
-        max: 84
 erodible: true
 
 trees:

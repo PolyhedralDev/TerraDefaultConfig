@@ -14,44 +14,18 @@ vanilla: JUNGLE
 erodible: true
 
 flora:
-  chance: 40
-  attempts: 1
-  items:
-    TALL_GRASS:
-      weight: 15
-      y:
-        min: 62
-        max: 84
-    GRASS:
-      weight: 75
-      y:
-        min: 62
-        max: 84
-    POPPY:
-      weight: 5
-      y:
-        min: 62
-        max: 84
-    SUNFLOWER:
-      weight: 1
-      y:
-        min: 62
-        max: 84
-    BLUE_ORCHID:
-      weight: 1
-      y:
-        min: 62
-        max: 84
-    ROSE_BUSH:
-      weight: 1
-      y:
-        min: 62
-        max: 84
-    LEAVES:
-      weight: 10
-      y:
-        min: 62
-        max: 84
+  - density: 40
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 15
+      - GRASS: 75
+      - POPPY: 5
+      - SUNFLOWER: 1
+      - BLUE_ORCHID: 1
+      - ROSE_BUSH: 1
+      - LEAVES: 10
 
 trees:
   density: 200

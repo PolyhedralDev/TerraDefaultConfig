@@ -16,45 +16,25 @@ erodible: true
 structures:
   - JUNGLE
   - STRONGHOLD
+
+
 flora:
-  chance: 40
-  attempts: 2
-  items:
-    TALL_GRASS:
-      weight: 150
-      y:
-        min: 62
-        max: 84
-    GRASS:
-      weight: 750
-      y:
-        min: 62
-        max: 84
-    POPPY:
-      weight: 50
-      y:
-        min: 62
-        max: 84
-    ROSE_BUSH:
-      weight: 4
-      y:
-        min: 62
-        max: 84
-    LILAC:
-      weight: 4
-      y:
-        min: 62
-        max: 84
-    STALAGMITE:
-      weight: 10
-      y:
-        min: 4
-        max: 50
-    STALACTITE:
-      weight: 10
-      y:
-        min: 4
-        max: 50
+  - density: 40
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - GRASS: 750
+      - ROSE_BUSH: 4
+      - LILAC: 4
+  - density: 5
+    y:
+      min: 0
+      max: 60
+    items:
+      - STALAGMITE: 1
+      - STALACTITE: 1
 
 trees:
   density: 350

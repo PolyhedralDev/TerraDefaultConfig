@@ -59,29 +59,22 @@ palette:
   - RED_DESERT: 255
 vanilla: BADLANDS
 
-flora-chance: 2
 flora:
-  chance: 2
-  attempts: 1
-  items:
-    DEAD_BUSH:
-      weight: 1
-      y:
-        min: 62
-        max: 84
-    SMALL_ROCK:
-      weight: 1
-      y:
-        min: 62
-        max: 84
+  - density: 2
+    y:
+      min: 62
+      max: 84
+    items:
+      - DEAD_BUSH: 1
+      - SMALL_ROCK: 1
 slabs:
   enable: true
   threshold: 0.0075
   palettes:
-    - "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_slab"
+    "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_slab"
   use-stairs-if-available: true
   stair-palettes:
-    - "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_stairs"
+    "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_stairs"
 
 trees:
   density: 7

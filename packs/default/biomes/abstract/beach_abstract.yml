@@ -14,29 +14,15 @@ structures:
   - STRONGHOLD
 
 flora:
-  chance: 60
-  attempts: 1
-  items:
-    TALL_GRASS:
-      weight: 15
-      y:
-        min: 62
-        max: 84
-    LILY_PAD:
-      weight: 1
-      y:
-        min: 62
-        max: 84
-    GRASS:
-      weight: 70
-      y:
-        min: 62
-        max: 84
-    POPPY:
-      weight: 5
-      y:
-        min: 62
-        max: 84
+  - density: 40
+    y:
+      min: 0
+      max: 255
+    items:
+      - TALL_GRASS: 15
+      - LILY_PAD: 1
+      - GRASS: 70
+      - POPPY: 5
 
 ores:
   DIRT:
