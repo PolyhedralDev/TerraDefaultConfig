@@ -7,12 +7,9 @@ start:
   y: 0.25
   z: 1
   radius:
-    multiply:
-      x: 2
-      y: 1
-      z: 2
-    min: 3
-    max: 5
+    x: "6"
+    y: "3"
+    z: "6"
   height:
     min: 4
     max: 48
