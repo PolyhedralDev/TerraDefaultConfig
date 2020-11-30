@@ -11,7 +11,7 @@ flora:
       - TALL_GRASS: 15
       - GRASS: 70
       - POPPY: 5
-
+erode: RIVER
 carving:
   CAVE: 40
   RAVINE: 5

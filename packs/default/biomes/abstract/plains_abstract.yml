@@ -8,7 +8,7 @@ carving:
 
 structures:
   - STRONGHOLD
-
+erode: RIVER
 erodible: true
 ores:
   DIRT:

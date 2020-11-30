@@ -1,6 +1,6 @@
 extends: "MOUNTAINS_PRETTY_1"
 id: "MOUNTAINS_JUNGLE_1"
-
+erode: RIVER
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1

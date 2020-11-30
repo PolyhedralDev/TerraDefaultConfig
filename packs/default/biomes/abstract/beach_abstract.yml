@@ -9,7 +9,7 @@ palette:
   - BEDROCK_LITTLE: 3
   - SANDY: 64
   - GRASSY: 255
-
+erode: RIVER
 structures:
   - STRONGHOLD
 

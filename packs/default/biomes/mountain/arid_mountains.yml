@@ -6,7 +6,7 @@ elevation:
 id: "ARID_MOUNTAINS"
 extends: "BASIC_ORES"
 
-
+erode: ARID_MOUNTAINS
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
