@@ -14,10 +14,13 @@ palette:
   - TAIGA: 255
 vanilla: TAIGA
 
-snow:
-  - min: 0
-    max: 255
-    chance: 100
+flora:
+  - density: 80
+    y:
+      min: 62
+      max: 156
+    items:
+      - SNOW: 1
 
 trees:
   - density: 8

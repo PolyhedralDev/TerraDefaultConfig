@@ -13,10 +13,13 @@ carving:
   RAVINE: 5
   CAVERN: 5
 
-snow:
-  - min: 0
-    max: 255
-    chance: 30
+flora:
+  - density: 80
+    y:
+      min: 62
+      max: 156
+    items:
+      - SNOW: 1
 erodible: true
 
 trees:

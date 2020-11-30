@@ -12,16 +12,13 @@ palette:
   - MOUNTAIN_STONE_GRASS: 108
   - MOUNTAIN_GRASS: 84
 vanilla: MOUNTAINS
-snow:
-  - min: 0
-    max: 120
-    chance: 50
-  - min: 120
-    max: 140
-    chance: 75
-  - min: 140
-    max: 255
-    chance: 100
+flora:
+  - density: 80
+    y:
+      min: 62
+      max: 156
+    items:
+      - SNOW: 1
 trees:
   - density: 6
     items:
