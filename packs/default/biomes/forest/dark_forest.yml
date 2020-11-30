@@ -17,15 +17,9 @@ erodible: true
 flora-chance: 40
 
 trees:
-  density: 300
-  items:
-    DARK_OAK:
-      weight: 19
-      y:
-        min: 58
-        max: 84
-    RED_MUSHROOM:
-      weight: 1
-      y:
-        min: 58
-        max: 84
+  - density: 25
+    items:
+      - DARK_OAK: 1
+    y:
+      min: 58
+      max: 84

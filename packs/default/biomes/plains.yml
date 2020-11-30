@@ -23,13 +23,5 @@ flora:
       - GRASS: 700
       - SUNFLOWER: 20
 
-trees:
-  density: 1
-  items:
-    OAK:
-      weight: 1
-      y:
-        min: 58
-        max: 72
 
 # Carving and ores covered by super biome

@@ -23,10 +23,9 @@ flora:
 erodible: true
 
 trees:
-  density: 20
-  items:
-    ACACIA:
-      weight: 1
-      y:
-        min: 58
-        max: 84
+  - density: 4
+    items:
+      ACACIA: 1
+    y:
+      min: 62
+      max: 128

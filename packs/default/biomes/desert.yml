@@ -21,13 +21,12 @@ flora:
 erodible: true
 
 trees:
-  density: 7
-  items:
-    CACTUS:
-      weight: 1
-      y:
-        min: 58
-        max: 72
+  - density: 0.5
+    items:
+      - CACTUS: 1
+    y:
+      min: 58
+      max: 92
 
 slabs:
   enable: true

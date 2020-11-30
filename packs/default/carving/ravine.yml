@@ -11,7 +11,7 @@ start:
     y: "18"
     z: "-12*(|position-length/2|/length) + 8"
   height:
-    min: 32
+    min: 16
     max: 62
 cut:
   top: 6

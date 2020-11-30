@@ -20,10 +20,12 @@ prevent-smooth: true
 
 slant:
   palette:
+    - "BLOCK:minecraft:bedrock": 0
+    - BEDROCK_MOST: 1
+    - BEDROCK_HALF: 2
+    - BEDROCK_LITTLE: 3
     - ARID_SIDE: 255
-  y-offset:
-    top: 0.4
-    bottom: 0.25
+  threshold: 0.1
 
 flora:
   - density: 40
@@ -35,13 +37,12 @@ flora:
       - GRASS: 70
 
 trees:
-  density: 50
-  items:
-    ACACIA:
-      weight: 1
-      y:
-        min: 58
-        max: 128
+  - density: 4
+    items:
+      ACACIA: 1
+    y:
+      min: 62
+      max: 128
 slabs:
   enable: true
   threshold: 0.015

@@ -28,30 +28,19 @@ flora:
       - LEAVES: 10
 
 trees:
-  density: 200
-  items:
-    GRAY_OAK:
-      weight: 90
-      y:
-        min: 58
-        max: 84
-    OAK:
-      weight: 45
-      y:
-        min: 58
-        max: 84
-    SMALL_ROCKS:
-      weight: 15
-      y:
-        min: 58
-        max: 84
-    MEDIUM_ROCKS:
-      weight: 10
-      y:
-        min: 58
-        max: 84
-    LARGE_ROCKS:
-      weight: 30
-      y:
-        min: 58
-        max: 84
+  - density: 10
+    items:
+      - SMALL_ROCKS: 15
+      - MEDIUM_ROCKS: 10
+      - LARGE_ROCKS: 30
+    y:
+      min: 58
+      max: 84
+  - density: 6
+    items:
+      - GRAY_OAK: 90
+      - OAK: 10
+    y:
+      min: 58
+      max: 84
+

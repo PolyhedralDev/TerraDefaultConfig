@@ -1,4 +1,4 @@
-noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x/1.5, z/1.5)+0.25)|/2.5"
+noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x/1.5, z/1.5)+0.25)|/3"
 elevation:
   equation: "min(floor(((max(noise2(x/1.5, z/1.5)+0.25, 0)))*5), 3)*9 + if(max(noise2(x/1.5, z/1.5)+0.05, 0), (noise2(x*2,z*2))*10, 0)"
   interpolation: true
@@ -6,6 +6,7 @@ extends: "BASIC_ORES"
 id: "MESA"
 
 slant:
+  threshold: 0.0725
   palette:
     - "BLOCK:minecraft:bedrock": 0
     - BEDROCK_MOST: 1
@@ -46,10 +47,7 @@ slant:
     - "BLOCK:minecraft:terracotta": 71
     - "BLOCK:minecraft:terracotta": 70
     - "BLOCK:minecraft:orange_terracotta": 66
-    - "BLOCK:minecraft:terracotta": 65
-  y-offset:
-    top: 0.5
-    bottom: 0.25
+    - "RED_DESERT": 64
 
 palette:
   - "BLOCK:minecraft:bedrock": 0
@@ -77,10 +75,9 @@ slabs:
     "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_stairs"
 
 trees:
-  density: 7
-  items:
-    CACTUS:
-      weight: 1
-      y:
-        min: 58
-        max: 72
+  - density: 0.5
+    items:
+      - CACTUS: 1
+    y:
+      min: 58
+      max: 92

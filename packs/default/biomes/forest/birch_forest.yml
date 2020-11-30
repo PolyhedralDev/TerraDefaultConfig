@@ -14,10 +14,9 @@ vanilla: BIRCH_FOREST
 erodible: true
 
 trees:
-  density: 200
-  items:
-    BIRCH:
-      weight: 1
-      y:
-        min: 58
-        max: 84
+  - density: 15
+    items:
+      - BIRCH: 1
+    y:
+      min: 58
+      max: 84

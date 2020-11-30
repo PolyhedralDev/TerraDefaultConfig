@@ -20,13 +20,12 @@ snow:
 erodible: true
 
 trees:
-  density: 40
-  items:
-    ICE_SPIKE:
-      weight: 1
-      y:
-        min: 58
-        max: 84
+  - density: 1
+    items:
+      - ICE_SPIKE: 1
+    y:
+      min: 58
+      max: 92
 slabs:
   enable: true
   threshold: 0.015

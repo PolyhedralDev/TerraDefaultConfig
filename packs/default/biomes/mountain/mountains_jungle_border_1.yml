@@ -9,20 +9,11 @@ palette:
   - MOUNTAIN_JUNGLE: 255
 vanilla: JUNGLE
 trees:
-  density: 70
-  items:
-    JUNGLE_BUSH:
-      weight: 4
-      y:
-        min: 58
-        max: 92
-    SMALL_JUNGLE:
-      weight: 3
-      y:
-        min: 58
-        max: 92
-    JUNGLE:
-      weight: 4
-      y:
-        min: 58
-        max: 92
+  - density: 30
+    items:
+      - JUNGLE_BUSH: 4
+      - SMALL_JUNGLE: 3
+      - JUNGLE: 4
+    y:
+      min: 58
+      max: 92

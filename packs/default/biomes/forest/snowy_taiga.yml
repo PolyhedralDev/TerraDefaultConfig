@@ -20,10 +20,9 @@ snow:
     chance: 100
 
 trees:
-  density: 75
-  items:
-    SPRUCE:
-      weight: 1
-      y:
-        min: 58
-        max: 84
+  - density: 8
+    items:
+      - SPRUCE: 1
+    y:
+      min: 58
+      max: 92

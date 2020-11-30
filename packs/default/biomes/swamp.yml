@@ -30,10 +30,9 @@ structures:
   - STRONGHOLD
 
 trees:
-  density: 15
-  items:
-    SWAMP_OAK:
-      weight: 1
-      y:
-        min: 58
-        max: 84
+  - density: 2
+    items:
+      - SWAMP_OAK: 1
+    y:
+      min: 58
+      max: 92

@@ -28,10 +28,9 @@ flora:
 erodible: true
 
 trees:
-  density: 100
-  items:
-    OAK:
-      weight: 8
-      y:
-        min: 58
-        max: 84
+  - density: 10
+    items:
+      - OAK: 1
+    y:
+      min: 58
+      max: 84

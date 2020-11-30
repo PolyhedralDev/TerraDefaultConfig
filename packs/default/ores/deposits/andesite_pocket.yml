@@ -1,9 +1,9 @@
 material: "minecraft:andesite"
-radius:
-  min: 3
-  max: 4
+size:
+  min: 32
+  max: 32
 deform: 0.75
 deform-frequency: 0.1
 id: "ANDESITE"
 replace:
-  - "#minecraft:base_stone_overworld"
+  - "minecraft:stone"

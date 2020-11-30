@@ -12,9 +12,8 @@ slant:
     - BEDROCK_HALF: 2
     - BEDROCK_LITTLE: 3
     - "STONE_SIDE": 255
-  y-offset:
-    top: 0.5
-    bottom: 0.25
+    - "GRASSY_STONE": 62
+  threshold: 0.1
 
 palette:
   - "BLOCK:minecraft:bedrock": 0
@@ -39,12 +38,3 @@ slabs:
     "minecraft:cobblestone": "MOUNTAIN_STAIRS"
     "minecraft:gravel": "MOUNTAIN_STAIRS"
     "minecraft:mossy_cobblestone": "MOUNTAIN_STAIRS_MOSS"
-
-trees:
-  density: 7
-  items:
-    CACTUS:
-      weight: 1
-      y:
-        min: 58
-        max: 72
