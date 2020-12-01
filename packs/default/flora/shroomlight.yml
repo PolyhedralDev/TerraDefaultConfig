@@ -5,6 +5,11 @@ layers:
 id: "SHROOMLIGHT"
 spawnable:
   - "minecraft:air"
+
+
+# To update lighting
+physics: true
+
 replaceable:
   - "minecraft:stone"
   - "minecraft:dirt"

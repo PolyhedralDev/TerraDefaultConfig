@@ -10,6 +10,8 @@ palette:
   - RIVER_SHORE: 62
   - MOUNTAIN_PRETTY: 255
 vanilla: PLAINS
+ocean:
+  palette: BLOCK:minecraft:water
 flora:
   - density: 60
     simplex-frequency: 0.1
@@ -21,3 +23,11 @@ flora:
     y:
       min: 62
       max: 180
+  - density: 7
+    items:
+      - CEILING_LEAVES: 4
+      - STALACTITE: 2
+      - SHROOMLIGHT: 1
+    y:
+      min: 62
+      max: 84

@@ -44,6 +44,7 @@ frequencies:
   grid-x: 4096
   grid-z: 4096
   zone: 2048
+author: dfsek
 blend:
   enable: true
   frequency: 0.1
