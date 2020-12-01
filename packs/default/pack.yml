@@ -55,6 +55,8 @@ erode:
   threshold: 0.0015
   octaves: 5
   grid: "BIOME:RIVER"
+vanilla:
+  mobs: true
 noise:
   noise2:
     dimensions: 2
