@@ -1,0 +1,18 @@
+files:
+  acacia/Acacia__1: 1
+  acacia/Acacia__2: 1
+  acacia/Acacia__3: 1
+  acacia/Acacia__4: 1
+  acacia/Acacia__5: 1
+  acacia/Acacia__6: 1
+  acacia/Acacia__7: 1
+  acacia/Acacia__8: 1
+  acacia/Acacia__9: 1
+  acacia/Acacia__10: 1
+  acacia/Acacia__11: 1
+  acacia/Acacia__12: 1
+id: ACACIA
+y-offset: 0
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
