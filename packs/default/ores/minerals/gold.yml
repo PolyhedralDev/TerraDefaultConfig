@@ -2,8 +2,5 @@ material: "minecraft:gold_ore"
 size:
   min: 9
   max: 9
-deform: 0.75
-deform-frequency: 0.2
+extends: MINERAL
 id: "GOLD_ORE"
-replace:
-  - "#minecraft:base_stone_overworld"

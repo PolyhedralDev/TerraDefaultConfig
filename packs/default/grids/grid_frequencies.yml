@@ -1,4 +1,4 @@
-id: ABS
+id: GRID_FREQUENCIES
 abstract: true
 frequency:
   x: 2048

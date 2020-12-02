@@ -33,7 +33,6 @@ slabs:
 carving:
   CAVE: 40
   RAVINE: 5
-  CAVERN: 5
 ores:
   DIRT:
     min: 0

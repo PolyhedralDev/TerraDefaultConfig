@@ -2,8 +2,5 @@ material: "minecraft:diamond_ore"
 size:
   min: 8
   max: 8
-deform: 0.75
-deform-frequency: 0.2
+extends: MINERAL
 id: "DIAMOND_ORE"
-replace:
-  - "#minecraft:base_stone_overworld"

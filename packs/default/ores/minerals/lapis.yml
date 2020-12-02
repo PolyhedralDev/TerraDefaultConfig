@@ -2,8 +2,5 @@ material: "minecraft:lapis_ore"
 size:
   min: 7
   max: 7
-deform: 0.75
-deform-frequency: 0.2
+extends: MINERAL
 id: "LAPIS_ORE"
-replace:
-  - "#minecraft:base_stone_overworld"

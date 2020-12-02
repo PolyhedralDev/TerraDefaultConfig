@@ -1,9 +1,3 @@
 material: "minecraft:gravel"
-size:
-  min: 32
-  max: 32
-deform: 0.75
-deform-frequency: 0.1
+extends: DEPOSIT
 id: "GRAVEL"
-replace:
-  - "minecraft:stone"

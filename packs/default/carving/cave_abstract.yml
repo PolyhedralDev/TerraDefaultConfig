@@ -1,0 +1,34 @@
+abstract: true
+id: CAVE_ABSTRACT
+step: 2
+length:
+  min: 40
+  max: 80
+start:
+  x: 1
+  y: 0.25
+  z: 1
+  radius:
+    x: "3"
+    y: "3"
+    z: "3"
+  height:
+    min: 4
+    max: 72
+cut:
+  top: 0
+  bottom: 1
+mutate:
+  x: 1
+  y: 3
+  z: 1
+  radius: 0.125
+shift:
+  "minecraft:grass_block": [ "minecraft:dirt" ]
+  "minecraft:mycelium": [ "minecraft:dirt" ]
+  "minecraft:podzol": [ "minecraft:dirt" ]
+  "minecraft:gravel": [ "minecraft:dirt" ]
+  "minecraft:sand": [ "minecraft:dirt" ]
+  "minecraft:coarse_dirt": [ "minecraft:dirt" ]
+
+update: [ ]
