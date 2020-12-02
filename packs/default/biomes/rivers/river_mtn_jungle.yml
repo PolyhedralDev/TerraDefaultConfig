@@ -37,3 +37,21 @@ flora:
     y:
       min: 62
       max: 84
+  - density: 5
+    y:
+      min: 62
+      max: 80
+    items:
+      - SUGARCANE: 2
+      - LILY_PAD: 1
+  - density: 60
+    items:
+      - SEAGRASS: 50
+      - TALL_SEAGRASS: 20
+      - KELP_SHORT: 1
+      - KELP_MEDIUM: 1
+      - KELP_TALL: 1
+      - SEA_PICKLE: 2
+    y:
+      min: 50
+      max: 63

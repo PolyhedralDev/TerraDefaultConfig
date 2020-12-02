@@ -22,3 +22,10 @@ flora:
     y:
       min: 62
       max: 84
+  - density: 20
+    items:
+      - SEAGRASS: 50
+      - TALL_SEAGRASS: 20
+    y:
+      min: 50
+      max: 63

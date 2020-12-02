@@ -21,7 +21,13 @@ flora:
       - GRASS: 675
       - LILY_PAD: 10
       - TALL_GRASS: 150
-
+  - density: 30
+    items:
+      - SEAGRASS: 50
+      - TALL_SEAGRASS: 20
+    y:
+      min: 50
+      max: 63
 ocean:
   palette: "BLOCK:minecraft:water"
   level: 62

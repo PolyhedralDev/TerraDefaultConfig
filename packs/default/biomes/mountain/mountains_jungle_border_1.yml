@@ -15,5 +15,5 @@ trees:
       - SMALL_JUNGLE: 3
       - JUNGLE: 4
     y:
-      min: 58
+      min: 62
       max: 92
