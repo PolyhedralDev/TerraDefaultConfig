@@ -21,7 +21,7 @@ slabs:
     "minecraft:gravel": "BLOCK:minecraft:stone_slab"
     "minecraft:sand": "BLOCK:minecraft:sandstone_slab"
     "minecraft:mossy_cobblestone": "BLOCK:minecraft:mossy_cobblestone_slab"
-    "minecraft:snow": "SNOW_LAYERS"
+    "minecraft:snow_block": "SNOW_LAYERS"
   use-stairs-if-available: true
   stair-palettes:
     "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_stairs"

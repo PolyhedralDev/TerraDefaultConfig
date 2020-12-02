@@ -29,10 +29,11 @@ flora:
   - density: 40
     y:
       min: 62
-      max: 84
+      max: 128
     items:
       - TALL_GRASS: 15
       - GRASS: 70
+      - DEAD_BUSH: 5
 
 trees:
   - density: 4
