@@ -1,5 +1,5 @@
 noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x, z) / 3) + 0.1|"
-extends: "BASIC_ORES"
+extends: "FOREST_ABSTRACT"
 id: "ROCKY_TALL_FOREST"
 
 palette:
@@ -11,7 +11,6 @@ palette:
   - RIVER_SHORE: 62
   - GRITTY: 255
 vanilla: JUNGLE
-erodible: true
 
 flora:
   - density: 40

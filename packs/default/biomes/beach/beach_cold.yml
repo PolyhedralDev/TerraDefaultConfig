@@ -7,5 +7,4 @@ palette:
   - BEDROCK_LITTLE: 3
   - GRAVEL: 64
   - TUNDRA: 255
-erodible: true
 vanilla: SNOWY_BEACH

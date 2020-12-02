@@ -1,6 +1,6 @@
 id: MOUNTAINS_PRETTY_FLORA
 abstract: true
-
+extends: BASIC_ORES
 flora:
   - density: 60
     simplex-frequency: 0.1

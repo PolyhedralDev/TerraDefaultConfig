@@ -28,15 +28,6 @@ trees:
       min: 58
       max: 92
 
-slabs:
-  enable: true
-  threshold: 0.0075
-  palettes:
-    "minecraft:sand": "BLOCK:minecraft:sandstone_slab"
-  use-stairs-if-available: true
-  stair-palettes:
-    "minecraft:sand": "BLOCK:minecraft:sandstone_stairs"
-
 
 
 # Carving and ores covered by super biome

@@ -29,14 +29,3 @@ trees:
     y:
       min: 58
       max: 92
-slabs:
-  enable: true
-  threshold: 0.015
-  palettes:
-    "minecraft:stone": "MOUNTAIN_SLABS"
-    "minecraft:snow_block": "SNOW_LAYERS"
-    "minecraft:gravel": "MOUNTAIN_SLABS"
-  use-stairs-if-available: true
-  stair-palettes:
-    "minecraft:stone": "MOUNTAIN_STAIRS"
-    "minecraft:gravel": "MOUNTAIN_STAIRS"

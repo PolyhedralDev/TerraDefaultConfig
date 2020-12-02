@@ -11,8 +11,6 @@ palette:
   - GRASSY: 255
 vanilla: PLAINS
 
-erodible: true
-
 flora:
   - density: 50
     y:

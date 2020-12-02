@@ -65,15 +65,6 @@ flora:
     items:
       - DEAD_BUSH: 1
       - SMALL_ROCK: 1
-slabs:
-  enable: true
-  threshold: 0.0075
-  palettes:
-    "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_slab"
-  use-stairs-if-available: true
-  stair-palettes:
-    "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_stairs"
-
 trees:
   - density: 0.5
     items:

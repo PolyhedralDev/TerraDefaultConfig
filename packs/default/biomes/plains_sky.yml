@@ -6,7 +6,7 @@ palette:
   - GRASSY: 255
 vanilla: PLAINS
 
-erodible: false
+erode: SKY_ISLANDS
 
 flora:
   - density: 50

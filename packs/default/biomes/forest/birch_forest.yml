@@ -1,5 +1,4 @@
-noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)+0.5) / 3)"
-extends: "BASIC_ORES"
+extends: "FOREST_ABSTRACT"
 id: "BIRCH_FOREST"
 
 palette:
@@ -10,8 +9,6 @@ palette:
   - SANDY: 62
   - GRASSY: 255
 vanilla: BIRCH_FOREST
-
-erodible: true
 
 trees:
   - density: 15

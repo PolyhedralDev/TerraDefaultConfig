@@ -25,10 +25,6 @@ flora:
 carving:
   CAVE_SWAMP: 30
 
-
-structures:
-  - STRONGHOLD
-
 trees:
   - density: 2
     items:
