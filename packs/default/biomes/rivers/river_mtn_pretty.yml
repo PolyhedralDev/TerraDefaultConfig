@@ -10,6 +10,7 @@ palette:
   - RIVER_SHORE: 62
   - MOUNTAIN_PRETTY: 255
 vanilla: PLAINS
+carving: {}
 ocean:
   palette: BLOCK:minecraft:water
 flora:

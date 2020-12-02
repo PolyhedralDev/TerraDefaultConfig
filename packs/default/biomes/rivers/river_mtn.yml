@@ -12,6 +12,7 @@ palette:
   - MOUNTAIN_GRASS: 84
   - MOUNTAIN_STONE: 255
 vanilla: RIVER
+carving: {}
 ocean:
   palette: COLD_OCEAN
 flora:

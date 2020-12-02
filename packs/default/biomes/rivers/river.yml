@@ -10,7 +10,7 @@ palette:
   - RIVER_SHORE: 62
   - GRASSY: 255
 vanilla: RIVER
-
+carving: {}
 flora:
   - density: 60
     y:
