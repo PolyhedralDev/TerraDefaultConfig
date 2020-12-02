@@ -61,7 +61,7 @@ flora:
   - density: 2
     y:
       min: 62
-      max: 84
+      max: 128
     items:
       - DEAD_BUSH: 1
       - SMALL_ROCK: 1
@@ -71,4 +71,4 @@ trees:
       - CACTUS: 1
     y:
       min: 58
-      max: 92
+      max: 128
