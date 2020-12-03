@@ -1,3 +1,5 @@
+# This biome is the parent of ALL biomes in the default config.
+
 id: "BASIC_ORES"
 abstract: true
 structures:
@@ -18,7 +20,6 @@ slabs:
     "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_slab"
     "minecraft:stone": "BLOCK:minecraft:stone_slab"
     "minecraft:cobblestone": "BLOCK:minecraft:cobblestone_slab"
-    "minecraft:gravel": "BLOCK:minecraft:stone_slab"
     "minecraft:sand": "BLOCK:minecraft:sandstone_slab"
     "minecraft:mossy_cobblestone": "BLOCK:minecraft:mossy_cobblestone_slab"
     "minecraft:snow_block": "SNOW_LAYERS"
@@ -27,7 +28,6 @@ slabs:
     "minecraft:red_sand": "BLOCK:minecraft:red_sandstone_stairs"
     "minecraft:stone": "BLOCK:minecraft:stone_stairs"
     "minecraft:cobblestone": "BLOCK:minecraft:cobblestone_stairs"
-    "minecraft:gravel": "BLOCK:minecraft:stone_stairs"
     "minecraft:sand": "BLOCK:minecraft:sandstone_stairs"
     "minecraft:mossy_cobblestone": "BLOCK:minecraft:mossy_cobblestone_stairs"
 carving:

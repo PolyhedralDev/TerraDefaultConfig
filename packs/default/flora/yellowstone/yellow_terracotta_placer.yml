@@ -1,0 +1,13 @@
+layers:
+  - materials:
+      - "minecraft:yellow_terracotta": 1
+    layers: 1
+id: "Y_TERRACOTTA_PLACER"
+spawnable:
+  - "minecraft:diorite"
+  - "yellow_terracotta"
+replaceable:
+  - "minecraft:diorite"
+irrigable-offset: 1
+irrigable:
+  - "minecraft:water"

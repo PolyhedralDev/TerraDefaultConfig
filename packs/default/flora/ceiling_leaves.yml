@@ -16,3 +16,4 @@ spawnable:
   - "minecraft:grass_block"
 replaceable:
   - "minecraft:air"
+  - "minecraft:stone_slab"

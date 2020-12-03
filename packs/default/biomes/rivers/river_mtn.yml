@@ -16,7 +16,7 @@ carving: {}
 ocean:
   palette: COLD_OCEAN
 flora:
-  - density: 6
+  - density: 10
     items:
       - STALACTITE: 2
       - CEILING_ICE: 1

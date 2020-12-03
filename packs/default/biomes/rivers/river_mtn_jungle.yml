@@ -29,7 +29,7 @@ flora:
     y:
       min: 62
       max: 180
-  - density: 7
+  - density: 14
     items:
       - CEILING_LEAVES: 4
       - STALACTITE: 2
