@@ -19,7 +19,7 @@ palette:
     replace:
       - "minecraft:stone"
     layers:
-      - materials: { "minecraft:stone": 1, "minecraft:cobblestone": 1,"minecraft:snow_block": 1 }
+      - materials: { "minecraft:stone": 2, "minecraft:cobblestone": 1,"minecraft:snow_block": 1 }
         y: 255
   outer:
     replace-blacklist: false
@@ -37,5 +37,9 @@ palette:
     layers:
       - materials: { "minecraft:packed_ice": 4 }
         y: 255
-      - materials: { "minecraft:stone": 1 }
+      - materials: { "minecraft:packed_ice": 2, "minecraft:stone": 1 }
         y: 18
+      - materials: { "minecraft:packed_ice": 1, "minecraft:stone": 2 }
+        y: 17
+      - materials: { "minecraft:stone": 1 }
+        y: 16

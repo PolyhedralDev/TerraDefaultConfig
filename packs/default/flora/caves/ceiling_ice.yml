@@ -14,5 +14,6 @@ spawnable:
   - "minecraft:dirt"
   - "minecraft:coarse_dirt"
   - "minecraft:grass_block"
+  - "minecraft:cobblestone"
 replaceable:
   - "minecraft:air"

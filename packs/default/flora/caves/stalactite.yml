@@ -12,6 +12,7 @@ layers:
 id: "STALACTITE"
 spawnable:
   - "minecraft:stone"
+  - "minecraft:cobblestone"
 replaceable:
   - "minecraft:air"
 ceiling: true

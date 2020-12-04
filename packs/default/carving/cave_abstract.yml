@@ -1,6 +1,9 @@
 abstract: true
 id: CAVE_ABSTRACT
 step: 2
+recalculate-direction:
+  min: 5
+  max: 10
 length:
   min: 40
   max: 80
@@ -9,15 +12,15 @@ start:
   y: 0.25
   z: 1
   radius:
-    x: "3"
-    y: "3"
-    z: "3"
+    x: "((rand(seed) + 1)*2+1) * if(max(rand(seed+1)-0.5, 0), 1, 1.25)"
+    y: "(rand(seed) + 1)*2+1"
+    z: "((rand(seed) + 1)*2+1) * if(max(rand(seed+1)-0.5, 0), 1, 1.25)"
   height:
     min: 4
     max: 72
 cut:
   top: 0
-  bottom: 1
+  bottom: 2
 mutate:
   x: 1
   y: 3

@@ -17,3 +17,37 @@ trees:
     y:
       min: 62
       max: 92
+flora:
+  - density: 100
+    simplex-frequency: 0.1
+    items:
+      - BLANK: 7
+      - LEAVES: 3
+    y:
+      min: 62
+      max: 180
+  - density: 50
+    items:
+      - TALL_GRASS: 3
+      - GRASS: 7
+      - SMALL_ROCK: 1
+    y:
+      min: 62
+      max: 180
+  - density: 14
+    items:
+      - CEILING_LEAVES: 4
+      - STALACTITE: 1
+      - STALAGMITE: 2
+      - SHROOMLIGHT: 1
+    y:
+      min: 15
+      max: 62
+  - density: 7
+    items:
+      - STALACTITE: 1
+      - STALAGMITE: 2
+      - SHROOMLIGHT: 1
+    y:
+      min: 8
+      max: 14

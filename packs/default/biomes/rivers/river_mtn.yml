@@ -36,6 +36,21 @@ flora:
       max: 156
     items:
       - SNOW: 1
+  - density: 12
+    items:
+      - STALACTITE: 1
+      - STALAGMITE: 1
+      - CEILING_ICE: 1
+    y:
+      min: 15
+      max: 62
+  - density: 8
+    items:
+      - STALACTITE: 1
+      - STALAGMITE: 1
+    y:
+      min: 8
+      max: 14
 trees:
   - density: 6
     items:
