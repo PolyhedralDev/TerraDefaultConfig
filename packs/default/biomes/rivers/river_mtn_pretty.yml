@@ -24,10 +24,10 @@ flora:
     y:
       min: 62
       max: 180
-  - density: 14
+  - density: 12
     items:
       - CEILING_LEAVES: 4
-      - STALACTITE: 2
+      - STALACTITE: 1
       - SHROOMLIGHT: 1
     y:
       min: 62

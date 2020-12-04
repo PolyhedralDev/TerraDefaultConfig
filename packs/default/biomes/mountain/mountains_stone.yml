@@ -36,9 +36,16 @@ flora:
     y:
       min: 8
       max: 14
+  - density: 8
+    items:
+      - STALACTITE: 1
+      - CEILING_ICE: 1
+    y:
+      min: 63
+      max: 96
 carving:
-  CAVE_TUNDRA: 35
-  RAVINE: 5
+  CAVE_TUNDRA: 55
+  RAVINE: 2
 trees:
   - density: 6
     items:

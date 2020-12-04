@@ -23,7 +23,7 @@ flora:
       - ROOT: 3
 
 carving:
-  CAVE_SWAMP: 30
+  CAVE_SWAMP: 55
 
 trees:
   - density: 2

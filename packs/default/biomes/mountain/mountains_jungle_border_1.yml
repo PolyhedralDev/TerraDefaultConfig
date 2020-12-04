@@ -36,10 +36,10 @@ flora:
       max: 180
   - density: 14
     items:
-      - CEILING_LEAVES: 4
+      - CEILING_LEAVES: 6
       - STALACTITE: 1
-      - STALAGMITE: 2
-      - SHROOMLIGHT: 1
+      - STALAGMITE: 1
+      - SHROOMLIGHT: 2
     y:
       min: 15
       max: 62
@@ -51,3 +51,11 @@ flora:
     y:
       min: 8
       max: 14
+  - density: 12
+    items:
+      - CEILING_LEAVES: 6
+      - STALACTITE: 1
+      - SHROOMLIGHT: 2
+    y:
+      min: 63
+      max: 96
