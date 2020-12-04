@@ -1,5 +1,6 @@
 noise-equation: "if(y, abs(y-64)/128 + noise3(x*1.5, y*2, z*1.5)*2, 1)"
-id: "NETHER"
+id: "NETHER_ABSTRACT"
+abstract: true
 
 carving:
   CAVE: 35

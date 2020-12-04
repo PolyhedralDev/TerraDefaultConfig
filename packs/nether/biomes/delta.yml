@@ -1,26 +1,16 @@
 noise-equation: "if(y, abs(y-64)/128 + noise3(x*1.5, y*2, z*1.5)*3, 1)"
 id: "DELTA"
-extends: "NETHER"
-flora-chance: 60
-flora-attempts: 1
-flora-simplex:
-  enable: true
-  frequency: 0.1
-  seed: 4
+extends: "NETHER_ABSTRACT"
+
 flora:
-  chance: 60
-  attempts: 1
-  items:
-    BASALT:
-      weight: 49
-      y:
-        min: 1
-        max: 255
-    LAVA:
-      weight: 1
-      y:
-        min: 1
-        max: 255
+  - density: 60
+    simplex-frequency: 0.1
+    items:
+      - BASALT: 49
+      - LAVA: 1
+    y:
+      min: 0
+      max: 255
 palette:
   - BEDROCK: 0
   - BEDROCK_MOST: 1

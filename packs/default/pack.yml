@@ -41,8 +41,6 @@ grids:
   - MOUNTAIN
   - MOUNTAIN
 frequencies:
-  grid-x: 4096
-  grid-z: 4096
   zone: 2048
 author: dfsek
 blend:

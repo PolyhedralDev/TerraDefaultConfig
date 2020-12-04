@@ -2,8 +2,6 @@ id: NETHER
 grids:
   - NETHER
 frequencies:
-  grid-x: 1024
-  grid-z: 1024
   zone: 3072
 blend:
   enable: true

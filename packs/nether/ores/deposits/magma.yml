@@ -1,7 +1,7 @@
 material: "minecraft:magma_block"
-radius:
-  min: 3
-  max: 5
+size:
+  min: 36
+  max: 36
 deform: 0.75
 deform-frequency: 0.1
 id: MAGMA
