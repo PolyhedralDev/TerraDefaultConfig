@@ -1,0 +1,5 @@
+id: GRID_FREQUENCIES
+abstract: true
+frequency:
+  x: 2048
+  z: 2048

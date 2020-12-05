@@ -7,5 +7,7 @@ spawnable:
   - "minecraft:netherrack"
   - "minecraft:soul_sand"
   - "minecraft:soul_soil"
+  - "minecraft:warped_nylium"
+  - "minecraft:crimson_nylium"
 replaceable:
   - "minecraft:air"

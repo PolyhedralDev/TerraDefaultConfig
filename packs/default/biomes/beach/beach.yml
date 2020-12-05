@@ -1,4 +1,3 @@
 extends: "BEACH_ABSTRACT"
 id: "BEACH"
 vanilla: BEACH
-erodible: true

@@ -7,15 +7,12 @@ start:
   y: 0.0
   z: 1
   radius:
-    multiply:
-      x: 1
-      y: 6
-      z: 1
-    min: 3
-    max: 4
+    x: "(rand(seed) + 1)/2 * (-12*(|position-length/2|/length) + 8)"
+    y: "(rand(seed) + 1)/1.25 * (-6*(|position-length/2|/length) + 18)"
+    z: "(rand(seed) + 1)/2 * (-12*(|position-length/2|/length) + 8)"
   height:
-    min: 12
-    max: 56
+    min: 16
+    max: 62
 cut:
   top: 6
   bottom: 4

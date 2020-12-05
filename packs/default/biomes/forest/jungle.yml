@@ -1,5 +1,4 @@
-noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)+0.25) / 3)"
-extends: "BASIC_ORES"
+extends: "PLAINS_ABSTRACT"
 id: "JUNGLE"
 
 palette:
@@ -12,65 +11,53 @@ palette:
   - GRASSY: 255
 vanilla: JUNGLE
 
-erodible: true
 structures:
   - JUNGLE
   - STRONGHOLD
+
+
 flora:
-  chance: 40
-  attempts: 2
-  items:
-    TALL_GRASS:
-      weight: 150
-      y:
-        min: 62
-        max: 84
-    GRASS:
-      weight: 750
-      y:
-        min: 62
-        max: 84
-    POPPY:
-      weight: 50
-      y:
-        min: 62
-        max: 84
-    ROSE_BUSH:
-      weight: 4
-      y:
-        min: 62
-        max: 84
-    LILAC:
-      weight: 4
-      y:
-        min: 62
-        max: 84
-    STALAGMITE:
-      weight: 10
-      y:
-        min: 4
-        max: 50
-    STALACTITE:
-      weight: 10
-      y:
-        min: 4
-        max: 50
+  - density: 40
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - GRASS: 750
+      - ROSE_BUSH: 4
+      - LILAC: 4
+  - density: 14
+    items:
+      - CEILING_LEAVES: 6
+      - STALACTITE: 1
+      - STALAGMITE: 1
+      - SHROOMLIGHT: 2
+    y:
+      min: 15
+      max: 62
+  - density: 12
+    items:
+      - CEILING_LEAVES: 6
+      - STALACTITE: 1
+      - SHROOMLIGHT: 2
+    y:
+      min: 63
+      max: 84
+  - density: 7
+    items:
+      - STALACTITE: 1
+      - STALAGMITE: 2
+      - SHROOMLIGHT: 1
+    y:
+      min: 8
+      max: 14
 
 trees:
-  density: 350
-  items:
-    JUNGLE_BUSH:
-      weight: 4
-      y:
-        min: 58
-        max: 92
-    SMALL_JUNGLE:
-      weight: 3
-      y:
-        min: 58
-        max: 92
-    JUNGLE:
-      weight: 4
-      y:
-        min: 58
-        max: 92
+  - density: 30
+    items:
+      - JUNGLE_BUSH: 4
+      - SMALL_JUNGLE: 3
+      - JUNGLE: 4
+    y:
+      min: 62
+      max: 92

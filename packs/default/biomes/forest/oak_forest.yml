@@ -1,5 +1,4 @@
-noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)+0.5) / 2)"
-extends: "BASIC_ORES"
+extends: "FOREST_ABSTRACT"
 id: "FOREST"
 
 palette:
@@ -13,46 +12,22 @@ palette:
 vanilla: FOREST
 
 flora:
-  chance: 45
-  attempts: 1
-  items:
-    TALL_GRASS:
-      weight: 150
-      y:
-        min: 62
-        max: 84
-    GRASS:
-      weight: 750
-      y:
-        min: 62
-        max: 84
-    POPPY:
-      weight: 50
-      y:
-        min: 62
-        max: 84
-    ROSE_BUSH:
-      weight: 4
-      y:
-        min: 62
-        max: 84
-    LILAC:
-      weight: 4
-      y:
-        min: 62
-        max: 84
-    LEAVES:
-      weight: 100
-      y:
-        min: 62
-        max: 84
-erodible: true
+  - density: 45
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - GRASS: 750
+      - POPPY: 50
+      - ROSE_BUSH: 4
+      - LILAC: 4
+      - LEAVES: 100
 
 trees:
-  density: 100
-  items:
-    OAK:
-      weight: 8
-      y:
-        min: 58
-        max: 84
+  - density: 10
+    items:
+      - OAK: 1
+    y:
+      min: 58
+      max: 84
