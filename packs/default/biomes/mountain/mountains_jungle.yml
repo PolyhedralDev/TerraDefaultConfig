@@ -11,9 +11,10 @@ vanilla: JUNGLE
 trees:
   - density: 30
     items:
-      - JUNGLE_BUSH: 4
-      - SMALL_JUNGLE: 3
-      - JUNGLE: 4
+      - JUNGLE_BUSH: 16
+      - SMALL_JUNGLE: 12
+      - JUNGLE: 16
+      - JUNGLE_COCO: 3
     y:
       min: 62
       max: 92
