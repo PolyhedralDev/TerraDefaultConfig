@@ -1,7 +1,8 @@
 id: NETHER
+author: dfsek
+version: 1.0.0
 grids:
   - NETHER
-author: dfsek
 frequencies:
   zone: 3072
 blend:
