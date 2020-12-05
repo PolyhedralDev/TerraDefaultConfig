@@ -1,8 +1,6 @@
 extends: "BEACH_ABSTRACT"
 id: "WARM_BEACH"
 vanilla: BEACH
-
-erodible: true
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
