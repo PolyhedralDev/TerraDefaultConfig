@@ -12,9 +12,9 @@ jobs:
       - name: Create Artifacts
         run: |
           cd packs/default
-          zip -r default.zip *
+          zip -r ../default.zip *
           cd ../nether
-          zip -r nether.zip *
+          zip -r ../nether.zip *
       - name: ""
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
