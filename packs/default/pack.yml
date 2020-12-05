@@ -1,4 +1,6 @@
 id: DEFAULT
+author: dfsek
+version: 1.0.0
 grids:
   - OCEAN_DEEP
   - OCEAN_DEEP
@@ -42,7 +44,7 @@ grids:
   - MOUNTAIN
 frequencies:
   zone: 2048
-author: dfsek
+
 blend:
   enable: true
   frequency: 0.1
