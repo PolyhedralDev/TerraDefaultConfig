@@ -1,9 +1,6 @@
 material: "minecraft:coal_ore"
-radius:
-  min: 1
-  max: 2
-deform: 0.75
-deform-frequency: 0.2
+size:
+  min: 17
+  max: 17
+extends: MINERAL
 id: "COAL_ORE"
-replace:
-  - "#minecraft:base_stone_overworld"

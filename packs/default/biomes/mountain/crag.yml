@@ -1,10 +1,10 @@
-noise-equation: "((-((y / 76)^2)) + 1) + |(noise2(x/1.5, z/1.5)+0.5)|/2.5"
+noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x/1.5, z/1.5)+0.5)|/2.5"
 elevation:
-  equation: "min(floor(((max(noise2(x/1.5, z/1.5)+0.5, 0)))*8), 6)*5 + if(max(noise2(x/1.5, z/1.5)+0.375, 0), (noise2(3*x+(min(floor(((max(noise2(x/1.5, z/1.5)+0.5, 0)))*8), 6)+1)*1000,3*z))*7, 0)"
+  equation: "min(floor(((max(noise2(x/1.5, z/1.5)+0.5, 0)))*8), 6)*0.25 + if(max(noise2(x/1.5, z/1.5)+0.375, 0), (noise2(3*x+(min(floor(((max(noise2(x/1.5, z/1.5)+0.5, 0)))*8), 6)+1)*1000,3*z))*0.4, 0)"
   interpolation: true
-extends: "BASIC_ORES"
+extends: "MOUNTAINS_PRETTY_FLORA"
 id: "CRAG"
-
+erode: CRAG
 slant:
   palette:
     - "BLOCK:minecraft:bedrock": 0
@@ -12,9 +12,8 @@ slant:
     - BEDROCK_HALF: 2
     - BEDROCK_LITTLE: 3
     - "STONE_SIDE": 255
-  y-offset:
-    top: 0.5
-    bottom: 0.25
+    - "GRASSY_STONE": 62
+  threshold: 0.1
 
 palette:
   - "BLOCK:minecraft:bedrock": 0
@@ -24,55 +23,3 @@ palette:
   - GRASSY: 81
   - GRASSY_STONE: 255
 vanilla: PLAINS
-
-flora:
-  chance: 60
-  attempts: 2
-  simplex:
-    enable: true
-    frequency: 0.1
-    seed: 4
-  items:
-    SMALL_ROCK:
-      weight: 1
-      y:
-        min: 62
-        max: 180
-    TALL_GRASS:
-      weight: 1
-      y:
-        min: 62
-        max: 180
-    GRASS:
-      weight: 5
-      y:
-        min: 62
-        max: 180
-    LEAVES:
-      weight: 3
-      y:
-        min: 62
-        max: 180
-slabs:
-  enable: true
-  threshold: 0.0075
-  palettes:
-    - "minecraft:stone": "MOUNTAIN_SLABS"
-    - "minecraft:cobblestone": "MOUNTAIN_SLABS"
-    - "minecraft:gravel": "MOUNTAIN_SLABS"
-    - "minecraft:mossy_cobblestone": "MOUNTAIN_SLABS_MOSS"
-  use-stairs-if-available: true
-  stair-palettes:
-    - "minecraft:stone": "MOUNTAIN_STAIRS"
-    - "minecraft:cobblestone": "MOUNTAIN_STAIRS"
-    - "minecraft:gravel": "MOUNTAIN_STAIRS"
-    - "minecraft:mossy_cobblestone": "MOUNTAIN_STAIRS_MOSS"
-
-trees:
-  density: 7
-  items:
-    CACTUS:
-      weight: 1
-      y:
-        min: 58
-        max: 72

@@ -1,0 +1,20 @@
+files:
+  medium_rocks/Medium_Rock__1: 1
+  medium_rocks/Medium_Rock__2: 1
+  medium_rocks/Medium_Rock__3: 1
+  medium_rocks/Medium_Rock__4: 1
+  medium_rocks/Medium_Rock__5: 1
+  medium_rocks/Medium_Rock__6: 1
+  medium_rocks/Medium_Rock__7: 1
+  medium_rocks/Medium_Rock__8: 1
+  medium_rocks/Medium_Rock__9: 1
+  medium_rocks/Medium_Rock__10: 1
+  medium_rocks/Medium_Rock__11: 1
+  medium_rocks/Medium_Rock__12: 1
+id: MEDIUM_ROCKS
+y-offset: 1
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:brown_concrete_powder"
+  - "minecraft:coarse_dirt"
+  - "minecraft:gravel"

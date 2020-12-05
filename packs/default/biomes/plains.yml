@@ -11,35 +11,15 @@ palette:
   - GRASSY: 255
 vanilla: PLAINS
 
-erodible: true
-
 flora:
-  chance: 60
-  attempts: 1
-  items:
-    TALL_GRASS:
-      weight: 29
-      y:
-        min: 62
-        max: 84
-    GRASS:
-      weight: 70
-      y:
-        min: 62
-        max: 84
-    SUNFLOWER:
-      weight: 1
-      y:
-        min: 62
-        max: 84
+  - density: 50
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - GRASS: 700
+      - SUNFLOWER: 20
 
-trees:
-  density: 1
-  items:
-    OAK:
-      weight: 1
-      y:
-        min: 58
-        max: 72
 
 # Carving and ores covered by super biome

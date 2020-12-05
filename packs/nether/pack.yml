@@ -1,9 +1,9 @@
 id: NETHER
+author: dfsek
+version: 1.0.0
 grids:
   - NETHER
 frequencies:
-  grid-x: 1024
-  grid-z: 1024
   zone: 3072
 blend:
   enable: true

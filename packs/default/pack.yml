@@ -1,4 +1,6 @@
 id: DEFAULT
+author: dfsek
+version: 1.0.0
 grids:
   - OCEAN_DEEP
   - OCEAN_DEEP
@@ -41,9 +43,8 @@ grids:
   - MOUNTAIN
   - MOUNTAIN
 frequencies:
-  grid-x: 4096
-  grid-z: 4096
   zone: 2048
+
 blend:
   enable: true
   frequency: 0.1
@@ -54,6 +55,8 @@ erode:
   threshold: 0.0015
   octaves: 5
   grid: "BIOME:RIVER"
+vanilla:
+  mobs: true
 noise:
   noise2:
     dimensions: 2

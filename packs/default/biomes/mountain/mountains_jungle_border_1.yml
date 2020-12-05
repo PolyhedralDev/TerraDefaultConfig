@@ -1,6 +1,6 @@
 extends: "MOUNTAINS_PRETTY_1"
 id: "MOUNTAINS_JUNGLE_1"
-
+erode: RIVER_M_J_E
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -9,26 +9,54 @@ palette:
   - MOUNTAIN_JUNGLE: 255
 vanilla: JUNGLE
 trees:
-  density: 350
-  items:
-    JUNGLE_BUSH:
-      weight: 16
-      y:
-        min: 58
-        max: 92
-    SMALL_JUNGLE:
-      weight: 12
-      y:
-        min: 58
-        max: 92
-    JUNGLE:
-      weight: 16
-      y:
-        min: 58
-        max: 92
-    JUNGLE_COCO:
-      weight: 3
-      y:
-        min: 58
-        max: 92
-        
+  - density: 30
+    items:
+      - JUNGLE_BUSH: 16
+      - SMALL_JUNGLE: 12
+      - JUNGLE: 16
+      - JUNGLE_COCO: 3
+    y:
+      min: 62
+      max: 92
+flora:
+  - density: 100
+    simplex-frequency: 0.1
+    items:
+      - BLANK: 7
+      - LEAVES: 3
+    y:
+      min: 62
+      max: 180
+  - density: 50
+    items:
+      - TALL_GRASS: 3
+      - GRASS: 7
+      - SMALL_ROCK: 1
+    y:
+      min: 62
+      max: 180
+  - density: 14
+    items:
+      - CEILING_LEAVES: 6
+      - STALACTITE: 1
+      - STALAGMITE: 1
+      - SHROOMLIGHT: 2
+    y:
+      min: 15
+      max: 62
+  - density: 7
+    items:
+      - STALACTITE: 1
+      - STALAGMITE: 2
+      - SHROOMLIGHT: 1
+    y:
+      min: 8
+      max: 14
+  - density: 12
+    items:
+      - CEILING_LEAVES: 6
+      - STALACTITE: 1
+      - SHROOMLIGHT: 2
+    y:
+      min: 63
+      max: 96

@@ -11,9 +11,10 @@ jobs:
         uses: actions/checkout@v2
       - name: Create Artifacts
         run: |
-          cd packs
-          zip -r default.zip default
-          zip -r nether.zip nether
+          cd packs/default
+          zip -r ../default.zip *
+          cd ../nether
+          zip -r ../nether.zip *
       - name: ""
         uses: "marvinpinto/action-automatic-releases@latest"
         with:

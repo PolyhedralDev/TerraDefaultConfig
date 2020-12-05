@@ -1,5 +1,0 @@
-layers:
-  - materials:
-      - "minecraft:mossy_cobblestone_stairs": 1
-    layers: 1
-id: "MOUNTAIN_STAIRS_MOSS"
