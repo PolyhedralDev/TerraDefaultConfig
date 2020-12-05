@@ -58,7 +58,7 @@ trees:
       - JUNGLE_BUSH: 16
       - SMALL_JUNGLE: 12
       - JUNGLE: 16
-      - JUNGLE_COCCO: 3
+      - JUNGLE_COCO: 3
     y:
       min: 62
       max: 92
