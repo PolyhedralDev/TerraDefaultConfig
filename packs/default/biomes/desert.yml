@@ -9,6 +9,9 @@ palette:
   - DESERT: 255
 vanilla: DESERT
 
+structures:
+  - DESERT
+  
 flora:
   - density: 2
     y:
