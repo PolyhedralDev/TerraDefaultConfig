@@ -16,8 +16,8 @@ start:
     y: "(rand(seed) + 1)*2+1"
     z: "((rand(seed) + 1)*2+1) * if(max(rand(seed+1)-0.5, 0), 1, 1.25)"
   height:
-    min: 4
-    max: 72
+    min: 6
+    max: 58
 cut:
   top: 0
   bottom: 2
