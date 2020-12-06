@@ -9,6 +9,9 @@ palette:
   - DESERT: 255
 vanilla: DESERT
 
+structures:
+  - DESERT
+  
 flora:
   - density: 2
     y:
@@ -27,7 +30,4 @@ trees:
     y:
       min: 58
       max: 92
-
-
-
-# Carving and ores covered by super biome
+      
