@@ -1,0 +1,25 @@
+files:
+  oak/oak_1: 1
+  oak/oak_2: 1
+  oak/oak_3: 1
+  oak/oak_4: 1
+  oak/oak_5: 1
+  oak/oak_6: 1
+  oak/oak_7: 1
+  oak/Oak__1: 1
+  oak/Oak__2: 1
+  oak/Oak__3: 1
+  oak/Oak__4: 1
+  oak/Oak__5: 1
+  oak/Oak__6: 1
+  oak/Oak__7: 1
+  oak/Oak__8: 1
+  oak/Oak__9: 1
+  oak/Oak__10: 1
+  oak/Oak__11: 1
+  oak/Oak__12: 1
+id: OAK
+y-offset: 0
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"

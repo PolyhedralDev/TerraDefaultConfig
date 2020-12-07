@@ -1,0 +1,5 @@
+abstract: true
+noise-equation: "-(if(max(y-base, 0), |y-base|*8, |y-base|)) - .5 + (noise2(x*2, z*2)*3)"
+id: "BORDER_BIOME"
+ocean:
+  level: -1

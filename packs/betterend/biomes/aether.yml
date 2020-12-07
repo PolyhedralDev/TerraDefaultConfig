@@ -1,0 +1,25 @@
+id: AETHER
+extends: END_BIOME
+palette:
+  - "GRASSY": 255
+vanilla: END_HIGHLANDS
+flora:
+  - density: 45
+    y:
+      min: 58
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - GRASS: 750
+      - POPPY: 50
+      - ROSE_BUSH: 4
+      - LILAC: 4
+      - LEAVES: 100
+
+trees:
+  - density: 10
+    items:
+      - OAK: 1
+    y:
+      min: 58
+      max: 84

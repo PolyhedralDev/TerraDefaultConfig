@@ -1,0 +1,5 @@
+abstract: true
+noise-equation: "-(if(max(y-base, 0), |y-base|*2, |y-base|/16)) - .5 + (noise2(x*2, z*2)*3)"
+id: "END_BIOME"
+ocean:
+  level: -1
