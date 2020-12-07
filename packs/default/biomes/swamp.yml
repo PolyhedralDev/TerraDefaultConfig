@@ -10,6 +10,10 @@ palette:
   - SWAMP: 255
 vanilla: SWAMP
 
+structures:
+  - STRONGHOLD
+  - SWAMP
+
 flora:
   - density: 80
     y:
