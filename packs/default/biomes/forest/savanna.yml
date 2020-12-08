@@ -13,7 +13,8 @@ vanilla: SAVANNA
 
 structures:
   - OUTPOST
-
+  - STRONGHOLD
+  
 flora:
   - density: 40
     y:
