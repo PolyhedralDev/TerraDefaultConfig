@@ -19,6 +19,9 @@ palette:
   - TAIGA: 255
 vanilla: TAIGA
 
+structures:
+  - OUTPOST
+
 trees:
   - density: 8
     items:
