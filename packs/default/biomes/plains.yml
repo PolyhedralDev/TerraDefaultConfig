@@ -11,6 +11,10 @@ palette:
   - GRASSY: 255
 vanilla: PLAINS
 
+structures:
+  - OUTPOST
+  - STRONGHOLD
+
 flora:
   - density: 50
     y:

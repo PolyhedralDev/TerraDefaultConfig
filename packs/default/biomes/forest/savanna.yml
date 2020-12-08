@@ -11,6 +11,10 @@ palette:
   - GRASSY: 255
 vanilla: SAVANNA
 
+structures:
+  - OUTPOST
+  - STRONGHOLD
+  
 flora:
   - density: 40
     y:
