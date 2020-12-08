@@ -13,6 +13,7 @@ vanilla: PLAINS
 
 structures:
   - OUTPOST
+  - STRONGHOLD
 
 flora:
   - density: 50
