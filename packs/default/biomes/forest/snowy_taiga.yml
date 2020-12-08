@@ -11,6 +11,9 @@ palette:
   - TAIGA: 255
 vanilla: TAIGA
 
+structures:
+  - OUTPOST
+
 flora:
   - density: 80
     y:
