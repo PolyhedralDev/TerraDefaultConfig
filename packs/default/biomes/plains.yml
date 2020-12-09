@@ -14,7 +14,8 @@ vanilla: PLAINS
 structures:
   - OUTPOST
   - STRONGHOLD
-  - OAK_HOUSE
+  - VILLAGE_HOUSE_OAK
+
 flora:
   - density: 50
     y:
