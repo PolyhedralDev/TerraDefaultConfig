@@ -1,8 +1,8 @@
 files:
-  oak_house/oak_house1: 1
-  oak_house/oak_house2: 1
-  oak_house/oak_house3: 1
-id: "OAK_HOUSE"
+  village_house_oak/village_house_oak1: 1
+  village_house_oak/village_house_oak2: 1
+  village_house_oak/village_house_oak3: 1
+id: "VILLAGE_HOUSE_OAK"
 spawn:
   start:
     min: 72
@@ -13,7 +13,7 @@ spawn:
   width: 175
   padding: 50
 loot:
-  0: oak_house
+  0: village_house_oak
 features:
   - type: ENTITY_FEATURE
     entity: VILLAGER
