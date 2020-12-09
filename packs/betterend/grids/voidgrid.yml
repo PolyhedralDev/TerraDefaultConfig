@@ -1,0 +1,4 @@
+extends: FREQUENCIES
+grid:
+  - ["AETHER_VOID_BORDER"]
+id: "VOID"

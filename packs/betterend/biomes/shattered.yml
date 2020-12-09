@@ -1,0 +1,10 @@
+id: SHATTERED
+abstract: true
+noise-equation: "-(if(max(y-base, 0), |y-base|*2+ 12*noise2(x*16, z*16), |y-base|/16+ 4*noise2(x*12, z*12))) - .5 + (noise2(x*2, z*2)*3)"
+extends: END_BIOME
+prevent-smooth: true
+palette:
+  - "BLOCK:minecraft:end_stone": 255
+ocean:
+  level: -1
+vanilla: THE_END

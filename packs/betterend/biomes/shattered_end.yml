@@ -1,0 +1,10 @@
+id: SHATTERED_END
+extends: SHATTERED
+trees:
+  - density: 10
+    items:
+      - SMALL_SHATTERED_PILLAR: 3
+      - LARGE_SHATTERED_PILLAR: 1
+    y:
+      min: 60
+      max: 72

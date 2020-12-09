@@ -1,6 +1,4 @@
 grid:
-  - ["END", "END", "END", "END", "END", "END", "END_VOID_BORDER", "VOID", "AETHER_VOID_BORDER", "AETHER", "AETHER", "AETHER", "AETHER", "AETHER", "AETHER"]
+  - ["END", "END", "END", "END", "END", "END"]
 id: "END"
-frequency:
-  x: 2048
-  z: 2048
+extends: FREQUENCIES

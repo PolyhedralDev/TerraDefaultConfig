@@ -1,0 +1,5 @@
+frequency:
+  x: 2048
+  z: 2048
+abstract: true
+id: FREQUENCIES
