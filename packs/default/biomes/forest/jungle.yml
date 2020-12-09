@@ -26,16 +26,18 @@ flora:
       - GRASS: 750
       - ROSE_BUSH: 4
       - LILAC: 4
-  - density: 14
+  - density: 12
     items:
-      - CEILING_LEAVES: 6
+      - CEILING_LEAVES: 2
+      - VINES: 2
+      - VINES_TALL: 1
       - STALACTITE: 1
       - STALAGMITE: 1
       - SHROOMLIGHT: 2
     y:
       min: 15
       max: 62
-  - density: 12
+  - density: 10
     items:
       - CEILING_LEAVES: 6
       - STALACTITE: 1
@@ -43,7 +45,7 @@ flora:
     y:
       min: 63
       max: 84
-  - density: 7
+  - density: 5
     items:
       - STALACTITE: 1
       - STALAGMITE: 2

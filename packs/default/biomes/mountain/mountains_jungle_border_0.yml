@@ -39,7 +39,9 @@ flora:
       max: 180
   - density: 14
     items:
-      - CEILING_LEAVES: 6
+      - CEILING_LEAVES: 2
+      - VINES: 2
+      - VINES_TALL: 1
       - STALACTITE: 1
       - STALAGMITE: 1
       - SHROOMLIGHT: 2
@@ -56,7 +58,9 @@ flora:
       max: 14
   - density: 12
     items:
-      - CEILING_LEAVES: 6
+      - CEILING_LEAVES: 2
+      - VINES: 2
+      - VINES_TALL: 1
       - STALACTITE: 1
       - SHROOMLIGHT: 2
     y:
