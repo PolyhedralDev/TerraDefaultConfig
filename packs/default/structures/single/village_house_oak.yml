@@ -1,0 +1,29 @@
+files:
+  village_house_oak/village_house_oak1: 1
+  village_house_oak/village_house_oak2: 1
+  village_house_oak/village_house_oak3: 1
+id: "VILLAGE_HOUSE_OAK"
+spawn:
+  start:
+    min: 72
+    max: 72
+  bound:
+    min: 48
+    max: 96
+  width: 175
+  padding: 50
+loot:
+  0: village_house_oak
+features:
+  - type: ENTITY_FEATURE
+    entity: VILLAGER
+    attempts: 200
+    in-height: 2
+    amount:
+      min: 4
+      max: 4
+    spawnable-on:
+      - "minecraft:cobblestone"
+      - "minecraft:grass_block"
+    spawnable-in:
+      - "minecraft:air"
