@@ -23,5 +23,11 @@ features:
     spawnable-on:
       - "minecraft:sandstone"
       - "minecraft:sand"
+      - "minecraft:sandstone_slab"
     spawnable-in:
       - "minecraft:air"
+      - "minecraft:green_carpet"
+      - "minecraft:dead_bush"
+      - "minecraft:acacia_button"
+      - "minecraft:stone_button"
+      - "minecraft:torch"
