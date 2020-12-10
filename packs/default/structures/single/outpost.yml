@@ -25,3 +25,6 @@ features:
       - "minecraft:grass_block"
     spawnable-in:
       - "minecraft:air"
+      - "minecraft:grass"
+      - "minecraft:tall_grass"
+      
