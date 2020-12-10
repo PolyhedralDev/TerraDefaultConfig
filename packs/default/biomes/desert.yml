@@ -11,6 +11,8 @@ vanilla: DESERT
 
 structures:
   - DESERT
+  - STRONGHOLD
+  - VILLAGE_HOUSE_DESERT
   
 flora:
   - density: 2
