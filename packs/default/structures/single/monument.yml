@@ -1,0 +1,37 @@
+files:
+  monument: 1
+id: "MONUMENT"
+spawn:
+  start:
+    min: 72
+    max: 72
+  bound:
+    min: 30
+    max: 96
+  width: 250
+  padding: 50
+loot: 
+  0: arrows
+features:
+  - type: ENTITY_FEATURE
+    entity: ELDER_GUARDIAN
+    attempts: 10000
+    in-height: 2
+    amount:
+      min: 3
+      max: 3
+    spawnable-on:
+      - "minecraft:prismarine_slab"
+    spawnable-in:
+      - "minecraft:water"
+  - type: ENTITY_FEATURE
+    entity: GUARDIAN
+    attempts: 10000
+    in-height: 2
+    amount:
+      min: 25
+      max: 35
+    spawnable-on:
+      - "minecraft:water"
+    spawnable-in:
+      - "minecraft:water"
