@@ -15,6 +15,7 @@ structures:
   - OUTPOST
   - STRONGHOLD
   - VILLAGE_HOUSE_OAK
+  - DUNGEON
 
 flora:
   - density: 50

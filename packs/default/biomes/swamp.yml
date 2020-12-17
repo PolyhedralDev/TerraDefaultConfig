@@ -13,6 +13,7 @@ vanilla: SWAMP
 structures:
   - STRONGHOLD
   - SWAMP
+  - DUNGEON
 
 flora:
   - density: 80
