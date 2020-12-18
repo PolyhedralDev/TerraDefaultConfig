@@ -4,3 +4,5 @@ extends: OCEAN_FLORA
 abstract: true
 structures:
   - MONUMENT
+  - DUNGEON
+  - STRONGHOLD
