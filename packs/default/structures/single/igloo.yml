@@ -3,11 +3,11 @@ files:
 id: "IGLOO"
 spawn:
   start:
-    min: 48
-    max: 145
+    min: 72
+    max: 72
   bound:
     min: 48
-    max: 145
+    max: 96
   width: 250
   padding: 75
 loot:
