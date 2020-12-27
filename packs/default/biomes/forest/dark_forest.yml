@@ -1,9 +1,6 @@
 extends: "FOREST_ABSTRACT"
 id: "DARK_FOREST"
 
-structures:
-  - MANSION
-  - STRONGHOLD
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1

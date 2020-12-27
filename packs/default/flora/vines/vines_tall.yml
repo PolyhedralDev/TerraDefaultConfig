@@ -19,4 +19,4 @@ spawnable:
 replaceable:
   - "minecraft:air"
 rotatable:
-  - "#terra:solid"
+  - "minecraft:stone"

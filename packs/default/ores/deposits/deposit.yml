@@ -1,7 +1,7 @@
 abstract: true
 id: DEPOSIT
 replace:
-  - "#minecraft:base_stone_overworld"
+  - "minecraft:stone"
 size:
   min: 32
   max: 32

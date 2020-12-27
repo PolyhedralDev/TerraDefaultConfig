@@ -10,11 +10,6 @@ palette:
   - DESERT: 255
 vanilla: DESERT
 
-structures:
-  - DESERT
-  - STRONGHOLD
-  - VILLAGE_HOUSE_DESERT
-  - DUNGEON
   
 flora:
   - density: 2
@@ -28,7 +23,7 @@ flora:
 erodible: true
 
 trees:
-  - density: 0.5
+  - density: 1.5
     items:
       - CACTUS: 1
     y:

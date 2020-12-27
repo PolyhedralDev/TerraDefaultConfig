@@ -10,10 +10,6 @@ palette:
   - RIVER_SHORE: 62
   - GRASSY: 255
 vanilla: SAVANNA
-
-structures:
-  - OUTPOST
-  - STRONGHOLD
   
 flora:
   - density: 40

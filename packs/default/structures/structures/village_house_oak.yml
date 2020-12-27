@@ -1,0 +1,32 @@
+scripts:
+  - "village_start": 1
+id: "VILLAGE_HOUSE_OAK"
+spawn:
+  start:
+    min: 72
+    max: 72
+  bound:
+    min: 48
+    max: 96
+  width: 100
+  padding: 50
+loot:
+  0: village_house_oak
+features:
+  - type: ENTITY_FEATURE
+    entity: VILLAGER
+    attempts: 75
+    in-height: 2
+    amount:
+      min: 4
+      max: 6
+    spawnable-on:
+      - "minecraft:cobblestone"
+      - "minecraft:grass_block"
+      - "minecraft:oak_stairs"
+      - "minecraft:oak_slab"
+    spawnable-in:
+      - "minecraft:air"
+      - "minecraft:green_carpet"
+      - "minecraft:grass"
+      - "minecraft:tall_grass"

@@ -1,0 +1,47 @@
+id "village_start";
+
+if(recursions() > 5) {
+    return;
+}
+
+num road = 12;
+
+num current = 0;
+while(current < road) {
+    pull(current,0,0,"minecraft:grass_path");
+    pull(current,0,1,"minecraft:grass_path");
+    pull(current,0,-1,"minecraft:grass_path");
+    current = current + 1;
+
+    if(current == 6) {
+        num int = randomInt(2);
+        if(int == 0) {
+            if(getMark(current,0,-6) != "house") {
+                structure(current, 2, -2, "village2", "CW_90");
+            }
+            setMark(current,0,-6,"house");
+        }
+        if(int == 1) {
+            if(getMark(current,0,6) != "house") {
+                structure(current, 2, 2, "village2", "CCW_90");
+            }
+            setMark(current,0,6,"house");
+        }
+    }
+
+}
+
+pull(current,0,0,"minecraft:grass_path");
+pull(current,0,1,"minecraft:grass_path");
+pull(current,0,-1,"minecraft:grass_path");
+
+pull(current+1,0,0,"minecraft:grass_path");
+pull(current+1,0,1,"minecraft:grass_path");
+pull(current+1,0,-1,"minecraft:grass_path");
+
+structure(current, 0, 0, "village_start", "CW_90", "CW_90", "NONE");
+
+if(randomInt(2) == 0) {
+    structure(current, 0, 0, "village_start", "NONE");
+}
+

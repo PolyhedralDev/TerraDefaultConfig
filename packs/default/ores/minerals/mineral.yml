@@ -1,5 +1,5 @@
 abstract: true
 id: MINERAL
 replace:
-  - "#minecraft:base_stone_overworld"
+  - "minecraft:stone"
 type: VANILLA

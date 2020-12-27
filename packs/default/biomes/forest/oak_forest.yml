@@ -25,7 +25,7 @@ flora:
       - LEAVES: 100
 
 trees:
-  - density: 10
+  - density: 8
     items:
       - OAK: 1
     y:

@@ -14,11 +14,11 @@ carving: {}
 flora:
   - density: 60
     y:
-      min: 61
+      min: 62
       max: 80
     items:
-      - SUGARCANE: 50
-      - GRASS: 650
+      - SUGARCANE: 25
+      - GRASS: 675
       - LILY_PAD: 10
       - TALL_GRASS: 150
   - density: 30

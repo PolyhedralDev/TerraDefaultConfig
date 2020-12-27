@@ -6,8 +6,8 @@ id: "SNOW"
 search: DOWN
 physics: true
 max-placements: 1
-spawn-blacklist: true
+spawn-blacklist: false
 spawnable:
-  - "#terra:snow_blacklist"
+  - "minecraft:grass_block"
 replaceable:
   - "minecraft:air"
