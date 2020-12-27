@@ -1,6 +1,0 @@
-blocks:
-  - materials:
-      - "minecraft:bedrock": 1
-      - "minecraft:netherrack": 1
-    layers: 1
-id: BEDROCK_HALF

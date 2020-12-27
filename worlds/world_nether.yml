@@ -1,9 +1,0 @@
-config: NETHER
-image:
-  use-image: false
-  align: center
-  image-location: "/home/dfsek/Pictures/Screenshot from 2020-09-22 16-20-11.png"
-  channels:
-    biome-x: red
-    biome-z: green
-    zone: blue

@@ -1,9 +1,0 @@
-material: "minecraft:magma_block"
-radius:
-  min: 3
-  max: 5
-deform: 0.75
-deform-frequency: 0.1
-id: MAGMA
-replace:
-  - "minecraft:netherrack"

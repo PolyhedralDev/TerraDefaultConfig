@@ -1,9 +1,0 @@
-blocks:
-  - materials:
-      - "minecraft:ice": 1
-    layers: 1
-  - materials:
-      - "minecraft:water": 1
-    layers: 1
-id: COLD_OCEAN
-name: "Cold Ocean Palette"

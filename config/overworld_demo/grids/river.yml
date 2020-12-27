@@ -1,4 +1,0 @@
-grid:
-  - ["RIVER", "RIVER", "RIVER", "RIVER", "RIVER", "RIVER", "RIVER",  "RIVER", "OCEAN", "OCEAN", "OCEAN"]
-id: RIVER
-name: "River Grid"
