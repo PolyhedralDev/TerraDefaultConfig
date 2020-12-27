@@ -12,6 +12,10 @@ carving:
   CAVE_TUNDRA: 55
   RAVINE: 2
 
+structures:
+  - STRONGHOLD
+  - IGLOO
+
 flora:
   - density: 80
     y:
