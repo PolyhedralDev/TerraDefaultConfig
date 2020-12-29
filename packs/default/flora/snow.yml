@@ -9,5 +9,10 @@ max-placements: 1
 spawn-blacklist: false
 spawnable:
   - "minecraft:grass_block"
+  - "minecraft:podzol"
+  - "minecraft:spruce_leaves"
+  - "minecraft:gravel"
+  - "minecraft:snow_block"
+  - "minecraft:stone"
 replaceable:
   - "minecraft:air"

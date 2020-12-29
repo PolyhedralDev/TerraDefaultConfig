@@ -20,7 +20,7 @@ flora:
       - SNOW: 1
 
 trees:
-  - density: 8
+  - density: 6
     items:
       - SPRUCE: 1
     y:

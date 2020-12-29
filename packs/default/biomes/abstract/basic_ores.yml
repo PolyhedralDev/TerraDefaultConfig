@@ -3,6 +3,9 @@
 id: "BASIC_ORES"
 abstract: true
 
+structures:
+  - STRONGHOLD
+
 flora:
   - density: 40
     y:

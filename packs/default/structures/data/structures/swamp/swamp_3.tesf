@@ -1,17 +1,29 @@
-id "swamp1";
+id "swamp_3";
 
 num y = 0;
 for(y; y > -50; y = y - 1) {
+    if(check(3, y + 1, 4) != "LAND") {
+        continue;
+    }
+    if(check(-4, y + 5, 4) != "AIR") {
+        continue;
+    }
     if(check(-3, y + 1, -4) != "LAND") {
         continue;
     }
-    if(check(3, y + 1, 4) != "LAND") {
+    if(check(-3, y + 5, -5) != "AIR") {
         continue;
     }
     if(check(3, y + 1, -4) != "LAND") {
         continue;
     }
     if(check(-3, y + 1, 4) != "LAND") {
+        continue;
+    }
+    if(check(4, y + 5, 5) != "AIR") {
+        continue;
+    }
+    if(check(4, y + 5, -4) != "AIR") {
         continue;
     }
     break;
