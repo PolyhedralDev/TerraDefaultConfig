@@ -1,6 +1,6 @@
 id "plains_1x1_2";
 num y = 0;
-if(getMark(0,0,6) == "house") fail;
+if(getMark(5,0,0) == "house") fail;
 while((check(0,y - 1,0) != "LAND") || (check(5,y - 1,0) != "LAND")) {
     if((check(0,y - 1,0) == "OCEAN") || (check(5,y - 1,0) == "OCEAN")) {
         fail;
@@ -10,7 +10,7 @@ while((check(0,y - 1,0) != "LAND") || (check(5,y - 1,0) != "LAND")) {
         fail;
     }
 }
-setMark(0,0,6,"house");
+setMark(5,0,0,"house");
 block(1, y + -1, 2, "minecraft:dirt");
 block(1, y + 0, 2, "minecraft:cobblestone_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]");
 block(1, y + 3, -4, "minecraft:stone_brick_slab[type=top,waterlogged=false]");

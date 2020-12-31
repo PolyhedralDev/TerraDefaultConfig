@@ -4,6 +4,8 @@ if(recursions() > 5) {
     return;
 }
 
+if(getMark(6,0,0) == "no_road") fail;
+
 num road = 12;
 
 num current = 0;
@@ -16,7 +18,7 @@ while(current < road) {
     if(current == 6) {
         num int = randomInt(2);
         if(int == 0) {
-            num sel = randomInt(5);
+            num sel = randomInt(9);
             if(sel == 0) {
                 structure(current, 0, -1, "plains_1x1_1", "CW_90");
             } else if(sel == 1) {
@@ -27,10 +29,18 @@ while(current < road) {
                 structure(current, 0, -1, "plains_1x1_4", "CW_90");
             } else if(sel == 4) {
                 structure(current, 0, -1, "plains_1x1_5", "CW_90");
+            } else if(sel == 5) {
+                structure(current, 0, -1, "plains_2x1_1", "CW_90");
+            } else if(sel == 6) {
+                structure(current, 0, -1, "plains_2x1_2", "CW_90");
+            } else if(sel == 7) {
+                structure(current, 0, -1, "plains_2x1_3", "CW_90");
+            } else if(sel == 8) {
+                structure(current, 0, -1, "plains_2x1_4", "CW_90");
             }
         }
         if(int == 1) {
-        num sel = randomInt(5);
+        num sel = randomInt(9);
             if(sel == 0) {
                 structure(current, 0, 1, "plains_1x1_1", "CCW_90");
             } else if(sel == 1) {
@@ -41,6 +51,14 @@ while(current < road) {
                 structure(current, 0, 1, "plains_1x1_4", "CCW_90");
             } else if(sel == 4) {
                 structure(current, 0, 1, "plains_1x1_5", "CCW_90");
+            } else if(sel == 5) {
+                structure(current, 0, 1, "plains_2x1_1", "CCW_90");
+            } else if(sel == 6) {
+                structure(current, 0, 1, "plains_2x1_2", "CCW_90");
+            } else if(sel == 7) {
+                structure(current, 0, 1, "plains_2x1_3", "CCW_90");
+            } else if(sel == 8) {
+                structure(current, 0, 1, "plains_2x1_4", "CCW_90");
             }
         }
     }
@@ -65,3 +83,4 @@ if(randomInt(3) == 0) {
 if(randomInt(4) == 0) {
     structure(current, 0, 0, "village_start", "CW_90", "CW_90");
 }
+setMark(6,0,0,"road");
