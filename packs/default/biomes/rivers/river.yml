@@ -31,3 +31,4 @@ flora:
 ocean:
   palette: "BLOCK:minecraft:water"
   level: 62
+weight: 200

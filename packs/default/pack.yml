@@ -2,50 +2,14 @@ id: DEFAULT
 author: dfsek
 version: 1.0.0
 grids:
-  - OCEAN_DEEP
-  - OCEAN_DEEP
-  - OCEAN_DEEP
-  - OCEAN_DEEP
-  - OCEAN_SHELF
-  - OCEAN
-  - OCEAN
-  - OCEAN
-  - BEACH
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - MOUNTAIN_0
-  - MOUNTAIN_1
-  - MOUNTAIN
-  - MOUNTAIN
-  - MOUNTAIN
-  - MOUNTAIN
-  - MOUNTAIN
+  - BIOME:PLAINS
 frequencies:
   zone: 2048
 
 blend:
+  terrain:
+    base: 4
+    elevation: 4
   enable: true
   frequency: 0.1
   amplitude: 4
