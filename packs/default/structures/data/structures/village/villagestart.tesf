@@ -16,6 +16,7 @@ while(current < road) {
     current = current + 1;
 
     if(current == 6) {
+        structure(current, 0, 0, "villager", "NONE");
         num int = randomInt(2);
         if(int == 0) {
             num sel = randomInt(9);
