@@ -11,9 +11,9 @@ spawn:
   width: 1000
   padding: 500
 loot:
-  1: wood_house
-  2: cobble_house
-  3: cobble_house
+  chest_1: "wood_house.json"
+  chest_2: "cobble_house.json"
+  chest_33: "cobble_house.json"
 features:
   - type: ENTITY_FEATURE
     entity: SILVERFISH

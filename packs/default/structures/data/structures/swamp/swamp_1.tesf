@@ -197,6 +197,9 @@ block(-2, y + 7, 0, "minecraft:spruce_planks");
 block(-2, y + 8, 0, "minecraft:spruce_planks");
 block(-2, y + 9, 0, "minecraft:oak_planks");
 block(-2, y + 10, 0, "minecraft:barrel[facing=east,open=false]");
+
+loot(-2, y + 10, 0, "swamp.json");
+
 block(-2, y + 11, 0, "minecraft:barrel[facing=south,open=false]");
 block(-2, y + 12, 0, "minecraft:oak_planks");
 block(-2, y + 5, 1, "minecraft:spruce_planks");

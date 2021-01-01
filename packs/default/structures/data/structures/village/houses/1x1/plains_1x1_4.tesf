@@ -393,6 +393,9 @@ block(5, y + 4, -1, "minecraft:green_carpet");
 block(5, y + 4, 0, "minecraft:green_carpet");
 block(5, y + 4, 1, "minecraft:air");
 block(5, y + 4, 2, "minecraft:chest[facing=north,type=single,waterlogged=false]");
+
+loot(5, y + 4, 2, "village_house_oak.json");
+
 block(5, y + 4, 3, "minecraft:oak_planks");
 block(5, y + 4, 4, "minecraft:air");
 block(5, y + 5, -4, "minecraft:stone_brick_slab[type=top,waterlogged=false]");

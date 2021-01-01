@@ -13,7 +13,7 @@ spawn:
   width: 125
   padding: 100
 loot:
-  0: swamp
+  chest: "swamp.json"
 features:
   - type: ENTITY_FEATURE
     entity: WITCH

@@ -218,6 +218,9 @@ block(3, y + 4, -2, "minecraft:oak_planks");
 block(3, y + 4, -1, "minecraft:air");
 block(3, y + 4, 0, "minecraft:green_bed[facing=west,occupied=false,part=head]");
 block(3, y + 4, 1, "minecraft:chest[facing=east,type=single,waterlogged=false]");
+
+loot(3, y + 4, 1, "village_house_oak.json");
+
 block(3, y + 4, 2, "minecraft:brown_bed[facing=west,occupied=false,part=head]");
 block(3, y + 4, 3, "minecraft:oak_planks");
 block(3, y + 4, 4, "minecraft:stone_bricks");

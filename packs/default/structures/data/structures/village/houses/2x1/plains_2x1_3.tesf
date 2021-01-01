@@ -916,6 +916,9 @@ block(5, y + 4, 1, "minecraft:air");
 block(5, y + 4, 2, "minecraft:air");
 block(5, y + 4, 3, "minecraft:air");
 block(5, y + 4, 4, "minecraft:chest[facing=north,type=single,waterlogged=false]");
+
+loot(5, y + 4, 4, "village_house_oak.json");
+
 block(5, y + 4, 5, "minecraft:stripped_oak_log[axis=y]");
 block(5, y + 4, 6, "minecraft:air");
 block(5, y + 4, 7, "minecraft:air");
