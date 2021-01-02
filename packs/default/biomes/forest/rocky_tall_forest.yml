@@ -27,8 +27,17 @@ flora:
       - LEAVES: 10
 
 trees:
+  - density: 10
+    items:
+      - SMALL_ROCK: 15
+      - MEDIUM_ROCK: 10
+      - LARGE_ROCK: 30
+    y:
+      min: 58
+      max: 84
   - density: 6
     items:
+      - GRAY_OAK: 90
       - OAK: 10
     y:
       min: 58
