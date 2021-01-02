@@ -11,7 +11,7 @@ palette:
   - MOUNTAIN_JUNGLE: 255
 vanilla: JUNGLE
 trees:
-  - density: 30
+  - density: 10
     items:
       - JUNGLE_BUSH: 16
       - SMALL_JUNGLE: 12
@@ -19,7 +19,7 @@ trees:
       - JUNGLE_COCOA: 3
     y:
       min: 62
-      max: 92
+      max: 84
 flora:
   - density: 100
     simplex-frequency: 0.1

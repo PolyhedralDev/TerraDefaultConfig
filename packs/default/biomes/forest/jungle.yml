@@ -51,7 +51,7 @@ flora:
       max: 14
 
 trees:
-  - density: 30
+  - density: 15
     items:
       - JUNGLE_BUSH: 16
       - SMALL_JUNGLE: 16

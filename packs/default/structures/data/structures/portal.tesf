@@ -1,8 +1,0 @@
-id "PORTAL_1";
-
-
-num y = 0;
-
-//while((check(0, y, 0) != "LAND") || (check(0, y, 8) != "LAND") || (check(8, y, 0) != "LAND") || (check(8, y, 8) != "LAND")) {
-//    y = y - 1;
-//}

@@ -1,6 +1,6 @@
 scripts:
   - "village_start": 1
-id: "VILLAGE_HOUSE_OAK"
+id: "VILLAGE_PLAINS"
 spawn:
   start:
     min: 72
@@ -8,6 +8,6 @@ spawn:
   bound:
     min: 48
     max: 96
-  width: 100
+  width: 75
   padding: 150
 

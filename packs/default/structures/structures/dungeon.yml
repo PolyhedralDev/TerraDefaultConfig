@@ -1,0 +1,11 @@
+scripts:
+  dungeon1: 1
+  dungeon2: 1
+  dungeon3: 1
+id: "DUNGEON"
+spawn:
+  start:
+    min: 16
+    max: 50
+  width: 100
+  padding: 50

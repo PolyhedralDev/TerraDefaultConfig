@@ -12,7 +12,8 @@ palette:
 vanilla: PLAINS
 
 structures:
-  - VILLAGE_HOUSE_OAK
+  - VILLAGE_PLAINS
+  - STRONGHOLD
 
 flora:
   - density: 50

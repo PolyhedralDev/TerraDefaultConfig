@@ -5,6 +5,7 @@ abstract: true
 
 structures:
   - STRONGHOLD
+  - DUNGEON
 
 flora:
   - density: 40

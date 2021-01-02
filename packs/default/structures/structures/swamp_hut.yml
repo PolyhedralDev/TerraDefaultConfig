@@ -10,7 +10,7 @@ spawn:
   bound:
     min: 48
     max: 96
-  width: 125
+  width: 50
   padding: 100
 loot:
   chest: "swamp.json"

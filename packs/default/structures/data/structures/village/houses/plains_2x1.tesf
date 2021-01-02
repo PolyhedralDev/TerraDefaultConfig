@@ -12,6 +12,10 @@ while((check(0,y - 1,0) != "LAND") || (check(5,y - 1,0) != "LAND")) {
         fail;
     }
 }
+
+if(check(0,y + 2,0) != "AIR") fail;
+if(check(5,y + 2,0) != "AIR") fail;
+
 setMark(5,0,0,"house");
 setMark(5,0,6,"no_road");
 setMark(5,0,12,"house");
