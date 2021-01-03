@@ -1,4 +1,7 @@
-noise-equation: "((-((y / 58)^2)) + 1) + (noise2(x, z)/5)"
+noise-equation: "(noise2(x, z)/5)"
+noise-2d:
+  enable: true
+  base: 58
 id: "BEACH_ABSTRACT"
 abstract: true
 extends: BASIC_ORES
