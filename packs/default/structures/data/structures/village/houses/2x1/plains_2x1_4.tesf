@@ -347,6 +347,7 @@ block(7, y + 0, 10, "minecraft:mossy_cobblestone");
 block(7, y + 1, -2, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
 block(7, y + 1, 1, "minecraft:air");
 block(composterDis, y + 1, 4, "minecraft:composter[level=0]");
+block(7, y + 1, 4, "minecraft:air");
 block(7, y + 1, 7, "minecraft:air");
 block(7, y + 1, 10, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
 block(7, y + 2, -2, "minecraft:air");

@@ -16,7 +16,7 @@ if(check(0,y + 2,0) != "AIR") fail;
 if(check(5,y + 2,0) != "AIR") fail;
 
 setMark(5,0,0,"house");
-num select = randomInt(5);
+num select = randomInt(8);
 if(select == 0) {
     structure(0,y,0,"plains_1x1_1", "NONE");
 } else if(select == 1) {
@@ -27,4 +27,10 @@ if(select == 0) {
     structure(0,y,0,"plains_1x1_4", "NONE");
 } else if(select == 4) {
     structure(0,y,0,"plains_1x1_5", "NONE");
+} else if(select == 5) {
+    structure(0,y,0,"plains_1x1_6", "NONE");
+} else if(select == 6) {
+    structure(0,y,0,"plains_1x1_7", "NONE");
+} else if(select == 7) {
+    structure(0,y,0,"plains_1x1_8", "NONE");
 }
