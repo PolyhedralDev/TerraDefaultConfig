@@ -1853,6 +1853,7 @@ block(6, y + 5, 3, "minecraft:stone_bricks");
 block(6, y + 0, 4, "minecraft:mossy_stone_bricks");
 block(6, y + 1, 4, "minecraft:air");
 block(6, y + 2, 4, "minecraft:spawner");
+state(6, y + 2, 4,"type=SILVERFISH");
 block(6, y + 3, 4, "minecraft:air");
 block(6, y + 4, 4, "minecraft:air");
 block(6, y + 5, 4, "minecraft:stone_bricks");

@@ -6,6 +6,7 @@ abstract: true
 structures:
   - STRONGHOLD
   - DUNGEON
+  - MINESHAFT
 
 flora:
   - density: 40

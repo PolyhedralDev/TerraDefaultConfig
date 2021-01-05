@@ -1,0 +1,9 @@
+scripts:
+  mineshaft_start: 1
+id: "MINESHAFT_MESA"
+spawn:
+  start:
+    min: 24
+    max: 45
+  width: 150
+  padding: 75

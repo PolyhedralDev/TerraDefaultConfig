@@ -599,6 +599,7 @@ block(0, y + 0, 0, "minecraft:cobblestone");
 block(0, y + 1, 0, "minecraft:cobblestone");
 block(0, y + 2, 0, "minecraft:mossy_cobblestone");
 block(0, y + 3, 0, "minecraft:spawner");
+state(0, y + 3, 0,"type=SPIDER");
 block(0, y + 4, 0, "minecraft:cobblestone");
 block(0, y + 5, 0, "minecraft:mossy_cobblestone");
 block(0, y + 6, 0, "minecraft:cobblestone");

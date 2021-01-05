@@ -2,9 +2,50 @@ id: DEFAULT
 author: dfsek
 version: 1.0.0
 grids:
-  - BIOME:MOUNTAINS_STONE
+  - OCEAN_DEEP
+  - OCEAN_DEEP
+  - OCEAN_DEEP
+  - OCEAN_SHELF
+  - OCEAN
+  - OCEAN
+  - BEACH
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - LAND
+  - MOUNTAIN_0
+  - MOUNTAIN_1
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
+  - MOUNTAIN
 frequencies:
   zone: 2048
+
+structures:
+  locatable:
+    STRONGHOLD: STRONGHOLD
 
 blend:
   terrain:
@@ -27,14 +68,14 @@ noise:
     frequency: 0.0075
     fractal:
       type: FBm
-      octaves: 5
+      octaves: 4
   noise3:
     dimensions: 3
     type: OpenSimplex2
     frequency: 0.0075
     fractal:
       type: FBm
-      octaves: 5
+      octaves: 4
 locatable:
   STRONGHOLD: STRONGHOLD
 variables:

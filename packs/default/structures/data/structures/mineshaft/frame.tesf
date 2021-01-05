@@ -9,4 +9,10 @@ for(num x = -1; x <= 1; x = x + 1) {
 for(num x = -1; x <= 1; x = x + 1) {
     block(0,-2,x,"minecraft:oak_planks", false);
 }
+
+if(randomInt(20) == 0) {
+    if(randomInt(2) == 0) block(0,-1,-1,"minecraft:torch");
+    else block(0,-1,1,"minecraft:torch");
+}
+
 if(randomInt(2) == 0) block(0,-1,0,"minecraft:rail[shape=east_west]");

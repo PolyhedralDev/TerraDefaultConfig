@@ -1,6 +1,8 @@
 id: OCEAN_FLORA
 extends: BASIC_ORES
 abstract: true
+structures:
+  - STRONGHOLD
 flora:
   - density: 50
     items:
