@@ -15,8 +15,9 @@ while((check(0,y - 1,0) != "LAND") || (check(5,y - 1,0) != "LAND")) {
 if(check(0,y + 2,0) != "AIR") fail;
 if(check(5,y + 2,0) != "AIR") fail;
 
-setMark(5,0,0,"house");
+
 num select = randomInt(8);
+
 if(select == 0) {
     structure(0,y,0,"plains_1x1_1", "NONE");
 } else if(select == 1) {
@@ -34,3 +35,6 @@ if(select == 0) {
 } else if(select == 7) {
     structure(0,y,0,"plains_1x1_8", "NONE");
 }
+
+
+setMark(5,0,0,"house");

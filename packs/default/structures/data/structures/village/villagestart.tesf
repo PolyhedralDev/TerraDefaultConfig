@@ -4,40 +4,29 @@ if(recursions() > 5) {
     return;
 }
 
-if(getMark(6,0,0) == "no_road") fail;
+str mark = getMark(6,0,0);
+if(mark == "no_road") fail;
 
 num road = 12;
 
-num current = 0;
-while(current < road) {
+
+for(num current = 0; current <= 13; current = current + 1) {
     structure(current,0,0,"decoratedPath", "NONE");
     structure(current,0,1,"decoratedPath", "NONE");
     structure(current,0,-1,"decoratedPath", "NONE");
-    current = current + 1;
-
-    if(current == 6) {
-        structure(current, 0, 0, "villager", "NONE");
-        structure(current, 0, 0, "random_house", "NONE");
-    }
-
 }
 
-structure(current,0,-1,"decoratedPath", "NONE");
-structure(current,0,0,"decoratedPath", "NONE");
-structure(current,0,1,"decoratedPath", "NONE");
+setMark(6,0,0,"road");
 
-structure(current+1,0,-1,"decoratedPath", "NONE");
-structure(current+1,0,0,"decoratedPath", "NONE");
-structure(current+1,0,1,"decoratedPath", "NONE");
-
+structure(6, 0, 0, "random_house", "NONE");
+structure(6, 0, 0, "villager", "NONE");
 
 if(randomInt(3) == 0) {
-    structure(current, 0, 0, "village_start", "CW_90", "CW_90", "NONE");
+    structure(12, 0, 0, "village_start", "CW_90", "CW_90", "NONE");
 } else {
-    structure(current, 0, 0, "village_start", "NONE");
+    structure(12, 0, 0, "village_start", "NONE");
+}
+if(randomInt(4) == 0) {
+    structure(12, 0, 0, "village_start", "CW_90", "CW_90");
 }
 
-if(randomInt(4) == 0) {
-    structure(current, 0, 0, "village_start", "CW_90", "CW_90");
-}
-setMark(6,0,0,"road");

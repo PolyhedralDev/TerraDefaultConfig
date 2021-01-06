@@ -1,6 +1,11 @@
 id "plains_2x1";
 if(getMark(5,0,0) == "house") fail;
+print(getMark(5,0,6));
 if(getMark(5,0,6) == "road") fail;
+print("here");
+
+setMark(1,1,1,"h");
+print(getMark(1,1,1));
 if(getMark(5,0,12) == "house") fail;
 num y = 0;
 while((check(0,y - 1,0) != "LAND") || (check(5,y - 1,0) != "LAND")) {
@@ -16,10 +21,9 @@ while((check(0,y - 1,0) != "LAND") || (check(5,y - 1,0) != "LAND")) {
 if(check(0,y + 2,0) != "AIR") fail;
 if(check(5,y + 2,0) != "AIR") fail;
 
-setMark(5,0,0,"house");
-setMark(5,0,6,"no_road");
-setMark(5,0,12,"house");
+
 num select = randomInt(5);
+
 if(select == 0) {
     structure(0,y,0,"plains_2x1_1", "NONE");
 } else if(select == 1) {
@@ -29,3 +33,10 @@ if(select == 0) {
 } else if(select == 3) {
     structure(0,y,0,"plains_2x1_4", "NONE");
 }
+
+setMark(5,0,0,"house");
+
+setMark(5,0,6,"no_road");
+
+setMark(5,0,12,"house");
+
