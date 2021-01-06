@@ -1,0 +1,18 @@
+id: "ACACIA"
+scripts:
+  - Acacia__1: 1
+  - Acacia__2: 1
+  - Acacia__3: 1
+  - Acacia__4: 1
+  - Acacia__5: 1
+  - Acacia__6: 1
+  - Acacia__7: 1
+  - Acacia__8: 1
+  - Acacia__9: 1
+  - Acacia__10: 1
+  - Acacia__11: 1
+  - Acacia__12: 1
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+y-offset: -2

@@ -1,0 +1,18 @@
+id "shaft_frame";
+
+for(num x = -1; x <= 1; x = x + 1) {
+    for(num y = -1; y <= 1; y = y + 1) {
+        if(randomInt(100) == 0 && !(x == 0 && y == 0)) block(0,y,x,"minecraft:cobweb");
+        else block(0,y,x,"minecraft:air");
+    }
+}
+for(num x = -1; x <= 1; x = x + 1) {
+    block(0,-2,x,"minecraft:oak_planks", false);
+}
+
+if(randomInt(20) == 0) {
+    if(randomInt(2) == 0) block(0,-1,-1,"minecraft:torch");
+    else block(0,-1,1,"minecraft:torch");
+}
+
+if(randomInt(2) == 0) block(0,-1,0,"minecraft:rail[shape=east_west]");

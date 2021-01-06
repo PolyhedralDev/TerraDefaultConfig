@@ -1,0 +1,15 @@
+id "shaft_room";
+
+num wid = (randomInt(4) + 3) * 3 - 2;
+num len = (randomInt(4) + 3) * 3 - 2;
+
+for(num x = - len/2; x <= len/2; x = x + 1) {
+    for(num z = - wid/2; z <= wid/2; z = z + 1) {
+        block(x, -2, z, "minecraft:oak_planks", false);
+        block(x, 2, z, "minecraft:oak_planks", false);
+        for(num y = -1; y <= 1; y = y + 1) {
+            if(!(floor(x) % 3 == 0 && (floor(z) % 3 == 0))) block(x, y, z, "minecraft:air");
+            else block(x, y, z, "minecraft:oak_planks");
+        }
+    }
+}

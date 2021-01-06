@@ -1,0 +1,15 @@
+id: "SMALL_JUNGLE"
+scripts:
+  - Junglemediumcoco1: 1
+  - Junglemediumcoco2: 1
+  - Junglemediumcoco3: 1
+  - Junglemediumcoco4: 1
+  - Junglesmall1: 1
+  - Junglesmall2: 1
+  - Junglesmall3: 1
+  - Junglesmall4: 1
+  - Junglesmall5: 1
+  - Junglesmall6: 1
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"

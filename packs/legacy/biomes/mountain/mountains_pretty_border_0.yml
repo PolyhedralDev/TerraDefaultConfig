@@ -1,0 +1,12 @@
+extends: "MOUNTAINS_PRETTY_0_A"
+id: "MOUNTAINS_PRETTY_0"
+erode: RIVER
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - MOUNTAIN_PRETTY: 255
+vanilla: PLAINS
