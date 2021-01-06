@@ -6,4 +6,4 @@ spawn:
     min: 12
     max: 24
   width: 200
-  padding: 100
+  padding: 200
