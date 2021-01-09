@@ -4,7 +4,6 @@ version: 1.0.0
 grids:
   - OCEAN_DEEP
   - OCEAN_DEEP
-  - OCEAN_DEEP
   - OCEAN_SHELF
   - OCEAN
   - OCEAN
@@ -41,7 +40,7 @@ grids:
   - MOUNTAIN
   - MOUNTAIN
 frequencies:
-  zone: 2048
+  zone: 64
 
 structures:
   locatable:

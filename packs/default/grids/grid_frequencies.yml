@@ -1,5 +1,5 @@
 id: GRID_FREQUENCIES
 abstract: true
 frequency:
-  x: 4096
-  z: 4096
+  x: 256
+  z: 256

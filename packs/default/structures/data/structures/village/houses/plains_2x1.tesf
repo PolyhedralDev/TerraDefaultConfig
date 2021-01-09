@@ -1,6 +1,5 @@
 id "plains_2x1";
 if(getMark(5,0,0) == "house") fail;
-print(getMark(5,0,6));
 if(getMark(5,0,6) == "road") fail;
 
 if(getMark(5,0,12) == "house") fail;
