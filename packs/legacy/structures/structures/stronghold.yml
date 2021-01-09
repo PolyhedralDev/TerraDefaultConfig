@@ -1,0 +1,43 @@
+scripts:
+  stronghold: 1
+id: "STRONGHOLD"
+spawn:
+  start:
+    min: 16
+    max: 64
+  bound:
+    min: 12
+    max: 84
+  width: 1000
+  padding: 500
+loot:
+  chest_1: "wood_house.json"
+  chest_2: "cobble_house.json"
+  chest_33: "cobble_house.json"
+features:
+  - type: ENTITY_FEATURE
+    entity: SILVERFISH
+    attempts: 40
+    in-height: 1
+    amount:
+      min: 20
+      max: 30
+    spawnable-on:
+      - "minecraft:stone"
+      - "minecraft:stone_bricks"
+      - "minecraft:mossy_stone_bricks"
+    spawnable-in:
+      - "minecraft:air"
+  - type: ENTITY_FEATURE
+    entity: ZOMBIE
+    attempts: 20
+    in-height: 2
+    amount:
+      min: 10
+      max: 15
+    spawnable-on:
+      - "minecraft:stone"
+      - "minecraft:stone_bricks"
+      - "minecraft:mossy_stone_bricks"
+    spawnable-in:
+      - "minecraft:air"

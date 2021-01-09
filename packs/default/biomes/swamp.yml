@@ -1,6 +1,9 @@
-noise-equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)/4))"
+noise-equation: "((noise2(x, z)/4))"
 extends: "BASIC_ORES"
 id: "SWAMP"
+noise-2d:
+  enable: true
+  base: 62
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -9,11 +12,6 @@ palette:
   - SWAMP_BOTTOM: 61
   - SWAMP: 255
 vanilla: SWAMP
-
-structures:
-  - STRONGHOLD
-  - SWAMP
-  - DUNGEON
 
 flora:
   - density: 80
@@ -29,6 +27,10 @@ flora:
 
 carving:
   CAVE_SWAMP: 55
+
+structures:
+  - SWAMP
+  - STRONGHOLD
 
 trees:
   - density: 2

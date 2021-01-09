@@ -17,7 +17,7 @@ ores: {}
 trees:
   - density: 6
     items:
-      - GRAY_OAK: 1
+      - SPRUCE: 1
     y:
       min: 58
       max: 92

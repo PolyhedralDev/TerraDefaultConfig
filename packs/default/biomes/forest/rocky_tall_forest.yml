@@ -1,4 +1,4 @@
-noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x, z) / 3) + 0.1|"
+noise-equation: "|(noise2(x, z) / 3) + 0.1|"
 extends: "FOREST_ABSTRACT"
 id: "ROCKY_TALL_FOREST"
 
@@ -29,9 +29,9 @@ flora:
 trees:
   - density: 10
     items:
-      - SMALL_ROCKS: 15
-      - MEDIUM_ROCKS: 10
-      - LARGE_ROCKS: 30
+      - SMALL_ROCK: 15
+      - MEDIUM_ROCK: 10
+      - LARGE_ROCK: 30
     y:
       min: 58
       max: 84

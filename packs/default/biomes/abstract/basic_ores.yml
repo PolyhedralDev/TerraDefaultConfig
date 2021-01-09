@@ -2,9 +2,12 @@
 
 id: "BASIC_ORES"
 abstract: true
+
 structures:
   - STRONGHOLD
   - DUNGEON
+  - MINESHAFT
+
 flora:
   - density: 40
     y:

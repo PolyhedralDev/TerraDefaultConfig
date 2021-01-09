@@ -1,0 +1,20 @@
+scripts:
+  Medium_Rock__1: 1
+  Medium_Rock__2: 1
+  Medium_Rock__3: 1
+  Medium_Rock__4: 1
+  Medium_Rock__5: 1
+  Medium_Rock__6: 1
+  Medium_Rock__7: 1
+  Medium_Rock__8: 1
+  Medium_Rock__9: 1
+  Medium_Rock__10: 1
+  Medium_Rock__11: 1
+  Medium_Rock__12: 1
+id: MEDIUM_ROCK
+y-offset: -2
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:brown_concrete_powder"
+  - "minecraft:coarse_dirt"
+  - "minecraft:gravel"
