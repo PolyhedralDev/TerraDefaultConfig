@@ -6,3 +6,8 @@ erode: RIVER
 noise-2d:
   enable: true
   base: 64
+structures:
+  - STRONGHOLD
+  - DUNGEON
+  - MINESHAFT
+  - RUINED_PORTAL

@@ -14,6 +14,9 @@ vanilla: PLAINS
 structures:
   - VILLAGE_PLAINS
   - STRONGHOLD
+  - DUNGEON
+  - MINESHAFT
+  - RUINED_PORTAL
 
 flora:
   - density: 50

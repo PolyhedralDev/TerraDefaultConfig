@@ -40,7 +40,7 @@ grids:
   - MOUNTAIN
   - MOUNTAIN
 frequencies:
-  zone: 64
+  zone: 56
 
 structures:
   locatable:
