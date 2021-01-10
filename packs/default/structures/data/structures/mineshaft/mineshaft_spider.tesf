@@ -12,3 +12,5 @@ for(num i = 0; i < length; i = i + 1) {
 structure(length,0,0,"shaft_frame","NONE");
 structure(length+1,0,0,"shaft_frame","NONE");
 structure(length,0,0,"mineshaft_section","CW_90", "CCW_90");
+block(length/2, -1, 0, "minecraft:spawner");
+state(length/2, -1, 0, "type=CAVE_SPIDER");
