@@ -6,5 +6,5 @@ grid:
   - ["SOUL_VALLEY", "CRIMSON", "WARPED", "DELTA", "NETHER"]
 id: NETHER
 frequency:
-  x: 2048
-  z: 2048
+  x: 512
+  z: 512
