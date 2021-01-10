@@ -1,6 +1,10 @@
 extends: "PLAINS_ABSTRACT"
 id: "TUNDRA"
-
+structures:
+  - IGLOO
+  - STRONGHOLD
+  - MINESHAFT
+  - DUNGEON
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -11,10 +15,6 @@ vanilla: SNOWY_TUNDRA
 carving:
   CAVE_TUNDRA: 55
   RAVINE: 2
-
-structures:
-  - STRONGHOLD
-  - IGLOO
 
 flora:
   - density: 80

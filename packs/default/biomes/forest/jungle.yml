@@ -1,6 +1,10 @@
 extends: "PLAINS_ABSTRACT"
 id: "JUNGLE"
-
+structures:
+  - JUNGLE
+  - STRONGHOLD
+  - MINESHAFT
+  - DUNGEON
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1

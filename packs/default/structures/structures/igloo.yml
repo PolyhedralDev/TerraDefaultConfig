@@ -1,0 +1,10 @@
+scripts:
+  igloo: 1
+id: "IGLOO"
+spawn:
+  start:
+    min: 72
+    max: 72
+  width: 250
+  padding: 75
+  
