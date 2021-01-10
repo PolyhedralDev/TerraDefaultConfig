@@ -1,0 +1,35 @@
+id "plains_1x2";
+if(getMark(5,0,0) == "house") fail;
+if(getMark(11,0,0) == "road") fail;
+if(getMark(17,0,0) == "house") fail;
+num y = 0;
+while((check(0,y,-4) != "LAND") || (check(17,y,-4) != "LAND") || (check(0,y,4) != "LAND") || (check(17,y,4) != "LAND")) {
+    if((check(0,y - 1,0) == "OCEAN") || (check(17,y - 1,0) == "OCEAN")) {
+        fail;
+    }
+    y = y - 1;
+    if(y < -30) {
+        fail;
+    }
+}
+
+if(check(0,y + 2,0) != "AIR") fail;
+
+
+num select = randomInt(4);
+
+if(select == 0) {
+    structure(0,y,0,"plains_1x2_1", "NONE");
+} else if(select == 1) {
+    structure(0,y,0,"plains_1x2_2", "NONE");
+} else if(select == 2) {
+    structure(0,y,0,"plains_1x2_3", "NONE");
+} else if(select == 3) {
+    structure(0,y,0,"plains_1x2_4", "NONE");
+}
+
+setMark(5,0,0,"house");
+
+setMark(11,0,0,"no_road");
+
+setMark(17,0,0,"house");

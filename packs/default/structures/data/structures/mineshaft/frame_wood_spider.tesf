@@ -1,0 +1,19 @@
+id "shaft_frame_wood_spider";
+
+if(getMark(0, -1, -1) != "loot") block(0,-1,-1,"minecraft:oak_fence");
+block(0,0,-1,"minecraft:oak_fence");
+if(getMark(0, -1, 1) != "loot") block(0,-1,1,"minecraft:oak_fence");
+block(0,0,1,"minecraft:oak_fence");
+block(0,1,-1,"minecraft:oak_planks");
+block(0,1,0,"minecraft:oak_planks");
+block(0,1,1,"minecraft:oak_planks");
+if(randomInt(3) == 0) block(0,0,0,"minecraft:air");
+else block(0,0,0,"minecraft:cobweb");
+if(getMark(0, -1, -1) != "loot") {
+    if(randomInt(3) == 0) block(0,-1,0,"minecraft:air");
+    else block(0,-1,0,"minecraft:cobweb");
+}
+for(num x = -1; x <= 1; x = x + 1) {
+    block(0,-2,x,"minecraft:oak_planks", false);
+}
+if(randomInt(2) == 0) block(0,-1,0,"minecraft:rail[shape=east_west]");

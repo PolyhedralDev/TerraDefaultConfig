@@ -1,0 +1,10 @@
+id "mineshaft_start";
+
+num layers = randomInt(2) + 4;
+
+for(num i = 0; i < layers; i = i + 1) {
+    structure(3*(3-randomInt(7)), i * 5, 3*(3-randomInt(7)), "mineshaft_section", "NONE");
+    structure(3*(3-randomInt(7)), i * 5, 3*(3-randomInt(7)), "mineshaft_section", "CW_90");
+    structure(3*(3-randomInt(7)), i * 5, 3*(3-randomInt(7)), "mineshaft_section", "CCW_90");
+    structure(3*(3-randomInt(7)), i * 5, 3*(3-randomInt(7)), "mineshaft_section", "CW_180");
+}

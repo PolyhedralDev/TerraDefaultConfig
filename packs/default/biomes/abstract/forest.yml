@@ -1,0 +1,8 @@
+id: "FOREST_ABSTRACT"
+noise-equation: "|((noise2(x, z)+0.5) / 3.5)|"
+noise-2d:
+  enable: true
+  base: 63
+abstract: true
+extends: BASIC_ORES
+erode: RIVER

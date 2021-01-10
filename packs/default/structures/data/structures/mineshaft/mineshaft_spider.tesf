@@ -1,0 +1,16 @@
+id "mineshaft_spider";
+
+if(recursions() > 3) return;
+
+num length = randomInt(10) + 20;
+
+for(num i = 0; i < length; i = i + 1) {
+    if(i % 5 == 0 && i < (length - 2) && i > 2) structure(i,0,0,"shaft_frame_wood_spider","NONE");
+    else structure(i,0,0,"shaft_frame_spider","NONE");
+    if(i == floor(length/2) && randomInt(3) == 0) structure(i,0,0,"mineshaft_section","CW_90", "CCW_90");
+}
+structure(length,0,0,"shaft_frame","NONE");
+structure(length+1,0,0,"shaft_frame","NONE");
+structure(length,0,0,"mineshaft_section","CW_90", "CCW_90");
+block(length/2, -1, 0, "minecraft:spawner");
+state(length/2, -1, 0, "type=CAVE_SPIDER");

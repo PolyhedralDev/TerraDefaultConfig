@@ -1,7 +1,8 @@
 material: "minecraft:lava"
-radius:
+size:
   min: 0
   max: 0
+type: SPHERE
 deform: 1
 deform-frequency: 0.1
 id: LAVA

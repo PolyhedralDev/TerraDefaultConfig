@@ -1,0 +1,16 @@
+noise-equation: "(noise2(x, z)/5)"
+noise-2d:
+  enable: true
+  base: 58
+id: "BEACH_ABSTRACT"
+abstract: true
+extends: BASIC_ORES
+carving: {}
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SANDY: 64
+  - GRASSY: 255
+erode: RIVER

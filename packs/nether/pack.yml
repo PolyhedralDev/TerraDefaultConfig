@@ -1,12 +1,27 @@
 id: NETHER
+author: dfsek
+version: 2.0.0
 grids:
   - NETHER
 frequencies:
-  grid-x: 1024
-  grid-z: 1024
   zone: 3072
 blend:
   enable: true
   frequency: 0.125
   amplitude: 10
   ignore-terrain: true
+noise:
+  noise2:
+    dimensions: 2
+    type: OpenSimplex2
+    frequency: 0.0075
+    fractal:
+      type: FBm
+      octaves: 5
+  noise3:
+    dimensions: 3
+    type: OpenSimplex2
+    frequency: 0.0075
+    fractal:
+      type: FBm
+      octaves: 5

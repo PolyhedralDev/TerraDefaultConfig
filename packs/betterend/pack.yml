@@ -1,0 +1,55 @@
+id: BETTEREND
+author: dfsek
+version: 1.0.0
+grids:
+  - SHATTERED
+  - SHATTERED
+  - SHATTERED
+  - SHATTERED
+  - SHATTERED
+  - END
+  - END
+  - END
+  - END
+  - END
+  - BIOME:END_VOID_BORDER
+  - BIOME:VOID
+  - BIOME:AETHER_VOID_BORDER
+  - AETHER
+  - AETHER
+  - AETHER
+  - AETHER
+  - AETHER
+grid-options:
+  type: RADIAL
+  radial:
+    radius: 1000
+    internal-grid: BIOME:MAIN_ISLAND
+frequencies:
+  zone: 2048
+blend:
+  enable: true
+  frequency: 0.5
+  amplitude: 4
+erode:
+  enable: false
+vanilla:
+  mobs: true
+  decorations: true
+noise:
+  noise2:
+    dimensions: 2
+    type: OpenSimplex2
+    frequency: 0.0075
+    fractal:
+      type: FBm
+      octaves: 5
+  noise3:
+    dimensions: 3
+    type: OpenSimplex2
+    frequency: 0.0075
+    fractal:
+      type: FBm
+      octaves: 5
+variables:
+  base: 63

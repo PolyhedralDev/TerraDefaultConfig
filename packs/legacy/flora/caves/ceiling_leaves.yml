@@ -1,0 +1,19 @@
+layers:
+  - materials:
+      - "minecraft:jungle_leaves[persistent=true]": 1
+    layers: 2
+  - materials:
+      - "minecraft:jungle_leaves[persistent=true]": 1
+      - "minecraft:air": 1
+    layers: 1
+id: "CEILING_LEAVES"
+ceiling: true
+spawnable:
+  - "minecraft:stone"
+  - "minecraft:gravel"
+  - "minecraft:dirt"
+  - "minecraft:coarse_dirt"
+  - "minecraft:grass_block"
+replaceable:
+  - "minecraft:air"
+  - "minecraft:stone_slab"

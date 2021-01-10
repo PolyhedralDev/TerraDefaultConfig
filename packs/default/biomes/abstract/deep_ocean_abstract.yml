@@ -1,0 +1,10 @@
+noise-equation: "((noise2(x, z)/3))"
+noise-2d:
+  enable: true
+  base: 36
+structures:
+  - MONUMENT
+  - STRONGHOLD
+id: "DEEP_OCEAN_ABSTRACT"
+extends: OCEAN_FLORA
+abstract: true

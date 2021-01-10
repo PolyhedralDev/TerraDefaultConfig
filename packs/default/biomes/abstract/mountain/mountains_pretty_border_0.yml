@@ -1,0 +1,7 @@
+noise-equation: "((noise2(x, z)+0.5) / 3) + abs(noise2(x/2, z/2))"
+noise-2d:
+  enable: true
+  base: 62
+id: "MOUNTAINS_PRETTY_0_A"
+abstract: true
+extends: MOUNTAINS_PRETTY_FLORA

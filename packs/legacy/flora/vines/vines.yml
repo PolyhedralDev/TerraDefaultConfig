@@ -1,0 +1,22 @@
+layers:
+  - materials:
+      - "minecraft:vine": 1
+    layers: 3
+  - materials:
+      - "minecraft:vine": 1
+      - "minecraft:air": 1
+    layers: 1
+id: "VINES"
+ceiling: true
+spawnable:
+  - "minecraft:stone"
+  - "minecraft:sand"
+  - "minecraft:red_sand"
+  - "minecraft:gravel"
+  - "minecraft:dirt"
+  - "minecraft:coarse_dirt"
+  - "minecraft:grass_block"
+replaceable:
+  - "minecraft:air"
+rotatable:
+  - "minecraft:stone"

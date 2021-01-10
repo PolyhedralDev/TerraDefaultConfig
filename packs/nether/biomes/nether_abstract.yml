@@ -1,0 +1,41 @@
+noise-equation: "if(y, abs(y-64)/128 + noise3(x*1.5, y*2, z*1.5)*2, 1)"
+id: "NETHER_ABSTRACT"
+abstract: true
+
+carving:
+  CAVE: 35
+  RAVINE: 5
+ocean:
+  level: 32
+  palette: "BLOCK:minecraft:lava"
+ores:
+  GOLD_ORE:
+    min: 1
+    max: 5
+    min-height: 0
+    max-height: 128
+  QUARTZ_ORE:
+    min: 3
+    max: 8
+    min-height: 0
+    max-height: 128
+  MAGMA:
+    min: 1
+    max: 2
+    min-height: 0
+    max-height: 36
+  LAVA:
+    min: 8
+    max: 32
+    min-height: 0
+    max-height: 255
+  ANCIENT_DEBRIS_LOW:
+    min: 0
+    max: 1
+    min-height: 8
+    max-height: 22
+  ANCIENT_DEBRIS_HIGH:
+    min: 0
+    max: 1
+    min-height: 8
+    max-height: 119

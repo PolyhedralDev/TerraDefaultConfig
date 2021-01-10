@@ -1,0 +1,11 @@
+id "carrots_section";
+
+num selector = randomInt(8);
+if(selector == 0) block(0, 1 , 0, "minecraft:carrots[age=0]");
+else if(selector == 1) block(0, 1, 0, "minecraft:carrots[age=1]");
+else if(selector == 2) block(0, 1, 0, "minecraft:carrots[age=2]");
+else if(selector == 3) block(0, 1, 0, "minecraft:carrots[age=3]");
+else if(selector == 4) block(0, 1, 0, "minecraft:carrots[age=4]");
+else if(selector == 5) block(0, 1, 0, "minecraft:carrots[age=5]");
+else if(selector == 6) block(0, 1, 0, "minecraft:carrots[age=6]");
+else if(selector == 7) block(0, 1, 0, "minecraft:carrots[age=7]");

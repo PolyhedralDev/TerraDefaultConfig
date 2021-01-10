@@ -1,0 +1,4 @@
+grid:
+  - ["SHATTERED_END", "SHATTERED_FOREST"]
+id: "SHATTERED"
+extends: FREQUENCIES

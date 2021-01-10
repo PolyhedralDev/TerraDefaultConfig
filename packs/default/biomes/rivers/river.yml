@@ -1,0 +1,37 @@
+noise-equation: "((noise2(x, z)/4))"
+noise-2d:
+  enable: true
+  base: 58
+extends: "BASIC_ORES"
+id: "RIVER"
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - GRASSY: 255
+vanilla: RIVER
+carving: {}
+flora:
+  - density: 60
+    y:
+      min: 62
+      max: 80
+    items:
+      - SUGARCANE: 25
+      - GRASS: 675
+      - LILY_PAD: 10
+      - TALL_GRASS: 150
+  - density: 30
+    items:
+      - SEAGRASS: 50
+      - TALL_SEAGRASS: 20
+    y:
+      min: 50
+      max: 63
+ocean:
+  palette: "BLOCK:minecraft:water"
+  level: 62
+weight: 200

@@ -1,0 +1,21 @@
+id "mineshaft_section";
+
+if(recursions() > 3) return;
+
+num length = randomInt(10) + 20;
+
+for(num i = 0; i < length; i = i + 1) {
+    if(i % 5 == 0 && (i < length - 2) && i > 2) structure(i,0,0,"shaft_frame_wood","NONE");
+    else structure(i,0,0,"shaft_frame","NONE");
+    if(i == floor(length/2) && randomInt(3) == 0) {
+        if(randomInt(10) == 0) structure(i,0,0,"mineshaft_spider","CW_90", "CCW_90");
+        else structure(i,0,0,"mineshaft_section","CW_90", "CCW_90");
+    }
+}
+structure(length,0,0,"shaft_frame","NONE");
+structure(length+1,0,0,"shaft_frame","NONE");
+if(randomInt(10) == 0) structure(length,0,0,"shaft_room","NONE");
+else {
+    if(randomInt(10) == 0) structure(length,0,0,"mineshaft_spider","CW_90", "CCW_90");
+    else structure(length,0,0,"mineshaft_section","CW_90", "CCW_90");
+}

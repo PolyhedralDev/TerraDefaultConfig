@@ -5,3 +5,6 @@ grid:
   - ["CRIMSON", "WARPED", "DELTA", "NETHER", "SOUL_VALLEY"]
   - ["SOUL_VALLEY", "CRIMSON", "WARPED", "DELTA", "NETHER"]
 id: NETHER
+frequency:
+  x: 512
+  z: 512

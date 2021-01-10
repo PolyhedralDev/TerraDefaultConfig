@@ -1,0 +1,16 @@
+layers:
+  - materials:
+      - "minecraft:shroomlight": 1
+    layers: 1
+id: "SHROOMLIGHT"
+spawnable:
+  - "minecraft:air"
+
+
+# To update lighting
+physics: true
+
+replaceable:
+  - "minecraft:stone"
+  - "minecraft:dirt"
+  - "minecraft:grass_block"
