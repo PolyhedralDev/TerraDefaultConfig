@@ -26,11 +26,11 @@ for(num current = 0; current < (height+2); current = current + 1) {
 
                 if(abs(radius-distance) < 1) {
                     if(randomInt(2) == 0) {
-                        block(x - 5, current, y - 5, "minecraft:oak_leaves[distance=1]");
+                        block(x - 5, current, y - 5, "minecraft:oak_leaves[distance=1]", false);
                     }
                 }
                 if(abs(radius-distance) >= 1) {
-                    block(x - 5, current, y - 5, "minecraft:oak_leaves[distance=1]");
+                    block(x - 5, current, y - 5, "minecraft:oak_leaves[distance=1]", false);
                 }
             }
         }
@@ -43,5 +43,5 @@ for(num current = 0; current < (height+2); current = current + 1) {
 num addHeight = randomInt(2)+2;
 
 for(num add = height+1; add < (height+addHeight+2); add = add + 1)  {
-    block(0, add - 1, 0, "minecraft:oak_leaves[distance=1]");
+    block(0, add - 1, 0, "minecraft:oak_leaves[distance=1]", false);
 }
