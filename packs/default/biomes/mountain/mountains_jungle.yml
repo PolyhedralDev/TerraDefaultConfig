@@ -22,7 +22,12 @@ trees:
       max: 84
 flora:
   - density: 100
-    simplex-frequency: 0.1
+    distribution:
+      type: OpenSimplex2
+      frequency: 0.075
+      fractal:
+        type: FBm
+        octaves: 1
     items:
       - BLANK: 7
       - LEAVES: 3

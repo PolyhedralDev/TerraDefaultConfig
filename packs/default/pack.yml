@@ -40,7 +40,7 @@ grids:
   - MOUNTAIN
   - MOUNTAIN
 frequencies:
-  zone: 56
+  zone: 64
 
 structures:
   locatable:
@@ -75,6 +75,19 @@ noise:
     fractal:
       type: FBm
       octaves: 4
+  noiseC:
+    dimensions: 2
+    type: Cellular
+    frequency: 0.25
+    cellular:
+      return: NoiseLookup
+      lookup:
+        dimensions: 2
+        type: OpenSimplex2
+        frequency: 0.02
+        fractal:
+          type: FBm
+          octaves: 4
 locatable:
   STRONGHOLD: STRONGHOLD
 variables:
