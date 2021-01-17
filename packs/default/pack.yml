@@ -44,7 +44,16 @@ frequencies:
 
 structures:
   locatable:
-    STRONGHOLD: STRONGHOLD
+    minecraft:desert_pyramid: DESERT
+    minecraft:stronghold: STRONGHOLD
+    minecraft:pillager_outpost: OUTPOST
+    minecraft:swamp_hut: SWAMP
+    minecraft:monument: MONUMENT
+    minecraft:igloo: IGLOO
+    minecraft:jungle_pyramid: JUNGLE
+    minecraft:ruined_portal: RUINED_PORTAL
+    minecraft:village: VILLAGE
+    minecraft:mineshaft: MINESHAFT
 
 blend:
   terrain:
