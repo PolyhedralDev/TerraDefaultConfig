@@ -7,7 +7,8 @@ palette:
 vanilla: PLAINS
 
 erode: SKY_ISLANDS
-
+tags:
+  - "LAND"
 flora:
   - density: 50
     y:

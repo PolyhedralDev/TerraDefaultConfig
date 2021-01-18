@@ -4,6 +4,10 @@ noise-2d:
   base: 58
 extends: "BASIC_ORES"
 id: "RIVER"
+color: 0x0000ff
+elevation:
+  equation: "-0.1"
+  weight: 8
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1

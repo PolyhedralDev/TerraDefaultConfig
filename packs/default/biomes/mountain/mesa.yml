@@ -8,11 +8,16 @@ elevation:
 extends: "BASIC_ORES"
 id: "MESA"
 erode: MESA
+color: 0xd94515
 structures:
   - MINESHAFT_MESA
   - STRONGHOLD
+tags:
+  - "LAND"
+  - "HOT"
+  - "DRY"
 slant:
-  threshold: 0.0725
+  threshold: 0.15
   palette:
     - "BLOCK:minecraft:bedrock": 0
     - BEDROCK_MOST: 1

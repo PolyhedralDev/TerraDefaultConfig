@@ -6,10 +6,8 @@ layers:
       - "minecraft:coarse_dirt": 7
       - "minecraft:dirt": 7
     layers: 1
-  - materials:
-      - "minecraft:dirt": 1
+  - materials: "minecraft:dirt"
     layers: 2
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 1
 id: "GRITTY"

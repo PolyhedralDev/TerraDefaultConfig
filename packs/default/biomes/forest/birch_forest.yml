@@ -1,6 +1,6 @@
 extends: "FOREST_ABSTRACT"
 id: "BIRCH_FOREST"
-
+color: 0x307444
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -17,3 +17,6 @@ trees:
     y:
       min: 58
       max: 84
+tags:
+  - "LAND"
+  - "RIVER_ERODE"

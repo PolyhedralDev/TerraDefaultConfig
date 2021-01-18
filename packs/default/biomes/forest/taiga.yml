@@ -1,5 +1,6 @@
 extends: "FOREST_ABSTRACT"
 id: "TAIGA"
+color: 0x0b6659
 flora:
   - density: 40
     y:
@@ -18,7 +19,10 @@ palette:
   - RIVER_SHORE: 62
   - TAIGA: 255
 vanilla: TAIGA
-  
+tags:
+  - "LAND"
+  - "COLD"
+  - "RIVER_ERODE"
 trees:
   - density: 6
     items:

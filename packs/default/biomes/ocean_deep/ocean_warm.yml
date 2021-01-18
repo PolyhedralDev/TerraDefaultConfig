@@ -1,6 +1,7 @@
 extends: "DEEP_OCEAN_ABSTRACT"
 id: "WARM_OCEAN_DEEP"
 vanilla: WARM_OCEAN
+color: 0x000050
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -20,3 +21,6 @@ flora:
       - KELP_SHORT: 5
       - KELP_MEDIUM: 5
       - KELP_TALL: 5
+tags:
+  - "OCEAN"
+  - "OCEAN_DEEP"

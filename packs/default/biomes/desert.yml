@@ -15,7 +15,12 @@ palette:
   - BEDROCK_LITTLE: 3
   - DESERT: 255
 vanilla: DESERT
-
+color: 0xfa9418
+tags:
+  - "LAND"
+  - "HOT"
+  - "DRY"
+  - "RIVER_ERODE"
   
 flora:
   - density: 2

@@ -1,7 +1,7 @@
 noise-equation: "|(noise2(x, z) / 3) + 0.1|"
 extends: "FOREST_ABSTRACT"
 id: "ROCKY_TALL_FOREST"
-
+color: 0x8ab33f
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -11,7 +11,9 @@ palette:
   - RIVER_SHORE: 62
   - GRITTY: 255
 vanilla: JUNGLE
-
+tags:
+  - "LAND"
+  - "RIVER_ERODE"
 flora:
   - density: 40
     y:

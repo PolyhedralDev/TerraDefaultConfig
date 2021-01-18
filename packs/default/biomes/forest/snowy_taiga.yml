@@ -1,5 +1,6 @@
 extends: "FOREST_ABSTRACT"
 id: "SNOWY_TAIGA"
+color: 0x31554a
 structures:
   - IGLOO
   - STRONGHOLD
@@ -14,7 +15,10 @@ palette:
   - RIVER_SHORE: 62
   - TAIGA: 255
 vanilla: TAIGA
-  
+tags:
+  - "LAND"
+  - "COLD"
+  - "RIVER_ERODE"
 flora:
   - density: 80
     y:

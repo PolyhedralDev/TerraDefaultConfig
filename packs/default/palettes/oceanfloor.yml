@@ -3,11 +3,9 @@ layers:
       - "minecraft:sand": 1
       - "minecraft:gravel": 3
     layers: 3
-  - materials:
-      - "minecraft:gravel": 2
+  - materials: "minecraft:gravel"
     layers: 2
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 1
 id: "OCEANFLOOR"
 

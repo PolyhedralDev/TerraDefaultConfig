@@ -5,7 +5,7 @@ noise-2d:
 elevation:
   equation: "min(floor(((|noise2(x/2.5, z/2.5)|) + 0.1)*4)*0.175, 12)"
   interpolation: true
-
+color: 0xa79d64
 id: "ARID_MOUNTAINS"
 extends: "BASIC_ORES"
 
@@ -18,7 +18,10 @@ palette:
   - ARID: 255
 vanilla: SAVANNA
 prevent-smooth: true
-
+tags:
+  - "LAND"
+  - "HOT"
+  - "DRY"
 slant:
   palette:
     - "BLOCK:minecraft:bedrock": 0

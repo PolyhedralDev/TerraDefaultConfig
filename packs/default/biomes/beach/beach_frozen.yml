@@ -1,5 +1,6 @@
 extends: "BEACH_ABSTRACT"
 id: "FROZEN_BEACH"
+color: 0xa2a284
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -8,6 +9,9 @@ palette:
   - GRAVEL: 64
   - TUNDRA: 255
 vanilla: SNOWY_BEACH
+tags:
+  - "BEACH"
+  - "COLD_BEACH"
 ocean:
   palette: "COLD_OCEAN"
   level: 62

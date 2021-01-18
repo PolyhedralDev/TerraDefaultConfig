@@ -4,11 +4,9 @@ layers:
       - "minecraft:grass_block": 4
       - "minecraft:sand": 2
     layers: 1
-  - materials:
-      - "minecraft:dirt": 1
+  - materials: "minecraft:dirt"
     layers: 2
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 1
 id: "RIVER_SHORE"
 noise:

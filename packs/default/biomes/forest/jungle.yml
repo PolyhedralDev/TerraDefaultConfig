@@ -5,6 +5,7 @@ structures:
   - STRONGHOLD
   - MINESHAFT
   - DUNGEON
+color: 0x537b09
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -14,7 +15,11 @@ palette:
   - RIVER_SHORE: 62
   - GRASSY: 255
 vanilla: JUNGLE
-
+tags:
+  - "LAND"
+  - "HOT"
+  - "WET"
+  - "RIVER_ERODE"
 
 flora:
   - density: 40

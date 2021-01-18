@@ -16,6 +16,10 @@ palette:
   - MOUNTAIN_GRASS: 84
 vanilla: MOUNTAINS
 erode: RIVER_M
+color: 0x606060
+tags:
+  - "LAND"
+  - "COLD"
 flora:
   - density: 80
     y:

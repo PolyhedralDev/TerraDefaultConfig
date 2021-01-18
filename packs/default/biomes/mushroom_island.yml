@@ -1,6 +1,6 @@
 extends: "PLAINS_ABSTRACT"
-id: "PLAINS"
-color: 0x8db360
+id: "MUSHROOM"
+color: 0xff00ff
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -8,27 +8,21 @@ palette:
   - BEDROCK_LITTLE: 3
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
-  - GRASSY: 255
+  - MYCELIUM: 255
 biome-noise:
   type: OpenSimplex2
   frequency: 0.01
-vanilla: PLAINS
 tags:
-  - "LAND"
-  - "RIVER_ERODE"
-structures:
-  - VILLAGE_PLAINS
-  - STRONGHOLD
-
+  - "LAND_MUSHROOM"
+vanilla: MUSHROOM_FIELDS
 flora:
-  - density: 50
+  - density: 10
     y:
       min: 62
       max: 84
     items:
-      - TALL_GRASS: 150
-      - GRASS: 700
-      - SUNFLOWER: 20
+      - RED_MUSHROOM: 1
+      - BROWN_MUSHROOM: 2
 
 
 # Carving and ores covered by super biome

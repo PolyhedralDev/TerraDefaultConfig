@@ -1,5 +1,6 @@
 extends: "PLAINS_ABSTRACT"
 id: "TUNDRA"
+color: 0xffffff
 structures:
   - IGLOO
   - STRONGHOLD
@@ -15,7 +16,11 @@ vanilla: SNOWY_TUNDRA
 carving:
   CAVE_TUNDRA: 55
   RAVINE: 2
-
+tags:
+  - "LAND"
+  - "COLD"
+  - "DRY"
+  - "RIVER_ERODE"
 flora:
   - density: 80
     y:

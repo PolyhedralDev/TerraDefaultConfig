@@ -1,12 +1,11 @@
 extends: "BEACH_ABSTRACT"
-id: "WARM_BEACH"
-vanilla: BEACH
+id: "MUSHROOM_BEACH"
+vanilla: MUSHROOM_FIELD_SHORE
+color: 0xa000ff
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
-  - SAND_ALL: 255
-tags:
-  - "BEACH"
-  - "HOT_BEACH"
+  - SANDY: 64
+  - MYCELIUM: 255

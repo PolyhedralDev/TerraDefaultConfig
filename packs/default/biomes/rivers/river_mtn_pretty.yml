@@ -1,7 +1,7 @@
-noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)+0.5) / 3) + max(abs(noise2(x/2, z/2)*4), 0) - if(max(y-58 + ((noise2(x, z)+0.5) / 3)*10,0), if(max(y-76,0), 0, (max(abs(noise2(x/2, z/2)*4), 0)) + 1) * (1.25-((y-58)/18)), 0)"
+noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)+0.5) / 3) + max(abs(noise2(x/2, z/2)*4), 0) - (if(max(y-58 + ((noise2(x, z)+0.5) / 3)*10,0), if(max(y-76,0), 0, (max(abs(noise2(x/2, z/2)*4), 0)) + 1) * (1.25-((y-58)/18)), 0))*3"
 extends: "BASIC_ORES"
+color: 0x0000ff
 id: "RIVER_M_P"
-weight: 4
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1

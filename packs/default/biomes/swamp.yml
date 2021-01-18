@@ -1,6 +1,7 @@
 noise-equation: "((noise2(x, z)/4))"
 extends: "BASIC_ORES"
 id: "SWAMP"
+color: 0x07f9b2
 noise-2d:
   enable: true
   base: 62
@@ -12,7 +13,9 @@ palette:
   - SWAMP_BOTTOM: 61
   - SWAMP: 255
 vanilla: SWAMP
-
+tags:
+  - "LAND"
+  - "WET"
 flora:
   - density: 80
     y:

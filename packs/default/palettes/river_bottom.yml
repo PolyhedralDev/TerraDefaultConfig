@@ -4,8 +4,7 @@ layers:
       - "minecraft:dirt": 4
       - "minecraft:sand": 2
     layers: 2
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 1
 id: "RIVER_BOTTOM"
 noise:
