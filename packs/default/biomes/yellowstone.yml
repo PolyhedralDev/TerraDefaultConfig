@@ -1,5 +1,6 @@
 id: YELLOWSTONE
 extends: PLAINS_ABSTRACT
+color: 0xff0000
 palette:
   - "COARSE": 255
   - "Y_DIORITE_MOST": 64

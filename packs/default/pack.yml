@@ -57,308 +57,327 @@ locatable:
   STRONGHOLD: STRONGHOLD
 variables:
   base: 63
-biome-pipeline:
+biomes:
+  type: PIPELINE
   resolution: 1
   blend:
     amplitude: 0
     noise:
       type: Constant
-  source:
-    type: RANDOM
-    biomes:
-      OCEAN: 1
-      PLAINS: 2
-    noise:
-      type: OpenSimplex2
-      frequency: 0.1
+  image:
+    name: map.jpg
   pipeline:
-    - mutate:
-        type: REPLACE
-        from: "BIOME:OCEAN"
-        to:
-          - "COLD_OCEAN_DEEP": 3
-          - "OCEAN_DEEP": 4
-          - "WARM_OCEAN_DEEP": 9
-        noise:
-          type: OpenSimplex2
-          salt: 2
-          frequency: 0.05
-    - mutate:
-        type: REPLACE
-        from: "BIOME:PLAINS"
-        to:
-          - TUNDRA: 3
-          - PLAINS: 4
-          - JUNGLE: 9
-        noise:
-          type: OpenSimplex2
-          salt: 2
-          frequency: 0.05
-    - mutate:
-        type: REPLACE
-        from: "BIOME:WARM_OCEAN_DEEP"
-        to:
-          - "WARM_OCEAN_DEEP": 1
-          - "LUKEWARM_OCEAN_DEEP": 4
-        noise:
-          type: WhiteNoise
-          salt: 21
-    - mutate:
-        type: REPLACE
-        from: "BIOME:COLD_OCEAN_DEEP"
-        to:
-          - "COLD_OCEAN_DEEP": 4
-          - "FROZEN_OCEAN_DEEP": 1
-        noise:
-          type: WhiteNoise
-          salt: 21
-    - mutate:
-        type: REPLACE
-        from: "BIOME:JUNGLE"
-        to:
-          - JUNGLE: 2
-          - SAVANNA: 1
-          - DESERT: 2
-        noise:
-          type: OpenSimplex2
-          salt: 5
-          frequency: 0.075
-    - mutate:
-        type: REPLACE
-        from: "BIOME:SAVANNA"
-        to:
-          - FOREST: 2
-          - PLAINS: 3
-        noise:
-          type: WhiteNoise
-          salt: 6
-    - mutate:
-        type: REPLACE
-        from: "BIOME:DESERT"
-        to:
-          - MESA: 1
-          - DESERT: 3
-          - SAVANNA: 2
-          - ARID_MOUNTAINS: 1
-        noise:
-          type: WhiteNoise
-          salt: 7
-    - mutate:
-        type: REPLACE
-        from: "BIOME:JUNGLE"
-        to:
-          - JUNGLE: 2
-          - MOUNTAINS_JUNGLE: 1
-          - ROCKY_TALL_FOREST: 1
-          - SWAMP: 1
-        noise:
-          type: WhiteNoise
-          salt: 8
-    - mutate:
-        type: REPLACE
-        from: "BIOME:PLAINS"
-        to:
-          - FOREST: 3
-          - BIRCH_FOREST: 1
-          - PLAINS: 3
-          - DARK_FOREST: 1
-          - CRAG: 1
-          - MOUNTAINS_PRETTY: 1
-        noise:
-          type: WhiteNoise
-          salt: 9
-    - mutate:
-        type: REPLACE
-        from: "BIOME:TUNDRA"
-        to:
-          - TAIGA: 2
-          - SNOWY_TAIGA: 1
-          - MOUNTAINS_STONE: 1
-          - TUNDRA: 1
-        noise:
-          type: WhiteNoise
-          salt: 10
-    - expand:
-        type: FRACTAL
-        noise:
-          type: WhiteNoise
-          salt: 11
-    - expand:
-        type: FRACTAL
-        noise:
-          type: WhiteNoise
-          salt: 11
-    - mutate:
-        type: BORDER
-        from: LAND
-        replace: BIOME:WARM_OCEAN_DEEP
-        to:
-          - WARM_OCEAN: 1
-        noise:
-          type: Constant
-    - mutate:
-        type: BORDER
-        from: LAND
-        replace: BIOME:LUKEWARM_OCEAN_DEEP
-        to:
-          - LUKEWARM_OCEAN: 1
-        noise:
-          type: Constant
-    - mutate:
-        type: BORDER
-        from: LAND
-        replace: BIOME:OCEAN_DEEP
-        to:
-          - OCEAN: 1
-        noise:
-          type: Constant
-    - mutate:
-        type: BORDER
-        from: LAND
-        replace: BIOME:COLD_OCEAN_DEEP
-        to:
-          - COLD_OCEAN: 1
-        noise:
-          type: Constant
-    - mutate:
-        type: BORDER
-        from: LAND
-        replace: BIOME:FROZEN_OCEAN_DEEP
-        to:
-          - FROZEN_OCEAN: 1
-        noise:
-          type: Constant
-    - mutate:
-        type: REPLACE
-        from: "BIOME:OCEAN_DEEP"
-        to:
-          - "MUSHROOM": 1
-          - "SELF": 9
-        noise:
-          type: OpenSimplex2
-          salt: 24
-          frequency: 0.1
-    - expand:
-        type: FRACTAL
-        noise:
-          type: WhiteNoise
-          salt: 12
-    - expand:
-        type: FRACTAL
-        noise:
-          type: WhiteNoise
-          salt: 13
-    - mutate:
-        type: BORDER
-        from: OCEAN
-        replace: LAND
-        to:
-          - BEACH: 1
-        noise:
-          type: Constant
-    - expand:
-        type: FRACTAL
-        noise:
-          type: WhiteNoise
-          salt: 14
-    - mutate:
-        type: BORDER
-        from: OCEAN
-        replace: LAND_MUSHROOM
-        to:
-          - MUSHROOM_BEACH: 1
-        noise:
-          type: Constant
-    - mutate:
-        type: BORDER
-        from: BIOME:MUSHROOM_BEACH
-        replace: OCEAN_DEEP
-        to:
-          - OCEAN: 1
-        noise:
-          type: Constant
-    - mutate:
-        type: SMOOTH
-        noise:
-          type: WhiteNoise
-          salt: 18
-    - expand:
-        type: FRACTAL
-        noise:
-          type: WhiteNoise
-          salt: 16
-    - mutate:
-        type: REPLACE
-        from: "RIVER_ERODE"
-        to:
-          - SELF: 5
-          - RIVER: 1
-          - SELF: 5
-        noise:
-          type: OpenSimplex2
-          frequency: 0.005
-          fractal:
-            octaves: 2
-            type: FBm
-            gain: 0.2
-            lacunarity: 4
-    - mutate:
-        type: REPLACE
-        from: "BIOME:MOUNTAINS_JUNGLE"
-        to:
-          - SELF: 5
-          - RIVER_M_J: 1
-          - SELF: 5
-        noise:
-          type: OpenSimplex2
-          frequency: 0.005
-          fractal:
-            octaves: 2
-            type: FBm
-            gain: 0.2
-            lacunarity: 4
-    - mutate:
-        type: REPLACE
-        from: "BIOME:MOUNTAINS_STONE"
-        to:
-          - SELF: 5
-          - RIVER_M: 1
-          - SELF: 5
-        noise:
-          type: OpenSimplex2
-          frequency: 0.005
-          fractal:
-            octaves: 2
-            type: FBm
-            gain: 0.2
-            lacunarity: 4
-    - mutate:
-        type: REPLACE
-        from: "BIOME:MOUNTAINS_PRETTY"
-        to:
-          - SELF: 5
-          - RIVER_M_P: 1
-          - SELF: 5
-        noise:
-          type: OpenSimplex2
-          frequency: 0.005
-          fractal:
-            octaves: 2
-            type: FBm
-            gain: 0.2
-            lacunarity: 4
-    - expand:
-        type: FRACTAL
-        noise:
-          type: WhiteNoise
-          salt: 17
-    - mutate:
-        type: SMOOTH
-        noise:
-          type: WhiteNoise
-          salt: 18
-    - mutate:
-        type: SMOOTH
-        noise:
-          type: WhiteNoise
-          salt: 19
+    source:
+      type: RANDOM
+      biomes:
+        OCEAN: 1
+        PLAINS: 2
+      noise:
+        type: OpenSimplex2
+        frequency: 0.1
+    stages:
+      - mutate: # Ocean climate distribution
+          type: REPLACE
+          from: "BIOME:OCEAN"
+          to:
+            - "COLD_OCEAN_DEEP": 3
+            - "OCEAN_DEEP": 4
+            - "WARM_OCEAN_DEEP": 9
+          noise:
+            type: OpenSimplex2 # Use Simplex, so hot cannot be directly next to cold.
+            salt: 2 # Salt with 2 so ocean & land have same climates.
+            frequency: 0.05
+      - mutate: # Land climate distribution
+          type: REPLACE
+          from: "BIOME:PLAINS"
+          to:
+            - TUNDRA: 3
+            - PLAINS: 4
+            - JUNGLE: 9
+          noise:
+            type: OpenSimplex2 # Use Simplex, so hot cannot be directly next to cold.
+            salt: 2 # Salt with 2 so ocean & land have same climates.
+            frequency: 0.05
+      - mutate:
+          type: REPLACE
+          from: "BIOME:WARM_OCEAN_DEEP"
+          to:
+            - "WARM_OCEAN_DEEP": 1
+            - "LUKEWARM_OCEAN_DEEP": 4
+          noise:
+            type: WhiteNoise
+            salt: 21
+      - mutate: # Randomize Cold/Frozen oceans.
+          type: REPLACE
+          from: "BIOME:COLD_OCEAN_DEEP"
+          to:
+            - "COLD_OCEAN_DEEP": 4
+            - "FROZEN_OCEAN_DEEP": 1
+          noise:
+            type: WhiteNoise
+            salt: 21
+      - mutate: # Humidity distribution of warm biomes
+          type: REPLACE
+          from: "BIOME:JUNGLE"
+          to:
+            - JUNGLE: 2
+            - SAVANNA: 1
+            - DESERT: 2
+          noise:
+            type: OpenSimplex2 # Use Simplex, so wet cannot be directly next to dry.
+            salt: 5
+            frequency: 0.075
+      - mutate: # Neutral warm biomes.
+          type: REPLACE
+          from: "BIOME:SAVANNA"
+          to:
+            - FOREST: 2
+            - PLAINS: 3
+          noise:
+            type: Cellular # Use cellular to increase biome size.
+            cellular:
+              return: CellValue
+            frequency: 0.5
+            salt: 6
+      - mutate: # Dry warm biomes
+          type: REPLACE
+          from: "BIOME:DESERT"
+          to:
+            - MESA: 1
+            - DESERT: 3
+            - SAVANNA: 2
+            - ARID_MOUNTAINS: 1
+          noise:
+            type: Cellular # Use cellular to increase biome size.
+            cellular:
+              return: CellValue
+            frequency: 0.5
+            salt: 7
+      - mutate: # Wet warm biomes
+          type: REPLACE
+          from: "BIOME:JUNGLE"
+          to:
+            - JUNGLE: 2
+            - MOUNTAINS_JUNGLE: 1
+            - ROCKY_TALL_FOREST: 1
+            - SWAMP: 1
+          noise:
+            type: Cellular # Use cellular to increase biome size.
+            cellular:
+              return: CellValue
+            frequency: 0.5
+            salt: 8
+      - mutate: # Distribution of neutral temperature biomes.
+          type: REPLACE
+          from: "BIOME:PLAINS"
+          to:
+            - FOREST: 3
+            - BIRCH_FOREST: 1
+            - PLAINS: 3
+            - DARK_FOREST: 1
+            - CRAG: 1
+            - MOUNTAINS_PRETTY: 1
+          noise:
+            type: Cellular # Use cellular to increase biome size.
+            cellular:
+              return: CellValue
+            frequency: 0.5
+            salt: 9
+      - mutate: # Distribution of cold biomes.
+          type: REPLACE
+          from: "BIOME:TUNDRA"
+          to:
+            - TAIGA: 2
+            - SNOWY_TAIGA: 1
+            - MOUNTAINS_STONE: 1
+            - TUNDRA: 1
+          noise:
+            type: Cellular # Use cellular to increase biome size.
+            cellular:
+              return: CellValue
+            frequency: 0.5
+            salt: 10
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 11
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 11
+      - mutate: # Border deep ocean with normal ocean.
+          type: BORDER
+          from: LAND
+          replace: BIOME:WARM_OCEAN_DEEP
+          to:
+            - WARM_OCEAN: 1
+          noise:
+            type: Constant
+      - mutate: # Border deep ocean with normal ocean.
+          type: BORDER
+          from: LAND
+          replace: BIOME:LUKEWARM_OCEAN_DEEP
+          to:
+            - LUKEWARM_OCEAN: 1
+          noise:
+            type: Constant
+      - mutate: # Border deep ocean with normal ocean.
+          type: BORDER
+          from: LAND
+          replace: BIOME:OCEAN_DEEP
+          to:
+            - OCEAN: 1
+          noise:
+            type: Constant
+      - mutate: # Border deep ocean with normal ocean.
+          type: BORDER
+          from: LAND
+          replace: BIOME:COLD_OCEAN_DEEP
+          to:
+            - COLD_OCEAN: 1
+          noise:
+            type: Constant
+      - mutate: # Border deep ocean with normal ocean.
+          type: BORDER
+          from: LAND
+          replace: BIOME:FROZEN_OCEAN_DEEP
+          to:
+            - FROZEN_OCEAN: 1
+          noise:
+            type: Constant
+      - mutate: # Mushroom Islands
+          type: REPLACE
+          from: "BIOME:OCEAN_DEEP"
+          to:
+            - "MUSHROOM": 1
+            - "SELF": 9
+          noise:
+            type: OpenSimplex2 # Simplex islands
+            salt: 24
+            frequency: 0.1
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 12
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 13
+      - mutate: # Generate beaches at land/ocean border.
+          type: BORDER
+          from: OCEAN
+          replace: LAND
+          to:
+            - BEACH: 1
+          noise:
+            type: Constant
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 14
+      - mutate: # Mushroom beaches.
+          type: BORDER
+          from: OCEAN
+          replace: LAND_MUSHROOM
+          to:
+            - MUSHROOM_BEACH: 1
+          noise:
+            type: Constant
+      - mutate: # Regular ocean around mushroom biomes, to prevent steep drop-off.
+          type: BORDER
+          from: BIOME:MUSHROOM_BEACH
+          replace: OCEAN_DEEP
+          to:
+            - OCEAN: 1
+          noise:
+            type: Constant
+      - mutate:
+          type: SMOOTH
+          noise:
+            type: WhiteNoise
+            salt: 18
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 16
+      - mutate: # Erode rivers.
+          type: REPLACE
+          from: "RIVER_ERODE"
+          to:
+            - SELF: 5
+            - RIVER: 1
+            - SELF: 5
+          noise:
+            type: OpenSimplex2
+            frequency: 0.005
+            fractal:
+              octaves: 2
+              type: FBm
+              gain: 0.2
+              lacunarity: 4
+      - mutate: # Erode jungle rivers.
+          type: REPLACE
+          from: "BIOME:MOUNTAINS_JUNGLE"
+          to:
+            - SELF: 5
+            - RIVER_M_J: 1
+            - SELF: 5
+          noise:
+            type: OpenSimplex2
+            frequency: 0.005
+            fractal:
+              octaves: 2
+              type: FBm
+              gain: 0.2
+              lacunarity: 4
+      - mutate: # Erode stone mountain rivers
+          type: REPLACE
+          from: "BIOME:MOUNTAINS_STONE"
+          to:
+            - SELF: 5
+            - RIVER_M: 1
+            - SELF: 5
+          noise:
+            type: OpenSimplex2
+            frequency: 0.005
+            fractal:
+              octaves: 2
+              type: FBm
+              gain: 0.2
+              lacunarity: 4
+      - mutate: # Erode mountain rivers
+          type: REPLACE
+          from: "BIOME:MOUNTAINS_PRETTY"
+          to:
+            - SELF: 5
+            - RIVER_M_P: 1
+            - SELF: 5
+          noise:
+            type: OpenSimplex2
+            frequency: 0.005
+            fractal:
+              octaves: 2
+              type: FBm
+              gain: 0.2
+              lacunarity: 4
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 17
+      - mutate:
+          type: SMOOTH
+          noise:
+            type: WhiteNoise
+            salt: 18
+      - mutate:
+          type: SMOOTH
+          noise:
+            type: WhiteNoise
+            salt: 19

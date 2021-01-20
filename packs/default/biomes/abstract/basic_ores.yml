@@ -35,7 +35,7 @@ slabs:
     "minecraft:sand": "BLOCK:minecraft:sandstone_stairs"
     "minecraft:mossy_cobblestone": "BLOCK:minecraft:mossy_cobblestone_stairs"
 carving:
-  CAVE: 55
+  CAVE: 50
   RAVINE: 2
 ores:
   DIRT:
