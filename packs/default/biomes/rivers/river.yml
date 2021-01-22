@@ -5,8 +5,11 @@ noise-2d:
 extends: "BASIC_ORES"
 id: "RIVER"
 color: 0x0000ff
+blend:
+  distance: 1
+  weight: 1.25
 elevation:
-  equation: "-0.1"
+  equation: "-0.025"
   weight: 8
 palette:
   - "BLOCK:minecraft:bedrock": 0
