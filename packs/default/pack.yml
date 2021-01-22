@@ -68,7 +68,7 @@ biomes:
     name: map.jpg
   pipeline:
     source:
-      type: RANDOM
+      type: NOISE
       biomes:
         OCEAN: 1
         PLAINS: 2
@@ -86,7 +86,7 @@ biomes:
           noise:
             type: OpenSimplex2 # Use Simplex, so hot cannot be directly next to cold.
             salt: 2 # Salt with 2 so ocean & land have same climates.
-            frequency: 0.04
+            frequency: 0.025
       - mutate: # Land climate distribution
           type: REPLACE
           from: "BIOME:PLAINS"
