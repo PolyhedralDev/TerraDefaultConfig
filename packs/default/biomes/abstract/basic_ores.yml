@@ -3,6 +3,11 @@
 id: "BASIC_ORES"
 abstract: true
 
+carving:
+  #equation: "max(carving1(x + 32, y*3.5, z + 32) + cave_threshold, -0.02) + max(carving2(x, y*3.5 - 24, z) + cave_threshold, -0.02) - if(max(y, cave_cutoff)-cave_cutoff, (y-cave_cutoff)/256, 0) - if(y, 0, 1)"
+  #equation: "-((((cave(x, y, z))) ^ 2) + (((cave2(x, y, z))) ^ 2)) + 0.06"
+  equation: "0"
+
 structures:
   - STRONGHOLD
   - DUNGEON
@@ -34,9 +39,6 @@ slabs:
     "minecraft:cobblestone": "BLOCK:minecraft:cobblestone_stairs"
     "minecraft:sand": "BLOCK:minecraft:sandstone_stairs"
     "minecraft:mossy_cobblestone": "BLOCK:minecraft:mossy_cobblestone_stairs"
-carving:
-  CAVE: 50
-  RAVINE: 2
 ores:
   DIRT:
     min: 0

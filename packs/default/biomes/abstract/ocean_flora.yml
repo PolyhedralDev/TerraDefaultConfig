@@ -11,8 +11,6 @@ flora:
     y:
       min: 30
       max: 64
-carving:
-  CAVE_OCEAN: 55
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
