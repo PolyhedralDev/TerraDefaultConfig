@@ -1,0 +1,53 @@
+id: "CAVE_SWAMP"
+extends: CAVE_ABSTRACT
+palette:
+  inner:
+    replace-blacklist: true
+    replace:
+      - "minecraft:air"
+      - "minecraft:water"
+      - "minecraft:lava"
+      - "minecraft:bedrock"
+      - "minecraft:ice"
+    layers:
+      - materials: { "minecraft:air": 1 }
+        y: 255
+      - materials: { "minecraft:water": 1 }
+        y: 62
+      - materials: { "minecraft:lava": 1 }
+        y: 7
+      - materials: { "minecraft:obsidian": 19, "minecraft:magma_block": 1 }
+        y: 8
+  outer:
+    replace-blacklist: false
+    replace:
+      - "minecraft:stone"
+    layers:
+      - materials: { "minecraft:stone": 21, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1, "minecraft:oak_leaves[persistent=true]": 2 }
+        y: 255
+      - materials: { "minecraft:stone": 23, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1 }
+        y: 48
+      - materials: { "minecraft:stone": 1 }
+        y: 18
+  top:
+    replace-blacklist: false
+    replace:
+      - "minecraft:stone"
+    layers:
+      - materials: { "minecraft:stone": 16, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1, "minecraft:oak_leaves[persistent=true]": 2 }
+        y: 255
+      - materials: { "minecraft:stone": 18, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1 }
+        y: 48
+      - materials: { "minecraft:stone": 1 }
+        y: 18
+  bottom:
+    replace-blacklist: false
+    replace:
+      - "minecraft:stone"
+    layers:
+      - materials: { "minecraft:stone": 4, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1, "minecraft:oak_leaves[persistent=true]": 2 }
+        y: 255
+      - materials: { "minecraft:stone": 6, "minecraft:spruce_wood": 1, "minecraft:dark_oak_wood": 1 }
+        y: 48
+      - materials: { "minecraft:stone": 1 }
+        y: 18

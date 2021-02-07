@@ -7,7 +7,7 @@ palette:
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
   - RIVER_BOTTOM: 61
-  - RIVER_SHORE: 62
+  - MYCELIUM_SHORE: 62
   - MYCELIUM: 255
 biome-noise:
   type: OpenSimplex2
@@ -15,8 +15,17 @@ biome-noise:
 tags:
   - "LAND_MUSHROOM"
 vanilla: MUSHROOM_FIELDS
+trees:
+  - density: 3
+    items:
+      - RED_MUSHROOM: 1
+      - BROWN_MUSHROOM: 1
+    y:
+      min: 62
+      max: 84
+
 flora:
-  - density: 10
+  - density: 4
     y:
       min: 62
       max: 84

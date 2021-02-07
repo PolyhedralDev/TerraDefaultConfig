@@ -20,6 +20,9 @@ blend:
     step: 3
     elevation: 4
 
+beta:
+  carving: false
+
 vanilla:
   mobs: true
 
@@ -31,15 +34,6 @@ noise:
     fractal:
       type: FBm
       octaves: 4
-  cave:
-    dimensions: 3
-    type: OpenSimplex2
-    frequency: 0.015
-  cave2:
-    dimensions: 3
-    type: OpenSimplex2
-    frequency: 0.015
-    salt: 2
   noise3:
     dimensions: 3
     type: OpenSimplex2
@@ -47,6 +41,9 @@ noise:
     fractal:
       type: FBm
       octaves: 4
+  rand:
+    dimensions: 3
+    type: WhiteNoise
   carving1:
     dimensions: 3
     type: Cellular
@@ -107,6 +104,7 @@ variables:
   base: 63
   cave_cutoff: 54
   cave_threshold: 0.25
+  thresholdSubAmp2: 0.04625
 biomes:
   type: PIPELINE
   biome: CRAG
@@ -127,7 +125,7 @@ biomes:
         PLAINS: 2
       noise:
         type: OpenSimplex2
-        frequency: 0.05
+        frequency: 0.04
         fractal:
           type: FBm
           octaves: 4
@@ -208,7 +206,7 @@ biomes:
             - JUNGLE: 2
             - MOUNTAINS_JUNGLE: 1
             - ROCKY_TALL_FOREST: 1
-            #- SWAMP: 1
+            - SWAMP: 1
           noise: *biome-distribute
       - mutate: # Distribution of neutral temperature biomes.
           type: REPLACE
@@ -243,29 +241,32 @@ biomes:
             LUKEWARM_OCEAN_DEEP: LUKEWARM_OCEAN
             COLD_OCEAN_DEEP: COLD_OCEAN
             FROZEN_OCEAN_DEEP: FROZEN_OCEAN
-  
           default-replace: OCEAN_DEEP
           default-to: OCEAN
           noise:
             type: Constant
+      - mutate: # Randomize Cold/Frozen oceans.
+          type: REPLACE
+          from: "BIOME:OCEAN_DEEP"
+          to:
+            - "OCEAN_DEEP": 7
+            - "MUSHROOM": 1
+          noise:
+            type: Cellular
+            frequency: 0.2
+            cellular:
+              return: CellValue
+            salt: 21
       - expand:
           type: FRACTAL
           noise:
             type: WhiteNoise
             salt: 11
-      - mutate: # Mushroom Islands
-          type: REPLACE
-          from: "BIOME:OCEAN_DEEP"
-          to:
-            - "MUSHROOM": 1
-            - "SELF": 9
+      - expand:
+          type: FRACTAL
           noise:
-            type: OpenSimplex2 # Simplex islands
-            salt: 24
-            frequency: 0.075
-            fractal:
-              type: FBm
-              octaves: 2
+            type: WhiteNoise
+            salt: 16
       - mutate: # Mushroom beaches.
           type: BORDER
           from: OCEAN
@@ -274,24 +275,6 @@ biomes:
             - MUSHROOM_BEACH: 1
           noise:
             type: Constant
-      - mutate: # Regular ocean around mushroom biomes, to prevent steep drop-off.
-          type: BORDER
-          from: BIOME:MUSHROOM_BEACH
-          replace: OCEAN_DEEP
-          to:
-            - OCEAN: 1
-          noise:
-            type: Constant
-      - mutate:
-          type: SMOOTH
-          noise:
-            type: WhiteNoise
-            salt: 18
-      - expand:
-          type: FRACTAL
-          noise:
-            type: WhiteNoise
-            salt: 16
       - mutate: # Generate beaches at land/ocean border.
           type: BORDER
           from: OCEAN
@@ -305,6 +288,19 @@ biomes:
           noise:
             type: WhiteNoise
             salt: 14
+      - mutate: # Regular ocean around mushroom biomes, to prevent steep drop-off.
+          type: BORDER
+          from: BIOME:MUSHROOM_BEACH
+          replace: OCEAN_DEEP
+          to:
+            - OCEAN: 1
+          noise:
+            type: Constant
+      - mutate:
+          type: SMOOTH
+          noise:
+            type: WhiteNoise
+            salt: 18
       - mutate: # Erode rivers.
           type: REPLACE_LIST
           to:
