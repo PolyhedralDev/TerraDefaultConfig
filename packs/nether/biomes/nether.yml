@@ -1,5 +1,6 @@
 extends: "NETHER_ABSTRACT"
 id: "NETHER"
+color: 0xbf3b3b
 flora:
   - density: 1
     items:
