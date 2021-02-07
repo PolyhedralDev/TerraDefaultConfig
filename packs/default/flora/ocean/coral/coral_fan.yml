@@ -1,0 +1,26 @@
+layers:
+  - materials:
+      - "minecraft:brain_coral_wall_fan": 1
+      - "minecraft:fire_coral_wall_fan": 1
+      - "minecraft:tube_coral_wall_fan": 1
+      - "minecraft:bubble_coral_wall_fan": 1
+      - "minecraft:water": 4
+    layers: 1
+id: "CORAL_FAN"
+spawnable:
+  - "minecraft:water"
+  - "minecraft:sand"
+  - "minecraft:gravel"
+replaceable:
+  - "minecraft:water"
+irrigable-offset: 1
+irrigable:
+  - "minecraft:brain_coral_block"
+  - "minecraft:tube_coral_block"
+  - "minecraft:fire_coral_block"
+  - "minecraft:bubble_coral_block"
+rotatable:
+  - "minecraft:brain_coral_block"
+  - "minecraft:tube_coral_block"
+  - "minecraft:fire_coral_block"
+  - "minecraft:bubble_coral_block"

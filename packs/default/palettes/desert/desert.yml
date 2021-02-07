@@ -1,11 +1,8 @@
 layers:
-  - materials:
-      - "minecraft:sand": 1
+  - materials: "minecraft:sand"
     layers: 3
-  - materials:
-      - "minecraft:sandstone": 1
+  - materials: "minecraft:sandstone"
     layers: 4
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 1
 id: DESERT

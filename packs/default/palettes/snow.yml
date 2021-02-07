@@ -1,11 +1,8 @@
 layers:
-  - materials:
-      - "minecraft:snow_block": 2
+  - materials: "minecraft:snow_block"
     layers: 3
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 4
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 1
 id: "SNOW"

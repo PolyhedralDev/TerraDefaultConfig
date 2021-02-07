@@ -1,46 +1,6 @@
 id: DEFAULT
 author: dfsek
 version: 2.0.0
-grids:
-  - OCEAN_DEEP
-  - OCEAN_DEEP
-  - OCEAN_SHELF
-  - OCEAN
-  - OCEAN
-  - BEACH
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - LAND
-  - MOUNTAIN_0
-  - MOUNTAIN_1
-  - MOUNTAIN
-  - MOUNTAIN
-  - MOUNTAIN
-  - MOUNTAIN
-  - MOUNTAIN
-frequencies:
-  zone: 64
 
 structures:
   locatable:
@@ -57,18 +17,15 @@ structures:
 
 blend:
   terrain:
-    base: 4
+    step: 3
     elevation: 4
-  enable: true
-  frequency: 0.1
-  amplitude: 4
-erode:
-  enable: true
-  frequency: 0.001
-  threshold: 0.0015
-  octaves: 5
+
+beta:
+  carving: false
+
 vanilla:
   mobs: true
+
 noise:
   noise2:
     dimensions: 2
@@ -84,6 +41,49 @@ noise:
     fractal:
       type: FBm
       octaves: 4
+  rand:
+    dimensions: 3
+    type: WhiteNoise
+  carving1:
+    dimensions: 3
+    type: Cellular
+    cellular:
+      return: Distance3Div
+    frequency: 0.0075
+    domain-warp:
+      type: Function
+      amplitude: 30
+      function:
+        type: OpenSimplex2
+        frequency: 0.025
+        salt: 1
+    salt: 1
+  carving2:
+    dimensions: 3
+    type: Cellular
+    cellular:
+      return: Distance3Div
+    frequency: 0.0075
+    domain-warp:
+      type: Function
+      amplitude: 20
+      function:
+        type: OpenSimplex2
+        frequency: 0.015
+        salt: 30
+    salt: 20
+  desert:
+    dimensions: 2
+    type: Cellular
+    frequency: 0.025
+    cellular:
+      return: Distance
+    domain-warp:
+      type: Function
+      amplitude: 20
+      function:
+        frquency: 0.015
+        type: OpenSimplex2
   noiseC:
     dimensions: 2
     type: Cellular
@@ -97,7 +97,258 @@ noise:
         fractal:
           type: FBm
           octaves: 4
+
 locatable:
   STRONGHOLD: STRONGHOLD
 variables:
   base: 63
+  cave_cutoff: 54
+  cave_threshold: 0.25
+  thresholdSubAmp2: 0.04625
+biomes:
+  type: PIPELINE
+  biome: WARM_OCEAN
+  resolution: 4
+  blend:
+    amplitude: 1.75
+    noise:
+      type: OpenSimplex2
+      frequency: 0.12
+  image:
+    name: map.jpg
+  pipeline:
+    initial-size: 4
+    source:
+      type: NOISE
+      biomes:
+        OCEAN: 1
+        PLAINS: 2
+      noise:
+        type: OpenSimplex2
+        frequency: 0.04
+        fractal:
+          type: FBm
+          octaves: 4
+    stages:
+      - mutate: # Ocean climate distribution
+          type: REPLACE
+          from: "BIOME:OCEAN"
+          to:
+            - "COLD_OCEAN_DEEP": 6
+            - "OCEAN_DEEP": 8
+            - "WARM_OCEAN_DEEP": 12
+          noise: &climate # This noise will be used elsewhere for climate.
+            type: OpenSimplex2 # Use Simplex, so hot cannot be directly next to cold.
+            salt: 2
+            frequency: 0.025
+      - mutate: # Land climate distribution
+          type: REPLACE
+          from: "BIOME:PLAINS"
+          to:
+            - TUNDRA: 4 # Super cold biomes
+            - TAIGA: 2 # Taiga buffer zone
+            - PLAINS: 8 # Temperate biomes
+            - JUNGLE: 12 # Warm biomes
+          noise: *climate # Use climate noise
+      - mutate:
+          type: REPLACE
+          from: "BIOME:WARM_OCEAN_DEEP"
+          to:
+            - "WARM_OCEAN_DEEP": 1
+            - "LUKEWARM_OCEAN_DEEP": 8
+          noise:
+            type: WhiteNoise
+            salt: 21
+      - mutate: # Randomize Cold/Frozen oceans.
+          type: REPLACE
+          from: "BIOME:COLD_OCEAN_DEEP"
+          to:
+            - "COLD_OCEAN_DEEP": 4
+            - "FROZEN_OCEAN_DEEP": 1
+          noise:
+            type: WhiteNoise
+            salt: 21
+      - mutate: # Humidity distribution of warm biomes
+          type: REPLACE
+          from: "BIOME:JUNGLE"
+          to:
+            - JUNGLE: 3
+            - SAVANNA: 2
+            - DESERT: 4
+          noise:
+            type: OpenSimplex2 # Use Simplex, so wet cannot be directly next to dry.
+            salt: 5
+            frequency: 0.0325
+      - mutate: # Neutral warm biomes.
+          type: REPLACE
+          from: "BIOME:SAVANNA"
+          to:
+            - FOREST: 2
+            - PLAINS: 3
+          noise: &biome-distribute
+            type: Cellular # Use cellular to increase biome size.
+            cellular:
+              return: CellValue
+            frequency: 0.25
+            salt: 6
+      - mutate: # Dry warm biomes
+          type: REPLACE
+          from: "BIOME:DESERT"
+          to:
+            - MESA: 1
+            - DESERT: 3
+            - SAVANNA: 2
+            - ARID_MOUNTAINS: 1
+          noise: *biome-distribute
+      - mutate: # Wet warm biomes
+          type: REPLACE
+          from: "BIOME:JUNGLE"
+          to:
+            - JUNGLE: 4
+            - MOUNTAINS_JUNGLE: 2
+            - ROCKY_TALL_FOREST: 2
+            - SWAMP: 2
+          noise: *biome-distribute
+      - mutate: # Distribution of neutral temperature biomes.
+          type: REPLACE
+          from: "BIOME:PLAINS"
+          to:
+            - FOREST: 3
+            - BIRCH_FOREST: 1
+            - PLAINS: 3
+            - DARK_FOREST: 1
+            - CRAG: 1
+            - MOUNTAINS_PRETTY: 1
+          noise: *biome-distribute
+      - mutate: # Distribution of cold biomes.
+          type: REPLACE
+          from: "BIOME:TUNDRA"
+          to:
+            - TAIGA: 2
+            - SNOWY_TAIGA: 1
+            - MOUNTAINS_STONE: 1
+            - TUNDRA: 1
+          noise: *biome-distribute
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 11
+      - mutate: # Wet warm biomes
+          type: REPLACE
+          from: "BIOME:JUNGLE"
+          to:
+            - JUNGLE: 6
+            - BAMBOO_JUNGLE: 1
+          noise:
+            type: Cellular # Use cellular to increase biome size.
+            cellular:
+              return: CellValue
+            frequency: 0.5
+            salt: 6
+      - mutate: # Border deep ocean with normal ocean.
+          type: BORDER_LIST
+          from: LAND
+          replace:
+            WARM_OCEAN_DEEP: WARM_OCEAN
+            LUKEWARM_OCEAN_DEEP: LUKEWARM_OCEAN
+            COLD_OCEAN_DEEP: COLD_OCEAN
+            FROZEN_OCEAN_DEEP: FROZEN_OCEAN
+          default-replace: OCEAN_DEEP
+          default-to: OCEAN
+          noise:
+            type: Constant
+      - mutate: # Randomize Cold/Frozen oceans.
+          type: REPLACE
+          from: "BIOME:OCEAN_DEEP"
+          to:
+            - "OCEAN_DEEP": 7
+            - "MUSHROOM": 1
+          noise:
+            type: Cellular
+            frequency: 0.2
+            cellular:
+              return: CellValue
+            salt: 21
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 11
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 16
+      - mutate: # Mushroom beaches.
+          type: BORDER
+          from: OCEAN
+          replace: LAND_MUSHROOM
+          to:
+            - MUSHROOM_BEACH: 1
+          noise:
+            type: Constant
+      - mutate: # Generate beaches at land/ocean border.
+          type: BORDER
+          from: OCEAN
+          replace: LAND
+          to:
+            - BEACH: 1
+          noise:
+            type: Constant
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+            salt: 14
+      - mutate: # Regular ocean around mushroom biomes, to prevent steep drop-off.
+          type: BORDER
+          from: BIOME:MUSHROOM_BEACH
+          replace: OCEAN_DEEP
+          to:
+            - OCEAN: 1
+          noise:
+            type: Constant
+      - mutate:
+          type: SMOOTH
+          noise:
+            type: WhiteNoise
+            salt: 18
+      - mutate: # Erode rivers.
+          type: REPLACE_LIST
+          to:
+            MOUNTAINS_JUNGLE:
+              - SELF: 7
+              - RIVER_M_J: 1
+              - SELF: 7
+            MOUNTAINS_STONE:
+              - SELF: 7
+              - RIVER_M: 1
+              - SELF: 7
+            MOUNTAINS_PRETTY:
+              - SELF: 7
+              - RIVER_M_P: 1
+              - SELF: 7
+          default-from: "RIVER_ERODE"
+          default-to:
+            - SELF: 7
+            - RIVER: 1
+            - SELF: 7
+          noise:
+            type: OpenSimplex2
+            frequency: 0.0075
+            fractal:
+              octaves: 2
+              type: FBm
+              gain: 0.2
+              lacunarity: 4
+      - mutate:
+          type: SMOOTH
+          noise:
+            type: WhiteNoise
+            salt: 18
+      - mutate:
+          type: SMOOTH
+          noise:
+            type: WhiteNoise
+            salt: 19

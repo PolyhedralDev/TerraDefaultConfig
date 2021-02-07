@@ -1,5 +1,6 @@
 extends: "NETHER_ABSTRACT"
 id: "CRIMSON"
+color: 0xdd0808
 flora:
   - density: 4
     items:

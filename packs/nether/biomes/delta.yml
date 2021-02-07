@@ -1,7 +1,7 @@
 noise-equation: "if(y, abs(y-64)/128 + noise3(x*1.5, y*2, z*1.5)*3, 1)"
 id: "DELTA"
 extends: "NETHER_ABSTRACT"
-
+color: 0x403636
 flora:
   - density: 60
     simplex-frequency: 0.1

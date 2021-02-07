@@ -1,6 +1,7 @@
 extends: "MOUNTAINS_PRETTY"
 id: "MOUNTAINS_JUNGLE"
 erode: RIVER_M_J
+color: 0x2c4205
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -10,6 +11,10 @@ palette:
   - RIVER_SHORE: 62
   - MOUNTAIN_JUNGLE: 255
 vanilla: JUNGLE
+tags:
+  - "LAND"
+  - "HOT"
+  - "WET"
 trees:
   - density: 10
     items:

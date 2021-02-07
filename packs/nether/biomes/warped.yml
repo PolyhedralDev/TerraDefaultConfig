@@ -1,5 +1,6 @@
 extends: "NETHER_ABSTRACT"
 id: "WARPED"
+color: 0x49907b
 flora:
   - density: 4
     items:

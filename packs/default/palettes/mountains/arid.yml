@@ -20,8 +20,7 @@ layers:
       - "minecraft:dirt": 7
       - "minecraft:white_terracotta": 2
     layers: 2
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 1
 id: "ARID"
 noise:

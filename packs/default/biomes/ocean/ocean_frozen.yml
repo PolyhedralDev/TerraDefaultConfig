@@ -1,6 +1,7 @@
 extends: "OCEAN_ABSTRACT"
 id: "FROZEN_OCEAN"
 vanilla: COLD_OCEAN
+color: 0x7070d6
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -11,3 +12,6 @@ palette:
 ocean:
   palette: "COLD_OCEAN"
   level: 62
+tags:
+  - "OCEAN"
+  - "COLD_OCEAN"

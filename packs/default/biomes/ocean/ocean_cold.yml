@@ -1,6 +1,7 @@
 extends: "OCEAN_ABSTRACT"
 id: "COLD_OCEAN"
 vanilla: COLD_OCEAN
+color: 0x202070
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -10,3 +11,6 @@ palette:
   - OCEANFLOOR: 60
 ocean:
   level: 62
+tags:
+  - "OCEAN"
+  - "COLD_OCEAN"

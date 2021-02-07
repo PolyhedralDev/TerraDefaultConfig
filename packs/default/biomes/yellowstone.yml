@@ -1,5 +1,6 @@
 id: YELLOWSTONE
 extends: PLAINS_ABSTRACT
+color: 0xff0000
 palette:
   - "COARSE": 255
   - "Y_DIORITE_MOST": 64
@@ -14,6 +15,8 @@ noise-equation: "((-((y / (base-1.9))^2)) + 1) + |noise2(x/2, z/2)/2| + max((noi
 erode: YELLOWSTONE
 carving: {}
 ores: {}
+tags:
+  - "LAND"
 trees:
   - density: 6
     items:

@@ -1,6 +1,8 @@
 id: OCEAN_FLORA
 extends: BASIC_ORES
 abstract: true
+carving:
+  CAVE_OCEAN: 40
 structures:
   - STRONGHOLD
 flora:
@@ -11,8 +13,6 @@ flora:
     y:
       min: 30
       max: 64
-carving:
-  CAVE_OCEAN: 55
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1

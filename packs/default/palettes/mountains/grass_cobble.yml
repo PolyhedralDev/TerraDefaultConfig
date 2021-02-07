@@ -33,8 +33,7 @@ layers:
       - "minecraft:cobblestone": 1
       - "minecraft:dirt": 4
     layers: 2
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 1
 id: "GRASSY_STONE"
 noise:

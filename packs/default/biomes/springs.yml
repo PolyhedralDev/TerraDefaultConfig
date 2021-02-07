@@ -1,4 +1,5 @@
 carving: {}
+color: 0xff0000
 extends: BASIC_ORES
 palette:
   - BLOCK:minecraft:bedrock: 0
@@ -13,6 +14,8 @@ noise-2d:
   enable: true
   base: 64
 erode: SPRINGS
+tags:
+  - "LAND"
 elevation:
   equation: "noiseC(x/2, z/2)/1.5 + 0.5"
 flora:

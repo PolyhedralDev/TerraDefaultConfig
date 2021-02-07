@@ -3,8 +3,8 @@ scripts:
 id: "VILLAGE_PLAINS"
 spawn:
   start:
-    min: 84
-    max: 84
+    min: 96
+    max: 96
   bound:
     min: 48
     max: 96

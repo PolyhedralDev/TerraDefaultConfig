@@ -4,10 +4,8 @@ layers:
       - "minecraft:coarse_dirt": 1
       - "minecraft:gravel": 2
     layers: 1
-  - materials:
-      - "minecraft:dirt": 1
+  - materials: "minecraft:dirt"
     layers: 2
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 1
 id: "SWAMP_BOTTOM"
