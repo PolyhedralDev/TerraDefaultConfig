@@ -107,7 +107,7 @@ variables:
   thresholdSubAmp2: 0.04625
 biomes:
   type: PIPELINE
-  biome: CRAG
+  biome: BAMBOO_JUNGLE
   resolution: 4
   blend:
     amplitude: 1.75
@@ -171,9 +171,9 @@ biomes:
           type: REPLACE
           from: "BIOME:JUNGLE"
           to:
-            - JUNGLE: 2
-            - SAVANNA: 1
-            - DESERT: 2
+            - JUNGLE: 3
+            - SAVANNA: 2
+            - DESERT: 4
           noise:
             type: OpenSimplex2 # Use Simplex, so wet cannot be directly next to dry.
             salt: 5
@@ -203,10 +203,10 @@ biomes:
           type: REPLACE
           from: "BIOME:JUNGLE"
           to:
-            - JUNGLE: 2
-            - MOUNTAINS_JUNGLE: 1
-            - ROCKY_TALL_FOREST: 1
-            - SWAMP: 1
+            - JUNGLE: 4
+            - MOUNTAINS_JUNGLE: 2
+            - ROCKY_TALL_FOREST: 2
+            - SWAMP: 2
           noise: *biome-distribute
       - mutate: # Distribution of neutral temperature biomes.
           type: REPLACE
@@ -233,6 +233,18 @@ biomes:
           noise:
             type: WhiteNoise
             salt: 11
+      - mutate: # Wet warm biomes
+          type: REPLACE
+          from: "BIOME:JUNGLE"
+          to:
+            - JUNGLE: 6
+            - BAMBOO_JUNGLE: 1
+          noise:
+            type: Cellular # Use cellular to increase biome size.
+            cellular:
+              return: CellValue
+            frequency: 0.5
+            salt: 6
       - mutate: # Border deep ocean with normal ocean.
           type: BORDER_LIST
           from: LAND
