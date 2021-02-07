@@ -107,7 +107,7 @@ variables:
   thresholdSubAmp2: 0.04625
 biomes:
   type: PIPELINE
-  biome: BAMBOO_JUNGLE
+  biome: WARM_OCEAN
   resolution: 4
   blend:
     amplitude: 1.75
@@ -154,7 +154,7 @@ biomes:
           from: "BIOME:WARM_OCEAN_DEEP"
           to:
             - "WARM_OCEAN_DEEP": 1
-            - "LUKEWARM_OCEAN_DEEP": 4
+            - "LUKEWARM_OCEAN_DEEP": 8
           noise:
             type: WhiteNoise
             salt: 21
