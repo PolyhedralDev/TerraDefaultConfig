@@ -20,7 +20,6 @@ palette:
   - TAIGA: 255
 vanilla: TAIGA
 structures:
-  - VILLAGE_PLAINS
   - STRONGHOLD
   - OUTPOST
   - DUNGEON
