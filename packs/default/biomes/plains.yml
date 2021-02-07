@@ -19,6 +19,9 @@ tags:
 structures:
   - VILLAGE_PLAINS
   - STRONGHOLD
+  - OUTPOST
+  - DUNGEON
+  - MINESHAFT
 
 flora:
   - density: 50

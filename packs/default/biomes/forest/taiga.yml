@@ -19,6 +19,12 @@ palette:
   - RIVER_SHORE: 62
   - TAIGA: 255
 vanilla: TAIGA
+structures:
+  - VILLAGE_PLAINS
+  - STRONGHOLD
+  - OUTPOST
+  - DUNGEON
+  - MINESHAFT
 tags:
   - "LAND"
   - "COLD"

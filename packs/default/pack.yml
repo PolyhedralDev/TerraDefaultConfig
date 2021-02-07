@@ -134,9 +134,9 @@ biomes:
           type: REPLACE
           from: "BIOME:OCEAN"
           to:
-            - "COLD_OCEAN_DEEP": 3
-            - "OCEAN_DEEP": 4
-            - "WARM_OCEAN_DEEP": 9
+            - "COLD_OCEAN_DEEP": 6
+            - "OCEAN_DEEP": 8
+            - "WARM_OCEAN_DEEP": 12
           noise: &climate # This noise will be used elsewhere for climate.
             type: OpenSimplex2 # Use Simplex, so hot cannot be directly next to cold.
             salt: 2
@@ -145,9 +145,10 @@ biomes:
           type: REPLACE
           from: "BIOME:PLAINS"
           to:
-            - TUNDRA: 3
-            - PLAINS: 4
-            - JUNGLE: 9
+            - TUNDRA: 4 # Super cold biomes
+            - TAIGA: 2 # Taiga buffer zone
+            - PLAINS: 8 # Temperate biomes
+            - JUNGLE: 12 # Warm biomes
           noise: *climate # Use climate noise
       - mutate:
           type: REPLACE

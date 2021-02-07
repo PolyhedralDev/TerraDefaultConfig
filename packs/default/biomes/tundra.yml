@@ -21,6 +21,7 @@ tags:
   - "COLD"
   - "DRY"
   - "RIVER_ERODE"
+  - "FROZEN"
 flora:
   - density: 80
     y:
