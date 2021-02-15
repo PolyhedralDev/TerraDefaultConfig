@@ -44,34 +44,6 @@ noise:
   rand:
     dimensions: 3
     type: WhiteNoise
-  carving1:
-    dimensions: 3
-    type: Cellular
-    cellular:
-      return: Distance3Div
-    frequency: 0.0075
-    domain-warp:
-      type: Function
-      amplitude: 30
-      function:
-        type: OpenSimplex2
-        frequency: 0.025
-        salt: 1
-    salt: 1
-  carving2:
-    dimensions: 3
-    type: Cellular
-    cellular:
-      return: Distance3Div
-    frequency: 0.0075
-    domain-warp:
-      type: Function
-      amplitude: 20
-      function:
-        type: OpenSimplex2
-        frequency: 0.015
-        salt: 30
-    salt: 20
   desert:
     dimensions: 2
     type: Cellular
@@ -97,17 +69,29 @@ noise:
         fractal:
           type: FBm
           octaves: 4
+  bubble: # Bubbly noise
+    dimensions: 2
+    sampler-type : NORMALIZER
+    type : LINEAR
+    min : -0.75
+    max : -1
+    function :
+      sampler-type : NORMALIZER
+      type : CLAMP
+      min : -1
+      max : -0.6
+      function :
+        sampler-type : NOISE
+        type : Cellular
+        frequency : 0.075
+        cellular :
+          return : Distance2Add
 
-locatable:
-  STRONGHOLD: STRONGHOLD
 variables:
   base: 63
-  cave_cutoff: 54
-  cave_threshold: 0.25
-  thresholdSubAmp2: 0.04625
 biomes:
   type: PIPELINE
-  biome: WARM_OCEAN
+  biome: DESERT_MOUNTAINS
   resolution: 4
   blend:
     amplitude: 1.75
@@ -116,6 +100,7 @@ biomes:
       frequency: 0.12
   image:
     name: map.jpg
+    align: NONE
   pipeline:
     initial-size: 4
     source:
@@ -213,12 +198,13 @@ biomes:
           type: REPLACE
           from: "BIOME:PLAINS"
           to:
-            - FOREST: 3
-            - BIRCH_FOREST: 1
-            - PLAINS: 3
-            - DARK_FOREST: 1
-            - CRAG: 1
-            - MOUNTAINS_PRETTY: 1
+            - FOREST: 5
+            - BIRCH_FOREST: 2
+            - PLAINS: 6
+            - SKY_ISLANDS: 1
+            - DARK_FOREST: 2
+            - CRAG: 2
+            - MOUNTAINS_PRETTY: 2
           noise: *biome-distribute
       - mutate: # Distribution of cold biomes.
           type: REPLACE
@@ -275,6 +261,11 @@ biomes:
           noise:
             type: WhiteNoise
             salt: 11
+      - mutate:
+          type: SMOOTH
+          noise:
+            type: WhiteNoise
+            salt: 182
       - expand:
           type: FRACTAL
           noise:
