@@ -3,10 +3,8 @@ layers:
       - "minecraft:grass_block": 1
       - "minecraft:diorite": 1
     layers: 1
-  - materials:
-      - "minecraft:dirt": 1
+  - materials: "minecraft:dirt"
     layers: 2
-  - materials:
-      - "minecraft:stone": 1
+  - materials: "minecraft:stone"
     layers: 1
 id: "Y_DIORITE_HALF"

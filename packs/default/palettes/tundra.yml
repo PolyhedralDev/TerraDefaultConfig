@@ -15,9 +15,11 @@ layers:
     layers: 1
 id: "TUNDRA"
 noise:
-  type: OpenSimplex2
-  fractal:
-    octaves: 2
-    type: FBm
-  frequency: 0.04
-  salt: 4
+  sampler-type: DOMAIN_WARP
+  warp:
+    type: WhiteNoise
+  amplitude: 5
+  function:
+    sampler-type: NOISE
+    type: OpenSimplex2
+    frequency: 0.04

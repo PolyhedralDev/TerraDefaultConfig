@@ -91,7 +91,7 @@ variables:
   base: 63
 biomes:
   type: PIPELINE
-  biome: DESERT_MOUNTAINS
+  biome: YELLOWSTONE
   resolution: 4
   blend:
     amplitude: 1.75
@@ -198,22 +198,23 @@ biomes:
           type: REPLACE
           from: "BIOME:PLAINS"
           to:
-            - FOREST: 5
-            - BIRCH_FOREST: 2
-            - PLAINS: 6
+            - FOREST: 20
+            - BIRCH_FOREST: 8
+            - PLAINS: 24
             - SKY_ISLANDS: 1
-            - DARK_FOREST: 2
-            - CRAG: 2
-            - MOUNTAINS_PRETTY: 2
+            - DARK_FOREST: 8
+            - CRAG: 4
+            - MOUNTAINS_PRETTY: 6
           noise: *biome-distribute
       - mutate: # Distribution of cold biomes.
           type: REPLACE
           from: "BIOME:TUNDRA"
           to:
-            - TAIGA: 2
-            - SNOWY_TAIGA: 1
-            - MOUNTAINS_STONE: 1
-            - TUNDRA: 1
+            - TAIGA: 16
+            - SNOWY_TAIGA: 8
+            - MOUNTAINS_STONE: 8
+            - TUNDRA: 6
+            - YELLOWSTONE: 1
           noise: *biome-distribute
       - expand:
           type: FRACTAL
