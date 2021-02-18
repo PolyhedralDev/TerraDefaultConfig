@@ -15,11 +15,10 @@ layers:
     layers: 1
 id: "TUNDRA"
 noise:
-  sampler-type: DOMAIN_WARP
+  type: DomainWarp
   warp:
     type: WhiteNoise
   amplitude: 5
   function:
-    sampler-type: NOISE
     type: OpenSimplex2
     frequency: 0.04

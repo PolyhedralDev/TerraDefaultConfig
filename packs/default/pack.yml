@@ -28,64 +28,58 @@ vanilla:
 
 noise:
   noise2:
+    type: FBm
     dimensions: 2
-    type: OpenSimplex2
-    frequency: 0.0075
-    fractal:
-      type: FBm
-      octaves: 4
+    octaves: 4
+    function:
+      type: OpenSimplex2
+      frequency: 0.0075
   noise3:
+    type: FBm
     dimensions: 3
-    type: OpenSimplex2
-    frequency: 0.0075
-    fractal:
-      type: FBm
-      octaves: 4
+    octaves: 4
+    function:
+      type: OpenSimplex2
+      frequency: 0.0075
   rand:
     dimensions: 3
     type: WhiteNoise
   desert:
+    type: DomainWarp
     dimensions: 2
-    type: Cellular
-    frequency: 0.025
-    cellular:
+    amplitude: 20
+    function:
+      type: Cellular
+      frequency: 0.025
       return: Distance
-    domain-warp:
-      type: Function
-      amplitude: 20
-      function:
-        frquency: 0.015
-        type: OpenSimplex2
+    warp:
+      frquency: 0.015
+      type: OpenSimplex2
   noiseC:
     dimensions: 2
     type: Cellular
     frequency: 0.25
-    cellular:
-      return: NoiseLookup
-      lookup:
-        dimensions: 2
+    return: NoiseLookup
+    lookup:
+      type: FBm
+      octaves: 4
+      function:
         type: OpenSimplex2
         frequency: 0.02
-        fractal:
-          type: FBm
-          octaves: 4
+
   bubble: # Bubbly noise
     dimensions: 2
-    sampler-type : NORMALIZER
-    type : LINEAR
-    min : -0.75
-    max : -1
-    function :
-      sampler-type : NORMALIZER
-      type : CLAMP
-      min : -1
-      max : -0.6
-      function :
-        sampler-type : NOISE
-        type : Cellular
-        frequency : 0.075
-        cellular :
-          return : Distance2Add
+    type: LINEAR
+    min: -0.75
+    max: -1
+    function:
+      type: CLAMP
+      min: -1
+      max: -0.6
+      function:
+        type: Cellular
+        frequency: 0.075
+        return: Distance2Add
 
 variables:
   base: 63
@@ -109,11 +103,10 @@ biomes:
         OCEAN: 1
         PLAINS: 2
       noise:
-        type: OpenSimplex2
-        frequency: 0.04
-        fractal:
-          type: FBm
-          octaves: 4
+        type: FBm
+        function:
+          type: OpenSimplex2
+          frequency: 0.04
     stages:
       - mutate: # Ocean climate distribution
           type: REPLACE
@@ -172,8 +165,7 @@ biomes:
             - PLAINS: 3
           noise: &biome-distribute
             type: Cellular # Use cellular to increase biome size.
-            cellular:
-              return: CellValue
+            return: CellValue
             frequency: 0.25
             salt: 6
       - mutate: # Dry warm biomes
@@ -229,8 +221,7 @@ biomes:
             - BAMBOO_JUNGLE: 1
           noise:
             type: Cellular # Use cellular to increase biome size.
-            cellular:
-              return: CellValue
+            return: CellValue
             frequency: 0.5
             salt: 6
       - mutate: # Border deep ocean with normal ocean.
@@ -254,8 +245,7 @@ biomes:
           noise:
             type: Cellular
             frequency: 0.2
-            cellular:
-              return: CellValue
+            return: CellValue
             salt: 21
       - expand:
           type: FRACTAL
@@ -327,13 +317,13 @@ biomes:
             - RIVER: 1
             - SELF: 7
           noise:
-            type: OpenSimplex2
-            frequency: 0.0075
-            fractal:
-              octaves: 2
-              type: FBm
-              gain: 0.2
-              lacunarity: 4
+            type: FBm
+            octaves: 2
+            gain: 0.2
+            lacunarity: 4
+            function:
+              type: OpenSimplex2
+              frequency: 0.0075
       - mutate:
           type: SMOOTH
           noise:
