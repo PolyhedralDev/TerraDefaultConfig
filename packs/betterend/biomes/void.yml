@@ -5,3 +5,5 @@ ocean:
   level: -1
 palette:
   - "BLOCK:minecraft:end_stone": 255
+tags:
+  - OUTER

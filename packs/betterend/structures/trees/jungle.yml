@@ -1,10 +1,8 @@
-files:
-  jungle/junglebig1: 4
-  jungle/junglebig2: 4
-  jungle/junglebig3: 1
-id: JUNGLE
-y-offset: 0
+id: "JUNGLE"
+scripts:
+  - Junglebig1: 1
+  - Junglebig2: 1
+  - Junglebig3: 1
 spawnable:
   - "minecraft:grass_block"
   - "minecraft:podzol"
-  - "minecraft:coarse_dirt"

@@ -38,18 +38,136 @@ vanilla:
   decorations: true
 noise:
   noise2:
+    type: FBm
     dimensions: 2
-    type: OpenSimplex2
-    frequency: 0.0075
-    fractal:
-      type: FBm
-      octaves: 5
+    octaves: 4
+    function:
+      type: OpenSimplex2
+      frequency: 0.0075
   noise3:
+    type: FBm
     dimensions: 3
-    type: OpenSimplex2
-    frequency: 0.0075
-    fractal:
-      type: FBm
-      octaves: 5
+    octaves: 4
+    function:
+      type: OpenSimplex2
+      frequency: 0.0075
+  mainIsland:
+    type: Expression
+    equation: "(simplex(x, z)+1.05) * max(-((x^2+z^2)/128^2) + 1, 0)"
+    functions:
+      simplex:
+        type: FBm
+        octaves: 3
+        function:
+          type: OpenSimplex2
+          frequency: 0.01
+
 variables:
   base: 63
+biomes:
+  type: PIPELINE
+  resolution: 4
+  blend:
+    amplitude: 1.75
+    noise:
+      type: OpenSimplex2
+      frequency: 0.12
+  pipeline:
+    initial-size: 4
+    source:
+      type: NOISE
+      biomes:
+        MAIN_ISLAND: 1
+        END: 10
+      noise:
+        type: Constant
+    stages:
+      - mutate:
+          type: REPLACE
+          from: "BIOME:END"
+          to:
+            - "AETHER": 2
+            - "END": 3
+          noise:
+            type: OpenSimplex2
+            frequency: 0.16
+      - mutate:
+          type: REPLACE
+          from: "BIOME:END"
+          to:
+            - SHATTERED_END: 3
+            - SHATTERED_FOREST: 1
+            - END: 4
+          noise:
+            type: Cellular
+            return: CellValue
+            frequency: 0.25
+      - mutate :
+          type : REPLACE
+          from : "AETHER"
+          to :
+            - AETHER : 3
+            - AETHER_HIGHLANDS : 1
+          noise :
+            type : Cellular
+            return : CellValue
+            frequency : 0.25
+            salt: 1
+      - expand:
+          type: FRACTAL
+          noise:
+            type: WhiteNoise
+      - mutate :
+          type : BORDER
+          from : "END"
+          replace : "AETHER"
+          to : VOID
+          noise :
+            type : Constant
+      - expand :
+          type : FRACTAL
+          noise :
+            type : WhiteNoise
+            salt: 1
+      - expand :
+          type : FRACTAL
+          noise :
+            type : WhiteNoise
+            salt : 2
+      - mutate :
+          type : SMOOTH
+          noise :
+            type : WhiteNoise
+      - mutate :
+          type : BORDER
+          from : "AETHER"
+          replace : "BIOME:VOID"
+          to : AETHER_VOID
+          noise :
+            type : Constant
+      - expand :
+          type : FRACTAL
+          noise :
+            type : WhiteNoise
+            salt : 3
+      - mutate:
+          type: SMOOTH
+          noise:
+            type: WhiteNoise
+      - mutate :
+          type : SMOOTH
+          noise :
+            type : WhiteNoise
+      - mutate: # Apply main island area
+          type: REPLACE
+          from: "OUTER"
+          to:
+            - MAIN_ISLAND: 1
+            - SELF: 1
+          noise:
+            type : Linear
+            min : -1
+            max : 0
+            function :
+              type : Expression
+              equation : "-max(-((x^2+z^2)/250^2) + 1, 0)"
