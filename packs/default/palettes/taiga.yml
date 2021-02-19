@@ -9,9 +9,10 @@ layers:
     layers: 1
 id: "TAIGA"
 noise:
-  type: OpenSimplex2
-  fractal:
-    octaves: 1
-    type: FBm
-  frequency: 0.03
-  salt: 3
+  type: DomainWarp
+  warp:
+    type: WhiteNoise
+  amplitude: 3
+  function:
+    type: OpenSimplex2
+    frequency: 0.03

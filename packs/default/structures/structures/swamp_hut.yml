@@ -12,19 +12,3 @@ spawn:
     max: 96
   width: 50
   padding: 100
-loot:
-  chest: "swamp.json"
-features:
-  - type: ENTITY_FEATURE
-    entity: WITCH
-    attempts: 20
-    in-height: 1
-    amount:
-      min: 2
-      max: 5
-    spawnable-on:
-      - "minecraft:spruce_planks"
-    spawnable-in:
-      - "minecraft:air"
-      - "minecraft:cobweb"
-      - "minecraft:vines"

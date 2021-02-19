@@ -16,8 +16,5 @@ layers:
 id: "MOUNTAIN_JUNGLE"
 noise:
   type: OpenSimplex2
-  fractal:
-    octaves: 1
-    type: FBm
   frequency: 0.04
   salt: 3

@@ -18,8 +18,5 @@ layers:
 id: "MOUNTAIN_STONE_GRASS"
 noise:
   type: OpenSimplex2
-  fractal:
-    octaves: 2
-    type: FBm
   frequency: 0.075
   salt: 3

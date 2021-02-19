@@ -1,0 +1,29 @@
+id: AETHER_VOID
+noise-equation: "-(if(max(y-base, 0), |y-base|*16, |y-base|/2)) - .5 + (noise2(x*2, z*2)*3)"
+vanilla: END_MIDLANDS
+palette:
+  - "GRASSY": 255
+flora:
+  - density: 45
+    y:
+      min: 58
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - GRASS: 750
+      - POPPY: 50
+      - ROSE_BUSH: 4
+      - LILAC: 4
+      - LEAVES: 100
+color: 0x002000
+trees:
+  - density: 10
+    items:
+      - OAK: 1
+    y:
+      min: 58
+      max: 84
+tags:
+  - OUTER
+ocean:
+  level: -1

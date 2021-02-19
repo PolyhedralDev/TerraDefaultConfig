@@ -20,8 +20,5 @@ layers:
 id: "MOUNTAIN_PRETTY"
 noise:
   type: OpenSimplex2
-  fractal:
-    octaves: 1
-    type: FBm
   frequency: 0.03
   salt: 3

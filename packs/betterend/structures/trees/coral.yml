@@ -1,0 +1,10 @@
+id: "CORAL"
+scripts:
+  - ball_coral: 4
+  - fan_coral_brain: 1
+  - fan_coral_bubble: 1
+  - fan_coral_fire: 1
+  - fan_coral_tube: 1
+spawnable:
+  - "minecraft:sand"
+  - "minecraft:gravel"

@@ -3,3 +3,6 @@ noise-equation: "-(if(max(y-base, 0), |y-base|*2, |y-base|/16)) - .5 + (noise2(x
 id: "END_BIOME"
 ocean:
   level: -1
+tags:
+  - END
+  - OUTER

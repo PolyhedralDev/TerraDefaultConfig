@@ -25,8 +25,5 @@ layers:
 id: "ARID"
 noise:
   type: OpenSimplex2
-  fractal:
-    octaves: 1
-    type: FBm
   frequency: 0.05
   salt: 3

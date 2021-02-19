@@ -1,5 +1,8 @@
 id: AETHER
 extends: END_BIOME
+tags:
+  - AETHER
+  - OUTER
 palette:
   - "GRASSY": 255
 vanilla: END_HIGHLANDS
@@ -15,7 +18,7 @@ flora:
       - ROSE_BUSH: 4
       - LILAC: 4
       - LEAVES: 100
-
+color: 0x00ff00
 trees:
   - density: 10
     items:

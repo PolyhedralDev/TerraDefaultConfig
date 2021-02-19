@@ -7,6 +7,3 @@ layers:
       - "minecraft:stone": 1
     layers: 1
 id: "YELLOWSTONE_BOTTOM"
-simplex: true
-frequency: 0.03
-seed: 3

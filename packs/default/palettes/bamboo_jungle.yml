@@ -9,9 +9,8 @@ layers:
     layers: 1
 id: "BAMBOO_JUNGLE"
 noise:
-  type: OpenSimplex2
-  fractal:
-    octaves: 2
-    type: FBm
-  frequency: 0.05
-  salt: 3
+  type: FBm
+  function:
+    type: OpenSimplex2
+    frequency: 0.05
+    salt: 3

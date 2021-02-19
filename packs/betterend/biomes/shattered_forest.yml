@@ -1,5 +1,6 @@
 id: SHATTERED_FOREST
 extends: SHATTERED
+color: 0x800000
 trees:
   - density: 6
     items:

@@ -1,0 +1,94 @@
+id "Acacia__12";
+
+num y = 0;
+
+    if(check(-5, y + 10, 4) != "AIR") {
+        fail;
+    }
+    if(check(5, y + 10, -6) != "AIR") {
+        fail;
+    }
+    if(check(-5, y + 10, -6) != "AIR") {
+        fail;
+    }
+    if(check(5, y + 10, 4) != "AIR") {
+        fail;
+    }
+    if(check(0, y + 1, 0) != "LAND") {
+        fail;
+    }
+
+block(-4, y + 8, 0, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(-4, y + 8, 1, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(-3, y + 8, -1, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(-3, y + 8, 0, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(-3, y + 9, 0, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(-3, y + 8, 1, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(-3, y + 8, 2, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(-3, y + 8, 3, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(-2, y + 7, -1, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(-2, y + 8, -1, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(-2, y + 8, 0, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(-2, y + 9, 0, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(-2, y + 6, 1, "minecraft:acacia_wood[axis=y]");
+block(-2, y + 7, 1, "minecraft:acacia_wood[axis=y]");
+block(-2, y + 8, 1, "minecraft:acacia_leaves[distance=1,persistent=false]", false);
+block(-2, y + 9, 1, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(-2, y + 8, 2, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(-2, y + 8, 3, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(-1, y + 7, -2, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(-1, y + 7, -1, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(-1, y + 0, 0, "minecraft:acacia_wood[axis=y]");
+block(-1, y + 1, 0, "minecraft:acacia_wood[axis=y]");
+block(-1, y + 7, 0, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(-1, y + 8, 0, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(-1, y + 4, 1, "minecraft:acacia_wood[axis=y]");
+block(-1, y + 5, 1, "minecraft:acacia_wood[axis=y]");
+block(-1, y + 7, 1, "minecraft:acacia_leaves[distance=1,persistent=false]", false);
+block(-1, y + 8, 1, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(-1, y + 8, 2, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(0, y + 7, -3, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(0, y + 7, -2, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(0, y + 0, -1, "minecraft:acacia_wood[axis=y]");
+block(0, y + 7, -1, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(0, y + 0, 0, "minecraft:acacia_wood[axis=y]");
+block(0, y + 1, 0, "minecraft:acacia_wood[axis=y]");
+block(0, y + 2, 0, "minecraft:acacia_wood[axis=y]");
+block(0, y + 3, 0, "minecraft:acacia_wood[axis=y]");
+block(0, y + 4, 0, "minecraft:acacia_wood[axis=y]");
+block(0, y + 7, 0, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(0, y + 8, 0, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(0, y + 0, 1, "minecraft:acacia_wood[axis=y]");
+block(0, y + 7, 1, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(1, y + 7, -4, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(1, y + 7, -3, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(1, y + 7, -2, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(1, y + 8, -2, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(1, y + 4, -1, "minecraft:acacia_wood[axis=y]");
+block(1, y + 5, -1, "minecraft:acacia_wood[axis=y]");
+block(1, y + 6, -1, "minecraft:acacia_wood[axis=y]");
+block(1, y + 7, -1, "minecraft:acacia_leaves[distance=1,persistent=false]", false);
+block(1, y + 8, -1, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(1, y + 0, 0, "minecraft:acacia_wood[axis=y]");
+block(1, y + 1, 0, "minecraft:acacia_wood[axis=y]");
+block(1, y + 2, 0, "minecraft:acacia_wood[axis=y]");
+block(1, y + 7, 0, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(1, y + 8, 0, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(1, y + 7, 1, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(1, y + 8, 1, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(1, y + 7, 2, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(2, y + 7, -3, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(2, y + 7, -2, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(2, y + 7, -1, "minecraft:acacia_leaves[distance=2,persistent=false]", false);
+block(2, y + 8, -1, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(2, y + 7, 0, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(2, y + 8, 0, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(2, y + 7, 1, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(2, y + 7, 2, "minecraft:acacia_leaves[distance=5,persistent=false]", false);
+block(3, y + 7, -3, "minecraft:acacia_leaves[distance=5,persistent=false]", false);
+block(3, y + 7, -2, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(3, y + 7, -1, "minecraft:acacia_leaves[distance=3,persistent=false]", false);
+block(3, y + 7, 0, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(3, y + 7, 1, "minecraft:acacia_leaves[distance=5,persistent=false]", false);
+block(4, y + 7, -1, "minecraft:acacia_leaves[distance=4,persistent=false]", false);
+block(4, y + 7, 0, "minecraft:acacia_leaves[distance=5,persistent=false]", false);

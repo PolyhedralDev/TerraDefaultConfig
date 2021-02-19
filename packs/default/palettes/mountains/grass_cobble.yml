@@ -38,8 +38,5 @@ layers:
 id: "GRASSY_STONE"
 noise:
   type: OpenSimplex2
-  fractal:
-    octaves: 2
-    type: FBm
   frequency: 0.05
   salt: 3

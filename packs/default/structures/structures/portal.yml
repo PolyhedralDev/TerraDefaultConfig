@@ -19,30 +19,3 @@ spawn:
     max: 256
   width: 50
   padding: 100
-#features:
-#  - type: ENTITY_FEATURE
-#    entity: SILVERFISH
-#    attempts: 40
-#    in-height: 1
-#    amount:
-#      min: 20
-#      max: 30
-#    spawnable-on:
-#      - "minecraft:stone"
-#      - "minecraft:stone_bricks"
-#      - "minecraft:mossy_stone_bricks"
-#    spawnable-in:
-#      - "minecraft:air"
-#  - type: ENTITY_FEATURE
-#    entity: ZOMBIE
-#    attempts: 20
-#    in-height: 2
-#    amount:
-#      min: 10
-#      max: 15
-#    spawnable-on:
-#      - "minecraft:stone"
-#      - "minecraft:stone_bricks"
-#      - "minecraft:mossy_stone_bricks"
-#    spawnable-in:
-#      - "minecraft:air"
