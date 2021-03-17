@@ -53,10 +53,10 @@ flora:
       max: 76
 erodible: true
 
-trees:
-  - density: 1
-    items:
-      - ICE_SPIKE: 1
-    y:
-      min: 58
-      max: 92
+#trees:
+#  - density: 1
+#    items:
+#      - ICE_SPIKE: 1
+#    y:
+#      min: 58
+#      max: 92
