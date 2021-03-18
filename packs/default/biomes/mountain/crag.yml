@@ -1,4 +1,4 @@
-noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x/1.5, z/1.5)+0.5)|/2.5"
+noise-equation: "(-y/base + 1) + |(noise2(x/1.5, z/1.5)+0.5)|/2.5"
 color: 0x789878
 
 elevation:
@@ -18,10 +18,10 @@ slant:
 tags:
   - "LAND"
 palette:
-  - "BLOCK:minecraft:bedrock": 0
-  - BEDROCK_MOST: 1
-  - BEDROCK_HALF: 2
-  - BEDROCK_LITTLE: 3
+  - "BLOCK:minecraft:bedrock": -64
+  - BEDROCK_MOST: -63
+  - BEDROCK_HALF: -62
+  - BEDROCK_LITTLE: -61
   - GRASSY: 81
   - GRASSY_STONE: 255
 vanilla: PLAINS

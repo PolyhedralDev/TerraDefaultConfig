@@ -3,10 +3,10 @@ id: "COLD_OCEAN"
 vanilla: COLD_OCEAN
 color: 0x202070
 palette:
-  - "BLOCK:minecraft:bedrock": 0
-  - BEDROCK_MOST: 1
-  - BEDROCK_HALF: 2
-  - BEDROCK_LITTLE: 3
+  - "BLOCK:minecraft:bedrock": -64
+  - BEDROCK_MOST: -63
+  - BEDROCK_HALF: -62
+  - BEDROCK_LITTLE: -61
   - TUNDRA: 255
   - OCEANFLOOR: 60
 ocean:

@@ -3,10 +3,10 @@ id: "MOUNTAINS_JUNGLE"
 erode: RIVER_M_J
 color: 0x2c4205
 palette:
-  - "BLOCK:minecraft:bedrock": 0
-  - BEDROCK_MOST: 1
-  - BEDROCK_HALF: 2
-  - BEDROCK_LITTLE: 3
+  - "BLOCK:minecraft:bedrock": -64
+  - BEDROCK_MOST: -63
+  - BEDROCK_HALF: -62
+  - BEDROCK_LITTLE: -61
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - MOUNTAIN_JUNGLE: 255
