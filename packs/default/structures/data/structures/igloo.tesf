@@ -1002,7 +1002,7 @@ block(3, y + 2, -3, "minecraft:air");
 block(3, y + 3, -3, "minecraft:air");
 block(3, y + 4, -3, "minecraft:stone_bricks");
 block(3, y + 0, -2, "minecraft:stone_bricks");
-block(3, y + 1, -2, "minecraft:cauldron[level=1]");
+block(3, y + 1, -2, "minecraft:cauldron");
 block(3, y + 2, -2, "minecraft:air");
 block(3, y + 3, -2, "minecraft:air");
 block(3, y + 4, -2, "minecraft:cracked_stone_bricks");
