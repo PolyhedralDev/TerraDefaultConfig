@@ -1,0 +1,16 @@
+layers:
+  - materials:
+      - "minecraft:brain_coral": 1
+      - "minecraft:fire_coral": 1
+      - "minecraft:tube_coral": 1
+      - "minecraft:bubble_coral": 1
+      - "minecraft:water": 4
+    layers: 1
+id: "CORAL"
+spawnable:
+  - "minecraft:brain_coral_block"
+  - "minecraft:tube_coral_block"
+  - "minecraft:fire_coral_block"
+  - "minecraft:bubble_coral_block"
+replaceable:
+  - "minecraft:water"

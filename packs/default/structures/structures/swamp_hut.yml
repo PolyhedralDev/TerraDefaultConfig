@@ -1,0 +1,14 @@
+scripts:
+  "swamp_1": 1
+  "swamp_2": 1
+  "swamp_3": 1
+id: "SWAMP"
+spawn:
+  start:
+    min: 72
+    max: 72
+  bound:
+    min: 48
+    max: 96
+  width: 50
+  padding: 100

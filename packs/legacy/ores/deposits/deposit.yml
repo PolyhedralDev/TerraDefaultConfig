@@ -1,0 +1,8 @@
+abstract: true
+id: DEPOSIT
+replace:
+  - "minecraft:stone"
+size:
+  min: 32
+  max: 32
+type: VANILLA

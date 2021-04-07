@@ -1,0 +1,62 @@
+extends: "PLAINS_ABSTRACT"
+id: "TUNDRA"
+color: 0xffffff
+structures:
+  - IGLOO
+  - STRONGHOLD
+  - MINESHAFT
+  - DUNGEON
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - TUNDRA: 255
+vanilla: SNOWY_TUNDRA
+carving:
+  CAVE_TUNDRA: 55
+  RAVINE: 2
+tags:
+  - "LAND"
+  - "COLD"
+  - "DRY"
+  - "RIVER_ERODE"
+  - "FROZEN"
+flora:
+  - density: 80
+    y:
+      min: 62
+      max: 156
+    items:
+      - SNOW: 1
+  - density: 12
+    items:
+      - STALACTITE: 1
+      - STALAGMITE: 1
+      - CEILING_ICE: 1
+    y:
+      min: 15
+      max: 62
+  - density: 8
+    items:
+      - STALACTITE: 1
+      - STALAGMITE: 1
+    y:
+      min: 8
+      max: 14
+  - density: 8
+    items:
+      - STALACTITE: 1
+      - CEILING_ICE: 1
+    y:
+      min: 63
+      max: 76
+erodible: true
+
+#trees:
+#  - density: 1
+#    items:
+#      - ICE_SPIKE: 1
+#    y:
+#      min: 58
+#      max: 92

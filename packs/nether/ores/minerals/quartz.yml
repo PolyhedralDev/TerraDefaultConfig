@@ -1,0 +1,9 @@
+material: "minecraft:nether_quartz_ore"
+size:
+  min: 17
+  max: 17
+deform: 0.75
+deform-frequency: 0.2
+id: QUARTZ_ORE
+replace:
+  - "minecraft:netherrack"

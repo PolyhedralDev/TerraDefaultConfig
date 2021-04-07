@@ -1,0 +1,37 @@
+extends: "FOREST_ABSTRACT"
+id: "SNOWY_TAIGA"
+color: 0x31554a
+structures:
+  - IGLOO
+  - STRONGHOLD
+  - MINESHAFT
+  - DUNGEON
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - TAIGA: 255
+vanilla: SNOWY_TAIGA
+tags:
+  - "LAND"
+  - "COLD"
+  - "RIVER_ERODE"
+  - "FROZEN"
+flora:
+  - density: 80
+    y:
+      min: 62
+      max: 156
+    items:
+      - SNOW: 1
+
+trees:
+  - density: 6
+    items:
+      - SPRUCE: 1
+    y:
+      min: 58
+      max: 92

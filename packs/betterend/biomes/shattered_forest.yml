@@ -1,0 +1,11 @@
+id: SHATTERED_FOREST
+extends: SHATTERED
+color: 0x800000
+trees:
+  - density: 6
+    items:
+      - SHATTERED_SMALL: 3
+      - SHATTERED_LARGE: 1
+    y:
+      min: 60
+      max: 72

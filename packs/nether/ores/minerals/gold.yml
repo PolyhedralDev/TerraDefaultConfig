@@ -1,0 +1,9 @@
+material: "minecraft:nether_gold_ore"
+size:
+  min: 14
+  max: 14
+deform: 0.75
+deform-frequency: 0.2
+id: GOLD_ORE
+replace:
+  - "minecraft:netherrack"

@@ -1,0 +1,34 @@
+id: CAVE
+extends: CAVE_ABSTRACT
+palette:
+  inner:
+    replace-blacklist: true
+    replace:
+      - "minecraft:air"
+      - "minecraft:water"
+      - "minecraft:lava"
+      - "minecraft:bedrock"
+      - "minecraft:ice"
+    layers:
+      - materials: { "minecraft:air": 1 }
+        y: 255
+      - materials: { "minecraft:lava": 1 }
+        y: 8
+  outer:
+    replace-blacklist: false
+    replace: [ ]
+    layers:
+      - materials: { "minecraft:stone": 1 }
+        y: 255
+  top:
+    replace-blacklist: false
+    replace: [ ]
+    layers:
+      - materials: { "minecraft:stone": 1 }
+        y: 255
+  bottom:
+    replace-blacklist: false
+    replace: [ ]
+    layers:
+      - materials: { "minecraft:stone": 1 }
+        y: 255

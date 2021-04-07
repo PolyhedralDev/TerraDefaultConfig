@@ -1,0 +1,8 @@
+layers:
+  - materials: "minecraft:mycelium"
+    layers: 1
+  - materials: "minecraft:dirt"
+    layers: 2
+  - materials: "minecraft:stone"
+    layers: 1
+id: "MYCELIUM"

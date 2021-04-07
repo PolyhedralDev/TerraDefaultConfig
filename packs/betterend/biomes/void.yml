@@ -1,0 +1,9 @@
+id: VOID
+noise-equation: "-(if(max(y-base, 0), |y-base|*4, |y-base|/8)) - .5 + (noise2(x*2, z*2)*3)"
+vanilla: END_MIDLANDS
+ocean:
+  level: -1
+palette:
+  - "BLOCK:minecraft:end_stone": 255
+tags:
+  - OUTER

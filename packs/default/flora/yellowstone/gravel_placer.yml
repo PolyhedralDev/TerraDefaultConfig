@@ -1,0 +1,16 @@
+layers:
+  - materials:
+      - "minecraft:gravel": 1
+    layers: 1
+id: "GRAVEL_PLACER"
+spawnable:
+  - "minecraft:diorite"
+  - "yellow_terracotta"
+replaceable:
+  - "minecraft:diorite"
+irrigable-offset: 1
+irrigable:
+  - "minecraft:red_sand"
+  - "minecraft:yellow_terracotta"
+  - "minecraft:basalt"
+  - "minecraft:blackstone"

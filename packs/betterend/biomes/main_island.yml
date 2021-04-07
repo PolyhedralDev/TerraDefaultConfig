@@ -1,0 +1,8 @@
+id: MAIN_ISLAND
+noise-equation: "-(if(max(y-base, 0), |y-base|*2, |y-base|/16)) - .5 + mainIsland(x, z)*3"
+palette:
+  - "BLOCK:minecraft:end_stone": 255
+ocean:
+  level: -1
+vanilla: THE_END
+color: 0x8080ff

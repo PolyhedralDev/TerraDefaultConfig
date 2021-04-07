@@ -1,0 +1,32 @@
+extends: "PLAINS_ABSTRACT"
+id: "SAVANNA"
+color: 0xbdb25f
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - GRASSY: 255
+vanilla: SAVANNA
+tags:
+  - "LAND"
+  - "DRY"
+  - "RIVER_ERODE"
+flora:
+  - density: 40
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 15
+      - GRASS: 70
+
+trees:
+  - density: 4
+    items:
+      ACACIA: 1
+    y:
+      min: 62
+      max: 128

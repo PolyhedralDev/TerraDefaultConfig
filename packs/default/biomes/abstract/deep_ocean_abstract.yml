@@ -1,0 +1,9 @@
+noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)/3))"
+variables:
+  base: 36
+structures:
+  - MONUMENT
+  - STRONGHOLD
+id: "DEEP_OCEAN_ABSTRACT"
+extends: OCEAN_FLORA
+abstract: true

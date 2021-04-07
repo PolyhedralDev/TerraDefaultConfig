@@ -1,0 +1,6 @@
+layers:
+  - materials: "minecraft:yellow_terracotta"
+    layers: 2
+  - materials: "minecraft:stone"
+    layers: 1
+id: "Y_YELLOW_TERRA"

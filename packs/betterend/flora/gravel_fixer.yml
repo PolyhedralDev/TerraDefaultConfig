@@ -1,0 +1,10 @@
+layers:
+  - materials:
+      - "minecraft:grass_block": 2
+      - "minecraft:podzol": 1
+    layers: 1
+id: "GRAVEL_FIXER"
+spawnable:
+  - "minecraft:air"
+replaceable:
+  - "minecraft:gravel"

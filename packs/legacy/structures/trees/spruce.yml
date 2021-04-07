@@ -1,0 +1,6 @@
+id: "SPRUCE"
+scripts:
+  - "spruce_tree": 1
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"

@@ -1,0 +1,12 @@
+scripts:
+  jungle1: 1
+id: "JUNGLE"
+spawn:
+  start:
+    min: 72
+    max: 72
+  bound:
+    min: 48
+    max: 96
+  width: 250
+  padding: 50

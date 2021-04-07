@@ -1,0 +1,7 @@
+layers:
+  - materials:
+      - "minecraft:cobblestone": 4
+      - "minecraft:mossy_cobblestone": 1
+      - "minecraft:stone": 5
+    layers: 1
+id: "STONE_SIDE"

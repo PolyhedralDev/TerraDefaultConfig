@@ -1,0 +1,48 @@
+noise-equation: "((-((y / base)^2)) + 1) + |noise2(x/2.5, z/2.5)|"
+variables:
+  base: 66
+elevation:
+  equation: "min(floor(((|noise2(x/2.5, z/2.5)|) + 0.1)*4)*0.175, 12)"
+  interpolation: true
+color: 0xa79d64
+id: "ARID_MOUNTAINS"
+extends: "BASIC_ORES"
+
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - ARID: 255
+vanilla: SAVANNA
+prevent-smooth: true
+tags:
+  - "LAND"
+  - "HOT"
+  - "DRY"
+slant:
+  palette:
+    - "BLOCK:minecraft:bedrock": 0
+    - BEDROCK_MOST: 1
+    - BEDROCK_HALF: 2
+    - BEDROCK_LITTLE: 3
+    - ARID_SIDE: 255
+  threshold: 0.1
+
+flora:
+  - density: 40
+    y:
+      min: 62
+      max: 128
+    items:
+      - TALL_GRASS: 15
+      - GRASS: 70
+      - DEAD_BUSH: 5
+
+trees:
+  - density: 4
+    items:
+      ACACIA: 1
+    y:
+      min: 62
+      max: 128

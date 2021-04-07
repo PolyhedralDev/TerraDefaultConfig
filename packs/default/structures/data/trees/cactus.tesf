@@ -1,0 +1,14 @@
+id "cactus";
+
+str blockID = getBlock(0,-1,0);
+if(blockID != "minecraft:sand" && blockID != "minecraft:red_sand") {
+    fail; // Cancel gen if not in land.
+}
+
+if(getBlock(0,0,0) != "minecraft:air") fail;
+
+num height = randomInt(4) + 1;
+
+for(num i = 0; i < height; i = i + 1) {
+    block(0,i,0,"minecraft:cactus");
+}

@@ -1,0 +1,15 @@
+extends: "MOUNTAINS_PRETTY_A"
+id: "MOUNTAINS_PRETTY"
+erode: RIVER_M_P
+color: 0x507050
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - MOUNTAIN_PRETTY: 255
+vanilla: PLAINS
+tags:
+  - "LAND"

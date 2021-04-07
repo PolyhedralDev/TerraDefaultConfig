@@ -1,0 +1,11 @@
+layers:
+  - materials:
+      - "minecraft:gravel": 1
+      - "minecraft:mycelium": 4
+      - "minecraft:sand": 2
+    layers: 1
+  - materials: "minecraft:dirt"
+    layers: 2
+  - materials: "minecraft:stone"
+    layers: 1
+id: "MYCELIUM_SHORE"

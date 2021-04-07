@@ -1,0 +1,7 @@
+noise-equation: "((noise2(x, z)/3))"
+noise-2d:
+  enable: true
+  base: 40
+id: "SHELF_OCEAN_ABSTRACT"
+abstract: true
+extends: OCEAN_FLORA

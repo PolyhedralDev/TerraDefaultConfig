@@ -1,0 +1,14 @@
+scripts:
+  Large_Rock__1: 1
+  Large_Rock__2: 1
+  Large_Rock__3: 1
+  Large_Rock__4: 1
+  Large_Rock__5: 1
+  Large_Rock__6: 1
+id: LARGE_ROCK
+y-offset: -3
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:brown_concrete_powder"
+  - "minecraft:coarse_dirt"
+  - "minecraft:gravel"

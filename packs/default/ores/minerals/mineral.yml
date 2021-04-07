@@ -1,0 +1,5 @@
+abstract: true
+id: MINERAL
+replace:
+  - "minecraft:stone"
+type: VANILLA

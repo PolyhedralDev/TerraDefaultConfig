@@ -1,0 +1,78 @@
+extends: "MOUNTAINS_PRETTY"
+id: "MOUNTAINS_JUNGLE"
+erode: RIVER_M_J
+color: 0x2c4205
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - MOUNTAIN_JUNGLE: 255
+vanilla: JUNGLE
+tags:
+  - "LAND"
+  - "HOT"
+  - "WET"
+trees:
+  - density: 10
+    items:
+      - JUNGLE_BUSH: 16
+      - SMALL_JUNGLE: 12
+      - JUNGLE: 16
+      - JUNGLE_COCOA: 3
+    y:
+      min: 62
+      max: 84
+flora:
+  - density: 100
+    distribution:
+      type: OpenSimplex2
+      frequency: 0.075
+      fractal:
+        type: FBm
+        octaves: 1
+    items:
+      - BLANK: 7
+      - LEAVES: 3
+    y:
+      min: 62
+      max: 180
+  - density: 50
+    items:
+      - TALL_GRASS: 3
+      - GRASS: 7
+      - SMALL_ROCK: 1
+    y:
+      min: 62
+      max: 180
+  - density: 14
+    items:
+      - CEILING_LEAVES: 2
+      - VINES: 2
+      - VINES_TALL: 1
+      - STALACTITE: 1
+      - STALAGMITE: 1
+      - SHROOMLIGHT: 2
+    y:
+      min: 15
+      max: 62
+  - density: 7
+    items:
+      - STALACTITE: 1
+      - STALAGMITE: 2
+      - SHROOMLIGHT: 1
+    y:
+      min: 8
+      max: 14
+  - density: 12
+    items:
+      - CEILING_LEAVES: 2
+      - VINES: 2
+      - VINES_TALL: 1
+      - STALACTITE: 1
+      - SHROOMLIGHT: 2
+    y:
+      min: 63
+      max: 96

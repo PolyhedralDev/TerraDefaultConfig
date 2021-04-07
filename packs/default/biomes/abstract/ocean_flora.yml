@@ -1,0 +1,22 @@
+id: OCEAN_FLORA
+extends: BASIC_ORES
+abstract: true
+carving:
+  CAVE_OCEAN: 40
+structures:
+  - STRONGHOLD
+flora:
+  - density: 50
+    items:
+      - TALL_SEAGRASS: 1
+      - SEAGRASS: 3
+    y:
+      min: 30
+      max: 64
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SANDY: 255
+  - OCEANFLOOR: 60

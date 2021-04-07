@@ -1,0 +1,22 @@
+extends: "FOREST_ABSTRACT"
+id: "DARK_FOREST"
+color: 0x40511a
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SANDY: 62
+  - GRASSY: 255
+vanilla: DARK_FOREST
+
+trees:
+  - density: 25
+    items:
+      - DARK_OAK: 1
+    y:
+      min: 58
+      max: 84
+tags:
+  - "LAND"
+  - "RIVER_ERODE"

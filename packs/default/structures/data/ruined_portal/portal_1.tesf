@@ -1,0 +1,173 @@
+id "RUINED_PORTAL_1";
+
+/*
+block(-12, 1, -8, "minecraft:stone_bricks");
+
+num xrad = 16;
+num zrad = 11;
+
+for (num x = 0 - xrad; x <= xrad; x = x + 1) {
+    for (num z = 0 - zrad; z <= zrad; z = z + 1) {
+        num dx = x / xrad;
+        num dz = z / zrad;
+        if ((2 * (dx * dx + dz * dz) + (randomInt(xrad/3) - xrad/7) * (1/xrad))<= 1) {
+            block(x, 0, z, "minecraft:netherrack");
+        }
+    }
+}
+
+xrad = xrad - 3;
+zrad = zrad - 2;
+
+for (num x2 = 0 - xrad; x2 <= xrad; x2 = x2 + 1) {
+    for (num z2 = 0 - zrad; z2 <= zrad; z2 = z2 + 1) {
+        num dx = x2 / xrad;
+        num dz = z2 / zrad;
+        if ((2 * (dx * dx + dz * dz) + (randomInt(xrad/3) - xrad/7) * (1/xrad)) <= 1) {
+            block(x2, 1, z2, "minecraft:netherrack");
+        }
+    }
+}
+
+num portalHeight = randomInt(4) + 5;
+num portalWidth = portalHeight / 5 * 4;
+*/
+
+num y = 0;
+
+while(check(0, y, 0) != "LAND") {
+    y = y - 1;
+}
+
+if ((check(-3, y + 1, -3) == "LAND") || (check(-3, y + 1, 2) == "LAND") || (check(2, y + 1, -3) == "LAND") || (check(2, y + 1, 2) == "LAND")) {
+    fail;
+}
+
+
+block(-3, y + 0, -3, "minecraft:netherrack");
+block(-3, y + 0, -2, "minecraft:netherrack");
+block(-3, y + 0, -1, "minecraft:netherrack");
+block(-3, y + 0, 0, "minecraft:netherrack");
+block(-3, y + 0, 1, "minecraft:netherrack");
+block(-3, y + 0, 2, "minecraft:netherrack");
+
+block(-3, y + 1, -2, "minecraft:stone_slab[type=bottom,waterlogged=false]");
+block(-3, y + 1, -1, "minecraft:stone_slab[type=bottom,waterlogged=false]");
+block(-3, y + 1, 0, "minecraft:stone_slab[type=bottom,waterlogged=false]");
+block(-3, y + 1, 1, "minecraft:stone_slab[type=bottom,waterlogged=false]");
+
+block(-2, y + 0, -3, "minecraft:netherrack");
+block(-2, y + 0, -2, "minecraft:netherrack");
+block(-2, y + 0, -1, "minecraft:netherrack");
+block(-2, y + 0, 0, "minecraft:netherrack");
+block(-2, y + 0, 1, "minecraft:netherrack");
+block(-2, y + 0, 2, "minecraft:netherrack");
+block(-2, y + 1, -3, "minecraft:stone_slab[type=bottom,waterlogged=false]");
+block(-2, y + 1, -2, "minecraft:stone");
+block(-2, y + 1, -1, "minecraft:stone");
+block(-2, y + 1, 0, "minecraft:stone");
+block(-2, y + 1, 1, "minecraft:stone");
+block(-2, y + 1, 2, "minecraft:stone_slab[type=bottom,waterlogged=false]");
+
+block(-1, y + 0, -3, "minecraft:netherrack");
+block(-1, y + 0, -2, "minecraft:netherrack");
+block(-1, y + 0, -1, "minecraft:netherrack");
+block(-1, y + 0, 0, "minecraft:netherrack");
+block(-1, y + 0, 1, "minecraft:netherrack");
+block(-1, y + 0, 2, "minecraft:netherrack");
+block(-1, y + 1, -3, "minecraft:stone_slab[type=double,waterlogged=false]");
+block(-1, y + 1, -2, "minecraft:stone");
+block(-1, y + 1, -1, "minecraft:stone");
+block(-1, y + 1, 0, "minecraft:stone");
+block(-1, y + 1, 1, "minecraft:stone_slab[type=double,waterlogged=false]");
+block(-1, y + 1, 2, "minecraft:stone_slab[type=double,waterlogged=false]");
+
+
+block(-1, y + 2, -3, "minecraft:chest[facing=west,type=single,waterlogged=false]");
+loot(-1, y + 2, -3, "ruined_portal.json");
+
+
+block(-1, y + 2, -2, "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=outer_left,waterlogged=false]");
+block(-1, y + 2, -1, "minecraft:stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]");
+block(-1, y + 2, 0, "minecraft:stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]");
+block(-1, y + 2, 1, "minecraft:stone_brick_stairs[facing=north,half=bottom,shape=outer_right,waterlogged=false]");
+
+block(-1, y + 7, -1, "minecraft:stone_brick_slab[type=top,waterlogged=false]");
+
+block(0, y + 0, -3, "minecraft:netherrack");
+block(0, y + 0, -2, "minecraft:netherrack");
+block(0, y + 0, -1, "minecraft:netherrack");
+block(0, y + 0, 0, "minecraft:netherrack");
+block(0, y + 0, 1, "minecraft:netherrack");
+block(0, y + 0, 2, "minecraft:netherrack");
+block(0, y + 1, -3, "minecraft:stone_bricks");
+block(0, y + 1, -2, "minecraft:netherrack");
+
+block(0, y + 1, 0, "minecraft:netherrack");
+block(0, y + 1, 1, "minecraft:cracked_stone_bricks");
+block(0, y + 1, 2, "minecraft:stone_bricks");
+block(0, y + 2, -3, "minecraft:stone_bricks");
+block(0, y + 2, -2, "minecraft:obsidian");
+block(0, y + 2, -1, "minecraft:obsidian");
+block(0, y + 2, 0, "minecraft:obsidian");
+block(0, y + 2, 1, "minecraft:obsidian");
+block(0, y + 2, 2, "minecraft:stone_bricks");
+block(0, y + 3, -3, "minecraft:chiseled_stone_bricks");
+block(0, y + 3, -2, "minecraft:obsidian");
+
+block(0, y + 3, 1, "minecraft:obsidian");
+block(0, y + 3, 2, "minecraft:chiseled_stone_bricks");
+block(0, y + 4, -3, "minecraft:stone_bricks");
+block(0, y + 4, -2, "minecraft:obsidian");
+
+block(0, y + 4, 2, "minecraft:stone_bricks");
+block(0, y + 5, -3, "minecraft:chiseled_stone_bricks");
+block(0, y + 5, -2, "minecraft:obsidian");
+
+block(0, y + 6, -3, "minecraft:stone_bricks");
+block(0, y + 6, -2, "minecraft:obsidian");
+block(0, y + 6, -1, "minecraft:obsidian");
+block(0, y + 6, 0, "minecraft:obsidian");
+
+block(0, y + 7, -3, "minecraft:stone_bricks");
+block(0, y + 7, -2, "minecraft:stone_bricks");
+block(0, y + 7, -1, "minecraft:gold_block");
+block(0, y + 7, 0, "minecraft:gold_block");
+
+block(0, y + 8, -1, "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]");
+block(0, y + 8, 0, "minecraft:stone_brick_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]");
+
+block(1, y + 0, -3, "minecraft:netherrack");
+block(1, y + 0, -2, "minecraft:netherrack");
+block(1, y + 0, -1, "minecraft:netherrack");
+block(1, y + 0, 0, "minecraft:netherrack");
+block(1, y + 0, 1, "minecraft:netherrack");
+block(1, y + 0, 2, "minecraft:netherrack");
+block(1, y + 1, -3, "minecraft:stone_slab[type=bottom,waterlogged=false]");
+block(1, y + 1, -2, "minecraft:netherrack");
+block(1, y + 1, -1, "minecraft:netherrack");
+block(1, y + 1, 0, "minecraft:netherrack");
+block(1, y + 1, 1, "minecraft:netherrack");
+block(1, y + 1, 2, "minecraft:netherrack");
+
+block(1, y + 2, -1, "minecraft:netherrack");
+block(1, y + 2, 0, "minecraft:netherrack");
+block(1, y + 2, 1, "minecraft:netherrack");
+block(1, y + 2, 2, "minecraft:netherrack");
+
+block(1, y + 3, 0, "minecraft:netherrack");
+block(1, y + 3, 1, "minecraft:netherrack");
+
+block(1, y + 4, 1, "minecraft:netherrack");
+
+block(2, y + 0, -3, "minecraft:netherrack");
+block(2, y + 0, -2, "minecraft:netherrack");
+block(2, y + 0, -1, "minecraft:netherrack");
+block(2, y + 0, 0, "minecraft:netherrack");
+block(2, y + 0, 1, "minecraft:netherrack");
+block(2, y + 0, 2, "minecraft:netherrack");
+
+block(2, y + 1, -2, "minecraft:netherrack");
+block(2, y + 1, -1, "minecraft:netherrack");
+block(2, y + 1, 0, "minecraft:netherrack");
+block(2, y + 1, 1, "minecraft:netherrack");

@@ -1,0 +1,42 @@
+layers:
+  - materials:
+      - "minecraft:stone": 1
+      - "minecraft:mossy_cobblestone": 1
+      - "minecraft:stone": 1
+      - "minecraft:stone": 1
+      - "minecraft:cobblestone": 1
+      - "minecraft:stone": 1
+      - "minecraft:stone": 1
+      - "minecraft:mossy_cobblestone": 1
+      - "minecraft:stone": 1
+      - "minecraft:stone": 1
+      - "minecraft:cobblestone": 1
+      - "minecraft:stone": 1
+      - "minecraft:stone": 1
+      - "minecraft:cobblestone": 1
+      - "minecraft:grass_block": 4
+    layers: 1
+  - materials:
+      - "minecraft:stone": 1
+      - "minecraft:mossy_cobblestone": 1
+      - "minecraft:stone": 1
+      - "minecraft:stone": 1
+      - "minecraft:cobblestone": 1
+      - "minecraft:stone": 1
+      - "minecraft:stone": 1
+      - "minecraft:mossy_cobblestone": 1
+      - "minecraft:stone": 1
+      - "minecraft:stone": 1
+      - "minecraft:cobblestone": 1
+      - "minecraft:stone": 1
+      - "minecraft:stone": 1
+      - "minecraft:cobblestone": 1
+      - "minecraft:dirt": 4
+    layers: 2
+  - materials: "minecraft:stone"
+    layers: 1
+id: "GRASSY_STONE"
+noise:
+  type: OpenSimplex2
+  frequency: 0.05
+  salt: 3

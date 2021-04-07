@@ -1,0 +1,33 @@
+carving: {}
+color: 0xff0000
+extends: BASIC_ORES
+palette:
+  - BLOCK:minecraft:bedrock: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SPRINGS: 255
+id: SPRINGS
+vanilla: LUKEWARM_OCEAN
+noise-equation: "0"
+noise-2d:
+  enable: true
+  base: 64
+erode: SPRINGS
+tags:
+  - "LAND"
+elevation:
+  equation: "noiseC(x/2, z/2)/1.5 + 0.5"
+flora:
+  - density: 100
+    y:
+      min: 60
+      max: 96
+    items:
+      - DIORITE_PLACER: 1
+  - density: 100
+    y:
+      min: 60
+      max: 96
+    items:
+      - WATER_PLACER: 1

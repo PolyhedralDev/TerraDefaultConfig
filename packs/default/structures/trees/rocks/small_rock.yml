@@ -1,0 +1,14 @@
+id: SMALL_ROCK
+scripts:
+  - Small_Rock__1: 1
+  - Small_Rock__2: 1
+  - Small_Rock__3: 1
+  - Small_Rock__4: 1
+  - Small_Rock__5: 1
+  - Small_Rock__6: 1
+y-offset: -2
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:brown_concrete_powder"
+  - "minecraft:coarse_dirt"
+  - "minecraft:gravel"

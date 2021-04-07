@@ -1,0 +1,54 @@
+noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)+0.5) / 3) + max(abs(noise2(x/2, z/2)*4), 0) - (if(max(y-58 + ((noise2(x, z)+0.5) / 3)*10,0), if(max(y-76,0), 0, (max(abs(noise2(x/2, z/2)*4), 0)) + 1) * (1.25-((y-58)/18)), 0))"
+extends: "BASIC_ORES"
+color: 0x0000ff
+id: "RIVER_M_P"
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - MOUNTAIN_PRETTY: 255
+vanilla: PLAINS
+carving: {}
+blend:
+  distance: 1
+ocean:
+  palette: BLOCK:minecraft:water
+flora:
+  - density: 60
+    simplex-frequency: 0.1
+    items:
+      - SMALL_ROCK: 1
+      - TALL_GRASS: 1
+      - GRASS: 5
+      - LEAVES: 3
+    y:
+      min: 62
+      max: 180
+  - density: 10
+    items:
+      - CEILING_LEAVES: 4
+      - STALACTITE: 1
+      - SHROOMLIGHT: 1
+    y:
+      min: 62
+      max: 84
+  - density: 5
+    y:
+      min: 62
+      max: 80
+    items:
+      - SUGARCANE: 2
+      - LILY_PAD: 1
+  - density: 50
+    items:
+      - SEAGRASS: 50
+      - TALL_SEAGRASS: 20
+      - KELP_SHORT: 1
+      - KELP_MEDIUM: 1
+      - KELP_TALL: 1
+    y:
+      min: 50
+      max: 63

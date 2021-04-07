@@ -1,0 +1,63 @@
+noise-equation: "((-((y / base)^2)) + 1) + |((noise2(x, z)+0.5) / 3)| + max(noise2(x/2, z/2)*4 + noise2(x*8, z*8)*0.25, 0) - (if(max(y-58 + ((noise2(x, z)+0.5) / 3)*10,0), if(max(y-76,0), 0, (((noise2(x, z)+0.5) / 3) + max(noise2(x/2, z/2)*4 + noise2(x*8, z*8)*0.25, 0)) + 0.5) * (1.25-((y-58)/18)), 0))"
+extends: "BASIC_ORES"
+id: "RIVER_M"
+color: 0x0000ff
+carving: {}
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - MOUNTAIN_STONE_GRASS: 108
+  - MOUNTAIN_GRASS: 84
+  - MOUNTAIN_STONE: 255
+vanilla: MOUNTAINS
+blend:
+  distance: 1
+ocean:
+  palette: COLD_OCEAN
+flora:
+  - density: 10
+    items:
+      - STALACTITE: 2
+      - CEILING_ICE: 1
+    y:
+      min: 62
+      max: 84
+  - density: 20
+    items:
+      - SEAGRASS: 50
+      - TALL_SEAGRASS: 20
+    y:
+      min: 50
+      max: 63
+  - density: 80
+    y:
+      min: 62
+      max: 156
+    items:
+      - SNOW: 1
+  - density: 12
+    items:
+      - STALACTITE: 1
+      - STALAGMITE: 1
+      - CEILING_ICE: 1
+    y:
+      min: 15
+      max: 62
+  - density: 8
+    items:
+      - STALACTITE: 1
+      - STALAGMITE: 1
+    y:
+      min: 8
+      max: 14
+trees:
+  - density: 6
+    items:
+      - SPRUCE: 1
+    y:
+      min: 62
+      max: 92

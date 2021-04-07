@@ -1,0 +1,8 @@
+id: "JUNGLE"
+scripts:
+  - Junglebig1: 1
+  - Junglebig2: 1
+  - Junglebig3: 1
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"

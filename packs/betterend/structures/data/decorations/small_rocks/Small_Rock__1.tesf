@@ -1,0 +1,35 @@
+id "Small_Rock__1";
+
+num y = 0;
+
+    if(check(0, y + 4, 0) != "AIR") {
+        fail;
+    }
+    if(check(-1, y + 4, -1) != "AIR") {
+        fail;
+    }
+    if(check(0, y + 3, 0) != "AIR") {
+        fail;
+    }
+    if(check(-1, y + 0, -1) != "LAND") {
+        fail;
+    }
+    if(check(-1, y + 3, 0) != "AIR") {
+        fail;
+    }
+    if(check(0, y + 5, -1) != "AIR") {
+        fail;
+    }
+
+block(-1, y + 1, -1, "minecraft:stone");
+block(-1, y + 2, -1, "minecraft:cobblestone");
+block(-1, y + 3, -1, "minecraft:cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]");
+block(-1, y + 1, 0, "minecraft:cobblestone");
+block(-1, y + 2, 0, "minecraft:andesite_slab[type=bottom,waterlogged=false]");
+block(0, y + 0, -1, "minecraft:cobblestone");
+block(0, y + 1, -1, "minecraft:stone");
+block(0, y + 2, -1, "minecraft:stone");
+block(0, y + 3, -1, "minecraft:stone");
+block(0, y + 4, -1, "minecraft:stone_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]");
+block(0, y + 1, 0, "minecraft:stone");
+block(0, y + 2, 0, "minecraft:andesite");

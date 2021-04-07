@@ -1,0 +1,6 @@
+noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)/3))"
+variables:
+  base: 48
+id: "OCEAN_ABSTRACT"
+abstract: true
+extends: OCEAN_FLORA

@@ -1,0 +1,19 @@
+scripts:
+  Gray_Oak__1: 1
+  Gray_Oak__2: 1
+  Gray_Oak__3: 1
+  Gray_Oak__4: 1
+  Gray_Oak__5: 1
+  Gray_Oak__6: 1
+  Gray_Oak__7: 1
+  Gray_Oak__8: 1
+  Gray_Oak__9: 1
+  Gray_Oak__10: 1
+  Gray_Oak__11: 1
+  Gray_Oak__12: 1
+id: GRAY_OAK
+y-offset: -1
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+  - "minecraft:coarse_dirt"

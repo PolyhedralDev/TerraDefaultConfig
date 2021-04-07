@@ -1,0 +1,27 @@
+noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x/1.5, z/1.5)+0.5)|/2.5"
+color: 0x789878
+
+elevation:
+  equation: "min(floor(((max(noise2(x/1.5, z/1.5)+0.5, 0)))*8), 6)*0.25 + if(noise2(x/1.5, z/1.5)+0.375 > 0, (noise2((3*x) + ((min(floor(((max(noise2(x/1.5, z/1.5)+0.5, 0)))*8), 6)+1)*1000),3*z))*0.4, 0)"
+extends: "MOUNTAINS_PRETTY_FLORA"
+id: "CRAG"
+erode: CRAG
+slant:
+  palette:
+    - "BLOCK:minecraft:bedrock": 0
+    - BEDROCK_MOST: 1
+    - BEDROCK_HALF: 2
+    - BEDROCK_LITTLE: 3
+    - "STONE_SIDE": 255
+    - "GRASSY_STONE": 62
+  threshold: 0.1
+tags:
+  - "LAND"
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - GRASSY: 81
+  - GRASSY_STONE: 255
+vanilla: PLAINS

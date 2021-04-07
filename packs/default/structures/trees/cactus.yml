@@ -1,0 +1,6 @@
+id: "CACTUS"
+scripts:
+  - "cactus": 1
+spawnable:
+  - "minecraft:sand"
+  - "minecraft:red_sand"

@@ -1,0 +1,15 @@
+id: END
+extends: END_BIOME
+palette:
+  - "BLOCK:minecraft:end_stone": 255
+color: 0xff00ff
+ocean:
+  level: -1
+vanilla: THE_END
+trees:
+  - density: 10
+    items:
+      - CHORUS_PLANT: 1
+    y:
+      min: 60
+      max: 72

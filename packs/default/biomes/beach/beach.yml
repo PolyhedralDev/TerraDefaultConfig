@@ -1,0 +1,4 @@
+extends: "BEACH_ABSTRACT"
+id: "BEACH"
+vanilla: BEACH
+color: 0xfade55

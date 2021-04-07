@@ -1,0 +1,9 @@
+scripts:
+  outpost: 1
+id: "OUTPOST"
+spawn:
+  start:
+    min: 72
+    max: 72
+  width: 125
+  padding: 50

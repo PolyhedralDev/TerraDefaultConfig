@@ -1,0 +1,8 @@
+layers:
+  - materials: "minecraft:red_sand"
+    layers: 3
+  - materials: "minecraft:red_sandstone"
+    layers: 4
+  - materials: "minecraft:stone"
+    layers: 1
+id: RED_DESERT

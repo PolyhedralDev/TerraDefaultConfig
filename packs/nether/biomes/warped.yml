@@ -1,0 +1,33 @@
+extends: "NETHER_ABSTRACT"
+id: "WARPED"
+color: 0x49907b
+flora:
+  - density: 4
+    items:
+      - TWISTING_VINES: 4
+      - FIRE: 1
+    y:
+      min: 32
+      max: 255
+
+trees:
+  - density: 1
+    items:
+      - WARPED_FUNGUS: 1
+    y:
+      min: 32
+      max: 150
+
+palette:
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - WARPED: 251
+  - NETHER_GRAVEL: 32
+  - BEDROCK: 255
+  - BEDROCK_MOST: 254
+  - BEDROCK_HALF: 253
+  - BEDROCK_LITTLE: 252
+vanilla: WARPED_FOREST
+

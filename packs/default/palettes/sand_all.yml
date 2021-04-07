@@ -1,0 +1,6 @@
+layers:
+  - materials: "minecraft:sand"
+    layers: 3
+  - materials: "minecraft:stone"
+    layers: 1
+id: "SAND_ALL"

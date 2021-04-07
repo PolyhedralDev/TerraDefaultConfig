@@ -1,0 +1,12 @@
+layers:
+  - materials:
+      - "minecraft:lava": 1
+    layers: 1
+id: LAVA
+spawnable:
+  - "minecraft:basalt"
+  - "minecraft:blackstone"
+replaceable:
+  - "minecraft:basalt"
+  - "minecraft:blackstone"
+physics: true

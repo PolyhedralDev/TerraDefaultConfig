@@ -1,0 +1,71 @@
+id: NETHER
+author: dfsek
+version: 2.0.0
+
+noise:
+  noise2:
+    type: FBm
+    dimensions: 2
+    octaves: 4
+    function:
+      type: OpenSimplex2
+      frequency: 0.0075
+  noise3:
+    type: FBm
+    dimensions: 3
+    octaves: 4
+    function:
+      type: OpenSimplex2
+      frequency: 0.0075
+biomes:
+  type: PIPELINE
+  resolution: 4
+  blend:
+    amplitude: 1.75
+    noise:
+      type: OpenSimplex2
+      frequency: 0.12
+  pipeline:
+    initial-size: 50
+    source:
+      type: NOISE
+      biomes:
+        NETHER: 1
+      noise:
+        type: Constant
+    stages:
+      - mutate:
+          type: REPLACE
+          from: BIOME:NETHER
+          to:
+            - SELF: 3
+            - DELTA: 1
+          noise:
+            type: OpenSimplex2
+      - mutate:
+          type: REPLACE
+          from: BIOME:NETHER
+          to:
+            - SELF: 2
+            - CRIMSON: 1
+          noise:
+            type: OpenSimplex2
+            salt: 1
+      - mutate:
+          type: REPLACE
+          from: BIOME:NETHER
+          to:
+            - SELF: 2
+            - WARPED: 1
+          noise:
+            type: OpenSimplex2
+            salt: 2
+      - mutate:
+          type: REPLACE
+          from: BIOME:NETHER
+          to:
+            - SELF: 2
+            - SOUL_VALLEY: 1
+          noise:
+            type: OpenSimplex2
+            salt: 3

@@ -1,0 +1,6 @@
+material: "minecraft:coal_ore"
+size:
+  min: 17
+  max: 17
+extends: MINERAL
+id: "COAL_ORE"

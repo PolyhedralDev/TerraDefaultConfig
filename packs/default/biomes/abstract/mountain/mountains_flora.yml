@@ -1,0 +1,25 @@
+id: MOUNTAINS_PRETTY_FLORA
+abstract: true
+extends: BASIC_ORES
+flora:
+  - density: 100
+    distribution:
+      type: OpenSimplex2
+      frequency: 0.075
+      fractal:
+        type: FBm
+        octaves: 1
+    items:
+      - BLANK: 7
+      - LEAVES: 3
+    y:
+      min: 62
+      max: 180
+  - density: 50
+    items:
+      - TALL_GRASS: 3
+      - GRASS: 7
+      - SMALL_ROCK: 1
+    y:
+      min: 62
+      max: 180

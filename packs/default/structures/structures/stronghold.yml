@@ -1,0 +1,12 @@
+scripts:
+  stronghold: 1
+id: "STRONGHOLD"
+spawn:
+  start:
+    min: 16
+    max: 64
+  bound:
+    min: 12
+    max: 84
+  width: 1000
+  padding: 500

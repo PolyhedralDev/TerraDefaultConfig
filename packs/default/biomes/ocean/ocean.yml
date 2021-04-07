@@ -1,0 +1,6 @@
+extends: "OCEAN_ABSTRACT"
+id: "OCEAN"
+vanilla: OCEAN
+color: 0x000070
+tags:
+  - "OCEAN"

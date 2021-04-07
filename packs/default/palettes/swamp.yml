@@ -1,0 +1,10 @@
+layers:
+  - materials:
+      - "minecraft:grass_block": 4
+      - "minecraft:coarse_dirt": 1
+    layers: 1
+  - materials: "minecraft:dirt"
+    layers: 2
+  - materials: "minecraft:stone"
+    layers: 1
+id: "SWAMP"

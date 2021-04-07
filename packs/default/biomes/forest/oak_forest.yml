@@ -1,0 +1,35 @@
+extends: "FOREST_ABSTRACT"
+id: "FOREST"
+color: 0x056621
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - GRASSY: 255
+vanilla: FOREST
+tags:
+  - "LAND"
+  - "RIVER_ERODE"
+flora:
+  - density: 45
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - GRASS: 750
+      - POPPY: 50
+      - ROSE_BUSH: 4
+      - LILAC: 4
+      - LEAVES: 100
+
+trees:
+  - density: 8
+    items:
+      - OAK: 1
+    y:
+      min: 58
+      max: 84

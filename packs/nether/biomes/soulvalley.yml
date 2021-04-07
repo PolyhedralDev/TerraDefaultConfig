@@ -1,0 +1,23 @@
+noise-equation: "if(y, abs(y-64)/128 + noise3(x*1.5, y*3, z*1.5)*2, 1)"
+id: "SOUL_VALLEY"
+extends: "NETHER_ABSTRACT"
+color: 0x5e3830
+flora:
+  - density: 2
+    items:
+      - BLUE_FIRE: 4
+      - BASALT: 1
+    y:
+      min: 32
+      max: 255
+palette:
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SOUL: 251
+  - BEDROCK: 255
+  - BEDROCK_MOST: 254
+  - BEDROCK_HALF: 253
+  - BEDROCK_LITTLE: 252
+vanilla: SOUL_SAND_VALLEY

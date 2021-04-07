@@ -1,0 +1,15 @@
+layers:
+  - materials:
+      - "minecraft:gravel": 1
+      - "minecraft:grass_block": 4
+      - "minecraft:sand": 2
+    layers: 1
+  - materials: "minecraft:dirt"
+    layers: 2
+  - materials: "minecraft:stone"
+    layers: 1
+id: "RIVER_SHORE"
+noise:
+  type: OpenSimplex2
+  frequency: 0.05
+  salt: 3

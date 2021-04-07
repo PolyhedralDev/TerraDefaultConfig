@@ -1,0 +1,32 @@
+id "village_start";
+
+if(recursions() > 5) {
+    return;
+}
+
+str mark = getMark(6,0,0);
+if(mark == "no_road") fail;
+
+num road = 12;
+
+
+for(num current = 0; current <= 13; current = current + 1) {
+    structure(current,0,0,"decoratedPath", "NONE");
+    structure(current,0,1,"decoratedPath", "NONE");
+    structure(current,0,-1,"decoratedPath", "NONE");
+}
+
+setMark(6,0,0,"road");
+
+structure(6, 0, 0, "random_house", "NONE");
+structure(6, 0, 0, "villager", "NONE");
+
+if(randomInt(2) == 0) {
+    structure(12, 0, 0, "village_start", "CW_90", "CW_90", "NONE");
+} else {
+    structure(12, 0, 0, "village_start", "NONE");
+}
+if(randomInt(3) == 0) {
+    structure(12, 0, 0, "village_start", "CW_90", "CW_90");
+}
+

@@ -1,0 +1,13 @@
+scripts:
+  - "village_start": 1
+id: "VILLAGE_PLAINS"
+spawn:
+  start:
+    min: 84
+    max: 84
+  bound:
+    min: 48
+    max: 96
+  width: 75
+  padding: 150
+

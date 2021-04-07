@@ -1,0 +1,25 @@
+noise-equation: "if(y, abs(y-64)/128 + noise3(x*1.5, y*2, z*1.5)*3, 1)"
+id: "DELTA"
+extends: "NETHER_ABSTRACT"
+color: 0x403636
+flora:
+  - density: 60
+    simplex-frequency: 0.1
+    items:
+      - BASALT: 49
+      - LAVA: 1
+    y:
+      min: 0
+      max: 255
+palette:
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - DELTA: 251
+  - DELTA_LAVA: 32
+  - BEDROCK: 255
+  - BEDROCK_MOST: 254
+  - BEDROCK_HALF: 253
+  - BEDROCK_LITTLE: 252
+vanilla: BASALT_DELTAS

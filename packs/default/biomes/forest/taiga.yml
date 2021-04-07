@@ -1,0 +1,37 @@
+extends: "FOREST_ABSTRACT"
+id: "TAIGA"
+color: 0x0b6659
+flora:
+  - density: 40
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 15
+      - GRASS: 70
+      - SWEET_BERRIES: 5
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - TAIGA: 255
+vanilla: TAIGA
+structures:
+  - STRONGHOLD
+  - OUTPOST
+  - DUNGEON
+  - MINESHAFT
+tags:
+  - "LAND"
+  - "COLD"
+  - "RIVER_ERODE"
+trees:
+  - density: 6
+    items:
+      - SPRUCE: 1
+    y:
+      min: 58
+      max: 92

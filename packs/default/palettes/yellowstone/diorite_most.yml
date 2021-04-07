@@ -1,0 +1,10 @@
+layers:
+  - materials:
+      - "minecraft:grass_block": 1
+      - "minecraft:diorite": 2
+    layers: 1
+  - materials: "minecraft:dirt"
+    layers: 2
+  - materials: "minecraft:stone"
+    layers: 1
+id: "Y_DIORITE_MOST"

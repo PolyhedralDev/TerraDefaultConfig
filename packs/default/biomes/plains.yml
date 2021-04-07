@@ -1,0 +1,37 @@
+extends: "PLAINS_ABSTRACT"
+id: "PLAINS"
+color: 0x8db360
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - GRASSY: 255
+biome-noise:
+  type: OpenSimplex2
+  frequency: 0.01
+vanilla: PLAINS
+tags:
+  - "LAND"
+  - "RIVER_ERODE"
+structures:
+  - VILLAGE_PLAINS
+  - STRONGHOLD
+  - OUTPOST
+  - DUNGEON
+  - MINESHAFT
+
+flora:
+  - density: 50
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - GRASS: 700
+      - SUNFLOWER: 20
+
+
+# Carving and ores covered by super biome

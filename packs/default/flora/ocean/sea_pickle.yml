@@ -1,0 +1,21 @@
+layers:
+  - materials:
+      - "minecraft:sea_pickle[waterlogged=true,pickles=1]": 1
+      - "minecraft:sea_pickle[waterlogged=true,pickles=2]": 1
+      - "minecraft:sea_pickle[waterlogged=true,pickles=3]": 1
+      - "minecraft:sea_pickle[waterlogged=true,pickles=4]": 1
+    layers: 1
+id: "SEA_PICKLE"
+search: DOWN
+physics: true
+max-placements: 1
+spawnable:
+  - "minecraft:dirt"
+  - "minecraft:gravel"
+  - "minecraft:sand"
+  - "minecraft:brain_coral_block"
+  - "minecraft:tube_coral_block"
+  - "minecraft:fire_coral_block"
+  - "minecraft:bubble_coral_block"
+replaceable:
+  - "minecraft:water"

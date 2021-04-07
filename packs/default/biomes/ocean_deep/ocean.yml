@@ -1,0 +1,7 @@
+extends: "DEEP_OCEAN_ABSTRACT"
+id: "OCEAN_DEEP"
+vanilla: OCEAN
+tags:
+  - "OCEAN"
+  - "OCEAN_DEEP"
+color: 0x000030

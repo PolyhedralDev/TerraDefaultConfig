@@ -1,0 +1,31 @@
+extends: "NETHER_ABSTRACT"
+id: "CRIMSON"
+color: 0xdd0808
+flora:
+  - density: 4
+    items:
+      - WEEPING_VINES: 4
+      - FIRE: 1
+    y:
+      min: 32
+      max: 255
+trees:
+  - density: 1
+    items:
+      - CRIMSON_FUNGUS: 1
+    y:
+      min: 32
+      max: 150
+palette:
+  - BEDROCK: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - CRIMSON: 251
+  - NETHER_GRAVEL: 32
+  - BEDROCK: 255
+  - BEDROCK_MOST: 254
+  - BEDROCK_HALF: 253
+  - BEDROCK_LITTLE: 252
+vanilla: CRIMSON_FOREST
+

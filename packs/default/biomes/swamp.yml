@@ -1,0 +1,43 @@
+noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)/4))"
+extends: "BASIC_ORES"
+id: "SWAMP"
+color: 0x07f9b2
+variables:
+  base: 62
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SWAMP_BOTTOM: 61
+  - SWAMP: 255
+vanilla: SWAMP
+tags:
+  - "LAND"
+  - "WET"
+flora:
+  - density: 80
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - LILY_PAD: 40
+      - GRASS: 700
+      - BLUE_ORCHID: 20
+      - ROOT: 3
+
+carving:
+  CAVE_SWAMP: 55
+
+structures:
+  - SWAMP
+  - STRONGHOLD
+
+trees:
+  - density: 2
+    items:
+      - SWAMP_OAK: 1
+    y:
+      min: 58
+      max: 92

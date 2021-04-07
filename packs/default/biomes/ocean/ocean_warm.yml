@@ -1,0 +1,44 @@
+extends: "OCEAN_ABSTRACT"
+id: "WARM_OCEAN"
+vanilla: WARM_OCEAN
+color: 0x0000ac
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - SANDY: 255
+  - OCEANFLOOR: 60
+flora:
+  - density: 50
+    y:
+      min: 30
+      max: 62
+    simplex-frequency: 0.05
+    items:
+      - TALL_SEAGRASS: 20
+      - SEAGRASS: 30
+      - KELP_SHORT: 1
+      - KELP_MEDIUM: 1
+      - KELP_TALL: 1
+      - SEA_PICKLE: 2
+    distribution:
+      type: WhiteNoise
+      dimensions: 3
+  - density: 75
+    y:
+      min: 30
+      max: 62
+    items:
+      - CORAL_FAN: 3
+      - CORAL: 3
+trees:
+  - density: 5
+    y:
+      min: 32
+      max: 52
+    items:
+      - CORAL: 1
+tags:
+  - "OCEAN"
+  - "WARM_OCEAN"

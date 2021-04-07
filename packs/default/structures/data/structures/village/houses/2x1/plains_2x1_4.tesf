@@ -1,0 +1,461 @@
+id "plains_2x1_4";
+num y = 0;
+
+num composterDis = 2 + randomInt(6);
+
+num cropA = randomInt(4);
+num cropB = randomInt(4);
+num cropC = randomInt(4);
+num cropD = randomInt(4);
+
+if(cropA == 0) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,0,"wheat_section", "NONE");
+	structure(i + 3,y,-1,"wheat_section", "NONE");
+   }
+} else if(cropA == 1) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,0,"potatoes_section", "NONE");
+	structure(i + 3,y,-1,"potatoes_section", "NONE");
+   }
+} else if(cropA == 2) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,0,"carrots_section", "NONE");
+	structure(i + 3,y,-1,"carrots_section", "NONE");
+   }
+} else if(cropA == 3) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,0,"beetroots_section", "NONE");
+	structure(i + 3,y,-1,"beetroots_section", "NONE");
+   }
+} 
+
+if(cropB == 0) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,3,"wheat_section", "NONE");
+	structure(i + 3,y,2,"wheat_section", "NONE");
+   }
+} else if(cropB == 1) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,3,"potatoes_section", "NONE");
+	structure(i + 3,y,2,"potatoes_section", "NONE");
+   }
+} else if(cropB == 2) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,3,"carrots_section", "NONE");
+	structure(i + 3,y,2,"carrots_section", "NONE");
+   }
+} else if(cropB == 3) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,3,"beetroots_section", "NONE");
+	structure(i + 36,y,2,"beetroots_section", "NONE");
+   }
+} 
+
+if(cropC == 0) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,6,"wheat_section", "NONE");
+	structure(i + 3,y,5,"wheat_section", "NONE");
+   }
+} else if(cropC == 1) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,6,"potatoes_section", "NONE");
+	structure(i + 3,y,5,"potatoes_section", "NONE");
+   }
+} else if(cropC == 2) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,6,"carrots_section", "NONE");
+	structure(i + 3,y,5,"carrots_section", "NONE");
+   }
+} else if(cropC == 3) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,6,"beetroots_section", "NONE");
+	structure(i + 3,y,5,"beetroots_section", "NONE");
+   }
+} 
+
+if(cropD == 0) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,9,"wheat_section", "NONE");
+	structure(i + 3,y,8,"wheat_section", "NONE");
+   }
+} else if(cropD == 1) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,9,"potatoes_section", "NONE");
+	structure(i + 3,y,8,"potatoes_section", "NONE");
+   }
+} else if(cropD == 2) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,9,"carrots_section", "NONE");
+	structure(i + 3,y,8,"carrots_section", "NONE");
+   }
+} else if(cropD == 3) {
+   for(num i = 0; i < 6; i = i + 1) {
+    structure(i + 3,y,9,"beetroots_section", "NONE");
+	structure(i + 3,y,8,"beetroots_section", "NONE");
+   }
+} 
+
+block(1, y + -1, 3, "minecraft:dirt");
+block(1, y + -1, 4, "minecraft:dirt");
+block(1, y + -1, 5, "minecraft:dirt");
+block(1, y + 0, 3, "minecraft:cobblestone_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]");
+block(1, y + 0, 4, "minecraft:cobblestone_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]");
+block(1, y + 0, 5, "minecraft:cobblestone_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]");
+block(2, y + -1, -2, "minecraft:dirt");
+block(2, y + -1, -1, "minecraft:dirt");
+block(2, y + -1, 0, "minecraft:dirt");
+block(2, y + -1, 1, "minecraft:dirt");
+block(2, y + -1, 2, "minecraft:dirt");
+block(2, y + -1, 3, "minecraft:dirt");
+block(2, y + -1, 4, "minecraft:dirt");
+block(2, y + -1, 5, "minecraft:dirt");
+block(2, y + -1, 6, "minecraft:dirt");
+block(2, y + -1, 7, "minecraft:dirt");
+block(2, y + -1, 8, "minecraft:dirt");
+block(2, y + -1, 9, "minecraft:dirt");
+block(2, y + -1, 10, "minecraft:dirt");
+block(2, y + 0, -2, "minecraft:cobblestone");
+block(2, y + 0, -1, "minecraft:mossy_cobblestone");
+block(2, y + 0, 0, "minecraft:mossy_cobblestone");
+block(2, y + 0, 1, "minecraft:cobblestone");
+block(2, y + 0, 2, "minecraft:cobblestone");
+block(2, y + 0, 3, "minecraft:cobblestone");
+block(2, y + 0, 4, "minecraft:mossy_cobblestone");
+block(2, y + 0, 5, "minecraft:mossy_cobblestone");
+block(2, y + 0, 6, "minecraft:cobblestone");
+block(2, y + 0, 7, "minecraft:cobblestone");
+block(2, y + 0, 8, "minecraft:mossy_cobblestone");
+block(2, y + 0, 9, "minecraft:mossy_cobblestone");
+block(2, y + 0, 10, "minecraft:cobblestone");
+block(2, y + 1, -2, "minecraft:oak_log[axis=y]");
+block(2, y + 1, -1, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(2, y + 1, 0, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(2, y + 1, 1, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(2, y + 1, 2, "minecraft:oak_log[axis=y]");
+block(2, y + 1, 6, "minecraft:oak_log[axis=y]");
+block(2, y + 1, 7, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(2, y + 1, 8, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(2, y + 1, 9, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(2, y + 1, 10, "minecraft:oak_log[axis=y]");
+block(2, y + 2, -2, "minecraft:stone_brick_slab[type=bottom,waterlogged=false]");
+block(2, y + 2, 2, "minecraft:stone_brick_slab[type=bottom,waterlogged=false]");
+block(2, y + 2, 6, "minecraft:stone_brick_slab[type=bottom,waterlogged=false]");
+block(2, y + 2, 10, "minecraft:stone_brick_slab[type=bottom,waterlogged=false]");
+block(3, y + -1, -2, "minecraft:dirt");
+block(3, y + -1, -1, "minecraft:dirt");
+block(3, y + -1, 0, "minecraft:dirt");
+block(3, y + -1, 1, "minecraft:dirt");
+block(3, y + -1, 2, "minecraft:dirt");
+block(3, y + -1, 3, "minecraft:dirt");
+block(3, y + -1, 4, "minecraft:dirt");
+block(3, y + -1, 5, "minecraft:dirt");
+block(3, y + -1, 6, "minecraft:dirt");
+block(3, y + -1, 7, "minecraft:dirt");
+block(3, y + -1, 8, "minecraft:dirt");
+block(3, y + -1, 9, "minecraft:dirt");
+block(3, y + -1, 10, "minecraft:dirt");
+block(3, y + 0, -2, "minecraft:cobblestone");
+block(3, y + 0, -1, "minecraft:farmland[moisture=7]");
+block(3, y + 0, 0, "minecraft:farmland[moisture=7]");
+block(3, y + 0, 1, "minecraft:water[level=0]");
+block(3, y + 0, 2, "minecraft:farmland[moisture=7]");
+block(3, y + 0, 3, "minecraft:farmland[moisture=7]");
+block(3, y + 0, 4, "minecraft:oak_planks");
+block(3, y + 0, 5, "minecraft:farmland[moisture=7]");
+block(3, y + 0, 6, "minecraft:farmland[moisture=7]");
+block(3, y + 0, 7, "minecraft:water[level=0]");
+block(3, y + 0, 8, "minecraft:farmland[moisture=7]");
+block(3, y + 0, 9, "minecraft:farmland[moisture=7]");
+block(3, y + 0, 10, "minecraft:mossy_cobblestone");
+block(3, y + 1, -2, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(3, y + 1, 1, "minecraft:air");
+block(3, y + 1, 4, "minecraft:air");
+block(3, y + 1, 7, "minecraft:air");
+block(3, y + 1, 10, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(3, y + 2, -2, "minecraft:air");
+block(3, y + 2, -1, "minecraft:air");
+block(3, y + 2, 0, "minecraft:air");
+block(3, y + 2, 1, "minecraft:air");
+block(3, y + 2, 2, "minecraft:air");
+block(3, y + 2, 3, "minecraft:air");
+block(3, y + 2, 4, "minecraft:air");
+block(3, y + 2, 5, "minecraft:air");
+block(3, y + 2, 6, "minecraft:air");
+block(3, y + 2, 7, "minecraft:air");
+block(3, y + 2, 8, "minecraft:air");
+block(3, y + 2, 9, "minecraft:air");
+block(3, y + 2, 10, "minecraft:air");
+block(4, y + -1, -2, "minecraft:dirt");
+block(4, y + -1, -1, "minecraft:dirt");
+block(4, y + -1, 0, "minecraft:dirt");
+block(4, y + -1, 1, "minecraft:dirt");
+block(4, y + -1, 2, "minecraft:dirt");
+block(4, y + -1, 3, "minecraft:dirt");
+block(4, y + -1, 4, "minecraft:dirt");
+block(4, y + -1, 5, "minecraft:dirt");
+block(4, y + -1, 6, "minecraft:dirt");
+block(4, y + -1, 7, "minecraft:dirt");
+block(4, y + -1, 8, "minecraft:dirt");
+block(4, y + -1, 9, "minecraft:dirt");
+block(4, y + -1, 10, "minecraft:dirt");
+block(4, y + 0, -2, "minecraft:mossy_cobblestone");
+block(4, y + 0, -1, "minecraft:farmland[moisture=7]");
+block(4, y + 0, 0, "minecraft:farmland[moisture=7]");
+block(4, y + 0, 1, "minecraft:water[level=0]");
+block(4, y + 0, 2, "minecraft:farmland[moisture=7]");
+block(4, y + 0, 3, "minecraft:farmland[moisture=7]");
+block(4, y + 0, 4, "minecraft:oak_planks");
+block(4, y + 0, 5, "minecraft:farmland[moisture=7]");
+block(4, y + 0, 6, "minecraft:farmland[moisture=7]");
+block(4, y + 0, 7, "minecraft:water[level=0]");
+block(4, y + 0, 8, "minecraft:farmland[moisture=7]");
+block(4, y + 0, 9, "minecraft:farmland[moisture=7]");
+block(4, y + 0, 10, "minecraft:mossy_cobblestone");
+block(4, y + 1, -2, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(4, y + 1, 1, "minecraft:air");
+block(4, y + 1, 4, "minecraft:air");
+block(4, y + 1, 7, "minecraft:air");
+block(4, y + 1, 10, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(4, y + 2, -2, "minecraft:air");
+block(4, y + 2, -1, "minecraft:air");
+block(4, y + 2, 0, "minecraft:air");
+block(4, y + 2, 1, "minecraft:air");
+block(4, y + 2, 2, "minecraft:air");
+block(4, y + 2, 3, "minecraft:air");
+block(4, y + 2, 4, "minecraft:air");
+block(4, y + 2, 5, "minecraft:air");
+block(4, y + 2, 6, "minecraft:air");
+block(4, y + 2, 7, "minecraft:air");
+block(4, y + 2, 8, "minecraft:air");
+block(4, y + 2, 9, "minecraft:air");
+block(4, y + 2, 10, "minecraft:air");
+block(5, y + -1, -2, "minecraft:dirt");
+block(5, y + -1, -1, "minecraft:dirt");
+block(5, y + -1, 0, "minecraft:dirt");
+block(5, y + -1, 1, "minecraft:dirt");
+block(5, y + -1, 2, "minecraft:dirt");
+block(5, y + -1, 3, "minecraft:dirt");
+block(5, y + -1, 4, "minecraft:dirt");
+block(5, y + -1, 5, "minecraft:dirt");
+block(5, y + -1, 6, "minecraft:dirt");
+block(5, y + -1, 7, "minecraft:dirt");
+block(5, y + -1, 8, "minecraft:dirt");
+block(5, y + -1, 9, "minecraft:dirt");
+block(5, y + -1, 10, "minecraft:dirt");
+block(5, y + 0, -2, "minecraft:cobblestone");
+block(5, y + 0, -1, "minecraft:farmland[moisture=7]");
+block(5, y + 0, 0, "minecraft:farmland[moisture=7]");
+block(5, y + 0, 1, "minecraft:oak_slab[type=top,waterlogged=true]");
+block(5, y + 0, 2, "minecraft:farmland[moisture=7]");
+block(5, y + 0, 3, "minecraft:farmland[moisture=7]");
+block(5, y + 0, 4, "minecraft:oak_planks");
+block(5, y + 0, 5, "minecraft:farmland[moisture=7]");
+block(5, y + 0, 6, "minecraft:farmland[moisture=7]");
+block(5, y + 0, 7, "minecraft:oak_slab[type=top,waterlogged=true]");
+block(5, y + 0, 8, "minecraft:farmland[moisture=7]");
+block(5, y + 0, 9, "minecraft:farmland[moisture=7]");
+block(5, y + 0, 10, "minecraft:mossy_cobblestone");
+block(5, y + 1, -2, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(5, y + 1, 1, "minecraft:air");
+block(5, y + 1, 4, "minecraft:air");
+block(5, y + 1, 7, "minecraft:air");
+block(5, y + 1, 10, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(5, y + 2, -2, "minecraft:air");
+block(5, y + 2, -1, "minecraft:air");
+block(5, y + 2, 0, "minecraft:air");
+block(5, y + 2, 1, "minecraft:air");
+block(5, y + 2, 2, "minecraft:air");
+block(5, y + 2, 3, "minecraft:air");
+block(5, y + 2, 4, "minecraft:air");
+block(5, y + 2, 5, "minecraft:air");
+block(5, y + 2, 6, "minecraft:air");
+block(5, y + 2, 7, "minecraft:air");
+block(5, y + 2, 8, "minecraft:air");
+block(5, y + 2, 9, "minecraft:air");
+block(5, y + 2, 10, "minecraft:air");
+block(6, y + -1, -2, "minecraft:dirt");
+block(6, y + -1, -1, "minecraft:dirt");
+block(6, y + -1, 0, "minecraft:dirt");
+block(6, y + -1, 1, "minecraft:dirt");
+block(6, y + -1, 2, "minecraft:dirt");
+block(6, y + -1, 3, "minecraft:dirt");
+block(6, y + -1, 4, "minecraft:dirt");
+block(6, y + -1, 5, "minecraft:dirt");
+block(6, y + -1, 6, "minecraft:dirt");
+block(6, y + -1, 7, "minecraft:dirt");
+block(6, y + -1, 8, "minecraft:dirt");
+block(6, y + -1, 9, "minecraft:dirt");
+block(6, y + -1, 10, "minecraft:dirt");
+block(6, y + 0, -2, "minecraft:mossy_cobblestone");
+block(6, y + 0, -1, "minecraft:farmland[moisture=7]");
+block(6, y + 0, 0, "minecraft:farmland[moisture=7]");
+block(6, y + 0, 1, "minecraft:oak_slab[type=top,waterlogged=true]");
+block(6, y + 0, 2, "minecraft:farmland[moisture=7]");
+block(6, y + 0, 3, "minecraft:farmland[moisture=7]");
+block(6, y + 0, 4, "minecraft:oak_planks");
+block(6, y + 0, 5, "minecraft:farmland[moisture=7]");
+block(6, y + 0, 6, "minecraft:farmland[moisture=7]");
+block(6, y + 0, 7, "minecraft:oak_slab[type=top,waterlogged=true]");
+block(6, y + 0, 8, "minecraft:farmland[moisture=7]");
+block(6, y + 0, 9, "minecraft:farmland[moisture=7]");
+block(6, y + 0, 10, "minecraft:cobblestone");
+block(6, y + 1, -2, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(6, y + 1, 1, "minecraft:air");
+block(6, y + 1, 4, "minecraft:air");
+block(6, y + 1, 7, "minecraft:air");
+block(6, y + 1, 10, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(6, y + 2, -2, "minecraft:air");
+block(6, y + 2, -1, "minecraft:air");
+block(6, y + 2, 0, "minecraft:air");
+block(6, y + 2, 1, "minecraft:air");
+block(6, y + 2, 2, "minecraft:air");
+block(6, y + 2, 3, "minecraft:air");
+block(6, y + 2, 4, "minecraft:air");
+block(6, y + 2, 5, "minecraft:air");
+block(6, y + 2, 6, "minecraft:air");
+block(6, y + 2, 7, "minecraft:air");
+block(6, y + 2, 8, "minecraft:air");
+block(6, y + 2, 9, "minecraft:air");
+block(6, y + 2, 10, "minecraft:air");
+block(7, y + -1, -2, "minecraft:dirt");
+block(7, y + -1, -1, "minecraft:dirt");
+block(7, y + -1, 0, "minecraft:dirt");
+block(7, y + -1, 1, "minecraft:dirt");
+block(7, y + -1, 2, "minecraft:dirt");
+block(7, y + -1, 3, "minecraft:dirt");
+block(7, y + -1, 4, "minecraft:dirt");
+block(7, y + -1, 5, "minecraft:dirt");
+block(7, y + -1, 6, "minecraft:dirt");
+block(7, y + -1, 7, "minecraft:dirt");
+block(7, y + -1, 8, "minecraft:dirt");
+block(7, y + -1, 9, "minecraft:dirt");
+block(7, y + -1, 10, "minecraft:dirt");
+block(7, y + 0, -2, "minecraft:cobblestone");
+block(7, y + 0, -1, "minecraft:farmland[moisture=7]");
+block(7, y + 0, 0, "minecraft:farmland[moisture=7]");
+block(7, y + 0, 1, "minecraft:water[level=0]");
+block(7, y + 0, 2, "minecraft:farmland[moisture=7]");
+block(7, y + 0, 3, "minecraft:farmland[moisture=7]");
+block(7, y + 0, 4, "minecraft:oak_planks");
+block(7, y + 0, 5, "minecraft:farmland[moisture=7]");
+block(7, y + 0, 6, "minecraft:farmland[moisture=7]");
+block(7, y + 0, 7, "minecraft:water[level=0]");
+block(7, y + 0, 8, "minecraft:farmland[moisture=7]");
+block(7, y + 0, 9, "minecraft:farmland[moisture=7]");
+block(7, y + 0, 10, "minecraft:mossy_cobblestone");
+block(7, y + 1, -2, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(7, y + 1, 1, "minecraft:air");
+block(composterDis, y + 1, 4, "minecraft:composter[level=0]");
+block(7, y + 1, 4, "minecraft:air");
+block(7, y + 1, 7, "minecraft:air");
+block(7, y + 1, 10, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(7, y + 2, -2, "minecraft:air");
+block(7, y + 2, -1, "minecraft:air");
+block(7, y + 2, 0, "minecraft:air");
+block(7, y + 2, 1, "minecraft:air");
+block(7, y + 2, 2, "minecraft:air");
+block(7, y + 2, 3, "minecraft:air");
+block(7, y + 2, 4, "minecraft:air");
+block(7, y + 2, 5, "minecraft:air");
+block(7, y + 2, 6, "minecraft:air");
+block(7, y + 2, 7, "minecraft:air");
+block(7, y + 2, 8, "minecraft:air");
+block(7, y + 2, 9, "minecraft:air");
+block(7, y + 2, 10, "minecraft:air");
+block(8, y + -1, -2, "minecraft:dirt");
+block(8, y + -1, -1, "minecraft:dirt");
+block(8, y + -1, 0, "minecraft:dirt");
+block(8, y + -1, 1, "minecraft:dirt");
+block(8, y + -1, 2, "minecraft:dirt");
+block(8, y + -1, 3, "minecraft:dirt");
+block(8, y + -1, 4, "minecraft:dirt");
+block(8, y + -1, 5, "minecraft:dirt");
+block(8, y + -1, 6, "minecraft:dirt");
+block(8, y + -1, 7, "minecraft:dirt");
+block(8, y + -1, 8, "minecraft:dirt");
+block(8, y + -1, 9, "minecraft:dirt");
+block(8, y + -1, 10, "minecraft:dirt");
+block(8, y + 0, -2, "minecraft:mossy_cobblestone");
+block(8, y + 0, -1, "minecraft:farmland[moisture=7]");
+block(8, y + 0, 0, "minecraft:farmland[moisture=7]");
+block(8, y + 0, 1, "minecraft:water[level=0]");
+block(8, y + 0, 2, "minecraft:farmland[moisture=7]");
+block(8, y + 0, 3, "minecraft:farmland[moisture=7]");
+block(8, y + 0, 4, "minecraft:oak_planks");
+block(8, y + 0, 5, "minecraft:farmland[moisture=7]");
+block(8, y + 0, 6, "minecraft:farmland[moisture=7]");
+block(8, y + 0, 7, "minecraft:water[level=0]");
+block(8, y + 0, 8, "minecraft:farmland[moisture=7]");
+block(8, y + 0, 9, "minecraft:farmland[moisture=7]");
+block(8, y + 0, 10, "minecraft:cobblestone");
+block(8, y + 1, -2, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(8, y + 1, 1, "minecraft:air");
+block(8, y + 1, 4, "minecraft:air");
+block(8, y + 1, 7, "minecraft:air");
+block(8, y + 1, 10, "minecraft:oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]");
+block(8, y + 2, -2, "minecraft:air");
+block(8, y + 2, -1, "minecraft:air");
+block(8, y + 2, 0, "minecraft:air");
+block(8, y + 2, 1, "minecraft:air");
+block(8, y + 2, 2, "minecraft:air");
+block(8, y + 2, 3, "minecraft:air");
+block(8, y + 2, 4, "minecraft:air");
+block(8, y + 2, 5, "minecraft:air");
+block(8, y + 2, 6, "minecraft:air");
+block(8, y + 2, 7, "minecraft:air");
+block(8, y + 2, 8, "minecraft:air");
+block(8, y + 2, 9, "minecraft:air");
+block(8, y + 2, 10, "minecraft:air");
+block(9, y + -1, -2, "minecraft:dirt");
+block(9, y + -1, -1, "minecraft:dirt");
+block(9, y + -1, 0, "minecraft:dirt");
+block(9, y + -1, 1, "minecraft:dirt");
+block(9, y + -1, 2, "minecraft:dirt");
+block(9, y + -1, 3, "minecraft:dirt");
+block(9, y + -1, 4, "minecraft:dirt");
+block(9, y + -1, 5, "minecraft:dirt");
+block(9, y + -1, 6, "minecraft:dirt");
+block(9, y + -1, 7, "minecraft:dirt");
+block(9, y + -1, 8, "minecraft:dirt");
+block(9, y + -1, 9, "minecraft:dirt");
+block(9, y + -1, 10, "minecraft:dirt");
+block(9, y + 0, -2, "minecraft:cobblestone");
+block(9, y + 0, -1, "minecraft:cobblestone");
+block(9, y + 0, 0, "minecraft:cobblestone");
+block(9, y + 0, 1, "minecraft:mossy_cobblestone");
+block(9, y + 0, 2, "minecraft:mossy_cobblestone");
+block(9, y + 0, 3, "minecraft:cobblestone");
+block(9, y + 0, 4, "minecraft:mossy_cobblestone");
+block(9, y + 0, 5, "minecraft:cobblestone");
+block(9, y + 0, 6, "minecraft:cobblestone");
+block(9, y + 0, 7, "minecraft:cobblestone");
+block(9, y + 0, 8, "minecraft:cobblestone");
+block(9, y + 0, 9, "minecraft:mossy_cobblestone");
+block(9, y + 0, 10, "minecraft:mossy_cobblestone");
+block(9, y + 1, -2, "minecraft:oak_log[axis=y]");
+block(9, y + 1, -1, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(9, y + 1, 0, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(9, y + 1, 1, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(9, y + 1, 2, "minecraft:oak_log[axis=y]");
+block(9, y + 1, 3, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(9, y + 1, 4, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(9, y + 1, 5, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(9, y + 1, 6, "minecraft:oak_log[axis=y]");
+block(9, y + 1, 7, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(9, y + 1, 8, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(9, y + 1, 9, "minecraft:oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]");
+block(9, y + 1, 10, "minecraft:oak_log[axis=y]");
+block(9, y + 2, -2, "minecraft:stone_brick_slab[type=bottom,waterlogged=false]");
+block(9, y + 2, -1, "minecraft:air");
+block(9, y + 2, 0, "minecraft:air");
+block(9, y + 2, 1, "minecraft:air");
+block(9, y + 2, 2, "minecraft:stone_brick_slab[type=bottom,waterlogged=false]");
+block(9, y + 2, 3, "minecraft:air");
+block(9, y + 2, 4, "minecraft:air");
+block(9, y + 2, 5, "minecraft:air");
+block(9, y + 2, 6, "minecraft:stone_brick_slab[type=bottom,waterlogged=false]");
+block(9, y + 2, 7, "minecraft:air");
+block(9, y + 2, 8, "minecraft:air");
+block(9, y + 2, 9, "minecraft:air");
+block(9, y + 2, 10, "minecraft:stone_brick_slab[type=bottom,waterlogged=false]");

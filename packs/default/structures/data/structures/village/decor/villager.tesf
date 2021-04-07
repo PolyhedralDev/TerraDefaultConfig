@@ -1,0 +1,17 @@
+id "villager";
+
+num y = 0;
+if(getMark(0,1,0) == "villager") fail;
+while((check(0,y - 1,0) != "LAND")) {
+    if((check(0,y - 1,0) == "OCEAN")) {
+        fail;
+    }
+    y = y - 1;
+    if(y < -30) {
+        fail;
+    }
+}
+
+if(check(0,0,0) != "AIR") fail;
+entity(0,y,0,"VILLAGER");
+setMark(0,1,0,"villager");

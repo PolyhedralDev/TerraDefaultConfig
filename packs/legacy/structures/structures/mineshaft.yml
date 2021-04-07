@@ -1,0 +1,9 @@
+scripts:
+  mineshaft_start: 1
+id: "MINESHAFT"
+spawn:
+  start:
+    min: 12
+    max: 24
+  width: 200
+  padding: 200

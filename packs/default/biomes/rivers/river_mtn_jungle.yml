@@ -1,0 +1,60 @@
+id: "RIVER_M_J"
+extends: "RIVER_M_P"
+color: 0x0000ff
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - MOUNTAIN_JUNGLE: 255
+vanilla: JUNGLE
+trees:
+  - density: 30
+    items:
+      - JUNGLE_BUSH: 4
+      - SMALL_JUNGLE: 3
+      - JUNGLE: 4
+    y:
+      min: 62
+      max: 92
+flora:
+  - density: 60
+    simplex-frequency: 0.1
+    items:
+      - SMALL_ROCK: 1
+      - TALL_GRASS: 1
+      - GRASS: 5
+      - LEAVES: 3
+    y:
+      min: 62
+      max: 180
+  - density: 14
+    items:
+      - CEILING_LEAVES: 2
+      - VINES: 2
+      - VINES_TALL: 1
+      - STALACTITE: 1
+      - SHROOMLIGHT: 2
+    y:
+      min: 62
+      max: 84
+  - density: 5
+    y:
+      min: 62
+      max: 80
+    items:
+      - SUGARCANE: 2
+      - LILY_PAD: 1
+  - density: 60
+    items:
+      - SEAGRASS: 50
+      - TALL_SEAGRASS: 20
+      - KELP_SHORT: 1
+      - KELP_MEDIUM: 1
+      - KELP_TALL: 1
+      - SEA_PICKLE: 2
+    y:
+      min: 50
+      max: 63

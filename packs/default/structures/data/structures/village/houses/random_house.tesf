@@ -1,0 +1,21 @@
+id "random_house";
+
+if(randomInt(2) == 0) {
+    num sel = randomInt(4);
+    if(sel == 0) {
+        structure(0, 0, -1, "plains_1x1", "CW_90");
+    } else if(sel == 1) {
+        structure(0, 0, -1, "plains_2x1", "CW_90");
+    } else if(sel == 2) {
+        structure(0, 0, -1, "plains_1x2", "CW_90");
+    }
+} else {
+    num sel = randomInt(4);
+    if(sel == 0) {
+        structure(0, 0, 1, "plains_1x1", "CCW_90");
+    } else if(sel == 1) {
+        structure(0, 0, 1, "plains_2x1", "CCW_90");
+    } else if(sel == 2) {
+        structure(0, 0, 1, "plains_1x2", "CCW_90");
+    }
+}

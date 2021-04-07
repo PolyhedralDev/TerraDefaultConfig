@@ -1,0 +1,7 @@
+id "beetroots_section";
+
+num selector = randomInt(4);
+if(selector == 0) block(0, 1 , 0, "minecraft:beetroots[age=0]");
+else if(selector == 1) block(0, 1, 0, "minecraft:beetroots[age=1]");
+else if(selector == 2) block(0, 1, 0, "minecraft:beetroots[age=2]");
+else if(selector == 3) block(0, 1, 0, "minecraft:beetroots[age=3]");

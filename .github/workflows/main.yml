@@ -1,0 +1,32 @@
+name: Upload Artifacts
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Create Artifacts
+        run: |
+          cd packs/default
+          zip -r ../default.zip *
+          cd ../nether
+          zip -r ../nether.zip *
+          cd ../legacy
+          zip -r ../legacy.zip *
+      - name: ""
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Latest Build"
+          files: |
+            packs/default.zip
+            packs/nether.zip
+            packs/legacy.zip

@@ -1,0 +1,42 @@
+id: AETHER_HIGHLANDS
+extends: END_BIOME
+color: 0x008000
+tags:
+  - AETHER
+  - OUTER
+palette:
+  - "HIGHLANDS": 255
+vanilla: END_HIGHLANDS
+flora:
+  - density: 45
+    y:
+      min: 58
+      max: 84
+    items:
+      - TALL_FERN: 125
+      - TALL_GRASS: 25
+      - FERN: 650
+      - GRASS: 100
+      - POPPY: 50
+      - ROSE_BUSH: 4
+      - LILAC: 4
+  - density: 100
+    y:
+      min: 58
+      max: 59
+    items:
+      - GRAVEL_FIXER: 1
+  - density: 75
+    y:
+      min: 58
+      max: 84
+    items:
+      - SNOW: 1
+
+trees:
+  - density: 10
+    items:
+      - SPRUCE: 1
+    y:
+      min: 58
+      max: 84

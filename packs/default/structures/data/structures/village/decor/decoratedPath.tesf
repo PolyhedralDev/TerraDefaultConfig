@@ -1,0 +1,8 @@
+id "decoratedPath";
+
+if(check(0,0,0) != "AIR") fail;
+
+num selector = randomInt(4);
+
+if(selector == 0) pull(0,0,0,"minecraft:grass_block");
+else pull(0,0,0,"minecraft:grass_path");

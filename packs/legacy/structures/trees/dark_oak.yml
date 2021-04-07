@@ -1,0 +1,18 @@
+id: "DARK_OAK"
+scripts:
+  - "Dark_Oak__1": 1
+  - "Dark_Oak__2": 1
+  - "Dark_Oak__3": 1
+  - "Dark_Oak__4": 1
+  - "Dark_Oak__5": 1
+  - "Dark_Oak__6": 1
+  - "Dark_Oak__7": 1
+  - "Dark_Oak__8": 1
+  - "Dark_Oak__9": 1
+  - "Dark_Oak__10": 1
+  - "Dark_Oak__11": 1
+  - "Dark_Oak__12": 1
+y-offset: -2
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
