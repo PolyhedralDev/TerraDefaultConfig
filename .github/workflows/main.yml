@@ -13,11 +13,14 @@ jobs:
         uses: actions/checkout@v2
       - name: Create Artifacts
         run: |
-          cd packs/default
+          cd default
+          cp ../LICENSE ./LICENSE
           zip -r ../default.zip *
           cd ../nether
+          cp ../LICENSE ./LICENSE
           zip -r ../nether.zip *
           cd ../legacy
+          cp ../LICENSE ./LICENSE
           zip -r ../legacy.zip *
       - name: ""
         uses: "marvinpinto/action-automatic-releases@latest"
@@ -27,6 +30,6 @@ jobs:
           prerelease: false
           title: "Latest Build"
           files: |
-            packs/default.zip
-            packs/nether.zip
-            packs/legacy.zip
+            default.zip
+            nether.zip
+            legacy.zip
