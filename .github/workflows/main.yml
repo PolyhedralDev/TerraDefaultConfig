@@ -2,7 +2,8 @@ name: Upload Artifacts
 
 on:
   push:
-    branches: final-config
+    branches:
+      - master
 
 jobs:
   build:
