@@ -12,5 +12,5 @@ TerraDefaultConfig is licensed under a
 Creative Commons Attribution 4.0 International License.
 
 You should have received a copy of the license along with this
-work.  If not, see http://creativecommons.org/licenses/by-sa/4.0/.  
+work.  If not, see http://creativecommons.org/licenses/by/4.0/.  
 ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png)
