@@ -1,8 +1,0 @@
-layers:
-  - materials:
-      - "minecraft:grass_block": 1
-    layers: 1
-  - materials:
-      - "minecraft:diorite": 1
-    layers: 2
-id: "SPRINGS"
