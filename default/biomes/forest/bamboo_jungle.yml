@@ -1,3 +1,4 @@
+type: BIOME
 extends: "PLAINS_ABSTRACT"
 id: "BAMBOO_JUNGLE"
 structures:

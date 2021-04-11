@@ -1,3 +1,4 @@
+type: BIOME
 extends: "FOREST_ABSTRACT"
 id: "DARK_FOREST"
 color: 0x40511a

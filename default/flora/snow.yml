@@ -1,3 +1,4 @@
+type: FLORA
 layers:
   - materials:
       - "minecraft:snow": 1

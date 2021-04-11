@@ -1,3 +1,4 @@
+type: CARVER
 id: CAVE
 extends: CAVE_ABSTRACT
 palette:

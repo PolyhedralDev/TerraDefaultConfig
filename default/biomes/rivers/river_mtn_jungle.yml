@@ -1,3 +1,4 @@
+type: BIOME
 id: "RIVER_M_J"
 extends: "RIVER_M_P"
 color: 0x0000ff

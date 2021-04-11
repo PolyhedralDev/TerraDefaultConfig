@@ -1,3 +1,4 @@
+type: FLORA
 layers:
   - materials:
       - "minecraft:sweet_berry_bush[age=2]": 1

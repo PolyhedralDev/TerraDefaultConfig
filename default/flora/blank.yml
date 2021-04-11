@@ -1,4 +1,5 @@
 # Blank flora for Simplex placeholder.
+type: FLORA
 
 layers:
   - materials:

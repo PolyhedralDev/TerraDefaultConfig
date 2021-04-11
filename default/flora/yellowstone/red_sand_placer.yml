@@ -1,3 +1,4 @@
+type: FLORA
 layers:
   - materials:
       - "minecraft:red_sand": 1

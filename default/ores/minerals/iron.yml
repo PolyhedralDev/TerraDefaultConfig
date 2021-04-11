@@ -1,3 +1,4 @@
+type: ORE
 material: "minecraft:iron_ore"
 size:
   min: 9

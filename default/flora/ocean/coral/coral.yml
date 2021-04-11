@@ -1,3 +1,4 @@
+type: FLORA
 layers:
   - materials:
       - "minecraft:brain_coral": 1

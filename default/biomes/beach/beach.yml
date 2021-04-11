@@ -1,3 +1,4 @@
+type: BIOME
 extends: "BEACH_ABSTRACT"
 id: "BEACH"
 vanilla: BEACH

@@ -1,3 +1,4 @@
+type: BIOME
 extends: "DEEP_OCEAN_ABSTRACT"
 id: "COLD_OCEAN_DEEP"
 vanilla: COLD_OCEAN

@@ -1,3 +1,4 @@
+type: ORE
 material: "minecraft:coal_ore"
 size:
   min: 17

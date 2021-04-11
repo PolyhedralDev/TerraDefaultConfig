@@ -1,3 +1,4 @@
+type: CARVER
 id: "CAVE_TUNDRA"
 extends: CAVE_ABSTRACT
 palette:

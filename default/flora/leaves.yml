@@ -1,3 +1,4 @@
+type: FLORA
 layers:
   - materials:
       - "minecraft:oak_leaves[persistent=true]": 1

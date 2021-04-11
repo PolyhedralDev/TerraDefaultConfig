@@ -1,3 +1,4 @@
+type: BIOME
 extends: "FOREST_ABSTRACT"
 id: "BIRCH_FOREST"
 color: 0x307444

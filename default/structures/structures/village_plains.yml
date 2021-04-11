@@ -1,3 +1,4 @@
+type: STRUCTURE
 scripts:
   - "village_start": 1
 id: "VILLAGE_PLAINS"

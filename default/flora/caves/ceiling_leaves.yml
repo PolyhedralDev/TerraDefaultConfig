@@ -1,3 +1,4 @@
+type: FLORA
 layers:
   - materials:
       - "minecraft:jungle_leaves[persistent=true]": 1

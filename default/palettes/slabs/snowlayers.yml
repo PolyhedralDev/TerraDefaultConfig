@@ -1,3 +1,4 @@
+type: PALETTE
 layers:
   - materials:
       - "minecraft:snow[layers=3]": 1

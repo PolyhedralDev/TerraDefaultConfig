@@ -1,3 +1,4 @@
+type: BIOME
 noise-equation: "((-((y / base)^2)) + 1) + |noise2(x/2.5, z/2.5)|"
 variables:
   base: 66

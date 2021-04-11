@@ -1,3 +1,4 @@
+type: FLORA
 layers:
   - materials:
       - "minecraft:iron_bars": 1

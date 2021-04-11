@@ -1,3 +1,4 @@
+type: PALETTE
 layers:
   - materials: "minecraft:sand"
     layers: 3

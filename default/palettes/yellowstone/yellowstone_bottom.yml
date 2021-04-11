@@ -1,3 +1,4 @@
+type: PALETTE
 layers:
   - materials:
       - "minecraft:magma_block": 1

@@ -1,3 +1,4 @@
+type: ORE
 material: "minecraft:lapis_ore"
 size:
   min: 7

@@ -1,3 +1,4 @@
+type: STRUCTURE
 scripts:
   monument: 1
 id: "MONUMENT"

@@ -1,3 +1,4 @@
+type: FLORA
 layers:
   - materials:
       - "minecraft:sea_pickle[waterlogged=true,pickles=1]": 1

@@ -1,5 +1,5 @@
 # This biome is the parent of ALL biomes in the default config.
-
+type: BIOME
 id: "BASIC_ORES"
 abstract: true
 

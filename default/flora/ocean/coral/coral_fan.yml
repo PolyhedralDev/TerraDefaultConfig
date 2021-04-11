@@ -1,3 +1,4 @@
+type: FLORA
 layers:
   - materials:
       - "minecraft:brain_coral_wall_fan": 1
