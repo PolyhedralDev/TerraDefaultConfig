@@ -23,6 +23,12 @@ flora:
       - TALL_GRASS: 150
       - GRASS: 700
       - SUNFLOWER: 20
-
+trees:
+  - density: 0.02
+    items:
+      - PUMPKIN_PATCH: 1
+    y:
+      min: 58
+      max: 92
 
 # Carving and ores covered by super biome
