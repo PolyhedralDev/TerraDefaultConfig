@@ -68,3 +68,9 @@ trees:
     y:
       min: 62
       max: 92
+  - density: 0.03
+    items:
+      - MELON_PATCH: 1
+    y:
+      min: 58
+      max: 92

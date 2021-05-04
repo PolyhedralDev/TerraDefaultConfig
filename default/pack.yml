@@ -300,30 +300,43 @@ biomes:
           type: REPLACE_LIST
           to:
             MOUNTAINS_JUNGLE:
-              - SELF: 7
+              - SELF: 1
               - RIVER_M_J: 1
-              - SELF: 7
             MOUNTAINS_STONE:
-              - SELF: 7
+              - SELF: 1
               - RIVER_M: 1
-              - SELF: 7
             MOUNTAINS_PRETTY:
-              - SELF: 7
+              - SELF: 1
               - RIVER_M_P: 1
-              - SELF: 7
           default-from: "RIVER_ERODE"
           default-to:
-            - SELF: 7
+            - SELF: 1
             - RIVER: 1
-            - SELF: 7
           noise:
-            type: FBm
-            octaves: 2
-            gain: 0.2
-            lacunarity: 4
-            function:
-              type: OpenSimplex2
-              frequency: 0.0075
+            type: EXPRESSION
+            equation: "if(noise(x/width, z/width) > 0,1,-1)"
+            variables:
+              width: 4.5
+            functions:
+              noise:
+                type: "KERNEL"
+                function:
+                  type: EXPRESSION
+                  equation: "if(noise(x, z) > 0, 1, 0)"
+                  functions:
+                    noise:
+                      type: DOMAINWARP
+                      function:
+                        type: OPENSIMPLEX2
+                        frequency: 0.03
+                      warp:
+                        type: OPENSIMPLEX2
+                        frequency: 0.075
+                      amplitude: 3
+                kernel:
+                  - [ -1, -1, -1 ]
+                  - [ -1, 8, -1 ]
+                  - [ -1, -1, -1 ]
       - mutate:
           type: SMOOTH
           noise:

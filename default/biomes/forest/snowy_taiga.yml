@@ -27,7 +27,14 @@ flora:
       max: 156
     items:
       - SNOW: 1
-
+  - density: 40
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 15
+      - GRASS: 70
+      - SWEET_BERRIES: 1
 trees:
   - density: 6
     items:
