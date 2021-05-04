@@ -11,7 +11,7 @@ palette:
 vanilla: BIRCH_FOREST
 
 trees:
-  - density: 15
+  - density: 7
     items:
       - BIRCH: 1
     y:

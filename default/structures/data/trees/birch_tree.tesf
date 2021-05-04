@@ -1,0 +1,45 @@
+id "birch_tree";
+
+str blockID = getBlock(0,-1,0);
+if(blockID != "minecraft:grass_block" && blockID != "minecraft:podzol" && blockID != "minecraft:dirt") {
+    fail; // Cancel gen if not in land.
+}
+
+if(getBlock(0,0,0) != "minecraft:air") fail;
+
+num height = randomInt(8) + 10;
+
+num leafHeight = 4 + randomInt(4);
+
+
+for(num current = 0; current < (height + leafHeight + 2); current = current + 1) {
+    if(current >= leafHeight) {
+        for(num x = 0; x <= 10; x = x + 1) {
+            for(num y = 0; y <= 10; y = y + 1) {
+                num radius = ((2 + (height - 10)/4));
+                num distance = sqrt(pow(x - 5, 2) + pow(y - 5, 2) + pow((current - height + 3) / 1.5, 2));
+                if(distance > radius) {
+                    continue;
+                }
+
+                if(abs(radius-distance) < 1) {
+                    if(randomInt(2) == 0) {
+                        block(x - 5, current, y - 5, "minecraft:birch_leaves[distance=1]", false);
+                    }
+                }
+                if(abs(radius-distance) >= 1) {
+                    block(x - 5, current, y - 5, "minecraft:birch_leaves[distance=1]", false);
+                }
+            }
+        }
+    }
+    if(current < (height+1)) {
+        block(0, current, 0, "minecraft:birch_log");
+    }
+}
+
+num addHeight = randomInt(2)+2;
+
+for(num add = height+1; add < (height+addHeight+2); add = add + 1)  {
+    block(0, add - 1, 0, "minecraft:birch_leaves[distance=1]", false);
+}
