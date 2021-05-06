@@ -11,7 +11,7 @@ palette:
 vanilla: DARK_FOREST
 
 trees:
-  - density: 25
+  - density: 15
     items:
       - DARK_OAK: 1
     y:
