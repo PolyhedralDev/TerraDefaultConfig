@@ -22,13 +22,13 @@ tags:
   - "HOT"
   - "DRY"
 slant:
-  palette:
-    - "BLOCK:minecraft:bedrock": 0
-    - BEDROCK_MOST: 1
-    - BEDROCK_HALF: 2
-    - BEDROCK_LITTLE: 3
-    - ARID_SIDE: 255
-  threshold: 0.1
+  - threshold: 0.1
+    palette:
+      - "BLOCK:minecraft:bedrock": 0
+      - BEDROCK_MOST: 1
+      - BEDROCK_HALF: 2
+      - BEDROCK_LITTLE: 3
+      - ARID_SIDE: 255
 
 flora:
   - density: 40

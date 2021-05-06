@@ -8,14 +8,14 @@ extends: "MOUNTAINS_PRETTY_FLORA"
 id: "CRAG"
 erode: CRAG
 slant:
-  palette:
-    - "BLOCK:minecraft:bedrock": 0
-    - BEDROCK_MOST: 1
-    - BEDROCK_HALF: 2
-    - BEDROCK_LITTLE: 3
-    - "STONE_SIDE": 255
-    - "GRASSY_STONE": 62
-  threshold: 0.1
+  - threshold: 0.1
+    palette:
+      - "BLOCK:minecraft:bedrock": 0
+      - BEDROCK_MOST: 1
+      - BEDROCK_HALF: 2
+      - BEDROCK_LITTLE: 3
+      - "STONE_SIDE": 255
+      - "GRASSY_STONE": 62
 tags:
   - "LAND"
 palette:
