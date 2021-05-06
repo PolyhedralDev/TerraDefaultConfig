@@ -109,7 +109,7 @@ variables:
   base: 63
 biomes:
   type: PIPELINE
-  biome: MESA
+  biome: OASIS
   resolution: 4
   blend:
     amplitude: 1.75
@@ -248,6 +248,17 @@ biomes:
             return: CellValue
             frequency: 0.5
             salt: 6
+      - mutate: # Dry warm biomes
+          type: REPLACE
+          from: "BIOME:DESERT"
+          to:
+            - DESERT: 19
+            - OASIS: 1
+          noise:
+            type: Cellular # Use cellular to increase biome size.
+            return: CellValue
+            frequency: 0.4
+            salt: 7
       - mutate: # Border deep ocean with normal ocean.
           type: BORDER_LIST
           from: LAND
