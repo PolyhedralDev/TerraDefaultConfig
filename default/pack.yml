@@ -332,6 +332,9 @@ biomes:
             MOUNTAINS_PRETTY:
               - SELF: 1
               - RIVER_M_P: 1
+            SKY_ISLANDS:
+              - SELF: 1
+              - RIVER_SKY_ISLANDS: 1
           default-from: "RIVER_ERODE"
           default-to:
             - SELF: 1
