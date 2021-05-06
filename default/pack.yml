@@ -55,6 +55,30 @@ noise:
     warp:
       frquency: 0.015
       type: OpenSimplex2
+  mesa:
+    type: "DOMAINWARP"
+    amplitude: 15
+    warp:
+      type: "OPENSIMPLEX2S"
+      frequency: 0.02
+    function:
+      type: "CELLULAR"
+      return: "Distance"
+      frequency: 0.015
+  mesaMask: # Essentially a white noise mask for the mesa function.
+    type: LINEAR
+    min: -4 # [0.2 ... 1]
+    max: 1
+    function:
+      type: "DOMAINWARP"
+      amplitude: 15
+      warp:
+        type: "OPENSIMPLEX2S"
+        frequency: 0.02
+      function:
+        type: "CELLULAR"
+        return: "CellValue"
+        frequency: 0.015
   noiseC:
     dimensions: 2
     type: Cellular
@@ -66,7 +90,7 @@ noise:
       function:
         type: OpenSimplex2
         frequency: 0.02
-
+  
   bubble: # Bubbly noise
     dimensions: 2
     type: LINEAR
@@ -85,7 +109,7 @@ variables:
   base: 63
 biomes:
   type: PIPELINE
-  biome: YELLOWSTONE
+  biome: MESA
   resolution: 4
   blend:
     amplitude: 1.75
