@@ -1,0 +1,10 @@
+scripts:
+  monument: 1
+id: "MONUMENT"
+spawn:
+  start:
+    min: 72
+    max: 72
+  width: 250
+  padding: 50
+
