@@ -12,15 +12,15 @@ for(i; i < 20; i = i + 1) {
     num select = randomInt(4);
 
     if(select == 0) {
-    spawnY = 1;
+        spawnY = 1;
     } else if(select == 1) {
-    spawnY = 5;
+        spawnY = 5;
     } else if(select == 2) {
-    spawnY = 8;
+        spawnY = 8;
     } else if(select == 3) {
-    spawnY = 17;
+        spawnY = 17;
     }
-    entity(spawnX, spawnY, spawnZ,"PILLAGER");
+  entity(spawnX, spawnY, spawnZ,"PILLAGER");
 }
 
 for(y; y > -50; y = y - 1) {
