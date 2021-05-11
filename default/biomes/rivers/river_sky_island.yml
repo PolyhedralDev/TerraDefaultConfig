@@ -37,6 +37,14 @@ flora:
     y:
       min: 50
       max: 63
+  - density: 50
+    y:
+      min: 120
+      max: 170
+    items:
+      - TALL_GRASS: 150
+      - GRASS: 700
+      - SUNFLOWER: 20
 ocean:
   palette: "BLOCK:minecraft:water"
   level: 62
