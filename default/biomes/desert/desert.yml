@@ -5,13 +5,9 @@ structures:
   - STRONGHOLD
   - MINESHAFT
   - DUNGEON
-#noise-equation: "((-((y / base))) + 1)"
-noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x, z) / 3) + 0.1| + (((noise2(x + noise2(x/2, z/2)*56*(min(max((y-base)/30, 0), 1)), z + noise2(x/2+1000, z/2+1000)*56*(min(max((y-base)/30, 0), 1)))+1)/2)^3)*0.75"
-
-variables:
-  cave_cutoff: 128
+noise-equation: "((-((y / base))) + 1) + noise2(x*0.75, z*0.75)/5 + 0.15"
 elevation:
-  #equation: "(desert(x, z) + 1)*0.3*max(min(noise2(x/3, z/3) +0.5, 1), 0) + noise2(x/3, z/3)/3 + 0.3"
+  equation: "(desert(x, z) + 1) * 0.225 * max(min(noise2(x*0.75, z*0.75) + 0.5, 1), 0)"
 noise-2d:
   enable: false
 palette:

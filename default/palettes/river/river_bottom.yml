@@ -8,6 +8,11 @@ layers:
     layers: 1
 id: "RIVER_BOTTOM"
 noise:
-  type: OpenSimplex2
-  frequency: 0.05
-  salt: 3
+  type: DomainWarp
+  amplitude: 1.5
+  warp:
+    type: WhiteNoise
+  function:
+    type: OpenSimplex2
+    frequency: 0.05
+    salt: 3
