@@ -47,10 +47,10 @@ noise:
   desert:
     type: DomainWarp
     dimensions: 2
-    amplitude: 20
+    amplitude: 25
     function:
       type: Cellular
-      frequency: 0.025
+      frequency: 0.015
       return: Distance
     warp:
       frquency: 0.015
