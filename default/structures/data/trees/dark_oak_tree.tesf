@@ -66,7 +66,7 @@ for(num xi = -4.5; xi <= 4; xi = xi+1) {
     }
 }
 
-block(0, height+2, 0, "minecraft:jungle_leaves"); // top leaf
-block(1, height+2, 0, "minecraft:jungle_leaves"); // top leaf
-block(0, height+2, 1, "minecraft:jungle_leaves"); // top leaf
-block(1, height+2, 1, "minecraft:jungle_leaves"); // top leaf
+block(0, height+2, 0, "minecraft:dark_oak_leaves"); // top leaf
+block(1, height+2, 0, "minecraft:dark_oak_leaves"); // top leaf
+block(0, height+2, 1, "minecraft:dark_oak_leaves"); // top leaf
+block(1, height+2, 1, "minecraft:dark_oak_leaves"); // top leaf
