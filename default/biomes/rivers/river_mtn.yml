@@ -17,7 +17,7 @@ vanilla: MOUNTAINS
 blend:
   distance: 1
 ocean:
-  palette: COLD_OCEAN
+  palette: FROZEN_OCEAN
 flora:
   - density: 10
     items:
