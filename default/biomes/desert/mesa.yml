@@ -3,7 +3,7 @@ noise-equation: "((-((y / base)^2)) + 1) + ((-mesa(x, z))^8)/1.5 + |noise2(x, z)
 elevation:
   #equation: "min(floor(((max(noise2(x/1.5, z/1.5)+0.25, 0)))*5), 3)*0.45 + if(max(noise2(x/1.5, z/1.5)+0.05, 0), (noise2(x*2,z*2))*0.55, 0)"
   equation: "if(mesa(x, z) < -0.975, mesaMask(x, z) + if(mesa(x*3, z*3) < -0.95, mesaMask(x*3, z*3)*0.75, 0), 0)"
-extends: "BASIC_ORES"
+extends: "BASE"
 id: "MESA"
 erode: MESA
 color: 0xd94515

@@ -5,7 +5,7 @@ tags:
   - "RIVER_ERODE"
   - "BEACH"
 abstract: true
-extends: BASIC_ORES
+extends: BASE
 carving: {}
 palette:
   - "BLOCK:minecraft:bedrock": 0

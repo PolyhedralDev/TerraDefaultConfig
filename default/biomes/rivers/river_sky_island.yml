@@ -1,7 +1,7 @@
 noise-equation: "if(max(y-96, 0), -(if(max(y-150, 0), |y-150|, |y-150|/16)) - 0.25 + (noise2(x*3, z*3)*3), ((-((y / base)^2)) + 1) + ((noise2(x, z)/4)))"
 variables:
   base: 58
-extends: "BASIC_ORES"
+extends: "BASE"
 carving: {}
 id: "RIVER_SKY_ISLANDS"
 color: 0x0000ff

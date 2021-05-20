@@ -6,7 +6,7 @@ elevation:
   interpolation: true
 color: 0xa79d64
 id: "ARID_MOUNTAINS"
-extends: "BASIC_ORES"
+extends: "BASE"
 
 palette:
   - "BLOCK:minecraft:bedrock": 0
