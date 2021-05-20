@@ -90,7 +90,7 @@ noise:
       function:
         type: OpenSimplex2
         frequency: 0.02
-  
+
   bubble: # Bubbly noise
     dimensions: 2
     type: LINEAR
@@ -217,6 +217,7 @@ biomes:
             - FOREST: 20
             - BIRCH_FOREST: 8
             - PLAINS: 24
+            - SUNFLOWER_PLAINS: 6
             - SKY_ISLANDS: 1
             - DARK_FOREST: 8
             - CRAG: 4
