@@ -1,6 +1,6 @@
 extends: "PLAINS_ABSTRACT"
-id: "PLAINS"
-color: 0x8db360
+id: "SUNFLOWER_PLAINS"
+color: 0xe8De2a
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -12,7 +12,7 @@ palette:
 biome-noise:
   type: OpenSimplex2
   frequency: 0.01
-vanilla: PLAINS
+vanilla: SUNFLOWER_PLAINS
 tags:
   - "LAND"
   - "RIVER_ERODE"
@@ -31,7 +31,8 @@ flora:
     items:
       - TALL_GRASS: 150
       - GRASS: 700
-      - DANDELION: 1
+      - SUNFLOWER: 20
+      - DANDELION: 5
       - OXEYE_DAISY: 1
       - CORNFLOWER: 1
       - AZURE_BLUET: 1
@@ -39,6 +40,7 @@ flora:
       - ORANGE_TULIP: 1
       - WHITE_TULIP: 1
       - PINK_TULIP: 1
+
 trees:
   - density: 0.02
     items:
@@ -46,5 +48,3 @@ trees:
     y:
       min: 58
       max: 92
-
-# Carving and ores covered by super biome
