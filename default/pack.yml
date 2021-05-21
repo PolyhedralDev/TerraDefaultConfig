@@ -219,6 +219,7 @@ biomes:
             - PLAINS: 24
             - SKY_ISLANDS: 1
             - DARK_FOREST: 8
+            - SUNFLOWER_PLAINS: 6
             - CRAG: 4
             - MOUNTAINS_PRETTY: 6
           noise: *biome-distribute
