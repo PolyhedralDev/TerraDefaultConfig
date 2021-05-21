@@ -53,7 +53,7 @@ noise:
       frequency: 0.015
       return: Distance
     warp:
-      frquency: 0.015
+      frequency: 0.015
       type: OpenSimplex2
   mesa:
     type: "DOMAINWARP"
