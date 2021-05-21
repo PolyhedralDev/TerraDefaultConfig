@@ -22,7 +22,14 @@ flora:
     items:
       - TALL_GRASS: 150
       - GRASS: 700
-      - SUNFLOWER: 20
+      - DANDELION: 1
+      - OXEYE_DAISY: 1
+      - CORNFLOWER: 1
+      - AZURE_BLUET: 1
+      - RED_TULIP: 1
+      - ORANGE_TULIP: 1
+      - WHITE_TULIP: 1
+      - PINK_TULIP: 1
 trees:
   - density: 0.02
     items:
