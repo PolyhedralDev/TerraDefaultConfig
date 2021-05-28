@@ -1,0 +1,45 @@
+extends: "PLAINS_ABSTRACT"
+id: "DESERT"
+structures:
+  - DESERT
+  - STRONGHOLD
+  - MINESHAFT
+  - DUNGEON
+noise-equation: "((-((y / base))) + 1) + noise2(x*0.75, z*0.75)/5 + 0.15"
+elevation:
+  equation: "(desert(x, z) + 1) * 0.225 * max(min(noise2(x*0.75, z*0.75) + 0.5, 1), 0)"
+noise-2d:
+  enable: false
+palette:
+  - "BLOCK:minecraft:bedrock": -64
+  - BEDROCK_MOST: -63
+  - BEDROCK_HALF: -62
+  - BEDROCK_LITTLE: -61
+  - DESERT: 255
+vanilla: DESERT
+color: 0xfa9418
+tags:
+  - "LAND"
+  - "HOT"
+  - "DRY"
+  - "RIVER_ERODE"
+  
+flora:
+  - density: 2
+    y:
+      min: 62
+      max: 84
+    items:
+      - DEAD_BUSH: 1
+      - SMALL_ROCK: 1
+
+erodible: true
+
+trees:
+  - density: 1.5
+    items:
+      - CACTUS: 1
+    y:
+      min: 58
+      max: 92
+      

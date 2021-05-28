@@ -1,0 +1,6 @@
+id: "DARK_OAK"
+scripts:
+  - "dark_oak_tree": 1
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"

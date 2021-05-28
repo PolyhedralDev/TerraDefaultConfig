@@ -1,0 +1,72 @@
+id "dark_oak_tree";
+
+str blockID = getBlock(0,-1,0);
+if(blockID != "minecraft:grass_block" && blockID != "minecraft:sand" && blockID != "minecraft:dirt") fail; // Cancel gen if not in land.
+blockID = getBlock(1,-1,0);
+if(blockID != "minecraft:grass_block" && blockID != "minecraft:sand" && blockID != "minecraft:dirt") fail; // Cancel gen if not in land.
+blockID = getBlock(0,-1,1);
+if(blockID != "minecraft:grass_block" && blockID != "minecraft:sand" && blockID != "minecraft:dirt") fail; // Cancel gen if not in land.
+blockID = getBlock(1,-1,1);
+if(blockID != "minecraft:grass_block" && blockID != "minecraft:sand" && blockID != "minecraft:dirt") fail; // Cancel gen if not in land.
+
+if(getBlock(0,0,0) != "minecraft:air") fail;
+
+num height = randomInt(4) + 6;
+
+
+for(num current = 0; current < height; current = current + 1) {
+    block(0, current, 0, "minecraft:dark_oak_log");
+    block(1, current, 0, "minecraft:dark_oak_log");
+    block(0, current, 1, "minecraft:dark_oak_log");
+    block(1, current, 1, "minecraft:dark_oak_log");
+    setMark(0, current, 0, "log");
+    setMark(1, current, 0, "log");
+    setMark(0, current, 1, "log");
+    setMark(1, current, 1, "log");
+
+    if(current > 2 && randomInt(3) == 0) { // offshoot
+        num x = randomInt(4)-1;
+        num z = randomInt(4)-1;
+        if((x == 0 || x == 1) && (z == 0 || z == 1)) {
+            if(randomInt(2) == 0) x = -1;
+            else x = 2;
+        }
+        num r = randomInt(3)+3;
+        for(num xi = -4; xi <= 4; xi = xi+1) {
+            for(num zi = -4; zi <= 4; zi = zi+1) {
+                if(pow(xi, 2) + pow(zi, 2) > r) continue; // circle
+                if(getBlock(x+xi, current, z+zi) != "minecraft:air" || getMark(x+xi, current, z+zi) == "log") continue;
+                block(x+xi, current, z+zi, "minecraft:dark_oak_leaves");
+            }
+        }
+        block(x, current, z, "minecraft:dark_oak_log");
+        block(x, current+1, z, "minecraft:dark_oak_leaves");
+        setMark(x, current, z, "log");
+    }
+}
+
+// top layer leaves
+for(num xi = -3.5; xi <= 3; xi = xi+1) {
+    for(num zi = -3.5; zi <= 3; zi = zi+1) {
+        if(pow(xi, 2) + pow(zi, 2) > 7) continue; // circle
+        if(getBlock(xi, height+1, zi) != "minecraft:air" || getMark(xi, height+1, zi) == "log") continue;
+        block(xi, height+1, zi, "minecraft:dark_oak_leaves");
+    }
+}
+
+num r = 3.25 + randomInt(5)/4;
+num r2 = r*r;
+
+// bottom layer leaves
+for(num xi = -4.5; xi <= 4; xi = xi+1) {
+    for(num zi = -4.5; zi <= 4; zi = zi+1) {
+        if(pow(xi, 2) + pow(zi, 2) > r2) continue; // circle
+        if(getBlock(xi, height, zi) != "minecraft:air" || getMark(xi, height, zi) == "log") continue;
+        block(xi, height, zi, "minecraft:dark_oak_leaves");
+    }
+}
+
+block(0, height+2, 0, "minecraft:dark_oak_leaves"); // top leaf
+block(1, height+2, 0, "minecraft:dark_oak_leaves"); // top leaf
+block(0, height+2, 1, "minecraft:dark_oak_leaves"); // top leaf
+block(1, height+2, 1, "minecraft:dark_oak_leaves"); // top leaf

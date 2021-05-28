@@ -1,0 +1,84 @@
+id: YELLOWSTONE
+extends: PLAINS_ABSTRACT
+color: 0xff0000
+colors:
+  water: 0x00a1bc
+  water-fog: 0x00a1bc
+palette:
+  - BLOCK:minecraft:bedrock: 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - "COARSE": 255
+  - "Y_DIORITE_MOST": 64
+  - "Y_DIORITE_HALF": 66
+  - "Y_DIORITE_LITTLE": 68
+  - "Y_YELLOW_TERRA": 61
+  - "Y_BLACKSTONE": 59
+  - "YELLOWSTONE_BOTTOM": 58
+  - "BLOCK:minecraft:diorite": 63
+vanilla: MOUNTAINS
+noise-equation: "((-((y / (base-1.9))^2)) + 1) + |noise2(x/2, z/2)/2| + max((noise2(x,z) + noise3(x, y, z)*0.5)-0.2, 0)*2 - min(max(-noise2(x, z) - 0.4, 0), 0.25)"
+erode: YELLOWSTONE
+carving: {}
+tags:
+  - "LAND"
+trees:
+  - density: 6
+    items:
+      - SPRUCE: 1
+    y:
+      min: 58
+      max: 92
+flora:
+  - density: 100
+    items:
+      - Y_TERRACOTTA_PLACER: 1
+    y:
+      min: 60
+      max: 64
+  - density: 100
+    items:
+      - R_SAND_PLACER: 1
+    y:
+      min: 60
+      max: 64
+  - density: 100
+    items:
+      - BASALT_PLACER: 1
+    y:
+      min: 60
+      max: 64
+  - density: 100
+    items:
+      - BLACKSTONE_PLACER: 1
+    y:
+      min: 60
+      max: 64
+  - density: 100
+    items:
+      - GRAVEL_PLACER: 1
+    y:
+      min: 60
+      max: 64
+  - density: 50
+    items:
+      - DANDELION: 5
+      - GRASS: 75
+      - TALL_GRASS: 15
+      - DEAD_BUSH: 5
+    y:
+      min: 62
+      max: 100
+  - density: 20
+    items:
+      - SNOW: 1
+    y:
+      min: 76
+      max: 96
+  - density: 50
+    items:
+      - SNOW: 1
+    y:
+      min: 97
+      max: 128

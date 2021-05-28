@@ -1,0 +1,18 @@
+layers:
+  - materials:
+      - "minecraft:gravel": 1
+      - "minecraft:dirt": 4
+      - "minecraft:sand": 2
+    layers: 2
+  - materials: "minecraft:stone"
+    layers: 1
+id: "RIVER_BOTTOM"
+noise:
+  type: DomainWarp
+  amplitude: 1.5
+  warp:
+    type: WhiteNoise
+  function:
+    type: OpenSimplex2
+    frequency: 0.05
+    salt: 3

@@ -1,0 +1,6 @@
+id: "PALM"
+scripts:
+  - "palm_tree": 1
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:sand"
