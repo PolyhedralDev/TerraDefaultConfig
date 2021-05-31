@@ -1,0 +1,60 @@
+id "palm_tree";
+
+str blockID = getBlock(0,-1,0);
+if(blockID != "minecraft:grass_block" && blockID != "minecraft:sand" && blockID != "minecraft:dirt") {
+    fail; // Cancel gen if not in land.
+}
+
+if(getBlock(0,0,0) != "minecraft:air") fail;
+
+num height = randomInt(5) + 7;
+
+num x = 0;
+num z = 0;
+
+num xOff = (randomInt(11)-5)/15;
+
+num zOff = (randomInt(11)-5)/15;
+
+for(num current = 0; current < height; current = current + 1) {
+    block(x, current, z, "minecraft:jungle_log");
+    block(x, current+1, z, "minecraft:jungle_log");
+    setMark(x, current, z, "log");
+    setMark(x, current+1, z, "log");
+    x = x + xOff;
+    z = z + zOff;
+}
+
+// top layer leaves
+for(num xi = -2; xi <= 2; xi = xi+1) {
+    for(num zi = -2; zi <= 2; zi = zi+1) {
+        if(pow(xi, 2) + pow(zi, 2) > 4) continue; // circle
+        if(getBlock(x+xi, height+1, z+zi) != "minecraft:air" || getMark(x+xi, height+1, z+zi) == "log") continue;
+        block(x+xi, height+1, z+zi, "minecraft:jungle_leaves");
+    }
+}
+
+num r = 3 + randomInt(5)/4;
+num r2 = r*r;
+
+// bottom layer leaves
+for(num xi = -4; xi <= 4; xi = xi+1) {
+    for(num zi = -4; zi <= 4; zi = zi+1) {
+        if(pow(xi, 2) + pow(zi, 2) > r2) continue; // circle
+        if(getBlock(x+xi, height, z+zi) != "minecraft:air" || getMark(x+xi, height, z+zi) == "log") continue;
+        block(x+xi, height, z+zi, "minecraft:jungle_leaves");
+    }
+}
+
+if(randomInt(2) == 0) block(x, height+2, z, "minecraft:jungle_leaves"); // top leaf
+
+num inc = 3.14159 / 6;
+
+for(num i = 0; i < 12; i = i + 1) {
+    num xi = round(cos(inc*i) * r);
+    num zi = round(sin(inc*i) * r);
+    num l = 3;
+    for(num h = -randomInt(2); h < l; h = h + 1) {
+        block(x+xi, height - 1 - h, z+zi, "minecraft:jungle_leaves");
+    }
+}
