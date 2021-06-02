@@ -7,6 +7,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - SANDY: 255
   - OCEANFLOOR: 60
 flora:

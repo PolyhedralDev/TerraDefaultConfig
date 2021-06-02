@@ -15,6 +15,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - DESERT: 255
 vanilla: DESERT
 color: 0xfa9418
