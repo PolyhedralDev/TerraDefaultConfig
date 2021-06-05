@@ -2,4 +2,5 @@ abstract: true
 id: MINERAL
 replace:
   - "minecraft:stone"
+  - "minecraft:deepslate"
 type: VANILLA
