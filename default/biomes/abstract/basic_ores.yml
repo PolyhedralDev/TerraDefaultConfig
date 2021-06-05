@@ -64,6 +64,11 @@ ores:
     min: 0
     max: 2
     min-height: 0
+    max-height: 18
+  TUFF:
+    min: 0
+    max: 2
+    min-height: 0
     max-height: 84
   COAL_ORE:
     min: 18
