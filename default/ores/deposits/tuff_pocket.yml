@@ -4,3 +4,6 @@ id: "TUFF"
 replace:
   - "minecraft:stone"
   - "minecraft:deepslate"
+  - "minecraft:andesite"
+  - "minecraft:diorite"
+  - "minecraft:granite"
