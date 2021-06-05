@@ -1,6 +1,7 @@
 material: "minecraft:redstone_ore"
 material-overrides:
   "minecraft:deepslate": "minecraft:deepslate_redstone_ore"
+  "minecraft:tuff": "minecraft:deepslate_redstone_ore"
 extends: MINERAL
 size:
   min: 8
