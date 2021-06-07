@@ -16,6 +16,12 @@ vanilla: PLAINS
 tags:
   - "LAND"
 flora:
+  - density: 0.5
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 50
     y:
       min: 0

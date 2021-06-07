@@ -24,6 +24,12 @@ tags:
   - "RIVER_ERODE"
   - "FROZEN"
 flora:
+  - density: 0.5
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 80
     y:
       min: 62

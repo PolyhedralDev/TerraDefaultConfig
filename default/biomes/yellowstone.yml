@@ -32,6 +32,12 @@ trees:
       min: 58
       max: 92
 flora:
+  - density: 0.5
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 100
     items:
       - Y_TERRACOTTA_PLACER: 1

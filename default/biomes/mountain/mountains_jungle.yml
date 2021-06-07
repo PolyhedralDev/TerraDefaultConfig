@@ -27,6 +27,12 @@ trees:
       min: 62
       max: 84
 flora:
+  - density: 0.5
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 100
     distribution:
       type: OpenSimplex2

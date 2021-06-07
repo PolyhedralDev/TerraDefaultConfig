@@ -14,6 +14,12 @@ structures:
   - MINESHAFT
 
 flora:
+  - density: 0.5
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 40
     y:
       min: 62

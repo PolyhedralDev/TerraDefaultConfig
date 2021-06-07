@@ -26,6 +26,12 @@ tags:
   - "RIVER_ERODE"
   
 flora:
+  - density: 0.5
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 2
     y:
       min: 62

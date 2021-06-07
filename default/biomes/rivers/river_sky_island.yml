@@ -22,6 +22,12 @@ palette:
   - GRASSY: 255
 vanilla: RIVER
 flora:
+  - density: 0.5
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 60
     y:
       min: 61

@@ -20,6 +20,12 @@ blend:
 ocean:
   palette: FROZEN_OCEAN
 flora:
+  - density: 0.5
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 10
     items:
       - STALACTITE: 2

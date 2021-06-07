@@ -21,6 +21,12 @@ trees:
       min: 62
       max: 92
 flora:
+  - density: 0.5
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 60
     simplex-frequency: 0.1
     items:
