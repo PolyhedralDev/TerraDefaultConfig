@@ -5,7 +5,6 @@ num height = originY();
 
 while(height > 0 && getBlock(0, height-originY(), 0) != "minecraft:air") {
     height = height - 1;
-    print(""+height);
 }
 
 if(height <= 1) fail;
