@@ -75,7 +75,7 @@ ores:
     min: 0
     max: 2
     min-height: 0
-    max-height: 84
+    max-height: 20
   COAL_ORE:
     min: 18
     max: 20
