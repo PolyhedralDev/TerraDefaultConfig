@@ -21,7 +21,7 @@ trees:
       min: 62
       max: 92
 flora:
-  - density: 0.5
+  - density: 1
     y:
       min: 10
       max: 56
