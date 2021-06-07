@@ -34,6 +34,11 @@ flora:
       - LEAVES: 100
 
 trees:
+  - density: 0.5
+    items: DRIPSTONE
+    y:
+      min: 58
+      max: 92
   - density: 8
     items:
       - OAK: 1

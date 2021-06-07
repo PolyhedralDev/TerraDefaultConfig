@@ -4,3 +4,4 @@ variables:
 id: "OCEAN_ABSTRACT"
 abstract: true
 extends: OCEAN_FLORA
+trees: []

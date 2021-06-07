@@ -17,6 +17,11 @@ tags:
   - "LAND_MUSHROOM"
 vanilla: MUSHROOM_FIELDS
 trees:
+  - density: 0.5
+    items: DRIPSTONE
+    y:
+      min: 58
+      max: 92
   - density: 3
     items:
       - RED_MUSHROOM: 1

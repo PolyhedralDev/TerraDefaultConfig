@@ -36,6 +36,11 @@ tags:
   - "COLD"
   - "RIVER_ERODE"
 trees:
+  - density: 0.5
+    items: DRIPSTONE
+    y:
+      min: 58
+      max: 92
   - density: 6
     items:
       - SPRUCE: 1

@@ -47,6 +47,11 @@ flora:
       - WHITE_TULIP: 1
       - PINK_TULIP: 1
 trees:
+  - density: 0.5
+    items: DRIPSTONE
+    y:
+      min: 58
+      max: 92
   - density: 0.02
     items:
       - PUMPKIN_PATCH: 1
