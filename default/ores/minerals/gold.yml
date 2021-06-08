@@ -1,4 +1,7 @@
 material: "minecraft:gold_ore"
+material-overrides:
+  "minecraft:deepslate": "minecraft:deepslate_gold_ore"
+  "minecraft:tuff": "minecraft:deepslate_gold_ore"
 size:
   min: 9
   max: 9

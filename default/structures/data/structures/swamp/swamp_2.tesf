@@ -335,7 +335,7 @@ block(1, y + 11, -3, "minecraft:oak_stairs[facing=south,half=bottom,shape=straig
 block(1, y + 12, -3, "minecraft:vine[east=false,north=false,south=false,up=false,west=true]");
 block(1, y + 13, -3, "minecraft:vine[east=false,north=false,south=false,up=false,west=true]");
 block(1, y + 5, -2, "minecraft:spruce_planks");
-block(1, y + 6, -2, "minecraft:cauldron[level=0]");
+block(1, y + 6, -2, "minecraft:cauldron");
 block(1, y + 7, -2, "minecraft:cobweb");
 block(1, y + 9, -2, "minecraft:oak_planks");
 block(1, y + 10, -2, "minecraft:oak_planks");

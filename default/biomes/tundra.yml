@@ -11,6 +11,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - TUNDRA: 255
 vanilla: SNOWY_TUNDRA
 carving:
@@ -23,6 +24,12 @@ tags:
   - "RIVER_ERODE"
   - "FROZEN"
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 80
     y:
       min: 62
@@ -53,10 +60,11 @@ flora:
       max: 76
 erodible: true
 
-#trees:
-#  - density: 1
-#    items:
-#      - ICE_SPIKE: 1
-#    y:
-#      min: 58
-#      max: 92
+trees:
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
+    y:
+      min: 48
+      max: 49

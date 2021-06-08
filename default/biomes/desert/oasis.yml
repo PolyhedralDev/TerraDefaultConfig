@@ -9,6 +9,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - RIVER_BOTTOM: 61
   - OASIS: 255
 vanilla: JUNGLE
@@ -16,6 +17,12 @@ tags:
   - "LAND"
   - "OASIS"
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 45
     y:
       min: 62
@@ -37,6 +44,13 @@ flora:
 carving: {}
 
 trees:
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
+    y:
+      min: 48
+      max: 49
   - density: 2
     items:
       - SWAMP_OAK: 1

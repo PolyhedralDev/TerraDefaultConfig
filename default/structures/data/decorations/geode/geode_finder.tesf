@@ -1,0 +1,29 @@
+// Finds spawn location for geode.
+id "geode_finder";
+
+num height = originY();
+
+while(height > 0 && getBlock(0, height-originY(), 0) != "minecraft:air") {
+    height = height - 1;
+}
+
+if(height <= 1) {
+    if(randomInt(5) == 0) structure(0,-randomInt(30)+10,0,"geode","NONE"); // 20% chance to generate anyways
+    return;
+}
+
+// Look for a wall to spawn in.
+num x = 0;
+num z = 0;
+
+num dirX = randomInt(3); // random direction to travel. 0 = -, 1 = 0, 2 = +
+num dirZ = randomInt(3); // random direction to travel. 0 = -, 1 = 0, 2 = +
+
+if(dirX == 2) x = x + 4;
+else if(dirX == 0) x = x - 4;
+if(dirZ == 2) z = z + 4;
+else if(dirZ == 0) z = z - 4;
+
+if(originY() + height < 8) fail;
+
+structure(x,(height-originY())-3,z,"geode","NONE");

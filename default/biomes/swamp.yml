@@ -9,6 +9,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - SWAMP_BOTTOM: 61
   - SWAMP: 255
 vanilla: SWAMP
@@ -35,6 +36,13 @@ structures:
   - STRONGHOLD
 
 trees:
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
+    y:
+      min: 48
+      max: 49
   - density: 2
     items:
       - SWAMP_OAK: 1

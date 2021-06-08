@@ -6,6 +6,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - RIVER_BOTTOM: 61
   - MYCELIUM_SHORE: 62
   - MYCELIUM: 255
@@ -16,6 +17,13 @@ tags:
   - "LAND_MUSHROOM"
 vanilla: MUSHROOM_FIELDS
 trees:
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
+    y:
+      min: 48
+      max: 49
   - density: 3
     items:
       - RED_MUSHROOM: 1
@@ -25,6 +33,12 @@ trees:
       max: 84
 
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 4
     y:
       min: 62

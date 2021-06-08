@@ -13,6 +13,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - ARID: 255
 vanilla: SAVANNA
 prevent-smooth: true
@@ -30,6 +31,12 @@ slant:
   threshold: 0.1
 
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 40
     y:
       min: 62
@@ -40,6 +47,13 @@ flora:
       - DEAD_BUSH: 5
 
 trees:
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
+    y:
+      min: 48
+      max: 49
   - density: 4
     items:
       ACACIA: 1

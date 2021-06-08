@@ -1,4 +1,7 @@
 material: "minecraft:diamond_ore"
+material-overrides:
+  "minecraft:deepslate": "minecraft:deepslate_diamond_ore"
+  "minecraft:tuff": "minecraft:deepslate_diamond_ore"
 size:
   min: 8
   max: 8

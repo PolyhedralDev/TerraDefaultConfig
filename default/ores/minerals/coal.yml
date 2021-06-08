@@ -1,4 +1,7 @@
 material: "minecraft:coal_ore"
+material-overrides:
+  "minecraft:deepslate": "minecraft:deepslate_coal_ore"
+  "minecraft:tuff": "minecraft:deepslate_coal_ore"
 size:
   min: 17
   max: 17

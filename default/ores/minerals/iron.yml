@@ -1,4 +1,7 @@
 material: "minecraft:iron_ore"
+material-overrides:
+  "minecraft:deepslate": "minecraft:deepslate_iron_ore"
+  "minecraft:tuff": "minecraft:deepslate_iron_ore"
 size:
   min: 9
   max: 9
