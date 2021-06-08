@@ -24,4 +24,6 @@ else if(dirX == 0) x = x - 4;
 if(dirZ == 2) z = z + 4;
 else if(dirZ == 0) z = z - 4;
 
+if(originY() + height < 8) fail;
+
 structure(x,(height-originY())-3,z,"geode","NONE");
