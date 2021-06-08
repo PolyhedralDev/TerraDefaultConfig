@@ -29,11 +29,13 @@ flora:
       - GRASS: 70
       - POPPY: 5
 trees:
-  - density: 0.5
-    items: DRIPSTONE
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
     y:
-      min: 58
-      max: 92
+      min: 48
+      max: 49
 slabs:
   enable: true
   threshold: 0.0075

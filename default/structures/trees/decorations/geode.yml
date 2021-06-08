@@ -1,5 +1,5 @@
-scripts: dripstone_finder
-id: DRIPSTONE
+scripts: geode_finder
+id: GEODE
 y-offset: 0
 spawnable:
   - "minecraft:grass_block"

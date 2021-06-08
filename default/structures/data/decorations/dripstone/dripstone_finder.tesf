@@ -7,6 +7,6 @@ while(height > 0 && getBlock(0, height-originY(), 0) != "minecraft:air") {
     height = height - 1;
 }
 
-if(height <= 1) fail;
+if(height <= 1) return;
 
-structure(0,(height-originY())-3,0,"dripstone_cluster","NONE");
+structure(0,(height-originY())-2,0,"dripstone_cluster","NONE");
