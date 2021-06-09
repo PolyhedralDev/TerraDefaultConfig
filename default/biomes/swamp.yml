@@ -1,7 +1,7 @@
 noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)/4))"
 extends: "BASIC_ORES"
 id: "SWAMP"
-color: 0x07f9b2
+color: 0x1b4220
 variables:
   base: 62
 palette:
