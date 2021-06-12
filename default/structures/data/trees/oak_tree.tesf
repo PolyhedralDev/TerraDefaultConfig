@@ -1,11 +1,11 @@
 id "oak_tree";
 
-str blockID = getBlock(0, -1, 0);
+str blockID = getBlock(0,-1,0);
 if(blockID != "minecraft:grass_block" && blockID != "minecraft:podzol" && blockID != "minecraft:dirt") {
     fail; // Cancel gen if not in land.
 }
 
-if(getBlock(0, 0, 0) != "minecraft:air") fail;
+if(getBlock(0,0,0) != "minecraft:air") fail;
 
 num height = randomInt(4) + 10;
 
@@ -24,12 +24,12 @@ for(num current = 0; current < (height+2); current = current + 1) {
                     continue;
                 }
 
-                if(abs(radius - distance) < 1) {
+                if(abs(radius-distance) < 1) {
                     if(randomInt(2) == 0) {
                         block(x - 5, current, y - 5, "minecraft:oak_leaves[distance=1]", false);
                     }
                 }
-                if(abs(radius - distance) >= 1) {
+                if(abs(radius-distance) >= 1) {
                     block(x - 5, current, y - 5, "minecraft:oak_leaves[distance=1]", false);
                 }
             }
@@ -41,7 +41,7 @@ for(num current = 0; current < (height+2); current = current + 1) {
 }
 
 if(randomInt(30) == 0) {
-    block(0, leafHeight-1, 1, "minecraft:bee_nest[facing=south]");
+	block(1, leafHeight-1, 0, "minecraft:bee_nest"); 
     num bees = randomInt(3)+1; // 1-3 bees
     for(num b = 0; b < bees; b = b + 1) {
       entity(0, leafHeight-1, 2, "BEE");
