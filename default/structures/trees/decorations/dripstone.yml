@@ -1,3 +1,4 @@
+type: TREE
 scripts: dripstone_finder
 id: DRIPSTONE
 y-offset: 0
