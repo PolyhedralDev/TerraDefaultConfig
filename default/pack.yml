@@ -48,14 +48,38 @@ noise:
   desert:
     type: DomainWarp
     dimensions: 2
-    amplitude: 20
+    amplitude: 25
     function:
       type: Cellular
-      frequency: 0.025
+      frequency: 0.015
       return: Distance
     warp:
       frquency: 0.015
       type: OpenSimplex2
+  mesa:
+    type: "DOMAINWARP"
+    amplitude: 15
+    warp:
+      type: "OPENSIMPLEX2S"
+      frequency: 0.02
+    function:
+      type: "CELLULAR"
+      return: "Distance"
+      frequency: 0.015
+  mesaMask: # Essentially a white noise mask for the mesa function.
+    type: LINEAR
+    min: -4 # [0.2 ... 1]
+    max: 1
+    function:
+      type: "DOMAINWARP"
+      amplitude: 15
+      warp:
+        type: "OPENSIMPLEX2S"
+        frequency: 0.02
+      function:
+        type: "CELLULAR"
+        return: "CellValue"
+        frequency: 0.015
   noiseC:
     dimensions: 2
     type: Cellular
@@ -67,7 +91,7 @@ noise:
       function:
         type: OpenSimplex2
         frequency: 0.02
-
+  
   bubble: # Bubbly noise
     dimensions: 2
     type: LINEAR
@@ -86,7 +110,7 @@ variables:
   base: 63
 biomes:
   type: PIPELINE
-  biome: YELLOWSTONE
+  biome: OASIS
   resolution: 4
   blend:
     amplitude: 1.75
@@ -196,6 +220,7 @@ biomes:
             - PLAINS: 24
             - SKY_ISLANDS: 1
             - DARK_FOREST: 8
+            - SUNFLOWER_PLAINS: 6
             - CRAG: 4
             - MOUNTAINS_PRETTY: 6
           noise: *biome-distribute
@@ -225,6 +250,17 @@ biomes:
             return: CellValue
             frequency: 0.5
             salt: 6
+      - mutate: # Dry warm biomes
+          type: REPLACE
+          from: "BIOME:DESERT"
+          to:
+            - DESERT: 19
+            - OASIS: 1
+          noise:
+            type: Cellular # Use cellular to increase biome size.
+            return: CellValue
+            frequency: 0.4
+            salt: 7
       - mutate: # Border deep ocean with normal ocean.
           type: BORDER_LIST
           from: LAND
@@ -301,30 +337,46 @@ biomes:
           type: REPLACE_LIST
           to:
             MOUNTAINS_JUNGLE:
-              - SELF: 7
+              - SELF: 1
               - RIVER_M_J: 1
-              - SELF: 7
             MOUNTAINS_STONE:
-              - SELF: 7
+              - SELF: 1
               - RIVER_M: 1
-              - SELF: 7
             MOUNTAINS_PRETTY:
-              - SELF: 7
+              - SELF: 1
               - RIVER_M_P: 1
-              - SELF: 7
+            SKY_ISLANDS:
+              - SELF: 1
+              - RIVER_SKY_ISLANDS: 1
           default-from: "RIVER_ERODE"
           default-to:
-            - SELF: 7
+            - SELF: 1
             - RIVER: 1
-            - SELF: 7
           noise:
-            type: FBm
-            octaves: 2
-            gain: 0.2
-            lacunarity: 4
-            function:
-              type: OpenSimplex2
-              frequency: 0.0075
+            type: EXPRESSION
+            equation: "if(noise(x/width, z/width) > 0,1,-1)"
+            variables:
+              width: 4.5
+            functions:
+              noise:
+                type: "KERNEL"
+                function:
+                  type: EXPRESSION
+                  equation: "if(noise(x, z) > 0, 1, 0)"
+                  functions:
+                    noise:
+                      type: DOMAINWARP
+                      function:
+                        type: OPENSIMPLEX2
+                        frequency: 0.03
+                      warp:
+                        type: OPENSIMPLEX2
+                        frequency: 0.075
+                      amplitude: 3
+                kernel:
+                  - [ -1, -1, -1 ]
+                  - [ -1, 8, -1 ]
+                  - [ -1, -1, -1 ]
       - mutate:
           type: SMOOTH
           noise:

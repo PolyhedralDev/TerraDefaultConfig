@@ -7,6 +7,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - MOUNTAIN_JUNGLE: 255
@@ -21,6 +22,12 @@ trees:
       min: 62
       max: 92
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 60
     simplex-frequency: 0.1
     items:

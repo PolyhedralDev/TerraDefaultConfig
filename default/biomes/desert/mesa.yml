@@ -1,9 +1,9 @@
 type: BIOME
-noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x/1.5, z/1.5)+0.25)|/3"
+noise-equation: "((-((y / base)^2)) + 1) + ((-mesa(x, z))^8)/1.5 + |noise2(x, z)/6|"
 
 elevation:
-  equation: "min(floor(((max(noise2(x/1.5, z/1.5)+0.25, 0)))*5), 3)*0.45 + if(max(noise2(x/1.5, z/1.5)+0.05, 0), (noise2(x*2,z*2))*0.55, 0)"
-  interpolation: true
+  #equation: "min(floor(((max(noise2(x/1.5, z/1.5)+0.25, 0)))*5), 3)*0.45 + if(max(noise2(x/1.5, z/1.5)+0.05, 0), (noise2(x*2,z*2))*0.55, 0)"
+  equation: "if(mesa(x, z) < -0.975, mesaMask(x, z) + if(mesa(x*3, z*3) < -0.95, mesaMask(x*3, z*3)*0.75, 0), 0)"
 extends: "BASIC_ORES"
 id: "MESA"
 erode: MESA
@@ -64,10 +64,17 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - RED_DESERT: 255
 vanilla: BADLANDS
 
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 2
     y:
       min: 62
@@ -76,6 +83,13 @@ flora:
       - DEAD_BUSH: 1
       - SMALL_ROCK: 1
 trees:
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
+    y:
+      min: 48
+      max: 49
   - density: 1.5
     items:
       - CACTUS: 1

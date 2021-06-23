@@ -1,17 +1,18 @@
 type: BIOME
 extends: "OCEAN_ABSTRACT"
 id: "FROZEN_OCEAN"
-vanilla: COLD_OCEAN
+vanilla: FROZEN_OCEAN
 color: 0x7070d6
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - TUNDRA: 255
   - OCEANFLOOR: 60
 ocean:
-  palette: "COLD_OCEAN"
+  palette: "FROZEN_OCEAN"
   level: 62
 tags:
   - "OCEAN"

@@ -5,10 +5,10 @@ layers:
     layers: 1
 id: "GRAVEL_PLACER"
 spawnable:
-  - "minecraft:diorite"
+  - "minecraft:calcite"
   - "yellow_terracotta"
 replaceable:
-  - "minecraft:diorite"
+  - "minecraft:calcite"
 irrigable-offset: 1
 irrigable:
   - "minecraft:red_sand"

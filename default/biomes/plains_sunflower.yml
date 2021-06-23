@@ -1,0 +1,64 @@
+extends: "PLAINS_ABSTRACT"
+id: "SUNFLOWER_PLAINS"
+color: 0xe8De2a
+palette:
+  - "BLOCK:minecraft:bedrock": 0
+  - BEDROCK_MOST: 1
+  - BEDROCK_HALF: 2
+  - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
+  - RIVER_BOTTOM: 61
+  - RIVER_SHORE: 62
+  - GRASSY: 255
+biome-noise:
+  type: OpenSimplex2
+  frequency: 0.01
+vanilla: SUNFLOWER_PLAINS
+tags:
+  - "LAND"
+  - "RIVER_ERODE"
+structures:
+  - VILLAGE_PLAINS
+  - STRONGHOLD
+  - OUTPOST
+  - DUNGEON
+  - MINESHAFT
+
+flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
+  - density: 50
+    y:
+      min: 62
+      max: 84
+    items:
+      - TALL_GRASS: 150
+      - GRASS: 700
+      - SUNFLOWER: 20
+      - DANDELION: 5
+      - OXEYE_DAISY: 1
+      - CORNFLOWER: 1
+      - AZURE_BLUET: 1
+      - RED_TULIP: 1
+      - ORANGE_TULIP: 1
+      - WHITE_TULIP: 1
+      - PINK_TULIP: 1
+
+trees:
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
+    y:
+      min: 48
+      max: 49
+  - density: 0.02
+    items:
+      - PUMPKIN_PATCH: 1
+    y:
+      min: 58
+      max: 92

@@ -7,6 +7,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - GRASSY: 255
@@ -16,6 +17,12 @@ tags:
   - "DRY"
   - "RIVER_ERODE"
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 40
     y:
       min: 62
@@ -25,6 +32,13 @@ flora:
       - GRASS: 70
 
 trees:
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
+    y:
+      min: 48
+      max: 49
   - density: 4
     items:
       ACACIA: 1

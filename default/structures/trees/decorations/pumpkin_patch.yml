@@ -1,0 +1,5 @@
+id: "PUMPKIN_PATCH"
+scripts:
+  - "pumpkin_patch": 1
+spawnable:
+  - "minecraft:grass_block"

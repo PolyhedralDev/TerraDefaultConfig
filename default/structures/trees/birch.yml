@@ -1,0 +1,6 @@
+id: "BIRCH"
+scripts:
+  - "birch_tree": 1
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"

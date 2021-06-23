@@ -1,0 +1,14 @@
+scripts: geode_finder
+id: GEODE
+y-offset: 0
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:brown_concrete_powder"
+  - "minecraft:coarse_dirt"
+  - "minecraft:gravel"
+  - "minecraft:stone"
+  - "minecraft:cobblestone"
+  - "minecraft:sand"
+  - "minecraft:red_sand"
+  - "minecraft:red_sandstone"
+  - "minecraft:sandstone"
