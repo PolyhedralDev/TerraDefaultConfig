@@ -16,7 +16,7 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - TAIGA: 255
-vanilla: SNOWY_TAIGA
+vanilla: minecraft:snowy_taiga
 tags:
   - "LAND"
   - "COLD"

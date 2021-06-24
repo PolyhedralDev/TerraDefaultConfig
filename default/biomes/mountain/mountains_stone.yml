@@ -16,7 +16,7 @@ palette:
   - MOUNTAIN_STONE: 255
   - MOUNTAIN_STONE_GRASS: 108
   - MOUNTAIN_GRASS: 84
-vanilla: MOUNTAINS
+vanilla: minecraft:mountains
 erode: RIVER_M
 color: 0x606060
 tags:

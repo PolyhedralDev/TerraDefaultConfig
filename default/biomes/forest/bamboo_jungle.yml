@@ -16,7 +16,7 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - BAMBOO_JUNGLE: 255
-vanilla: BAMBOO_JUNGLE
+vanilla: minecraft:bamboo_jungle
 tags:
   - "LAND"
   - "HOT"

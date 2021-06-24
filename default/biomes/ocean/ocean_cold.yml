@@ -1,7 +1,7 @@
 type: BIOME
 extends: "OCEAN_ABSTRACT"
 id: "COLD_OCEAN"
-vanilla: COLD_OCEAN
+vanilla: minecraft:cold_ocean
 color: 0x202070
 palette:
   - "BLOCK:minecraft:bedrock": 0

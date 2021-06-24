@@ -16,7 +16,7 @@ palette:
   - BEDROCK_LITTLE: 3
   - DEEPSLATE: 20
   - ARID: 255
-vanilla: SAVANNA
+vanilla: minecraft:savanna
 prevent-smooth: true
 tags:
   - "LAND"

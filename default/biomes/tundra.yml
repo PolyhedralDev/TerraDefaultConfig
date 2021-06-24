@@ -14,7 +14,7 @@ palette:
   - BEDROCK_LITTLE: 3
   - DEEPSLATE: 20
   - TUNDRA: 255
-vanilla: SNOWY_TUNDRA
+vanilla: minecraft:snowy_tundra
 carving:
   CAVE_TUNDRA: 55
   RAVINE: 2

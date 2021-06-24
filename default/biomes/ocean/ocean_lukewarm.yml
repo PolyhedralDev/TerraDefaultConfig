@@ -1,7 +1,7 @@
 type: BIOME
 extends: "OCEAN_ABSTRACT"
 id: "LUKEWARM_OCEAN"
-vanilla: LUKEWARM_OCEAN
+vanilla: minecraft:lukewarm_ocean
 color: 0x000090
 palette:
   - "BLOCK:minecraft:bedrock": 0

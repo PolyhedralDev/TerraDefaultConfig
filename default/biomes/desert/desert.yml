@@ -18,7 +18,7 @@ palette:
   - BEDROCK_LITTLE: 3
   - DEEPSLATE: 20
   - DESERT: 255
-vanilla: DESERT
+vanilla: minecraft:desert
 color: 0xfa9418
 tags:
   - "LAND"

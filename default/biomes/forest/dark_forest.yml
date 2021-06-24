@@ -10,7 +10,7 @@ palette:
   - DEEPSLATE: 20
   - SANDY: 62
   - GRASSY: 255
-vanilla: DARK_FOREST
+vanilla: minecraft:dark_forest
 
 trees:
   - density: 0.75

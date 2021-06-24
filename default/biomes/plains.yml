@@ -14,7 +14,7 @@ palette:
 biome-noise:
   type: OpenSimplex2
   frequency: 0.01
-vanilla: PLAINS
+vanilla: minecraft:plains
 tags:
   - "LAND"
   - "RIVER_ERODE"

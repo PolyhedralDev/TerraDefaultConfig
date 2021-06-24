@@ -1,7 +1,7 @@
 type: BIOME
 extends: "DEEP_OCEAN_ABSTRACT"
 id: "FROZEN_OCEAN_DEEP"
-vanilla: FROZEN_OCEAN
+vanilla: minecraft:frozen_ocean
 color: 0x404090
 palette:
   - "BLOCK:minecraft:bedrock": 0
