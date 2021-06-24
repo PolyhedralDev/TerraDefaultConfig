@@ -1,7 +1,7 @@
 type: BIOME
 extends: "BEACH_ABSTRACT"
 id: "MUSHROOM_BEACH"
-vanilla: MUSHROOM_FIELD_SHORE
+vanilla: minecraft:mushroom_field_shore
 color: 0xa000ff
 palette:
   - "BLOCK:minecraft:bedrock": 0

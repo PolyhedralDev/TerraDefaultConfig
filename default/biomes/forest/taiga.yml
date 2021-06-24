@@ -26,7 +26,7 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - TAIGA: 255
-vanilla: TAIGA
+vanilla: minecraft:taiga
 structures:
   - STRONGHOLD
   - OUTPOST

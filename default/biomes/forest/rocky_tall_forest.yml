@@ -12,7 +12,7 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - GRITTY: 255
-vanilla: JUNGLE
+vanilla: minecraft:jungle
 tags:
   - "LAND"
   - "RIVER_ERODE"

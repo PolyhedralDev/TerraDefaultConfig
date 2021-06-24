@@ -1,7 +1,7 @@
 type: BIOME
 extends: "DEEP_OCEAN_ABSTRACT"
 id: "OCEAN_DEEP"
-vanilla: OCEAN
+vanilla: minecraft:ocean
 tags:
   - "OCEAN"
   - "OCEAN_DEEP"

@@ -26,4 +26,4 @@ palette:
   - DEEPSLATE: 20
   - GRASSY: 81
   - GRASSY_STONE: 255
-vanilla: PLAINS
+vanilla: minecraft:plains

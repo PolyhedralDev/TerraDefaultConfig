@@ -13,7 +13,7 @@ palette:
   - DEEPSLATE: 20
   - SWAMP_BOTTOM: 61
   - SWAMP: 255
-vanilla: SWAMP
+vanilla: minecraft:swamp
 tags:
   - "LAND"
   - "WET"

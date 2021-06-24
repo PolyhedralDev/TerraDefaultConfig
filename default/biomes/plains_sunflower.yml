@@ -14,7 +14,7 @@ palette:
 biome-noise:
   type: OpenSimplex2
   frequency: 0.01
-vanilla: SUNFLOWER_PLAINS
+vanilla: minecraft:sunflower_plains
 tags:
   - "LAND"
   - "RIVER_ERODE"

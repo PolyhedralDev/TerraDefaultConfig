@@ -13,7 +13,7 @@ palette:
   - DEEPSLATE: 20
   - RIVER_BOTTOM: 61
   - OASIS: 255
-vanilla: JUNGLE
+vanilla: minecraft:jungle
 tags:
   - "LAND"
   - "OASIS"

@@ -10,7 +10,7 @@ palette:
   - DEEPSLATE: 20
   - SANDY: 62
   - GRASSY: 255
-vanilla: BIRCH_FOREST
+vanilla: minecraft:birch_forest
 
 trees:
   - density: 0.75

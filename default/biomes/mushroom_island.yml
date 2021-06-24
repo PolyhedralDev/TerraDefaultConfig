@@ -16,7 +16,7 @@ biome-noise:
   frequency: 0.01
 tags:
   - "LAND_MUSHROOM"
-vanilla: MUSHROOM_FIELDS
+vanilla: minecraft:mushroom_fields
 trees:
   - density: 0.75
     items:
