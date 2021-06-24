@@ -1,0 +1,11 @@
+type: FLORA
+layers:
+  - materials:
+      - "minecraft:cornflower": 1
+    layers: 1
+id: "CORNFLOWER"
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+replaceable:
+  - "minecraft:air"

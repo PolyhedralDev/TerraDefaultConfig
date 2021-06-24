@@ -3,7 +3,7 @@ noise-equation: "if(max(y-96, 0), -(if(max(y-150, 0), |y-150|, |y-150|/16)) - 0.
 variables:
   base: 58
 extends: "BASIC_ORES"
-carving: {}
+carving: { }
 id: "RIVER_SKY_ISLANDS"
 color: 0x0000ff
 blend:

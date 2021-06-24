@@ -7,7 +7,7 @@ tags:
   - "BEACH"
 abstract: true
 extends: BASIC_ORES
-carving: {}
+carving: { }
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1

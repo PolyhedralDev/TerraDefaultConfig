@@ -3,7 +3,7 @@ noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)/4))"
 variables:
   base: 58
 extends: "BASIC_ORES"
-carving: {}
+carving: { }
 id: "RIVER"
 color: 0x0000ff
 blend:

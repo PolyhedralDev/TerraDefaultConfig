@@ -1,0 +1,11 @@
+type: FLORA
+layers:
+  - materials:
+      - "minecraft:azure_bluet": 1
+    layers: 1
+id: "AZURE_BLUET"
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+replaceable:
+  - "minecraft:air"

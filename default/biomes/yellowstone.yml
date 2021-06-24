@@ -22,7 +22,7 @@ palette:
 vanilla: MOUNTAINS
 noise-equation: "((-((y / (base-1.9))^2)) + 1) + |noise2(x/2, z/2)/2| + max((noise2(x,z) + noise3(x, y, z)*0.5)-0.2, 0)*2 - min(max(-noise2(x, z) - 0.4, 0), 0.25)"
 erode: YELLOWSTONE
-carving: {}
+carving: { }
 tags:
   - "LAND"
 trees:

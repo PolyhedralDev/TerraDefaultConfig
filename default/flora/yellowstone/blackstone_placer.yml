@@ -14,4 +14,4 @@ irrigable:
   - "minecraft:red_sand"
   - "minecraft:yellow_terracotta"
   - "minecraft:basalt"
-ores: {}
+ores: { }

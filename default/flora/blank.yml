@@ -6,5 +6,5 @@ layers:
       - "minecraft:air": 1
     layers: 1
 id: "BLANK"
-spawnable: []
-replaceable: []
+spawnable: [ ]
+replaceable: [ ]

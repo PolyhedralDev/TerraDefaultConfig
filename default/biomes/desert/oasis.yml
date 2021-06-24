@@ -42,7 +42,7 @@ flora:
     items:
       - SUGARCANE: 25
       - LILY_PAD: 10
-carving: {}
+carving: { }
 
 trees:
   - density: 0.75

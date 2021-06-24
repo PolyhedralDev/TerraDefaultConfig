@@ -1,0 +1,12 @@
+type: FLORA
+layers:
+  - materials:
+      - "minecraft:brown_mushroom": 1
+    layers: 1
+id: "BROWN_MUSHROOM"
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+  - "minecraft:mycelium"
+replaceable:
+  - "minecraft:air"

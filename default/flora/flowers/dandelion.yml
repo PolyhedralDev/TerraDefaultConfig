@@ -1,0 +1,11 @@
+type: FLORA
+layers:
+  - materials:
+      - "minecraft:dandelion": 1
+    layers: 1
+id: "DANDELION"
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+replaceable:
+  - "minecraft:air"

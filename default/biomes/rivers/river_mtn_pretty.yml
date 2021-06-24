@@ -13,7 +13,7 @@ palette:
   - RIVER_SHORE: 62
   - MOUNTAIN_PRETTY: 255
 vanilla: PLAINS
-carving: {}
+carving: { }
 blend:
   distance: 1
 ocean:

@@ -1,0 +1,11 @@
+type: FLORA
+layers:
+  - materials:
+      - "minecraft:lily_of_the_valley": 1
+    layers: 1
+id: "LILY_OF_THE_VALLEY"
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+replaceable:
+  - "minecraft:air"

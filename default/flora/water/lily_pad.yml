@@ -1,0 +1,10 @@
+type: FLORA
+layers:
+  - materials:
+      - "minecraft:lily_pad": 1
+    layers: 1
+id: "LILY_PAD"
+spawnable:
+  - "minecraft:water"
+replaceable:
+  - "minecraft:air"

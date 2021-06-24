@@ -3,7 +3,7 @@ noise-equation: "((-((y / base)^2)) + 1) + |((noise2(x, z)+0.5) / 3)| + max(nois
 extends: "BASIC_ORES"
 id: "RIVER_M"
 color: 0x0000ff
-carving: {}
+carving: { }
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
