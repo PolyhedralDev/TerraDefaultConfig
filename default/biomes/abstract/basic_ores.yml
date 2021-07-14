@@ -1,3 +1,4 @@
+type: "BIOME"
 # This biome is the parent of ALL biomes in the default config.
 
 id: "BASIC_ORES"

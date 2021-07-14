@@ -1,3 +1,4 @@
+type: "BIOME"
 id: YELLOWSTONE
 extends: PLAINS_ABSTRACT
 color: 0xff0000

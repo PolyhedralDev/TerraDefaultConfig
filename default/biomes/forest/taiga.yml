@@ -1,3 +1,4 @@
+type: "BIOME"
 extends: "FOREST_ABSTRACT"
 id: "TAIGA"
 color: 0x0b6659

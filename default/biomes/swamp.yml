@@ -1,3 +1,4 @@
+type: "BIOME"
 noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)/4))"
 extends: "BASIC_ORES"
 id: "SWAMP"

@@ -1,3 +1,4 @@
+type: "BIOME"
 extends: "MOUNTAINS_PRETTY_A"
 id: "MOUNTAINS_PRETTY"
 erode: RIVER_M_P

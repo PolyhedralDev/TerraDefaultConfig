@@ -1,3 +1,4 @@
+type: "BIOME"
 extends: "PLAINS_ABSTRACT"
 id: "DESERT"
 structures:

@@ -1,3 +1,4 @@
+type: "BIOME"
 id: MOUNTAINS_PRETTY_FLORA
 abstract: true
 extends: BASIC_ORES

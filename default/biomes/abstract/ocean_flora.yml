@@ -1,3 +1,4 @@
+type: "BIOME"
 id: OCEAN_FLORA
 extends: BASIC_ORES
 abstract: true

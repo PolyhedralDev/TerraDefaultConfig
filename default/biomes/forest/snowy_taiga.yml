@@ -1,3 +1,4 @@
+type: "BIOME"
 extends: "FOREST_ABSTRACT"
 id: "SNOWY_TAIGA"
 color: 0x31554a

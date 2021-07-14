@@ -1,3 +1,4 @@
+type: "BIOME"
 extends: "BEACH_ABSTRACT"
 id: "MUSHROOM_BEACH"
 vanilla: MUSHROOM_FIELD_SHORE

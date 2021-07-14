@@ -1,3 +1,4 @@
+type: "BIOME"
 noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x*2, z*2)/6))"
 extends: "BASIC_ORES"
 id: "OASIS"

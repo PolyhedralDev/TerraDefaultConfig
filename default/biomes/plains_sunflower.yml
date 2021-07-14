@@ -1,3 +1,4 @@
+type: "BIOME"
 extends: "PLAINS_ABSTRACT"
 id: "SUNFLOWER_PLAINS"
 color: 0xe8De2a

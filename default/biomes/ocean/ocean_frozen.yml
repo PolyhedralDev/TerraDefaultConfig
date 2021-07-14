@@ -1,3 +1,4 @@
+type: "BIOME"
 extends: "OCEAN_ABSTRACT"
 id: "FROZEN_OCEAN"
 vanilla: FROZEN_OCEAN
