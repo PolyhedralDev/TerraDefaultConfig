@@ -1,3 +1,4 @@
+type: "PALETTE"
 layers:
   - materials:
       - "minecraft:stone": 1
@@ -37,6 +38,6 @@ layers:
     layers: 1
 id: "GRASSY_STONE"
 noise:
-  type: OpenSimplex2
+  type: OPENSIMPLEX2
   frequency: 0.05
   salt: 3

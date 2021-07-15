@@ -1,7 +1,7 @@
 type: "BIOME"
 extends: "OCEAN_ABSTRACT"
 id: "LUKEWARM_OCEAN"
-vanilla: LUKEWARM_OCEAN
+vanilla: "minecraft:lukewarm_ocean"
 color: 0x000090
 palette:
   - "BLOCK:minecraft:bedrock": 0
@@ -17,6 +17,8 @@ flora:
       min: 30
       max: 62
     simplex-frequency: 0.05
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_SEAGRASS: 1
       - SEAGRASS: 3

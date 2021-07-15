@@ -12,13 +12,15 @@ palette:
   - MYCELIUM_SHORE: 62
   - MYCELIUM: 255
 biome-noise:
-  type: OpenSimplex2
+  type: OPENSIMPLEX2
   frequency: 0.01
 tags:
   - "LAND_MUSHROOM"
-vanilla: MUSHROOM_FIELDS
+vanilla: "minecraft:mushroom_fields"
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -26,6 +28,8 @@ trees:
       min: 48
       max: 49
   - density: 3
+    distribution:
+      type: WHITENOISE
     items:
       - RED_MUSHROOM: 1
       - BROWN_MUSHROOM: 1
@@ -38,12 +42,16 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 4
     y:
       min: 62
       max: 84
+    distribution:
+      type: WHITENOISE
     items:
       - RED_MUSHROOM: 1
       - BROWN_MUSHROOM: 2

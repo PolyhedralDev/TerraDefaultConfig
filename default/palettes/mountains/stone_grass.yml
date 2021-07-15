@@ -1,3 +1,4 @@
+type: "PALETTE"
 layers:
   - materials:
       - "minecraft:cyan_terracotta": 1
@@ -17,6 +18,6 @@ layers:
     layers: 1
 id: "MOUNTAIN_STONE_GRASS"
 noise:
-  type: OpenSimplex2
+  type: OPENSIMPLEX2
   frequency: 0.075
   salt: 3

@@ -1,0 +1,13 @@
+type: "FLORA"
+layer-distribution:
+  type: WHITENOISE
+layers:
+  - materials:
+      - "minecraft:white_tulip": 1
+    layers: 1
+id: "WHITE_TULIP"
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+replaceable:
+  - "minecraft:air"

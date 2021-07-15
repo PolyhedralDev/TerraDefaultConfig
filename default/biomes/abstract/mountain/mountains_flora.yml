@@ -7,14 +7,16 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 100
     distribution:
-      type: OpenSimplex2
+      type: OPENSIMPLEX2
       frequency: 0.075
       fractal:
-        type: FBm
+        type: FBM
         octaves: 1
     items:
       - BLANK: 7
@@ -23,6 +25,8 @@ flora:
       min: 62
       max: 180
   - density: 50
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_GRASS: 3
       - GRASS: 7

@@ -1,0 +1,14 @@
+type: "FLORA"
+layer-distribution:
+  type: WHITENOISE
+layers:
+  - materials:
+      - "minecraft:red_mushroom": 1
+    layers: 1
+id: "RED_MUSHROOM"
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+  - "minecraft:mycelium"
+replaceable:
+  - "minecraft:air"

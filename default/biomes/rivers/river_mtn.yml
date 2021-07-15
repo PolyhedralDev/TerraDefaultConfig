@@ -1,5 +1,7 @@
 type: "BIOME"
-noise-equation: "((-((y / base)^2)) + 1) + |((noise2(x, z)+0.5) / 3)| + max(noise2(x/2, z/2)*4 + noise2(x*8, z*8)*0.25, 0) - (if(max(y-58 + ((noise2(x, z)+0.5) / 3)*10,0), if(max(y-76,0), 0, (((noise2(x, z)+0.5) / 3) + max(noise2(x/2, z/2)*4 + noise2(x*8, z*8)*0.25, 0)) + 0.5) * (1.25-((y-58)/18)), 0))"
+noise:
+  type: EXPRESSION
+  equation: "((-((y / 63)^2)) + 1) + |((noise2(x, z)+0.5) / 3)| + max(noise2(x/2, z/2)*4 + noise2(x*8, z*8)*0.25, 0) - (if(max(y-58 + ((noise2(x, z)+0.5) / 3)*10,0), if(max(y-76,0), 0, (((noise2(x, z)+0.5) / 3) + max(noise2(x/2, z/2)*4 + noise2(x*8, z*8)*0.25, 0)) + 0.5) * (1.25-((y-58)/18)), 0))"
 extends: "BASIC_ORES"
 id: "RIVER_M"
 color: 0x0000ff
@@ -15,7 +17,7 @@ palette:
   - MOUNTAIN_STONE_GRASS: 108
   - MOUNTAIN_GRASS: 84
   - MOUNTAIN_STONE: 255
-vanilla: MOUNTAINS
+vanilla: "minecraft:mountains"
 blend:
   distance: 1
 ocean:
@@ -25,9 +27,13 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 10
+    distribution:
+      type: WHITENOISE
     items:
       - STALACTITE: 2
       - CEILING_ICE: 1
@@ -35,6 +41,8 @@ flora:
       min: 62
       max: 84
   - density: 20
+    distribution:
+      type: WHITENOISE
     items:
       - SEAGRASS: 50
       - TALL_SEAGRASS: 20
@@ -45,9 +53,13 @@ flora:
     y:
       min: 62
       max: 156
+    distribution:
+      type: WHITENOISE
     items:
       - SNOW: 1
   - density: 12
+    distribution:
+      type: WHITENOISE
     items:
       - STALACTITE: 1
       - STALAGMITE: 1
@@ -56,6 +68,8 @@ flora:
       min: 15
       max: 62
   - density: 8
+    distribution:
+      type: WHITENOISE
     items:
       - STALACTITE: 1
       - STALAGMITE: 1
@@ -64,6 +78,8 @@ flora:
       max: 14
 trees:
   - density: 6
+    distribution:
+      type: WHITENOISE
     items:
       - SPRUCE: 1
     y:

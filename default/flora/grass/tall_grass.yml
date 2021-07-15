@@ -1,0 +1,16 @@
+type: "FLORA"
+layer-distribution:
+  type: WHITENOISE
+layers:
+  - materials:
+      - "minecraft:tall_grass[half=upper]": 1
+    layers: 1
+  - materials:
+      - "minecraft:tall_grass[half=lower]": 1
+    layers: 1
+id: "TALL_GRASS"
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+replaceable:
+  - "minecraft:air"

@@ -1,5 +1,7 @@
 type: "BIOME"
-noise-equation: "((-((y / base)^2)) + 1) + (noise2(x, z)/5)"
+noise:
+  type: EXPRESSION
+  equation: "((-((y / 63)^2)) + 1) + (noise2(x, z)/5)"
 color: 0xfade55
 id: "BEACH_ABSTRACT"
 tags:

@@ -1,7 +1,7 @@
 type: "BIOME"
-noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)/3))"
-variables:
-  base: 36
+noise:
+  type: EXPRESSION
+  equation: "((-((y / 36)^2)) + 1) + ((noise2(x, z)/3))"
 structures:
   - MONUMENT
   - STRONGHOLD

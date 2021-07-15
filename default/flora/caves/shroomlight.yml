@@ -1,3 +1,6 @@
+type: "FLORA"
+layer-distribution:
+  type: WHITENOISE
 layers:
   - materials:
       - "minecraft:shroomlight": 1

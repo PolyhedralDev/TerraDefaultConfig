@@ -1,5 +1,7 @@
 type: "BIOME"
-noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)+0.5) / 3) + max(abs(noise2(x/2, z/2)*4), 0) - (if(max(y-58 + ((noise2(x, z)+0.5) / 3)*10,0), if(max(y-76,0), 0, (max(abs(noise2(x/2, z/2)*4), 0)) + 1) * (1.25-((y-58)/18)), 0))"
+noise:
+  type: EXPRESSION
+  equation: "((-((y / 63)^2)) + 1) + ((noise2(x, z)+0.5) / 3) + max(abs(noise2(x/2, z/2)*4), 0) - (if(max(y-58 + ((noise2(x, z)+0.5) / 3)*10,0), if(max(y-76,0), 0, (max(abs(noise2(x/2, z/2)*4), 0)) + 1) * (1.25-((y-58)/18)), 0))"
 extends: "BASIC_ORES"
 color: 0x0000ff
 id: "RIVER_M_P"
@@ -12,7 +14,7 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - MOUNTAIN_PRETTY: 255
-vanilla: PLAINS
+vanilla: "minecraft:plains"
 carving: {}
 blend:
   distance: 1
@@ -23,10 +25,14 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 60
     simplex-frequency: 0.1
+    distribution:
+      type: WHITENOISE
     items:
       - SMALL_ROCK: 1
       - TALL_GRASS: 1
@@ -36,6 +42,8 @@ flora:
       min: 62
       max: 180
   - density: 10
+    distribution:
+      type: WHITENOISE
     items:
       - CEILING_LEAVES: 4
       - STALACTITE: 1
@@ -47,10 +55,14 @@ flora:
     y:
       min: 62
       max: 80
+    distribution:
+      type: WHITENOISE
     items:
       - SUGARCANE: 2
       - LILY_PAD: 1
   - density: 50
+    distribution:
+      type: WHITENOISE
     items:
       - SEAGRASS: 50
       - TALL_SEAGRASS: 20

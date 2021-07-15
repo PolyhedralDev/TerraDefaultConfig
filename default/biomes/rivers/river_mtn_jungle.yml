@@ -11,9 +11,11 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - MOUNTAIN_JUNGLE: 255
-vanilla: JUNGLE
+vanilla: "minecraft:jungle"
 trees:
   - density: 30
+    distribution:
+      type: WHITENOISE
     items:
       - JUNGLE_BUSH: 4
       - SMALL_JUNGLE: 3
@@ -26,10 +28,14 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 60
     simplex-frequency: 0.1
+    distribution:
+      type: WHITENOISE
     items:
       - SMALL_ROCK: 1
       - TALL_GRASS: 1
@@ -39,6 +45,8 @@ flora:
       min: 62
       max: 180
   - density: 14
+    distribution:
+      type: WHITENOISE
     items:
       - CEILING_LEAVES: 2
       - VINES: 2
@@ -52,10 +60,14 @@ flora:
     y:
       min: 62
       max: 80
+    distribution:
+      type: WHITENOISE
     items:
       - SUGARCANE: 2
       - LILY_PAD: 1
   - density: 60
+    distribution:
+      type: WHITENOISE
     items:
       - SEAGRASS: 50
       - TALL_SEAGRASS: 20

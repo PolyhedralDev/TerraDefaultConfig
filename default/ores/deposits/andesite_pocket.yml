@@ -1,3 +1,4 @@
+type: "ORE"
 material: "minecraft:andesite"
 extends: DEPOSIT
 id: "ANDESITE"

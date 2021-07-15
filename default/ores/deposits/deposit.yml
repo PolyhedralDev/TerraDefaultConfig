@@ -1,3 +1,4 @@
+type: "ORE"
 abstract: true
 id: DEPOSIT
 replace:
@@ -5,4 +6,3 @@ replace:
 size:
   min: 32
   max: 32
-type: VANILLA

@@ -1,3 +1,4 @@
+type: "TREE"
 id: SMALL_ROCK
 scripts:
   - Small_Rock__1: 1

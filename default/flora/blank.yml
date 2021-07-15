@@ -1,3 +1,6 @@
+type: "FLORA"
+layer-distribution:
+  type: WHITENOISE
 # Blank flora for Simplex placeholder.
 
 layers:

@@ -19,18 +19,24 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 40
     y:
       min: 62
       max: 84
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_GRASS: 15
       - GRASS: 70
       - POPPY: 5
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -120,3 +126,5 @@ ores:
     max: 1
     min-height: 1
     max-height: 15
+ocean:
+  palette: "BLOCK:minecraft:water"

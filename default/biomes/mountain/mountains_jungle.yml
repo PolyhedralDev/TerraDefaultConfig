@@ -12,13 +12,15 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - MOUNTAIN_JUNGLE: 255
-vanilla: JUNGLE
+vanilla: "minecraft:jungle"
 tags:
   - "LAND"
   - "HOT"
   - "WET"
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -26,6 +28,8 @@ trees:
       min: 48
       max: 49
   - density: 10
+    distribution:
+      type: WHITENOISE
     items:
       - JUNGLE_BUSH: 16
       - SMALL_JUNGLE: 12
@@ -39,14 +43,16 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 100
     distribution:
-      type: OpenSimplex2
+      type: OPENSIMPLEX2
       frequency: 0.075
       fractal:
-        type: FBm
+        type: FBM
         octaves: 1
     items:
       - BLANK: 7
@@ -55,6 +61,8 @@ flora:
       min: 62
       max: 180
   - density: 50
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_GRASS: 3
       - GRASS: 7
@@ -63,6 +71,8 @@ flora:
       min: 62
       max: 180
   - density: 14
+    distribution:
+      type: WHITENOISE
     items:
       - CEILING_LEAVES: 2
       - VINES: 2
@@ -74,6 +84,8 @@ flora:
       min: 15
       max: 62
   - density: 7
+    distribution:
+      type: WHITENOISE
     items:
       - STALACTITE: 1
       - STALAGMITE: 2
@@ -82,6 +94,8 @@ flora:
       min: 8
       max: 14
   - density: 12
+    distribution:
+      type: WHITENOISE
     items:
       - CEILING_LEAVES: 2
       - VINES: 2

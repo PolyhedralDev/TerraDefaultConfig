@@ -1,3 +1,4 @@
+type: "PALETTE"
 layers:
   - materials:
       - "minecraft:grass_block": 1
@@ -24,6 +25,6 @@ layers:
     layers: 1
 id: "ARID"
 noise:
-  type: OpenSimplex2
+  type: OPENSIMPLEX2
   frequency: 0.05
   salt: 3

@@ -1,3 +1,4 @@
+type: "PALETTE"
 layers:
   - materials:
       - "minecraft:brown_terracotta": 2
@@ -15,6 +16,6 @@ layers:
     layers: 1
 id: "MOUNTAIN_JUNGLE"
 noise:
-  type: OpenSimplex2
+  type: OPENSIMPLEX2
   frequency: 0.04
   salt: 3

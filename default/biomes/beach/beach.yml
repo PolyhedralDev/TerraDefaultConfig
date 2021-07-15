@@ -1,5 +1,5 @@
 type: "BIOME"
 extends: "BEACH_ABSTRACT"
 id: "BEACH"
-vanilla: BEACH
+vanilla: "minecraft:beach"
 color: 0xfade55

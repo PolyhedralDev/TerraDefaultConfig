@@ -16,7 +16,7 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - TAIGA: 255
-vanilla: SNOWY_TAIGA
+vanilla: "minecraft:snowy_taiga"
 tags:
   - "LAND"
   - "COLD"
@@ -27,24 +27,32 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 80
     y:
       min: 62
       max: 156
+    distribution:
+      type: WHITENOISE
     items:
       - SNOW: 1
   - density: 40
     y:
       min: 62
       max: 84
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_GRASS: 15
       - GRASS: 70
       - SWEET_BERRIES: 1
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -52,6 +60,8 @@ trees:
       min: 48
       max: 49
   - density: 6
+    distribution:
+      type: WHITENOISE
     items:
       - SPRUCE: 1
     y:

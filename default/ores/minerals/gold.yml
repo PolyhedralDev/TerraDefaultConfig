@@ -1,3 +1,4 @@
+type: "ORE"
 material: "minecraft:gold_ore"
 material-overrides:
   "minecraft:deepslate": "minecraft:deepslate_gold_ore"

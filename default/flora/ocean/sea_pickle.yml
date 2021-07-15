@@ -1,3 +1,6 @@
+type: "FLORA"
+layer-distribution:
+  type: WHITENOISE
 layers:
   - materials:
       - "minecraft:sea_pickle[waterlogged=true,pickles=1]": 1

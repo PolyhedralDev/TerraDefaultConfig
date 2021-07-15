@@ -1,3 +1,4 @@
+type: "PALETTE"
 layers:
   - materials:
       - "minecraft:gravel": 1
@@ -10,11 +11,11 @@ layers:
     layers: 1
 id: "RIVER_SHORE"
 noise:
-  type: DomainWarp
+  type: DOMAINWARP
   amplitude: 1.5
   warp:
-    type: WhiteNoise
+    type: WHITENOISE
   function:
-    type: OpenSimplex2
+    type: OPENSIMPLEX2
     frequency: 0.05
     salt: 3

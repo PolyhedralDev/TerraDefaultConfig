@@ -14,7 +14,7 @@ palette:
   - BEDROCK_LITTLE: 3
   - DEEPSLATE: 20
   - TUNDRA: 255
-vanilla: SNOWY_TUNDRA
+vanilla: "minecraft:snowy_tundra"
 carving:
   CAVE_TUNDRA: 55
   RAVINE: 2
@@ -29,15 +29,21 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 80
     y:
       min: 62
       max: 156
+    distribution:
+      type: WHITENOISE
     items:
       - SNOW: 1
   - density: 12
+    distribution:
+      type: WHITENOISE
     items:
       - STALACTITE: 1
       - STALAGMITE: 1
@@ -46,6 +52,8 @@ flora:
       min: 15
       max: 62
   - density: 8
+    distribution:
+      type: WHITENOISE
     items:
       - STALACTITE: 1
       - STALAGMITE: 1
@@ -53,6 +61,8 @@ flora:
       min: 8
       max: 14
   - density: 8
+    distribution:
+      type: WHITENOISE
     items:
       - STALACTITE: 1
       - CEILING_ICE: 1
@@ -63,6 +73,8 @@ erodible: true
 
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1

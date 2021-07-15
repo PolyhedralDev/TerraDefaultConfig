@@ -7,12 +7,16 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 40
     y:
       min: 62
       max: 84
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_GRASS: 15
       - GRASS: 70
@@ -26,7 +30,7 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - TAIGA: 255
-vanilla: TAIGA
+vanilla: "minecraft:taiga"
 structures:
   - STRONGHOLD
   - OUTPOST
@@ -38,6 +42,8 @@ tags:
   - "RIVER_ERODE"
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -45,6 +51,8 @@ trees:
       min: 48
       max: 49
   - density: 6
+    distribution:
+      type: WHITENOISE
     items:
       - SPRUCE: 1
     y:

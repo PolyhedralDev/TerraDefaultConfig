@@ -1,3 +1,6 @@
+type: "FLORA"
+layer-distribution:
+  type: WHITENOISE
 layers:
   - materials:
       - "minecraft:stone_button[facing=east,face=floor]": 1

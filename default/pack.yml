@@ -20,6 +20,25 @@ blend:
     step: 3
     elevation: 4
 
+generator: "NOISE_3D"
+
+addons:
+  - "biome-provider-pipeline"
+  - "chunk-generator-noise-3d"
+  - "config-biome"
+  - "config-flora"
+  - "config-noise-function"
+  - "config-ore"
+  - "config-palette"
+  - "config-tree"
+  - "structure-terrascript-loader"
+  - "language-yaml"
+  
+  
+stages:
+  - "TREE"
+  - "FLORA"
+
 beta:
   carving: false
 
@@ -28,33 +47,33 @@ vanilla:
 
 noise:
   noise2:
-    type: FBm
+    type: FBM
     dimensions: 2
     octaves: 4
     function:
-      type: OpenSimplex2
+      type: OPENSIMPLEX2
       frequency: 0.0075
   noise3:
-    type: FBm
+    type: FBM
     dimensions: 3
     octaves: 4
     function:
-      type: OpenSimplex2
+      type: OPENSIMPLEX2
       frequency: 0.0075
   rand:
     dimensions: 3
-    type: WhiteNoise
+    type: WHITENOISE
   desert:
-    type: DomainWarp
+    type: DOMAINWARP
     dimensions: 2
     amplitude: 25
     function:
-      type: Cellular
+      type: CELLULAR
       frequency: 0.015
       return: Distance
     warp:
       frquency: 0.015
-      type: OpenSimplex2
+      type: OPENSIMPLEX2
   mesa:
     type: "DOMAINWARP"
     amplitude: 15
@@ -81,14 +100,14 @@ noise:
         frequency: 0.015
   noiseC:
     dimensions: 2
-    type: Cellular
+    type: CELLULAR
     frequency: 0.25
     return: NoiseLookup
     lookup:
-      type: FBm
+      type: FBM
       octaves: 4
       function:
-        type: OpenSimplex2
+        type: OPENSIMPLEX2
         frequency: 0.02
   
   bubble: # Bubbly noise
@@ -101,12 +120,10 @@ noise:
       min: -1
       max: -0.6
       function:
-        type: Cellular
+        type: CELLULAR
         frequency: 0.075
         return: Distance2Add
 
-variables:
-  base: 63
 biomes:
   type: PIPELINE
   biome: OASIS
@@ -114,7 +131,7 @@ biomes:
   blend:
     amplitude: 1.75
     noise:
-      type: OpenSimplex2
+      type: OPENSIMPLEX2
       frequency: 0.12
   image:
     name: map.jpg
@@ -127,9 +144,9 @@ biomes:
         OCEAN: 1
         PLAINS: 2
       noise:
-        type: FBm
+        type: FBM
         function:
-          type: OpenSimplex2
+          type: OPENSIMPLEX2
           frequency: 0.04
     stages:
       - mutate: # Ocean climate distribution
@@ -140,7 +157,7 @@ biomes:
             - "OCEAN_DEEP": 8
             - "WARM_OCEAN_DEEP": 12
           noise: &climate # This noise will be used elsewhere for climate.
-            type: OpenSimplex2 # Use Simplex, so hot cannot be directly next to cold.
+            type: OPENSIMPLEX2 # Use Simplex, so hot cannot be directly next to cold.
             salt: 2
             frequency: 0.025
       - mutate: # Land climate distribution
@@ -159,7 +176,7 @@ biomes:
             - "WARM_OCEAN_DEEP": 1
             - "LUKEWARM_OCEAN_DEEP": 8
           noise:
-            type: WhiteNoise
+            type: WHITENOISE
             salt: 21
       - mutate: # Randomize Cold/Frozen oceans.
           type: REPLACE
@@ -168,7 +185,7 @@ biomes:
             - "COLD_OCEAN_DEEP": 4
             - "FROZEN_OCEAN_DEEP": 1
           noise:
-            type: WhiteNoise
+            type: WHITENOISE
             salt: 21
       - mutate: # Humidity distribution of warm biomes
           type: REPLACE
@@ -178,7 +195,7 @@ biomes:
             - SAVANNA: 2
             - DESERT: 4
           noise:
-            type: OpenSimplex2 # Use Simplex, so wet cannot be directly next to dry.
+            type: OPENSIMPLEX2 # Use Simplex, so wet cannot be directly next to dry.
             salt: 5
             frequency: 0.0325
       - mutate: # Neutral warm biomes.
@@ -188,7 +205,7 @@ biomes:
             - FOREST: 2
             - PLAINS: 3
           noise: &biome-distribute
-            type: Cellular # Use cellular to increase biome size.
+            type: CELLULAR # Use CELLULAR to increase biome size.
             return: CellValue
             frequency: 0.25
             salt: 6
@@ -236,7 +253,7 @@ biomes:
       - expand:
           type: FRACTAL
           noise:
-            type: WhiteNoise
+            type: WHITENOISE
             salt: 11
       - mutate: # Wet warm biomes
           type: REPLACE
@@ -245,7 +262,7 @@ biomes:
             - JUNGLE: 6
             - BAMBOO_JUNGLE: 1
           noise:
-            type: Cellular # Use cellular to increase biome size.
+            type: CELLULAR # Use CELLULAR to increase biome size.
             return: CellValue
             frequency: 0.5
             salt: 6
@@ -256,7 +273,7 @@ biomes:
             - DESERT: 19
             - OASIS: 1
           noise:
-            type: Cellular # Use cellular to increase biome size.
+            type: CELLULAR # Use CELLULAR to increase biome size.
             return: CellValue
             frequency: 0.4
             salt: 7
@@ -271,7 +288,7 @@ biomes:
           default-replace: OCEAN_DEEP
           default-to: OCEAN
           noise:
-            type: Constant
+            type: CONSTANT
       - mutate: # Randomize Cold/Frozen oceans.
           type: REPLACE
           from: "BIOME:OCEAN_DEEP"
@@ -279,24 +296,24 @@ biomes:
             - "OCEAN_DEEP": 7
             - "MUSHROOM": 1
           noise:
-            type: Cellular
+            type: CELLULAR
             frequency: 0.2
             return: CellValue
             salt: 21
       - expand:
           type: FRACTAL
           noise:
-            type: WhiteNoise
+            type: WHITENOISE
             salt: 11
       - mutate:
           type: SMOOTH
           noise:
-            type: WhiteNoise
+            type: WHITENOISE
             salt: 182
       - expand:
           type: FRACTAL
           noise:
-            type: WhiteNoise
+            type: WHITENOISE
             salt: 16
       - mutate: # Mushroom beaches.
           type: BORDER
@@ -305,7 +322,7 @@ biomes:
           to:
             - MUSHROOM_BEACH: 1
           noise:
-            type: Constant
+            type: CONSTANT
       - mutate: # Generate beaches at land/ocean border.
           type: BORDER
           from: OCEAN
@@ -313,11 +330,11 @@ biomes:
           to:
             - BEACH: 1
           noise:
-            type: Constant
+            type: CONSTANT
       - expand:
           type: FRACTAL
           noise:
-            type: WhiteNoise
+            type: WHITENOISE
             salt: 14
       - mutate: # Regular ocean around mushroom biomes, to prevent steep drop-off.
           type: BORDER
@@ -326,11 +343,11 @@ biomes:
           to:
             - OCEAN: 1
           noise:
-            type: Constant
+            type: CONSTANT
       - mutate:
           type: SMOOTH
           noise:
-            type: WhiteNoise
+            type: WHITENOISE
             salt: 18
       - mutate: # Erode rivers.
           type: REPLACE_LIST
@@ -379,10 +396,10 @@ biomes:
       - mutate:
           type: SMOOTH
           noise:
-            type: WhiteNoise
+            type: WHITENOISE
             salt: 18
       - mutate:
           type: SMOOTH
           noise:
-            type: WhiteNoise
+            type: WHITENOISE
             salt: 19

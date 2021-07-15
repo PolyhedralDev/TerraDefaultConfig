@@ -6,9 +6,13 @@ structures:
   - STRONGHOLD
   - MINESHAFT
   - DUNGEON
-noise-equation: "((-((y / base))) + 1) + noise2(x*0.75, z*0.75)/5 + 0.15"
+noise:
+  type: EXPRESSION
+  equation: "((-((y / 63))) + 1) + noise2(x*0.75, z*0.75)/5 + 0.15"
 elevation:
-  equation: "(desert(x, z) + 1) * 0.225 * max(min(noise2(x*0.75, z*0.75) + 0.5, 1), 0)"
+  equation:
+    type: EXPRESSION
+    equation: "(desert(x, z) + 1) * 0.225 * max(min(noise2(x*0.75, z*0.75) + 0.5, 1), 0)"
 noise-2d:
   enable: false
 palette:
@@ -18,7 +22,7 @@ palette:
   - BEDROCK_LITTLE: 3
   - DEEPSLATE: 20
   - DESERT: 255
-vanilla: DESERT
+vanilla: "minecraft:desert"
 color: 0xfa9418
 tags:
   - "LAND"
@@ -31,12 +35,16 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 2
     y:
       min: 62
       max: 84
+    distribution:
+      type: WHITENOISE
     items:
       - DEAD_BUSH: 1
       - SMALL_ROCK: 1
@@ -45,6 +53,8 @@ erodible: true
 
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -52,6 +62,8 @@ trees:
       min: 48
       max: 49
   - density: 1.5
+    distribution:
+      type: WHITENOISE
     items:
       - CACTUS: 1
     y:

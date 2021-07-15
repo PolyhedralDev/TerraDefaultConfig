@@ -1,3 +1,4 @@
+type: "ORE"
 material: "minecraft:lapis_ore"
 material-overrides:
   "minecraft:deepslate": "minecraft:deepslate_lapis_ore"

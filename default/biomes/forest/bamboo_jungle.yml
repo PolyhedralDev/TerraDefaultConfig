@@ -16,7 +16,7 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - BAMBOO_JUNGLE: 255
-vanilla: BAMBOO_JUNGLE
+vanilla: "minecraft:bamboo_jungle"
 tags:
   - "LAND"
   - "HOT"
@@ -28,18 +28,24 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 40
     y:
       min: 62
       max: 84
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_GRASS: 150
       - GRASS: 750
       - ROSE_BUSH: 4
       - LILAC: 4
   - density: 12
+    distribution:
+      type: WHITENOISE
     items:
       - CEILING_LEAVES: 2
       - VINES: 2
@@ -51,6 +57,8 @@ flora:
       min: 15
       max: 62
   - density: 10
+    distribution:
+      type: WHITENOISE
     items:
       - CEILING_LEAVES: 6
       - STALACTITE: 1
@@ -59,6 +67,8 @@ flora:
       min: 63
       max: 84
   - density: 5
+    distribution:
+      type: WHITENOISE
     items:
       - STALACTITE: 1
       - STALAGMITE: 2
@@ -69,6 +79,8 @@ flora:
 
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -76,6 +88,8 @@ trees:
       min: 48
       max: 49
   - density: 50
+    distribution:
+      type: WHITENOISE
     items:
       - JUNGLE_BUSH: 16
       - SMALL_JUNGLE: 16

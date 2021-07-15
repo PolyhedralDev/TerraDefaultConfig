@@ -1,0 +1,13 @@
+type: "FLORA"
+layer-distribution:
+  type: WHITENOISE
+layers:
+  - materials:
+      - "minecraft:allium": 1
+    layers: 1
+id: "ALLIUM"
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+replaceable:
+  - "minecraft:air"

@@ -1,3 +1,4 @@
+type: "PALETTE"
 layers:
   - materials:
       - "minecraft:grass_block": 2
@@ -9,8 +10,8 @@ layers:
     layers: 1
 id: "BAMBOO_JUNGLE"
 noise:
-  type: FBm
+  type: FBM
   function:
-    type: OpenSimplex2
+    type: OPENSIMPLEX2
     frequency: 0.05
     salt: 3

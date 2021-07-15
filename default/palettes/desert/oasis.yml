@@ -1,3 +1,4 @@
+type: "PALETTE"
 layers:
   - materials:
       - "minecraft:grass_block": 4
@@ -9,14 +10,14 @@ layers:
     layers: 1
 id: "OASIS"
 noise:
-  type: DomainWarp
+  type: DOMAINWARP
   amplitude: 2
   warp:
-    type: WhiteNoise
+    type: WHITENOISE
   function:
-    type: FBm
+    type: FBM
     octaves: 3
     function:
-      type: OpenSimplex2
+      type: OPENSIMPLEX2
       frequency: 0.03
       salt: 3

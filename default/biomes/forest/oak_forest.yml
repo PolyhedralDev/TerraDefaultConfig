@@ -11,7 +11,7 @@ palette:
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - GRASSY: 255
-vanilla: FOREST
+vanilla: "minecraft:forest"
 tags:
   - "LAND"
   - "RIVER_ERODE"
@@ -20,12 +20,16 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 45
     y:
       min: 62
       max: 84
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_GRASS: 150
       - GRASS: 750
@@ -36,6 +40,8 @@ flora:
 
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -43,6 +49,8 @@ trees:
       min: 48
       max: 49
   - density: 8
+    distribution:
+      type: WHITENOISE
     items:
       - OAK: 1
     y:

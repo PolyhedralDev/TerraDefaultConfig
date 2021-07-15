@@ -1,3 +1,4 @@
+type: "PALETTE"
 layers:
   - materials:
       - "minecraft:gravel": 1
@@ -15,10 +16,10 @@ layers:
     layers: 1
 id: "TUNDRA"
 noise:
-  type: DomainWarp
+  type: DOMAINWARP
   warp:
-    type: WhiteNoise
+    type: WHITENOISE
   amplitude: 5
   function:
-    type: OpenSimplex2
+    type: OPENSIMPLEX2
     frequency: 0.04

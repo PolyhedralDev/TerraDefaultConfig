@@ -1,3 +1,4 @@
+type: "ORE"
 material: "minecraft:tuff"
 extends: DEPOSIT
 id: "TUFF"

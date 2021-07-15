@@ -1,7 +1,7 @@
 type: "BIOME"
 extends: "DEEP_OCEAN_ABSTRACT"
 id: "WARM_OCEAN_DEEP"
-vanilla: WARM_OCEAN
+vanilla: "minecraft:deep_warm_ocean"
 color: 0x000050
 palette:
   - "BLOCK:minecraft:bedrock": 0
@@ -25,12 +25,14 @@ flora:
       - KELP_TALL: 1
       - SEA_PICKLE: 2
     distribution:
-      type: WhiteNoise
+      type: WHITENOISE
       dimensions: 3
   - density: 75
     y:
       min: 30
       max: 62
+    distribution:
+      type: WHITENOISE
     items:
       - CORAL_FAN: 3
       - CORAL: 3
@@ -39,6 +41,8 @@ trees:
     y:
       min: 32
       max: 52
+    distribution:
+      type: WHITENOISE
     items:
       - CORAL: 1
 tags:

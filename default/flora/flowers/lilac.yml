@@ -1,0 +1,16 @@
+type: "FLORA"
+layer-distribution:
+  type: WHITENOISE
+layers:
+  - materials:
+      - "minecraft:lilac[half=upper]": 1
+    layers: 1
+  - materials:
+      - "minecraft:lilac[half=lower]": 1
+    layers: 1
+id: "LILAC"
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
+replaceable:
+  - "minecraft:air"

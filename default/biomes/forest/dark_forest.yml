@@ -10,10 +10,12 @@ palette:
   - DEEPSLATE: 20
   - SANDY: 62
   - GRASSY: 255
-vanilla: DARK_FOREST
+vanilla: "minecraft:dark_forest"
 
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -21,6 +23,8 @@ trees:
       min: 48
       max: 49
   - density: 15
+    distribution:
+      type: WHITENOISE
     items:
       - DARK_OAK: 1
     y:

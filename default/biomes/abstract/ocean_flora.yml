@@ -8,6 +8,9 @@ structures:
   - STRONGHOLD
 flora:
   - density: 50
+    
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_SEAGRASS: 1
       - SEAGRASS: 3

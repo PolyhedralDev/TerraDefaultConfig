@@ -1,9 +1,11 @@
 type: "BIOME"
-noise-equation: "((-((y / base)^2)) + 1) + |noise2(x/2.5, z/2.5)|"
-variables:
-  base: 66
+noise:
+  type: EXPRESSION
+  equation: "((-((y / 66)^2)) + 1) + |noise2(x/2.5, z/2.5)|"
 elevation:
-  equation: "min(floor(((|noise2(x/2.5, z/2.5)|) + 0.1)*4)*0.175, 12)"
+  equation:
+    type: EXPRESSION
+    equation: "min(floor(((|noise2(x/2.5, z/2.5)|) + 0.1)*4)*0.175, 12)"
   interpolation: true
 color: 0xa79d64
 id: "ARID_MOUNTAINS"
@@ -16,7 +18,7 @@ palette:
   - BEDROCK_LITTLE: 3
   - DEEPSLATE: 20
   - ARID: 255
-vanilla: SAVANNA
+vanilla: "minecraft:savanna"
 prevent-smooth: true
 tags:
   - "LAND"
@@ -36,12 +38,16 @@ flora:
     y:
       min: 10
       max: 56
+    distribution:
+      type: WHITENOISE
     items:
       - GLOW_LICHEN: 1
   - density: 40
     y:
       min: 62
       max: 128
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_GRASS: 15
       - GRASS: 70
@@ -49,6 +55,8 @@ flora:
 
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -56,6 +64,8 @@ trees:
       min: 48
       max: 49
   - density: 4
+    distribution:
+      type: WHITENOISE
     items:
       ACACIA: 1
     y:

@@ -1,10 +1,10 @@
 type: "BIOME"
-noise-equation: "((-((y / base)^2)) + 1) + ((noise2(x, z)/4))"
+noise:
+  type: EXPRESSION
+  equation: "((-((y / 62)^2)) + 1) + ((noise2(x, z)/4))"
 extends: "BASIC_ORES"
 id: "SWAMP"
 color: 0x1b4220
-variables:
-  base: 62
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -13,7 +13,7 @@ palette:
   - DEEPSLATE: 20
   - SWAMP_BOTTOM: 61
   - SWAMP: 255
-vanilla: SWAMP
+vanilla: "minecraft:swamp"
 tags:
   - "LAND"
   - "WET"
@@ -22,6 +22,8 @@ flora:
     y:
       min: 62
       max: 84
+    distribution:
+      type: WHITENOISE
     items:
       - TALL_GRASS: 150
       - LILY_PAD: 40
@@ -38,6 +40,8 @@ structures:
 
 trees:
   - density: 0.75
+    distribution:
+      type: WHITENOISE
     items:
       - DRIPSTONE: 9
       - GEODE: 1
@@ -45,6 +49,8 @@ trees:
       min: 48
       max: 49
   - density: 2
+    distribution:
+      type: WHITENOISE
     items:
       - SWAMP_OAK: 1
     y:

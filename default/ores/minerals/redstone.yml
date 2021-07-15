@@ -1,3 +1,4 @@
+type: "ORE"
 material: "minecraft:redstone_ore"
 material-overrides:
   "minecraft:deepslate": "minecraft:deepslate_redstone_ore"
