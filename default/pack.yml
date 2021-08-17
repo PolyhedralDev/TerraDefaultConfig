@@ -148,7 +148,7 @@ biomes:
           from: "BIOME:PLAINS"
           to:
             - TUNDRA: 4 # Super cold biomes
-            - TAIGA: 2 # Taiga buffer zone
+            # - TAIGA: 2  Taiga buffer zone
             - PLAINS: 8 # Temperate biomes
             - JUNGLE: 12 # Warm biomes
           noise: *climate # Use climate noise
