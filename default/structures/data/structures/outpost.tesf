@@ -1,27 +1,6 @@
 id "outpost";
 
 num y = 0;
-num i = 0;
-
-for(i; i < 20; i = i + 1) {
-    num spawnY = 0;
-    num theta = randomInt(360) * 3.14159/180;
-    num r = 5+randomInt(randomInt(4)+1); // account for radial distribution favoring the center.
-    num spawnX = cos(theta)*r;
-    num spawnZ = sin(theta)*r;
-    num select = randomInt(4);
-
-    if(select == 0) {
-        spawnY = 1;
-    } else if(select == 1) {
-        spawnY = 5;
-    } else if(select == 2) {
-        spawnY = 8;
-    } else if(select == 3) {
-        spawnY = 18;
-    }
-  entity(spawnX, spawnY, spawnZ,"PILLAGER");
-}
 
 for(y; y > -50; y = y - 1) {
     if(check(-8, y + 0, -8) != "LAND") {

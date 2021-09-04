@@ -1,14 +1,6 @@
 id "monument";
 
 num y = 0;
-num i = 0;
-
-for(i; i < 50; i = i + 1) {
-    num spawnX = randomInt(60) - 30;
-    num spawnZ = randomInt(60) - 30;
-    num spawnY = 0 - randomInt(20);
-    structure(spawnX, spawnY, spawnZ,"guardian", "NONE");
-   }
 
 for(y; y > -50; y = y - 1) {
     if(check(30, y + 6, 2) != "OCEAN") {
