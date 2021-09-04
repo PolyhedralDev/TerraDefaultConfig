@@ -8,6 +8,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - MOUNTAIN_STONE_GRASS: 108
@@ -19,6 +20,12 @@ blend:
 ocean:
   palette: FROZEN_OCEAN
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 10
     items:
       - STALACTITE: 2

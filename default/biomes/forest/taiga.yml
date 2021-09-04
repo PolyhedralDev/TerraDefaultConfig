@@ -2,6 +2,12 @@ extends: "FOREST_ABSTRACT"
 id: "TAIGA"
 color: 0x0b6659
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 40
     y:
       min: 62
@@ -15,6 +21,7 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - RIVER_BOTTOM: 61
   - RIVER_SHORE: 62
   - TAIGA: 255
@@ -29,6 +36,13 @@ tags:
   - "COLD"
   - "RIVER_ERODE"
 trees:
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
+    y:
+      min: 48
+      max: 49
   - density: 6
     items:
       - SPRUCE: 1

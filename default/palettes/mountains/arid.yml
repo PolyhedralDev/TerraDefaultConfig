@@ -2,13 +2,13 @@ layers:
   - materials:
       - "minecraft:grass_block": 1
       - "minecraft:grass_block": 1
-      - "minecraft:grass_path": 1
+      - "minecraft:dirt_path": 1
       - "minecraft:grass_block": 1
       - "minecraft:grass_block": 1
       - "minecraft:grass_block": 1
       - "minecraft:grass_block": 1
       - "minecraft:grass_block": 1
-      - "minecraft:grass_path": 1
+      - "minecraft:dirt_path": 1
       - "minecraft:grass_block": 1
       - "minecraft:grass_block": 1
       - "minecraft:grass_block": 1

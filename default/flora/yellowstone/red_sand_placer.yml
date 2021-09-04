@@ -4,10 +4,10 @@ layers:
     layers: 1
 id: "R_SAND_PLACER"
 spawnable:
-  - "minecraft:diorite"
+  - "minecraft:calcite"
   - "yellow_terracotta"
 replaceable:
-  - "minecraft:diorite"
+  - "minecraft:calcite"
 irrigable-offset: 1
 irrigable:
   - "minecraft:yellow_terracotta"

@@ -63,10 +63,17 @@ palette:
   - BEDROCK_MOST: 1
   - BEDROCK_HALF: 2
   - BEDROCK_LITTLE: 3
+  - DEEPSLATE: 20
   - RED_DESERT: 255
 vanilla: BADLANDS
 
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 2
     y:
       min: 62
@@ -75,6 +82,13 @@ flora:
       - DEAD_BUSH: 1
       - SMALL_ROCK: 1
 trees:
+  - density: 0.75
+    items:
+      - DRIPSTONE: 9
+      - GEODE: 1
+    y:
+      min: 48
+      max: 49
   - density: 1.5
     items:
       - CACTUS: 1

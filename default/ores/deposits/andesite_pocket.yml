@@ -1,3 +1,8 @@
 material: "minecraft:andesite"
 extends: DEPOSIT
 id: "ANDESITE"
+replace:
+  - "minecraft:stone"
+  - "minecraft:deepslate"
+  - "minecraft:diorite"
+  - "minecraft:granite"

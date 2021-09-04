@@ -2,6 +2,12 @@ id: MOUNTAINS_PRETTY_FLORA
 abstract: true
 extends: BASIC_ORES
 flora:
+  - density: 1
+    y:
+      min: 10
+      max: 56
+    items:
+      - GLOW_LICHEN: 1
   - density: 100
     distribution:
       type: OpenSimplex2

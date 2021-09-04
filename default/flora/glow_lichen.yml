@@ -1,0 +1,25 @@
+layers:
+  - materials:
+      - "minecraft:glow_lichen": 1
+    layers: 1
+id: "GLOW_LICHEN"
+max-placements: 1
+spawnable:
+  - "minecraft:air"
+replaceable:
+  - "minecraft:air"
+rotatable:
+  - "minecraft:stone"
+  - "minecraft:diorite"
+  - "minecraft:andesite"
+  - "minecraft:granite"
+  - "minecraft:deepslate"
+  - "minecraft:tuff"
+irrigable:
+  - "minecraft:stone"
+  - "minecraft:diorite"
+  - "minecraft:andesite"
+  - "minecraft:granite"
+  - "minecraft:deepslate"
+  - "minecraft:tuff"
+irrigable-offset: 1
