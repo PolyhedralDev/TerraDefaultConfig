@@ -5,6 +5,7 @@ carving:
   CAVE_OCEAN: 40
 structures:
   - STRONGHOLD
+  - SHIPWRECK
 flora:
   - density: 50
     items:

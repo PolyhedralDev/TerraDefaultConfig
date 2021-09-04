@@ -1,6 +1,7 @@
 id "outpost";
 
 num y = 0;
+
 for(y; y > -50; y = y - 1) {
     if(check(-8, y + 0, -8) != "LAND") {
         continue;

@@ -1,0 +1,17 @@
+scripts:
+  shipwreck1: 1
+  shipwreck2: 1
+  shipwreck3: 1
+  shipwreck4: 1
+  shipwreck5: 1
+  shipwreck6: 1
+  shipwreck7: 1
+  shipwreck8: 1
+  shipwreck9: 1
+id: "SHIPWRECK"
+spawn:
+  start:
+    min: 72
+    max: 72
+  width: 125
+  padding: 50

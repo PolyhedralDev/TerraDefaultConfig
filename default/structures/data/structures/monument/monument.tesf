@@ -1,6 +1,7 @@
 id "monument";
 
 num y = 0;
+
 for(y; y > -50; y = y - 1) {
     if(check(30, y + 6, 2) != "OCEAN") {
         continue;
